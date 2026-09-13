@@ -4405,6 +4405,66 @@
    "citations": 350,
    "venue": "Nature",
    "source": "curated"
+  },
+  "claim:a-bellman-optimality-equation-for-plasticity:1": {
+   "id": "claim:a-bellman-optimality-equation-for-plasticity:1",
+   "type": "claim",
+   "label": "论文为 Abel et al. (2025) 的信息论可塑性定义导出马尔可夫决策过程中的贝尔曼最优方程，作者自述为 preliminary work。"
+  },
+  "claim:a-bellman-optimality-equation-for-plasticity:2": {
+   "id": "claim:a-bellman-optimality-equation-for-plasticity:2",
+   "type": "claim",
+   "label": "Abel et al. (2025)（arXiv:2505.10361，17 位作者）将 plasticity 定义为观察到动作的广义方向信息、empowerment 为动作到观察，二者互为镜像；持续学习智能体需要两种量都保持在阈值之上。"
+  },
+  "claim:a-bellman-optimality-equation-for-plasticity:3": {
+   "id": "claim:a-bellman-optimality-equation-for-plasticity:3",
+   "type": "claim",
+   "label": "方程以 I(S_{t+1};A_{t+1}|S_t,A_t) 为步奖励，值函数 V(s,a) 定义在状态-动作对上；论文证明对应贝尔曼算子为压缩映射，且最优策略可取确定性策略。"
+  },
+  "claim:a-bellman-optimality-equation-for-plasticity:4": {
+   "id": "claim:a-bellman-optimality-equation-for-plasticity:4",
+   "type": "claim",
+   "label": "共享的 q 边际使各后继状态的动作选择耦合，论文将其表述为多重权重背包问题并用动态规划求解，避免 |A|^|S| 规模的枚举。"
+  },
+  "claim:a-bellman-optimality-equation-for-plasticity:5": {
+   "id": "claim:a-bellman-optimality-equation-for-plasticity:5",
+   "type": "claim",
+   "label": "Control-Gated MDP（2 状态 2 动作）上以 0.01 粒度枚举全部策略得到可塑性-赋能前沿；可塑性最优策略为确定性（π(1|0)=1、π(0|1)=1），赋能最优策略为混合策略；值迭代单调收敛到约 0.92 bits 可塑性、0 bits 赋能。"
+  },
+  "claim:a-bellman-optimality-equation-for-plasticity:6": {
+   "id": "claim:a-bellman-optimality-equation-for-plasticity:6",
+   "type": "claim",
+   "label": "Road 环境（5 车道、3 动作、{-1,0,1} 均匀风）中撞边上下文价值最低；Two-Room 环境（5×7 共 35 状态、4 动作、全噪声房+全确定房+河流）策略模拟显示智能体趋向噪声房间以最大化可塑性。"
+  },
+  "claim:t1-terminal-agent-reinforcement-learning:1": {
+   "id": "claim:t1-terminal-agent-reinforcement-learning:1",
+   "type": "claim",
+   "label": "论文提出 T1，一个 122B 总参数的混合专家模型，纯强化学习训练，在云端沙箱的真实 shell 中执行任务，单任务最多 300+ 轮工具调用，奖励来自执行每个任务自带的验证器。"
+  },
+  "claim:t1-terminal-agent-reinforcement-learning:2": {
+   "id": "claim:t1-terminal-agent-reinforcement-learning:2",
+   "type": "claim",
+   "label": "训练配方三件套：激进热启动监督微调稳定 actor-critic 训练；稠密过程奖励按轨迹通过的验证器绝对数量打分；训练语料与评测完全脱开（种子隔离，合成任务与 Terminal-Bench 2.1 不相交）。"
+  },
+  "claim:t1-terminal-agent-reinforcement-learning:3": {
+   "id": "claim:t1-terminal-agent-reinforcement-learning:3",
+   "type": "claim",
+   "label": "TITO（token-in, token-out）用采样得到的精确 token 训练，token-in 保留前缀防重编码漂移，token-out 在轮次边界缝合并配合损失掩码，损失区域实现零 token 漂移。"
+  },
+  "claim:t1-terminal-agent-reinforcement-learning:4": {
+   "id": "claim:t1-terminal-agent-reinforcement-learning:4",
+   "type": "claim",
+   "label": "R3（rollout routing replay）记录采样器在每一层 MoE 的逐 token 专家选择并在训练中重放；TITO 与 R3 分别解决 token 与专家两条正交轴，把训练-推理对数概率差从 0.021 降到 0.013。"
+  },
+  "claim:t1-terminal-agent-reinforcement-learning:5": {
+   "id": "claim:t1-terminal-agent-reinforcement-learning:5",
+   "type": "claim",
+   "label": "一批 rollout 的成本高达数百沙箱小时，二元结果只产生一个比特信号，这是稠密验证奖励与防钻空设计（拒绝可利用任务、监控轮次增长、洗牌纳入奖励设计）的动机。"
+  },
+  "claim:t1-terminal-agent-reinforcement-learning:6": {
+   "id": "claim:t1-terminal-agent-reinforcement-learning:6",
+   "type": "claim",
+   "label": "Terminal-Bench 2.1 同一 agent harness 下，基座 43.8% 提升到 T1 的 64.0%；对比 GPT-5.4 为 54.8%、DeepSeek-V4-Flash 为 56.9%、Claude Opus 4.6 为 63.8%，逼近 Claude Opus 4.7 的 66.1%，为同参数段最佳。"
   }
  },
  "edges": [
@@ -8582,6 +8642,66 @@
    "s": "arxiv:2609.10776",
    "t": "doi:10.1038/s41586-024-07711-7",
    "rel": "cites"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "claim:a-bellman-optimality-equation-for-plasticity:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "claim:a-bellman-optimality-equation-for-plasticity:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "claim:a-bellman-optimality-equation-for-plasticity:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "claim:a-bellman-optimality-equation-for-plasticity:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "claim:a-bellman-optimality-equation-for-plasticity:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "claim:a-bellman-optimality-equation-for-plasticity:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11042",
+   "t": "claim:t1-terminal-agent-reinforcement-learning:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11042",
+   "t": "claim:t1-terminal-agent-reinforcement-learning:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11042",
+   "t": "claim:t1-terminal-agent-reinforcement-learning:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11042",
+   "t": "claim:t1-terminal-agent-reinforcement-learning:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11042",
+   "t": "claim:t1-terminal-agent-reinforcement-learning:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11042",
+   "t": "claim:t1-terminal-agent-reinforcement-learning:6",
+   "rel": "claims"
   }
  ]
 }

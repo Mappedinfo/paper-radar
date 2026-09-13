@@ -20,3 +20,8 @@
 - paper-fetch CLI 已从 Rimagination/paper-fetch-skill 源码安装（lite 模式）；对 2026-09 新 arXiv 条目解析 ambiguous，疑似缺浏览器组件的降级，待装 playwright 后复测。
 - 图谱上游补充：empowerment 谱系（Klyubin 2005 / Leibfried 2019 / Dohare 2024 Nature）不在抓取正则覆盖内，已手动补节点与 cites 边——标题正则后续应加 empowerment/inverse RL 等术语。
 - 全局图英文机构名按字符截断有断词问题，待按词边界换行。
+
+## 2026-09-13 (设计 v2 · EasySlides 规范)
+- 创作者反馈：context.setup「为什么是这一页」与 context.implication「这一页带来什么」改为创作辅助信息，不再渲染上片；PPT 设计遵循 easyslides/references/design-guidelines.md（学术蓝 #003366/#0066CC/#CC0000、60-30-10、页眉-关键信息条-内容区-页脚、CJK 字号阶梯）。
+- make_deck_svg.py 全面改版为浅色学术风；关键信息条累积句至 ≥24 字、最多两行；图谱页作为带边框图嵌入浅色页面。第一期（Bellman）为旧深色版，第二期（T1）起用 v2。
+- 今日双片全部自动推送成功：BV1k6Yi64EuD（Bellman 可塑性）、BV13wYq6VE7j（T1 终端智能体）。
