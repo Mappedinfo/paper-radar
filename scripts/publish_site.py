@@ -18,11 +18,17 @@ import sys
 BILI_PROJECTS = pathlib.Path(r"E:\bili\Bili\projects")
 
 
-def seed_claims(root, channel, graph):
+def load_episodes(root, channel, graph):
+    """Auto-import claims from produced episodes (episodes.json is the source
+    of truth); evidence hints come from channels/<ch>.json -> episode_claims."""
     cfg = json.loads((root / "channels" / f"{channel}.json").read_text(encoding="utf-8"))
-    seeds = cfg.get("episode_claims", [])
+    hints = {s["slug"]: s for s in cfg.get("episode_claims", [])}
+    ep_path = root / "data" / channel / "episodes.json"
+    episodes = json.loads(ep_path.read_text(encoding="utf-8")) if ep_path.exists() else []
     nodes, edges = graph["nodes"], graph["edges"]
     edge_set = {(e["s"], e["t"], e["rel"]) for e in edges}
+    videos = {}
+    added = 0
 
     def add_node(nid, ntype, **props):
         if nid not in nodes:
@@ -34,40 +40,43 @@ def seed_claims(root, channel, graph):
             edge_set.add((s, t, rel))
             edges.append({"s": s, "t": t, "rel": rel})
 
-    added = 0
-    for seed in seeds:
-        src_path = BILI_PROJECTS / seed["slug"] / "sources.json"
-        if not src_path.exists():
-            print(f"seed skip (no sources.json): {seed['slug']}")
+    for ep in episodes:
+        seed = hints.get(ep["slug"], {"paper_id": ep.get("paper_id"), "evidence": []})
+        pk = ep.get("paper_id") or seed.get("paper_id")
+        if not pk:
             continue
-        src = json.loads(src_path.read_text(encoding="utf-8"))
-        primary = next((s for s in src.get("sources", []) if s.get("primary_paper")), None)
-        if not primary:
-            continue
-        pk = seed["paper_id"]
-        add_node(pk, "paper", label=primary.get("title", seed["slug"])[:180],
-                 year=primary.get("year"), citations=primary.get("cited_by_count", 0) or 0,
-                 venue=primary.get("venue") or "arXiv", source="episode",
-                 episode=seed["slug"])
-        for name in primary.get("authors", [])[:12]:
-            aid = add_node("author:" + name.lower(), "author", label=name)
-            add_edge(aid, pk, "authored")
-        for i, claim in enumerate(primary.get("claims", [])[:6], 1):
-            cid = add_node(f"claim:{seed['slug']}:{i}", "claim", label=claim.strip())
-            add_edge(pk, cid, "claims")
-            added += 1
-        # evidence nodes from the episode's verified numeric claims (configured)
-        for ev in seed.get("evidence", []):
-            eid = add_node(f"evidence:{seed['slug']}:{ev['n']}", "evidence", label=ev["label"])
-            add_edge(eid, f"claim:{seed['slug']}:{ev['n']}", "supports")
-            added += 1
-    return added
+        videos[pk] = {
+            "bvid": ep.get("bvid"),
+            "url": f"https://www.bilibili.com/video/{ep['bvid']}" if ep.get("bvid") else None,
+            "slug": ep["slug"], "date": ep.get("date"),
+            "status": ep.get("status", "release_ready"),
+        }
+        if ep.get("status") in ("uploaded", "published", "release_ready"):
+            src_path = BILI_PROJECTS / ep["slug"] / "sources.json"
+            if not src_path.exists():
+                continue
+            src = json.loads(src_path.read_text(encoding="utf-8"))
+            primary = next((s for s in src.get("sources", []) if s.get("primary_paper")), None)
+            if not primary:
+                continue
+            add_node(pk, "paper", label=primary.get("title", ep["slug"])[:180],
+                     year=primary.get("year"), citations=primary.get("cited_by_count", 0) or 0,
+                     venue=primary.get("venue") or "arXiv", source="episode")
+            for i, claim in enumerate(primary.get("claims", [])[:6], 1):
+                cid = add_node(f"claim:{ep['slug']}:{i}", "claim", label=claim.strip())
+                add_edge(pk, cid, "claims")
+                added += 1
+            for ev in seed.get("evidence", []):
+                eid = add_node(f"evidence:{ep['slug']}:{ev['n']}", "evidence", label=ev["label"])
+                add_edge(eid, f"claim:{ep['slug']}:{ev['n']}", "supports")
+                added += 1
+    return videos, added
 
 
 def publish(root, channel):
     cd = root / "data" / channel
     graph = json.loads((cd / "graph.json").read_text(encoding="utf-8"))
-    n_claims = seed_claims(root, channel, graph)
+    videos, n_claims = load_episodes(root, channel, graph)
     (cd / "graph.json").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 
     out = root / "docs" / "data"
@@ -80,6 +89,7 @@ def publish(root, channel):
         "updated_at": dt.datetime.now().isoformat(timespec="seconds"),
         "nodes": slim_nodes,
         "edges": graph["edges"],
+        "videos": videos,
     }
     (out / f"{channel}.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
     rp = cd / "group-rankings.json"
@@ -88,7 +98,8 @@ def publish(root, channel):
     counts = {}
     for n in slim_nodes.values():
         counts[n["type"]] = counts.get(n["type"], 0) + 1
-    print(f"site data: docs/data/{channel}.json — {counts} nodes, {len(payload['edges'])} edges (+{n_claims} claim/evidence seeded)")
+    print(f"site data: docs/data/{channel}.json — {counts} nodes, {len(payload['edges'])} edges, "
+          f"{len(videos)} videos (+{n_claims} claim/evidence)")
 
 
 def main():

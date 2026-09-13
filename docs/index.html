@@ -61,7 +61,7 @@ const COLOR={group:'#f5b84a',paper:'#4ac6f5',author:'#b08cf2',venue:'#9aa5b1',cl
 const REL_ZH={cites:'引用',authored:'著文',member_of:'属于',published_in:'刊于',supports:'支撑',claims:'主张'};
 const CHANNEL='reinforcement-learning';
 let G=null,RANKS=[],nodes=[],edges=[],byId={},sel=null,hover=null,show={group:1,paper:1,author:1,venue:0,claim:1,evidence:1};
-let cam={x:innerWidth/2,y:innerHeight/2,k:1};
+let cam={x:innerWidth/2,y:innerHeight/2,k:1},VIDEOS={};
 
 const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
 function resize(){const r=cv.parentElement.getBoundingClientRect(),d=devicePixelRatio||1;
@@ -73,7 +73,7 @@ async function boot(){
                                  fetch(`data/${CHANNEL}-rankings.json`).then(x=>x.json()).catch(()=>[])]);
   G=g;RANKS=r;
   document.getElementById('stamp').textContent=g.updated_at.slice(0,10);
-  nodes=Object.values(g.nodes);byId=g.nodes;edges=g.edges;
+  nodes=Object.values(g.nodes);byId=g.nodes;edges=g.edges;VIDEOS=g.videos||{};
   // physics-friendly copies
   nodes.forEach(n=>{n.x=0;n.y=0;n.vx=0;n.vy=0;
     const a=Math.random()*Math.PI*2,rr=60+Math.random()*420;
@@ -124,6 +124,11 @@ function draw(){
     ctx.globalAlpha=dimd?0.16:1;
     ctx.fillStyle=COLOR[n.type];
     ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);ctx.fill();
+    if(VIDEOS[n.id]){ // 粉色圆环 = 已有解读视频
+      ctx.strokeStyle='#fb7299';ctx.lineWidth=2.6;
+      ctx.beginPath();ctx.arc(n.x,n.y,n.r+5,0,7);ctx.stroke();
+      ctx.shadowColor='#fb7299';ctx.shadowBlur=12;
+      ctx.beginPath();ctx.arc(n.x,n.y,n.r+5,0,7);ctx.stroke();ctx.shadowBlur=0;}
     if(sel&&n.id===sel.id){ctx.strokeStyle='#fff';ctx.lineWidth=2.5;ctx.stroke();
       ctx.shadowColor=COLOR[n.type];ctx.shadowBlur=22;ctx.fill();ctx.shadowBlur=0;}
     ctx.globalAlpha=1;});
@@ -173,6 +178,9 @@ function showPanel(n){
   const el=document.getElementById('ranks');
   let html=`<h2 style="color:${COLOR[n.type]}">${{group:'课题组',paper:'论文',author:'作者',venue:'期刊/会议',claim:'论点',evidence:'论据'}[n.type]||n.type}</h2>`;
   html+=`<div class="card"><b>${n.label||n.id}</b><div class="n">${n.venue||''} ${n.year||''} ${n.citations?('· 被引 '+n.citations):''}</div><div class="n">${n.id}</div></div>`;
+  if(n.type==='paper'&&VIDEOS[n.id]){const v=VIDEOS[n.id];
+    html+=v.url?`<a class="card" style="display:block;text-decoration:none;border-color:#fb7299" href="${v.url}" target="_blank">📺 <b style="color:#fb7299">本期解读视频</b><div class="n">${v.bvid} · ${v.date} 制作 · 点击跳转 B 站观看 →</div></a>`
+      :`<div class="card" style="border-color:#fb7299">📺 <b style="color:#fb7299">解读视频已制作</b><div class="n">${v.date} · 待发布（${v.status}）</div></div>`;}
   const nb=adj[n.id]||[];
   const byRel={};nb.forEach(([o,e])=>{const r=e.s===n.id?e.rel:e.rel;byRel[r]=byRel[r]||[];byRel[r].push(o);});
   Object.keys(byRel).forEach(r=>{html+=`<div class="card"><b>${REL_ZH[r]||r} · ${byRel[r].length}</b><div class="n">${byRel[r].slice(0,10).map(id=>(byId[id]&&byId[id].label||id).slice(0,44)).join('、')}${byRel[r].length>10?'…':''}</div></div>`;});
