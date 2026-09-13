@@ -55,6 +55,7 @@ whitelist, and seed groups, then run the same commands with `--channel <id>`.
 
 - Skill routing: `SKILL.md`
 - Graph schema: `references/graph-schema.md`
+- 每期 PPT 通用大纲与布局: `references/episode-deck-blueprint.md`
 - Daily runbook + skill-evolution protocol: `workflows/daily-column.md`
 
 ## License

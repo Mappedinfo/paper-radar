@@ -64,7 +64,7 @@ any converter) — these become the opening slides of the episode.
    - closing: 图谱回看 (这篇论文将如何改变引用网络).
    Graph numbers spoken on screen (被引次数、排名、组内论文数) must come
    from the graph store, and every paper claim from the full text.
-3. Build the deck with **EasySlides** (`~/.qoder/skills/easyslides`), embedding
+3. Build the deck with **EasySlides** following `references/episode-deck-blueprint.md` (通用页面序列与布局契约：hook 第1页、图谱第2-3页、references 末页；context.setup/implication 不上片) (`~/.qoder/skills/easyslides`), embedding
    the rendered graph SVG/PNG pages; export per its SKILL.md. The deck→video
    composition path may fall back to the validated PlainDeck renderer if the
    EasySlides export path is not wired yet — record which one was used.
