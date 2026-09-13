@@ -36,3 +36,10 @@
 - 批注五条全部修复：封面英文按词边界换行（wrap_words）；页眉右=§章节·作者年份、页脚左=arXiv 编号（去除作者重复）；图谱页标题去口语改为直接命名（强化学习领域全局图谱/本期论文的局部引用网络，两期 storyboard 已同步）；背景页扩容并新增原生对偶示意图 diagram_mirror（动作⇄观察信息流，图 N 编号）；公式 20pt 加大加高。
 - build_pptx.py 重写为原生构建：文本框/原生表格/自选图形，仅图谱为位图——PPTX 完全可人工二次编辑；PowerPoint COM 导出 PNG 已验证（deck/pptx-export/），人工改完的 PPTX 可直接导出 PNG 重出视频，PPTX 成为唯一视觉源。
 - 批注解析注意：PowerPoint 365 批注存 modernComment_*.xml（ppt/comments/），经典 commentN.xml 解析抓不到；slide→批注映射走 slideN.xml.rels。
+
+## 2026-09-13 (v3.2 · 论文原图管线 + 实测布局 + overlap 审计门)
+- 创作者要求：论文原图（架构图/核心结果图）自动裁剪入 PPT 并自动解说。extract_figures.py 重写为 PDF 截图路线（创作者建议）：下载 arXiv PDF → 题注文本块（Figure N）锚定 → 上方图像/矢量聚类区域 → 2.5x 裁剪；剔除与正文文本块重叠>35%的区域（flash 视觉质检反馈）；题注关键词分类（results 词优先于 architecture 词）；architecture→方法页、results→实验页自动分配；visual-assets.json 台账自动登记。
+- build_pptx：论文原图优先于自制指标表（同页只取论文图）；图注带「论文 Figure N，第 P 页」出处；备注页自动前缀「本页图示（论文 Figure N）…caption」解说。
+- overlap 自动计算（创作者问「有什么逻辑自动计算 overlap 吗」）：v3.1 只有字数估行高+WARN，中英混排实际换行与估算有偏差导致第 4/5 页溢出。v3.2 改为 PIL+微软雅黑真实字宽测量（measure_lines）精确计算每块高度，构建后 Audit 两两包围盒相交检测（>0.03in 阈值）+ 页脚越界检测，任何命中即构建失败——不再静默交付越界页。本轮 13 页审计全过。
+- flash 视觉模型（mcp analyze_image）用于裁剪图质检可行：本地裁剪图经 Read 自动上 CDN 后可传入；本轮质检发现 fig-03 混入正文文字并反馈修复（文本区剔除规则）。
+- PyMuPDF fitz API deprecated 警告：后续换 import pymupdf。

@@ -74,7 +74,13 @@
 - 图谱页标题使用直接命名（强化学习领域全局图谱 / 本期论文的局部引用网络），不用口语化问句。
 - 页眉右 = §章节 · 作者年份；页脚左 = arXiv 编号；二者不得重复。
 
-## 六、可扩展位
+## 六、论文原图管线与 overlap 审计（v3.2）
+
+- **论文原图自动入片**：`extract_figures.py`（PDF 截图路线）下载 arXiv PDF，按题注（Figure N）锚定裁剪架构图与核心结果图，自动分配（architecture→方法页，results→实验页），登记 visual-assets.json 台账；同页有论文原图时不再放自制指标表；图注必须带「论文 Figure N，第 P 页」出处；备注页自动前缀图示解说。
+- **overlap 自动审计门**：`build_pptx.py` 用 PIL+微软雅黑真实字宽测量计算每块高度（禁用字数估算），构建后对每页做两两形状包围盒相交检测与页脚越界检测，任何命中构建失败。交付的 PPTX 必须 overlap audit passed。
+- **flash 视觉质检（可选）**：裁剪图可经 Read 上 CDN 后用视觉模型复核裁剪质量与分类，反馈进 extract_figures 的过滤规则。
+
+## 七、可扩展位
 
 - 新增内容页类型时，先在本文档登记布局契约，再改 `make_deck_svg.py`，改完在 LESSONS.md 记录。
 - 每期允许 ±2 页浮动（12-14 场景），但 hook 必须第 1 页、图谱页必须第 2-3 页、references 必须末页。
