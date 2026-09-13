@@ -19,6 +19,24 @@
     "max_results": 60
   },
   "seed_groups": ["DeepMind", "OpenAI", "Berkeley", "Stanford", "MIT", "Princeton", "Tsinghua University", "Peking University", "University of Alberta", "Meta AI"],
+  "episode_claims": [
+    {
+      "slug": "absolute-zero-reinforced-self-play-reasoning",
+      "paper_id": "arxiv:2505.03335",
+      "evidence": [
+        {"n": 9, "label": "AZR Coder-7B 代码平均 61.6、数学平均 39.1、总平均 50.4，超过 Qwen2.5-7B-Coder 基线（论文主表）"},
+        {"n": 10, "label": "3B/7B/14B 变体 OOD 总平均较基座 +5.7/+10.2/+13.2 个百分点（规模实验）"}
+      ]
+    },
+    {
+      "slug": "deepseek-r1",
+      "paper_id": "arxiv:2501.12948",
+      "evidence": [
+        {"n": 4, "label": "AIME 2024 pass@1 79.8%、MATH-500 97.3%、Codeforces 2029、GPQA Diamond 71.5%（论文 Table 3）"},
+        {"n": 5, "label": "约 80 万条 R1 生成数据蒸馏；Distill-Qwen-32B AIME 2024 达 72.6%（附录 Table 15）"}
+      ]
+    }
+  ],
   "episode": {
     "venue_weights": {"NeurIPS": 1.3, "ICML": 1.3, "ICLR": 1.25, "Nature": 1.6, "Science": 1.6, "JMLR": 1.2, "AAAI": 1.0, "IJCAI": 1.0, "TPAMI": 1.2},
     "score": "0.45*venue_weight + 0.25*group_strength + 0.20*recency + 0.10*log10(1+citations)",

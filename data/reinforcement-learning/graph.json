@@ -4223,6 +4223,161 @@
    "id": "group:zuse institute berlin",
    "type": "group",
    "label": "Zuse Institute Berlin"
+  },
+  "arxiv:2505.03335": {
+   "id": "arxiv:2505.03335",
+   "type": "paper",
+   "label": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
+   "year": 2025,
+   "citations": 0,
+   "venue": "arXiv",
+   "source": "episode",
+   "episode": "absolute-zero-reinforced-self-play-reasoning"
+  },
+  "author:andrew zhao": {
+   "id": "author:andrew zhao",
+   "type": "author",
+   "label": "Andrew Zhao"
+  },
+  "author:yiran wu": {
+   "id": "author:yiran wu",
+   "type": "author",
+   "label": "Yiran Wu"
+  },
+  "author:yang yue": {
+   "id": "author:yang yue",
+   "type": "author",
+   "label": "Yang Yue"
+  },
+  "author:tong wu": {
+   "id": "author:tong wu",
+   "type": "author",
+   "label": "Tong Wu"
+  },
+  "author:quentin xu": {
+   "id": "author:quentin xu",
+   "type": "author",
+   "label": "Quentin Xu"
+  },
+  "author:matthieu lin": {
+   "id": "author:matthieu lin",
+   "type": "author",
+   "label": "Matthieu Lin"
+  },
+  "author:shenzhi wang": {
+   "id": "author:shenzhi wang",
+   "type": "author",
+   "label": "Shenzhi Wang"
+  },
+  "author:qingyun wu": {
+   "id": "author:qingyun wu",
+   "type": "author",
+   "label": "Qingyun Wu"
+  },
+  "author:zilong zheng": {
+   "id": "author:zilong zheng",
+   "type": "author",
+   "label": "Zilong Zheng"
+  },
+  "author:gao huang": {
+   "id": "author:gao huang",
+   "type": "author",
+   "label": "Gao Huang"
+  },
+  "claim:absolute-zero-reinforced-self-play-reasoning:1": {
+   "id": "claim:absolute-zero-reinforced-self-play-reasoning:1",
+   "type": "claim",
+   "label": "论文中的 zero data 指训练阶段不使用外部人工精选的任务和答案数据集；它并不表示不依赖预训练模型、代码执行环境、提示、过滤规则或人工设计的训练机制。"
+  },
+  "claim:absolute-zero-reinforced-self-play-reasoning:2": {
+   "id": "claim:absolute-zero-reinforced-self-play-reasoning:2",
+   "type": "claim",
+   "label": "Absolute Zero Reasoner 使用同一个模型交替担任 proposer 与 solver：前者生成任务，后者求解任务，并以可验证结果形成强化学习信号。"
+  },
+  "claim:absolute-zero-reinforced-self-play-reasoning:3": {
+   "id": "claim:absolute-zero-reinforced-self-play-reasoning:3",
+   "type": "claim",
+   "label": "训练任务由程序、输入与输出组成。Python 执行器用于检查任务构造和 solver 答案，并对可执行性、安全性与近似确定性进行筛选。"
+  },
+  "claim:absolute-zero-reinforced-self-play-reasoning:4": {
+   "id": "claim:absolute-zero-reinforced-self-play-reasoning:4",
+   "type": "claim",
+   "label": "论文将训练任务分成 deduction、abduction 与 induction，分别对应由程序和输入预测输出、由程序和输出寻找可行输入、由输入输出示例合成程序。"
+  },
+  "claim:absolute-zero-reinforced-self-play-reasoning:5": {
+   "id": "claim:absolute-zero-reinforced-self-play-reasoning:5",
+   "type": "claim",
+   "label": "proposer 的学习信号来自 solver 多次 rollout 的成功率，目标是产生有学习价值而非过易或完全不可解的任务；solver 以答案正确性获得二元奖励。"
+  },
+  "claim:absolute-zero-reinforced-self-play-reasoning:6": {
+   "id": "claim:absolute-zero-reinforced-self-play-reasoning:6",
+   "type": "claim",
+   "label": "实现中的安全过滤排除了部分敏感 Python 模块，包括 os.sys、sys 与 shutil；确定性近似检查以两次独立运行为准。这些机制是人为设定的环境边界。"
+  },
+  "evidence:absolute-zero-reinforced-self-play-reasoning:9": {
+   "id": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "type": "evidence",
+   "label": "AZR Coder-7B 代码平均 61.6、数学平均 39.1、总平均 50.4，超过 Qwen2.5-7B-Coder 基线（论文主表）"
+  },
+  "evidence:absolute-zero-reinforced-self-play-reasoning:10": {
+   "id": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "type": "evidence",
+   "label": "3B/7B/14B 变体 OOD 总平均较基座 +5.7/+10.2/+13.2 个百分点（规模实验）"
+  },
+  "arxiv:2501.12948": {
+   "id": "arxiv:2501.12948",
+   "type": "paper",
+   "label": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+   "year": 2025,
+   "citations": 0,
+   "venue": "arXiv",
+   "source": "episode",
+   "episode": "deepseek-r1"
+  },
+  "author:deepseek-ai": {
+   "id": "author:deepseek-ai",
+   "type": "author",
+   "label": "DeepSeek-AI"
+  },
+  "claim:deepseek-r1:1": {
+   "id": "claim:deepseek-r1:1",
+   "type": "claim",
+   "label": "论文主张，在可验证任务上，仅靠最终答案对错作为奖励的纯强化学习可以激励大语言模型形成长链推理行为。"
+  },
+  "claim:deepseek-r1:2": {
+   "id": "claim:deepseek-r1:2",
+   "type": "claim",
+   "label": "DeepSeek-R1-Zero 跳过监督微调，直接在 DeepSeek-V3-Base 上用 GRPO 和规则奖励训练，并在 AIME 2024 等基准上取得提升。"
+  },
+  "claim:deepseek-r1:3": {
+   "id": "claim:deepseek-r1:3",
+   "type": "claim",
+   "label": "DeepSeek-R1 采用多阶段训练：冷启动数据、第一轮强化学习、拒绝采样与监督微调、第二轮面向通用能力的强化学习。"
+  },
+  "claim:deepseek-r1:4": {
+   "id": "claim:deepseek-r1:4",
+   "type": "claim",
+   "label": "论文报告了 DeepSeek-R1 在 AIME 2024、MATH-500、Codeforces、GPQA Diamond 等可验证基准上的结果。"
+  },
+  "claim:deepseek-r1:5": {
+   "id": "claim:deepseek-r1:5",
+   "type": "claim",
+   "label": "作者通过蒸馏将 R1 生成的约 80 万条数据用于 Qwen 与 Llama 系列小模型，发现蒸馏后的中小模型在推理基准上超过同等规模指令模型。"
+  },
+  "claim:deepseek-r1:6": {
+   "id": "claim:deepseek-r1:6",
+   "type": "claim",
+   "label": "论文明确列出能力局限：工具使用、结构化输出、token 效率、语言混合、提示敏感、软件工程任务，以及纯 RL 对可靠奖励信号的依赖。"
+  },
+  "evidence:deepseek-r1:4": {
+   "id": "evidence:deepseek-r1:4",
+   "type": "evidence",
+   "label": "AIME 2024 pass@1 79.8%、MATH-500 97.3%、Codeforces 2029、GPQA Diamond 71.5%（论文 Table 3）"
+  },
+  "evidence:deepseek-r1:5": {
+   "id": "evidence:deepseek-r1:5",
+   "type": "evidence",
+   "label": "约 80 万条 R1 生成数据蒸馏；Distill-Qwen-32B AIME 2024 达 72.6%（附录 Table 15）"
   }
  },
  "edges": [
@@ -8250,6 +8405,141 @@
    "s": "author:sebastian pokutta",
    "t": "group:zuse institute berlin",
    "rel": "member_of"
+  },
+  {
+   "s": "author:andrew zhao",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yiran wu",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yang yue",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tong wu",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:quentin xu",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:matthieu lin",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shenzhi wang",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:qingyun wu",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zilong zheng",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "author:gao huang",
+   "t": "arxiv:2505.03335",
+   "rel": "authored"
+  },
+  {
+   "s": "arxiv:2505.03335",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2505.03335",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2505.03335",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2505.03335",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2505.03335",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2505.03335",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:6",
+   "rel": "claims"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "author:deepseek-ai",
+   "t": "arxiv:2501.12948",
+   "rel": "authored"
+  },
+  {
+   "s": "arxiv:2501.12948",
+   "t": "claim:deepseek-r1:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2501.12948",
+   "t": "claim:deepseek-r1:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2501.12948",
+   "t": "claim:deepseek-r1:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2501.12948",
+   "t": "claim:deepseek-r1:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2501.12948",
+   "t": "claim:deepseek-r1:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2501.12948",
+   "t": "claim:deepseek-r1:6",
+   "rel": "claims"
+  },
+  {
+   "s": "evidence:deepseek-r1:4",
+   "t": "claim:deepseek-r1:4",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:deepseek-r1:5",
+   "t": "claim:deepseek-r1:5",
+   "rel": "supports"
   }
  ]
 }

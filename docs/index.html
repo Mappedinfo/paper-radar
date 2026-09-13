@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Radar · 强化学习知识图谱</title>
+<style>
+  :root{--bg:#0e1420;--panel:#161e2e;--line:#26324a;--txt:#e8eef7;--dim:#8fa0b3;
+        --group:#f5b84a;--paper:#4ac6f5;--author:#b08cf2;--venue:#9aa5b1;--claim:#f27e9d;--evidence:#7ed9a0;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.55 Georgia,"Songti SC",serif;height:100vh;overflow:hidden}
+  header{display:flex;align-items:center;gap:18px;padding:12px 20px;border-bottom:1px solid var(--line);background:var(--panel)}
+  header h1{font-size:20px;font-weight:700}
+  header .sub{color:var(--dim);font-size:13px}
+  #search{margin-left:auto;background:#0b101b;border:1px solid var(--line);color:var(--txt);
+          padding:7px 12px;border-radius:8px;width:250px;font:14px Georgia,serif;outline:none}
+  #search:focus{border-color:#4ac6f5}
+  main{display:grid;grid-template-columns:1fr 340px;height:calc(100vh - 59px)}
+  #stage{position:relative;overflow:hidden}
+  canvas{position:absolute;inset:0;cursor:grab}
+  canvas.drag{cursor:grabbing}
+  .legend{position:absolute;left:14px;bottom:12px;background:rgba(13,19,31,.88);border:1px solid var(--line);
+          border-radius:10px;padding:10px 14px;font-size:13px;display:flex;gap:14px;flex-wrap:wrap;max-width:70%}
+  .legend label{display:flex;gap:6px;align-items:center;cursor:pointer;color:var(--dim)}
+  .legend input{accent-color:#4ac6f5}
+  .dot{width:11px;height:11px;border-radius:50%;display:inline-block}
+  .hint{position:absolute;left:14px;top:12px;color:var(--dim);font-size:12.5px;background:rgba(13,19,31,.75);
+        padding:6px 10px;border-radius:8px}
+  aside{border-left:1px solid var(--line);background:var(--panel);overflow-y:auto;padding:16px}
+  aside h2{font-size:15px;margin-bottom:8px;color:var(--paper)}
+  aside .meta{color:var(--dim);font-size:12.5px;margin-bottom:14px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:10px;background:#111a29}
+  .card b{font-size:13.5px}
+  .card .n{color:var(--dim);font-size:12.5px}
+  .rank{display:flex;justify-content:space-between;font-size:13.5px;padding:5px 2px;border-bottom:1px dashed #212c42}
+  .rank .sc{color:var(--group)}
+  .claim{border-left:3px solid var(--claim);padding:6px 10px;margin:8px 0;background:#131c2c;border-radius:0 8px 8px 0;font-size:13.5px}
+  .evidence{border-left:3px solid var(--evidence);padding:6px 10px;margin:6px 0 6px 14px;background:#101a26;border-radius:0 8px 8px 0;font-size:13px;color:#cfe3d8}
+  a{color:var(--paper)}
+  footer{position:absolute;right:14px;bottom:12px;color:#5d6f85;font-size:12px;text-align:right}
+  @media(max-width:900px){main{grid-template-columns:1fr}aside{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1>📡 Paper Radar</h1>
+  <div class="sub">强化学习知识图谱 · 关系 / 论点 / 论据 · <span id="stamp"></span></div>
+  <input id="search" placeholder="搜索 论文 / 作者 / 课题组…" autocomplete="off">
+</header>
+<main>
+  <div id="stage">
+    <canvas id="cv"></canvas>
+    <div class="hint">拖拽平移 · 滚轮缩放 · 点击节点查看局部关系（高亮 2 跳邻域）· 再点空白处回到全局</div>
+    <div class="legend" id="legend"></div>
+    <footer>本站只可视化关系、论点与论据，不存储论文内容<br>数据源 OpenAlex / arXiv · <a href="https://github.com/mappedinfo/paper-radar" target="_blank">mappedinfo/paper-radar</a></footer>
+  </div>
+  <aside id="panel"><h2>课题组实力榜</h2><div class="meta">按引用关系计算 · 节点大小 = 实力分</div><div id="ranks">加载中…</div></aside>
+</main>
+<script>
+const COLOR={group:'#f5b84a',paper:'#4ac6f5',author:'#b08cf2',venue:'#9aa5b1',claim:'#f27e9d',evidence:'#7ed9a0'};
+const REL_ZH={cites:'引用',authored:'著文',member_of:'属于',published_in:'刊于',supports:'支撑',claims:'主张'};
+const CHANNEL='reinforcement-learning';
+let G=null,RANKS=[],nodes=[],edges=[],byId={},sel=null,hover=null,show={group:1,paper:1,author:1,venue:0,claim:1,evidence:1};
+let cam={x:innerWidth/2,y:innerHeight/2,k:1};
+
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+function resize(){const r=cv.parentElement.getBoundingClientRect(),d=devicePixelRatio||1;
+  cv.width=r.width*d;cv.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);}
+addEventListener('resize',resize);resize();
+
+async function boot(){
+  const [g,r]=await Promise.all([fetch(`data/${CHANNEL}.json`).then(x=>x.json()),
+                                 fetch(`data/${CHANNEL}-rankings.json`).then(x=>x.json()).catch(()=>[])]);
+  G=g;RANKS=r;
+  document.getElementById('stamp').textContent=g.updated_at.slice(0,10);
+  nodes=Object.values(g.nodes);byId=g.nodes;edges=g.edges;
+  // physics-friendly copies
+  nodes.forEach(n=>{n.x=0;n.y=0;n.vx=0;n.vy=0;
+    const a=Math.random()*Math.PI*2,rr=60+Math.random()*420;
+    n.x=Math.cos(a)*rr;n.y=Math.sin(a)*rr;});
+  nsize();sim(340);draw();renderRanks();renderLegend();
+  requestAnimationFrame(tick);
+}
+function nsize(){nodes.forEach(n=>{
+  if(n.type==='group')n.r=6+14*Math.sqrt(Math.min(1,(scoreOf(n.id)||1e6)/1.2e6));
+  else if(n.type==='paper')n.r=3+8*Math.sqrt(Math.log10(2+(n.citations||0))/6);
+  else if(n.type==='claim'||n.type==='evidence')n.r=4.5;else n.r=2.6;});}
+function scoreOf(gid){const r=RANKS.find(x=>x.group_id===gid);return r?r.score:null}
+const adj={};edges.forEach(e=>{(adj[e.s]=adj[e.s]||[]).push([e.t,e]);(adj[e.t]=adj[e.t]||[]).push([e,e.s===e.t?e:e]);});
+function neighbors(id,hops){const out=new Set([id]);let fr=[id];
+  for(let h=0;h<hops;h++){const nx=[];fr.forEach(x=>(adj[x]||[]).forEach(([y])=>{if(!out.has(y)){out.add(y);nx.push(y);}}));fr=nx;}return out;}
+
+function sim(iters){
+  for(let it=0;it<iters;it++){
+    for(let i=0;i<nodes.length;i++){const a=nodes[i];
+      for(let j=i+1;j<nodes.length;j++){const b=nodes[j];
+        let dx=b.x-a.x,dy=b.y-a.y,d2=dx*dx+dy*dy+40,d=Math.sqrt(d2);
+        const rep=(a.r+b.r)*9/d2*60;dx/=d;dy/=d;
+        a.vx-=dx*rep;a.vy-=dy*rep;b.vx+=dx*rep;b.vy+=dy*rep;}}
+    edges.forEach(e=>{const a=byId[e.s],b=byId[e.t];if(!a||!b)return;
+      let dx=b.x-a.x,dy=b.y-a.y,d=Math.sqrt(dx*dx+dy*dy)||1;
+      const L=e.rel==='cites'?150:e.rel==='member_of'?55:e.rel==='authored'?95:70;
+      const f=(d-L)*0.012;dx/=d;dy/=d;a.vx+=dx*f;d&&(a.vy+=dy*f);b.vx-=dx*f;b.vy-=dy*f;});
+    nodes.forEach(n=>{n.vx+=(0-n.x)*0.0009;n.vy+=(0-n.y)*0.0009;
+      n.vx*=0.82;n.vy*=0.82;n.x+=n.vx;n.y+=n.vy;});
+  }
+}
+function tick(){sim(2);draw();requestAnimationFrame(tick);}
+
+function draw(){
+  const W=cv.width/(devicePixelRatio||1),H=cv.height/(devicePixelRatio||1);
+  ctx.clearRect(0,0,W,H);
+  const hl=sel?neighbors(sel.id,2):null;
+  ctx.save();ctx.translate(cam.x,cam.y);ctx.scale(cam.k,cam.k);
+  edges.forEach(e=>{const a=byId[e.s],b=byId[e.t];if(!a||!b)return;
+    if(!show[a.type]||!show[b.type])return;
+    const hot=hl&&(hl.has(e.s)&&hl.has(e.t));
+    ctx.strokeStyle=hot?'rgba(201,154,63,.85)':'rgba(58,74,97,.35)';
+    ctx.lineWidth=hot?1.8:0.7;
+    ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();});
+  nodes.forEach(n=>{
+    if(!show[n.type])return;
+    const dimd=hl&&!hl.has(n.id);
+    ctx.globalAlpha=dimd?0.16:1;
+    ctx.fillStyle=COLOR[n.type];
+    ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);ctx.fill();
+    if(sel&&n.id===sel.id){ctx.strokeStyle='#fff';ctx.lineWidth=2.5;ctx.stroke();
+      ctx.shadowColor=COLOR[n.type];ctx.shadowBlur=22;ctx.fill();ctx.shadowBlur=0;}
+    ctx.globalAlpha=1;});
+  // labels for bigger/selected nodes
+  ctx.font='11px Georgia';ctx.textAlign='center';
+  nodes.forEach(n=>{
+    if(!show[n.type])return;
+    const dimd=hl&&!hl.has(n.id);
+    if(dimd&&n.id!==(sel&&sel.id))return;
+    const isSel=n.id===(sel&&sel.id);
+    if(!(isSel||n.type==='group'||n.type==='claim'||n.type==='evidence'||(n.type==='paper'&&(n.citations||0)>2500)))return;
+    ctx.fillStyle=isSel?'#fff':'rgba(232,238,247,.75)';
+    const t=(n.label||'').slice(0,26);
+    ctx.fillText(t,n.x,n.y-n.r-5);});
+  ctx.restore();
+}
+
+// interaction
+let drag=null;
+cv.addEventListener('mousedown',e=>{drag={x:e.offsetX,y:e.offsetY,cx:cam.x,cy:cam.y,moved:0};cv.classList.add('drag');});
+addEventListener('mouseup',()=>{drag=null;cv.classList.remove('drag');});
+cv.addEventListener('mousemove',e=>{
+  if(drag){cam.x=drag.cx+e.offsetX-drag.x;cam.y=drag.cy+e.offsetY-drag.y;drag.moved+=1;return;}
+  const n=pick(e.offsetX,e.offsetY);hover=n;cv.style.cursor=n?'pointer':'grab';});
+cv.addEventListener('click',e=>{if(drag&&drag.moved>3)return;
+  const n=pick(e.offsetX,e.offsetY);
+  if(n){sel=n;showPanel(n);}else{sel=null;renderRanks();}});
+cv.addEventListener('wheel',e=>{e.preventDefault();
+  const f=e.deltaY<0?1.12:1/1.12;const wx=(e.offsetX-cam.x)/cam.k,wy=(e.offsetY-cam.y)/cam.k;
+  cam.k=Math.min(6,Math.max(0.12,cam.k*f));cam.x=e.offsetX-wx*cam.k;cam.y=e.offsetY-wy*cam.k;},{passive:false});
+function pick(mx,my){let best=null,bd=1e9;
+  nodes.forEach(n=>{if(!show[n.type])return;
+    const x=n.x*cam.k+cam.x,y=n.y*cam.k+cam.y;
+    const d=Math.hypot(mx-x,my-y);if(d<n.r*cam.k+6&&d<bd){bd=d;best=n;}});return best;}
+
+document.getElementById('search').addEventListener('input',e=>{
+  const q=e.target.value.trim().toLowerCase();if(!q)return;
+  const hit=nodes.find(n=>(n.label||'').toLowerCase().includes(q)&&show[n.type]);
+  if(hit){sel=hit;showPanel(hit);cam.k=1.4;}});
+function renderLegend(){const el=document.getElementById('legend');
+  el.innerHTML=Object.keys(COLOR).map(t=>`<label><input type="checkbox" data-t="${t}" ${show[t]?'checked':''}><span class="dot" style="background:${COLOR[t]}"></span>${{group:'课题组',paper:'论文',author:'作者',venue:'期刊/会议',claim:'论点',evidence:'论据'}[t]}</label>`).join('');
+  el.querySelectorAll('input').forEach(i=>i.addEventListener('change',()=>show[i.dataset.t]=i.checked?1:0));}
+function renderRanks(){const el=document.getElementById('ranks');
+  el.innerHTML='<h2>课题组实力榜</h2><div class="meta">按引用关系计算 · 点击节点看局部</div>'+
+    RANKS.slice(0,15).map((r,i)=>`<div class="rank"><span>${i+1}. ${r.group}</span><span class="sc">${(r.score/1000).toFixed(0)}k · ${r.papers}篇</span></div>`).join('');}
+function showPanel(n){
+  const el=document.getElementById('ranks');
+  let html=`<h2 style="color:${COLOR[n.type]}">${{group:'课题组',paper:'论文',author:'作者',venue:'期刊/会议',claim:'论点',evidence:'论据'}[n.type]||n.type}</h2>`;
+  html+=`<div class="card"><b>${n.label||n.id}</b><div class="n">${n.venue||''} ${n.year||''} ${n.citations?('· 被引 '+n.citations):''}</div><div class="n">${n.id}</div></div>`;
+  const nb=adj[n.id]||[];
+  const byRel={};nb.forEach(([o,e])=>{const r=e.s===n.id?e.rel:e.rel;byRel[r]=byRel[r]||[];byRel[r].push(o);});
+  Object.keys(byRel).forEach(r=>{html+=`<div class="card"><b>${REL_ZH[r]||r} · ${byRel[r].length}</b><div class="n">${byRel[r].slice(0,10).map(id=>(byId[id]&&byId[id].label||id).slice(0,44)).join('、')}${byRel[r].length>10?'…':''}</div></div>`;});
+  if(n.type==='paper'){const claims=(byRel['claims']||[]);
+    claims.forEach(c=>{html+=`<div class="claim">${byId[c].label}</div>`;
+      ((adj[c]||[]).filter(([o,e])=>e.rel==='supports').forEach(([o])=>{html+=`<div class="evidence">${byId[o].label}</div>`;}));});}
+  if(n.type==='claim'){(byRel['supports']||[]).forEach(o=>html+=`<div class="evidence">${byId[o].label}</div>`);}
+  el.innerHTML=html;}
+boot();
+</script>
+</body>
+</html>

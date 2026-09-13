@@ -8,7 +8,12 @@ python scripts/fetch_arxiv.py     --channel reinforcement-learning
 python scripts/build_graph.py     --channel reinforcement-learning
 python scripts/rank_groups.py     --channel reinforcement-learning
 python scripts/column_report.py   --channel reinforcement-learning
+python scripts/publish_site.py    --channel reinforcement-learning
 ```
+
+The last step refreshes the GitHub Pages site (`docs/`) — it visualizes
+relationships, 论点 and 论据 only, never paper content, and seeds claims
+from produced episodes per `channels/*.json → episode_claims`.
 
 ## 1. Read the report
 

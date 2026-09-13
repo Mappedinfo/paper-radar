@@ -39,6 +39,13 @@ Python ≥ 3.10, standard library only (no pip installs needed for the radar
 itself). Reports land in `reports/`, graphs in `data/<channel>/graph.json`,
 renders in `data/<channel>/renders/`.
 
+## 知识图谱站点 / Live graph site
+
+**https://mappedinfo.github.io/paper-radar** — 交互式力导向知识图谱
+（拖拽/缩放/搜索/点击查看 2 跳局部关系），节点含 课题组 / 作者 / 论文 /
+论点 / 论据。**本站只可视化关系、论点与论据，不存储任何论文内容。**
+数据由 `scripts/publish_site.py` 在每日例程中刷新并随仓库推送。
+
 ## 新建一个专栏频道 / Add a channel
 
 Copy `channels/reinforcement-learning.json`, adjust topic queries, venue
