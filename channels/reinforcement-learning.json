@@ -1,0 +1,27 @@
+{
+  "id": "reinforcement-learning",
+  "name_zh": "强化学习专栏",
+  "topic_queries": ["reinforcement learning", "deep reinforcement learning", "RLHF policy optimization", "offline reinforcement learning", "multi-agent reinforcement learning"],
+  "classic": {
+    "min_citations": 500,
+    "max_works": 150,
+    "search": "reinforcement learning"
+  },
+  "recent": {
+    "window_days": 14,
+    "max_works": 120,
+    "min_citations": 0,
+    "venues": ["NeurIPS", "ICML", "ICLR", "AAAI", "IJCAI", "JMLR", "Nature", "Science", "Transactions on Pattern Analysis and Machine Intelligence", "Journal of Machine Learning Research", "PMLR"]
+  },
+  "arxiv": {
+    "categories": ["cs.LG", "cs.AI"],
+    "query": "\"reinforcement learning\"",
+    "max_results": 60
+  },
+  "seed_groups": ["DeepMind", "OpenAI", "Berkeley", "Stanford", "MIT", "Princeton", "Tsinghua University", "Peking University", "University of Alberta", "Meta AI"],
+  "episode": {
+    "venue_weights": {"NeurIPS": 1.3, "ICML": 1.3, "ICLR": 1.25, "Nature": 1.6, "Science": 1.6, "JMLR": 1.2, "AAAI": 1.0, "IJCAI": 1.0, "TPAMI": 1.2},
+    "score": "0.45*venue_weight + 0.25*group_strength + 0.20*recency + 0.10*log10(1+citations)",
+    "cadence": "daily_one_episode"
+  }
+}
