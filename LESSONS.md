@@ -31,3 +31,8 @@
 - v3 落地：页眉双端信息（论文缩写｜§章节 · 作者年份）+ 八段章节进度带；论点框（thesis）+ 全量正文；指标卡改学术表格（表 N 题注+深蓝表头+斑马行）；公式显示块（式 N，serif 居中）；图表统一编号（图/表/式）；单一字族固定字阶（40 标题/27 论点/24 正文/22 表格/20 题注/18 脚注）两档字重；光标式排版按行计高、溢出自动降字号；narration 不再上片，经 build_pptx.py 写入每页 SPEAKER NOTES。
 - build_pptx.py：python-pptx 全幅 PNG + notes（封面为栏目说明），产出 <slug>-deck.pptx 供批注/人工微调。
 - 交付方式：先出 PPTX 批注版，确认后再进 TTS/合成/推送（本日视频 1/2 已按 v1/v2 产出并推送，v3 从下一期起生效，批注通过后可用 v3 重出旧片）。
+
+## 2026-09-13 (v3.1 · 首轮人工批注闭环 + 原生可编辑 PPTX)
+- 批注五条全部修复：封面英文按词边界换行（wrap_words）；页眉右=§章节·作者年份、页脚左=arXiv 编号（去除作者重复）；图谱页标题去口语改为直接命名（强化学习领域全局图谱/本期论文的局部引用网络，两期 storyboard 已同步）；背景页扩容并新增原生对偶示意图 diagram_mirror（动作⇄观察信息流，图 N 编号）；公式 20pt 加大加高。
+- build_pptx.py 重写为原生构建：文本框/原生表格/自选图形，仅图谱为位图——PPTX 完全可人工二次编辑；PowerPoint COM 导出 PNG 已验证（deck/pptx-export/），人工改完的 PPTX 可直接导出 PNG 重出视频，PPTX 成为唯一视觉源。
+- 批注解析注意：PowerPoint 365 批注存 modernComment_*.xml（ppt/comments/），经典 commentN.xml 解析抓不到；slide→批注映射走 slideN.xml.rels。
