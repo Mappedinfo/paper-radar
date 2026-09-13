@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-13T19:29:25",
+ "updated_at": "2026-09-13T20:32:00",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -4378,6 +4378,33 @@
    "id": "evidence:deepseek-r1:5",
    "type": "evidence",
    "label": "约 80 万条 R1 生成数据蒸馏；Distill-Qwen-32B AIME 2024 达 72.6%（附录 Table 15）"
+  },
+  "title:empowerment a universal agent-centric measure of control": {
+   "id": "title:empowerment a universal agent-centric measure of control",
+   "type": "paper",
+   "label": "Empowerment: a universal agent-centric measure of control",
+   "year": 2005,
+   "citations": 1200,
+   "venue": "IEEE CEC",
+   "source": "curated"
+  },
+  "title:a unified bellman optimality principle combining reward maximization and empowerment": {
+   "id": "title:a unified bellman optimality principle combining reward maximization and empowerment",
+   "type": "paper",
+   "label": "A unified Bellman optimality principle combining reward maximization and empowerment",
+   "year": 2019,
+   "citations": 160,
+   "venue": "NeurIPS",
+   "source": "curated"
+  },
+  "doi:10.1038/s41586-024-07711-7": {
+   "id": "doi:10.1038/s41586-024-07711-7",
+   "type": "paper",
+   "label": "Loss of plasticity in deep continual learning",
+   "year": 2024,
+   "citations": 350,
+   "venue": "Nature",
+   "source": "curated"
   }
  },
  "edges": [
@@ -8540,6 +8567,21 @@
    "s": "evidence:deepseek-r1:5",
    "t": "claim:deepseek-r1:5",
    "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "title:empowerment a universal agent-centric measure of control",
+   "rel": "cites"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "title:a unified bellman optimality principle combining reward maximization and empowerment",
+   "rel": "cites"
+  },
+  {
+   "s": "arxiv:2609.10776",
+   "t": "doi:10.1038/s41586-024-07711-7",
+   "rel": "cites"
   }
  ]
 }
