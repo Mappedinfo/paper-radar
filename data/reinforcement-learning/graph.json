@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-13T20:32:00",
+ "updated_at": "2026-09-14T08:02:42",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -4465,6 +4465,66 @@
    "id": "claim:t1-terminal-agent-reinforcement-learning:6",
    "type": "claim",
    "label": "Terminal-Bench 2.1 同一 agent harness 下，基座 43.8% 提升到 T1 的 64.0%；对比 GPT-5.4 为 54.8%、DeepSeek-V4-Flash 为 56.9%、Claude Opus 4.6 为 63.8%，逼近 Claude Opus 4.7 的 66.1%，为同参数段最佳。"
+  },
+  "claim:fork-where-the-model-changes-its-mind:1": {
+   "id": "claim:fork-where-the-model-changes-its-mind:1",
+   "type": "claim",
+   "label": "树结构展开给无 critic 的可验证奖励强化学习（RLVR）提供步级信用，在链中间分叉后兄弟结局的差异可以估计步价值；每个分叉都有采样成本，实际预算通常只允许每条链少数几个分叉，分叉位置决定步级 RL 的收益。"
+  },
+  "claim:fork-where-the-model-changes-its-mind:2": {
+   "id": "claim:fork-where-the-model-changes-its-mind:2",
+   "type": "claim",
+   "label": "主流方法按结构摆分叉（固定长度、中点、分隔符）或按下一 token 熵；论文把分叉摆放形式化为定位链价值曲线的拐点，即期望结局发生转折处。"
+  },
+  "claim:fork-where-the-model-changes-its-mind:3": {
+   "id": "claim:fork-where-the-model-changes-its-mind:3",
+   "type": "claim",
+   "label": "论文提出 belief-shift branching，在候选边界读取模型的答案信念，在连续信念分歧最大的步骤前分叉；三种实例均不需要步级监督，分别是黑盒探针 Probe-JS、白盒 logit-lens 深度剖面 Lens-Shift、离线拟合的激活方向 belief-shift 向量（仅用于 RL 前验证）。"
+  },
+  "claim:fork-where-the-model-changes-its-mind:4": {
+   "id": "claim:fork-where-the-model-changes-its-mind:4",
+   "type": "claim",
+   "label": "信号只负责摆放分叉；探针成本在数学域约为步计算量的 1%，在代码域低于 5%（在 rollout 引擎内运行时）。"
+  },
+  "claim:fork-where-the-model-changes-its-mind:5": {
+   "id": "claim:fork-where-the-model-changes-its-mind:5",
+   "type": "claim",
+   "label": "以蒙特卡洛价值曲线为基准的验证覆盖 8 个模型乘基准面板，belief-shift 信号在每个面板均排名第一，领先熵、结构与 LLM 裁判基线。"
+  },
+  "claim:fork-where-the-model-changes-its-mind:6": {
+   "id": "claim:fork-where-the-model-changes-its-mind:6",
+   "type": "claim",
+   "label": "在覆盖三个模型家族与两个域的匹配预算 RL 中，belief-shift 分叉在全部数学聚合上领先，OLMo-3-7B 相对最强基线总分 +2.6、AIME 2026 +2.9；代码域横扫 OLMo 全部列，LiveCodeBench-medium +6.5。"
+  },
+  "claim:from-connectivity-to-rewards:1": {
+   "id": "claim:from-connectivity-to-rewards:1",
+   "type": "claim",
+   "label": "现有图方法在目标条件分层强化学习（GCHRL）中把图当作随机采样工具，而没有当作编码连接性与状态可达性的环境模型；非对称（quasimetric）环境的状态转移不对称性对稳定策略学习与鲁棒路径规划构成根本挑战。"
+  },
+  "claim:from-connectivity-to-rewards:2": {
+   "id": "claim:from-connectivity-to-rewards:2",
+   "type": "claim",
+   "label": "论文提出 G2QDR（Graph-Guided Quasimetric Dense Reward），用状态连接性模型预测非对称环境下成对状态的连接强度，并将其转换为标量辅助稠密奖励，跨多个层级提供连续引导；理论上可集成进任意 GCHRL 架构。"
+  },
+  "claim:from-connectivity-to-rewards:3": {
+   "id": "claim:from-connectivity-to-rewards:3",
+   "type": "claim",
+   "label": "连接性模型由探索期间生成的有向状态图训练的神经网络实现；算法同时包含高层约束与低层修正，惩罚项进一步提升性能。"
+  },
+  "claim:from-connectivity-to-rewards:4": {
+   "id": "claim:from-connectivity-to-rewards:4",
+   "type": "claim",
+   "label": "实验覆盖 MuJoCo 稀疏奖励环境 AntMaze（U 形与 W 形）、AntGather、AntPush、AntFall、Pusher，接入四个代表性骨干 HIRO、HRAC、HESS、HLPS。"
+  },
+  "claim:from-connectivity-to-rewards:5": {
+   "id": "claim:from-connectivity-to-rewards:5",
+   "type": "claim",
+   "label": "协议为每环境训练 20000 回合，每 1000 回合用 100 次独立评估测成功率，结果为 10 次独立运行的均值加减标准差。"
+  },
+  "claim:from-connectivity-to-rewards:6": {
+   "id": "claim:from-connectivity-to-rewards:6",
+   "type": "claim",
+   "label": "以 HIRO 骨干为例，AntMaze U 形成功率从基线 0.72 提升到 0.87，AntMaze W 形从 0.53 到 0.66；总体上 G2QDR 普遍提升各骨干成功率并降低方差，增益在不对称程度更高的任务上最明显。"
   }
  },
  "edges": [
@@ -8574,16 +8634,6 @@
    "rel": "claims"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "author:deepseek-ai",
    "t": "arxiv:2501.12948",
    "rel": "authored"
@@ -8701,6 +8751,236 @@
   {
    "s": "arxiv:2609.11042",
    "t": "claim:t1-terminal-agent-reinforcement-learning:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.11061",
+   "t": "claim:fork-where-the-model-changes-its-mind:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11061",
+   "t": "claim:fork-where-the-model-changes-its-mind:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11061",
+   "t": "claim:fork-where-the-model-changes-its-mind:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11061",
+   "t": "claim:fork-where-the-model-changes-its-mind:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11061",
+   "t": "claim:fork-where-the-model-changes-its-mind:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11061",
+   "t": "claim:fork-where-the-model-changes-its-mind:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10781",
+   "t": "claim:from-connectivity-to-rewards:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10781",
+   "t": "claim:from-connectivity-to-rewards:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10781",
+   "t": "claim:from-connectivity-to-rewards:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10781",
+   "t": "claim:from-connectivity-to-rewards:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10781",
+   "t": "claim:from-connectivity-to-rewards:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10781",
+   "t": "claim:from-connectivity-to-rewards:6",
    "rel": "claims"
   }
  ]

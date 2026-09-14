@@ -43,3 +43,10 @@
 - overlap 自动计算（创作者问「有什么逻辑自动计算 overlap 吗」）：v3.1 只有字数估行高+WARN，中英混排实际换行与估算有偏差导致第 4/5 页溢出。v3.2 改为 PIL+微软雅黑真实字宽测量（measure_lines）精确计算每块高度，构建后 Audit 两两包围盒相交检测（>0.03in 阈值）+ 页脚越界检测，任何命中即构建失败——不再静默交付越界页。本轮 13 页审计全过。
 - flash 视觉模型（mcp analyze_image）用于裁剪图质检可行：本地裁剪图经 Read 自动上 CDN 后可传入；本轮质检发现 fig-03 混入正文文字并反馈修复（文本区剔除规则）。
 - PyMuPDF fitz API deprecated 警告：后续换 import pymupdf。
+
+## 2026-09-14 (每日例程第 2 次自动运行)
+- 上游故障：OpenAlex 503/504、arXiv API 429（网页端正常），两源重试无效；雷达沿用昨日图谱数据继续，选题池不受影响。教训：API 与网页端可用性要分开判断，fetch 前先 curl 探活。
+- 双片 v3.2 全自动完成：信念分叉（BV1MfYr6SECA，13 场景 333.89s）与 G2QDR（BV18ZYr6nEuh，12 场景 284.13s），均为原生可编辑 PPTX→COM 导出帧→ffmpeg 合成，论文原图 6+6 张入片，两片 overlap 审计通过、release 预检通过。
+- ⚠️ 重复投稿事故：期 2 上传命令因进程替换写法 bug 被 eval 两次，产生重复稿 BV1uZYr6nEGR（已报告用户手动删除，保留 BV18ZYr6nEuh）；尝试的删除端点 404。教训（写入流程认知）：任何上传命令只允许单次 eval，执行后必须 grep download.log 校验 BV 数量与预期一致，多退少报。
+- 两个 TTS 任务并发时资源锁自动交替（scene 级 FIFO），总时长与串行相当，可安全并行。
+- extract_figures 新增防误判：正文里“Figure N shows…”不再当题注（CAP_RE 排除引用式句首），同号 figure 去重保首个；价值曲线等关键图可手工指定分配（storyboard.paper_figure 覆盖自动分配）。

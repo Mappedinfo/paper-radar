@@ -52,8 +52,10 @@ def page_figures(page):
             continue
         text = " ".join(s["text"] for l in b["lines"] for s in l["spans"]).strip()
         m = CAP_RE.match(text)
-        if m:
-            caps.append((int(m.group(2)), text, fitz_rect(b["bbox"])))
+        if m and not re.match(r"^(Figure|Fig\.?|图)\s*\d+\s+(shows|show|reports|presents)", text, re.I):
+            fno_ = int(m.group(2))
+            if fno_ not in [c[0] for c in caps]:
+                caps.append((fno_, text, fitz_rect(b["bbox"])))
     if not caps:
         return
     # text blocks excluding captions — regions mostly covered by them are body text

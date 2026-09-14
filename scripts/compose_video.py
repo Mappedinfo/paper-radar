@@ -50,7 +50,7 @@ def main():
         subprocess.run(cmd, check=True, capture_output=True)
     except subprocess.CalledProcessError as e:
         sys.exit("ffmpeg failed:\n" + e.stderr.decode("utf-8", "ignore")[-2000:])
-    cover = slides.get("00-cover")
+    cover = slides.get("00-cover") or slides.get("00")
     if cover:
         (p / "cover.png").write_bytes(cover.read_bytes())
     dur = probe(out)
