@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-14T08:02:42",
+ "updated_at": "2026-09-15T08:02:54",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -4525,6 +4525,66 @@
    "id": "claim:from-connectivity-to-rewards:6",
    "type": "claim",
    "label": "以 HIRO 骨干为例，AntMaze U 形成功率从基线 0.72 提升到 0.87，AntMaze W 形从 0.53 到 0.66；总体上 G2QDR 普遍提升各骨干成功率并降低方差，增益在不对称程度更高的任务上最明显。"
+  },
+  "claim:trace-causal-exploration-synthesized-rewards:1": {
+   "id": "claim:trace-causal-exploration-synthesized-rewards:1",
+   "type": "claim",
+   "label": "论文提出把验证的不对称性工程化，在受控模拟器中采样一次干预并生成其应产生的观测，隐藏的干预充当 oracle 标签与客观奖励，而智能体仍需调查噪声、混杂与分布式证据。"
+  },
+  "claim:trace-causal-exploration-synthesized-rewards:2": {
+   "id": "claim:trace-causal-exploration-synthesized-rewards:2",
+   "type": "claim",
+   "label": "TRACE 是数字广告诊断环境，含 12 类根因与细粒度细分归因，智能体用 Python 与 SQL 调查每个事件，需要同时给出根因以及受影响的细分分配。"
+  },
+  "claim:trace-causal-exploration-synthesized-rewards:3": {
+   "id": "claim:trace-causal-exploration-synthesized-rewards:3",
+   "type": "claim",
+   "label": "留出测试集为 235 个事件；最强提示基线 Claude Opus 5 达到 0.686 FullAttr@1。"
+  },
+  "claim:trace-causal-exploration-synthesized-rewards:4": {
+   "id": "claim:trace-causal-exploration-synthesized-rewards:4",
+   "type": "claim",
+   "label": "监督微调把 Qwen3.5-35B-A3B 从 0.159 提到 0.637，随后用合成奖励做强化学习达到 0.757，超过全部受测提示基线，包括前沿闭源模型与提示版 Qwen3.5-122B-A10B。"
+  },
+  "claim:trace-causal-exploration-synthesized-rewards:5": {
+   "id": "claim:trace-causal-exploration-synthesized-rewards:5",
+   "type": "claim",
+   "label": "得到的策略比提示版 35B 基座使用的工具调用显著更少。"
+  },
+  "claim:trace-causal-exploration-synthesized-rewards:6": {
+   "id": "claim:trace-causal-exploration-synthesized-rewards:6",
+   "type": "claim",
+   "label": "结论指出，可扩展的客观训练信号可以比模型规模是更重要的约束。"
+  },
+  "claim:near-optimal-rl-multi-step-lookahead:1": {
+   "id": "claim:near-optimal-rl-multi-step-lookahead:1",
+   "type": "claim",
+   "label": "设定为带转移前瞻的强化学习，智能体在决定动作前可以观察任意长度为 ℓ 的动作序列会到达哪些状态；前瞻能显著提升可达性能，但已知多步前瞻下的最优规划是 NP-hard，且该 hardness 此前是在折扣因子任意接近一时建立的。"
+  },
+  "claim:near-optimal-rl-multi-step-lookahead:2": {
+   "id": "claim:near-optimal-rl-multi-step-lookahead:2",
+   "type": "claim",
+   "label": "论文第一个结果（Theorem 1）：对每个固定有理折扣因子 γ∈(0,1)，精确规划在 ℓ≥2 时仍是 NP-hard，说明 hardness 并非只来自折扣因子趋近一。"
+  },
+  "claim:near-optimal-rl-multi-step-lookahead:3": {
+   "id": "claim:near-optimal-rl-multi-step-lookahead:3",
+   "type": "claim",
+   "label": "第二个结果（Theorem 2）：对每个固定前瞻深度 ℓ，存在随机化多项式时间近似方案，以高概率构造一致近优策略。"
+  },
+  "claim:near-optimal-rl-multi-step-lookahead:4": {
+   "id": "claim:near-optimal-rl-multi-step-lookahead:4",
+   "type": "claim",
+   "label": "方法上把方案扩展到未知转移与随机奖励，使用乐观主义与方差自适应置信界，其中方差项提供 Bernstein 型转移奖励，αN·ρN 项控制数据依赖的集中性。"
+  },
+  "claim:near-optimal-rl-multi-step-lookahead:5": {
+   "id": "claim:near-optimal-rl-multi-step-lookahead:5",
+   "type": "claim",
+   "label": "所得算法的累积遗憾的主项与经典表格折扣 RL 相符，只差对数因子。"
+  },
+  "claim:near-optimal-rl-multi-step-lookahead:6": {
+   "id": "claim:near-optimal-rl-multi-step-lookahead:6",
+   "type": "claim",
+   "label": "结论概括为，精确规划虽 NP-hard，高效的近优规划与学习仍然可行。"
   }
  },
  "edges": [
@@ -8914,16 +8974,6 @@
    "rel": "cites"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2609.11061",
    "t": "claim:fork-where-the-model-changes-its-mind:1",
    "rel": "claims"
@@ -8981,6 +9031,236 @@
   {
    "s": "arxiv:2609.10781",
    "t": "claim:from-connectivity-to-rewards:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.10315",
+   "t": "claim:trace-causal-exploration-synthesized-rewards:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10315",
+   "t": "claim:trace-causal-exploration-synthesized-rewards:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10315",
+   "t": "claim:trace-causal-exploration-synthesized-rewards:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10315",
+   "t": "claim:trace-causal-exploration-synthesized-rewards:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10315",
+   "t": "claim:trace-causal-exploration-synthesized-rewards:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.10315",
+   "t": "claim:trace-causal-exploration-synthesized-rewards:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11807",
+   "t": "claim:near-optimal-rl-multi-step-lookahead:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11807",
+   "t": "claim:near-optimal-rl-multi-step-lookahead:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11807",
+   "t": "claim:near-optimal-rl-multi-step-lookahead:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11807",
+   "t": "claim:near-optimal-rl-multi-step-lookahead:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11807",
+   "t": "claim:near-optimal-rl-multi-step-lookahead:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.11807",
+   "t": "claim:near-optimal-rl-multi-step-lookahead:6",
    "rel": "claims"
   }
  ]

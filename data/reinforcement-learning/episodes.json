@@ -40,5 +40,19 @@
   "slug": "from-connectivity-to-rewards",
   "bvid": "BV18ZYr6nEuh",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-09-15",
+  "paper_id": "arxiv:2609.10315",
+  "slug": "trace-causal-exploration-synthesized-rewards",
+  "bvid": "BV1iPe76AERy",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-15",
+  "paper_id": "arxiv:2609.11807",
+  "slug": "near-optimal-rl-multi-step-lookahead",
+  "bvid": "BV1rRej6uE88",
+  "status": "uploaded"
  }
 ]

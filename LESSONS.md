@@ -50,3 +50,10 @@
 - ⚠️ 重复投稿事故：期 2 上传命令因进程替换写法 bug 被 eval 两次，产生重复稿 BV1uZYr6nEGR（已报告用户手动删除，保留 BV18ZYr6nEuh）；尝试的删除端点 404。教训（写入流程认知）：任何上传命令只允许单次 eval，执行后必须 grep download.log 校验 BV 数量与预期一致，多退少报。
 - 两个 TTS 任务并发时资源锁自动交替（scene 级 FIFO），总时长与串行相当，可安全并行。
 - extract_figures 新增防误判：正文里“Figure N shows…”不再当题注（CAP_RE 排除引用式句首），同号 figure 去重保首个；价值曲线等关键图可手工指定分配（storyboard.paper_figure 覆盖自动分配）。
+
+## 2026-09-15 (每日例程第 3 次自动运行)
+- 上游连续第二天故障（OpenAlex 503 / arXiv API 429，网页端正常）；雷达沿用图谱，选题池不受影响。连续两天说明非瞬时抖动，fetch 脚本后续可加「连续失败即静默跳过」降级，避免每日重试噪音。
+- 双片全自动完成：TRACE（BV1iPe76AERy，10 场景 236.11s，广告诊断合成奖励，论文 2 图入片）与多步前瞻近优 RL（BV1rRej6uE88，11 场景 275.82s，纯理论无实验图，用定理要点表替代）。
+- 昨日重复投稿教训生效：上传统一为单次 eval + 输出重定向 + grep 校验 submissions_this_run == 1，两期各恰好一次提交。
+- export_pptx_png.py 固化为脚本（内联 python -c 的 bash 转义在 Windows Git Bash 下极易踩坑，不再内联）。
+- 理论论文无图时的版面方案：evidence 页用「表 N ｜ 定理要点」metrics 表替代论文原图，题注注明依据定理编号。
