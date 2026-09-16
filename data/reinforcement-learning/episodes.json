@@ -54,5 +54,19 @@
   "slug": "near-optimal-rl-multi-step-lookahead",
   "bvid": "BV1rRej6uE88",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-09-16",
+  "paper_id": "arxiv:2609.15064",
+  "slug": "what-does-an-llm-learn-from-rl",
+  "bvid": "BV11Pex6NEVE",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-16",
+  "paper_id": "arxiv:2609.15987",
+  "slug": "bellman-policy-optimization",
+  "bvid": "BV1CPex6NESC",
+  "status": "uploaded"
  }
 ]

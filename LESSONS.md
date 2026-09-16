@@ -57,3 +57,10 @@
 - 昨日重复投稿教训生效：上传统一为单次 eval + 输出重定向 + grep 校验 submissions_this_run == 1，两期各恰好一次提交。
 - export_pptx_png.py 固化为脚本（内联 python -c 的 bash 转义在 Windows Git Bash 下极易踩坑，不再内联）。
 - 理论论文无图时的版面方案：evidence 页用「表 N ｜ 定理要点」metrics 表替代论文原图，题注注明依据定理编号。
+
+## 2026-09-16 (每日例程第 4 次自动运行)
+- arXiv API 恢复（60 条新论文入库，图谱扩到 152 篇/854 作者）；OpenAlex 连续第三天 504，考虑加静默降级。
+- 双片完成：Fixed-SAE Track（BV11Pex6NEVE，11 场景 243.28s，RL 机制可解释性，10 图入片）与 BPO（BV1CPex6NESC，10 场景 224.60s，轨迹级策略优化，3 图入片）。
+- 数字溯源门的归一化规则摸清：「N 个百分点」→百分比归一化；顿号连排的数字只有最后一个带单位。正文引用多个数字时必须逐个紧邻「个百分点/％」书写，claims 同步。已按此修复 BPO 的对照页。
+- bash 内联 `&` 后台启动的进程在会话结束时被杀，且日志不可见；必须用 run_in_background 正式启动。BPO 首次静默启动失败后正式重启，靠 tts-scenes 断点续跑补齐，无重复合成。
+- TTS 完成判定以磁盘产物为准（narration.wav + 全部 scene wav 的 mtime），日志行缓冲可能延迟刷出，轮询 grep 日志会误判未完成。
