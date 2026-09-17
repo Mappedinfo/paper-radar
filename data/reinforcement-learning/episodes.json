@@ -68,5 +68,19 @@
   "slug": "bellman-policy-optimization",
   "bvid": "BV1CPex6NESC",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-09-17",
+  "paper_id": "arxiv:2609.16648",
+  "slug": "growmtp-rl-draft-head",
+  "bvid": "BV1kveK6GEBD",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-17",
+  "paper_id": "arxiv:2609.16816",
+  "slug": "impossiblerubrics-stress-testing-rubric-rewards",
+  "bvid": "BV1CveK6GEKX",
+  "status": "uploaded"
  }
 ]
