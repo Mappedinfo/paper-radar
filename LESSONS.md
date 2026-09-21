@@ -71,3 +71,10 @@
 - 单次上传防护连续第 3 天生效（两期 submissions==1）。
 - TTS 完成判定全面改为磁盘产物法（narration.wav 存在 + scene wav 数 == 场景数），不再依赖日志行，避免缓冲误判。
 - GrowMTP 自动分配只命中 1 图，价值曲线主图（fig-01）按 LESSONS 手工指定到证据页——自动分类对「无 results 关键词的主结果图」仍弱，后续可在 caption 加权重规则。
+
+## 2026-09-21 (漏跑 4 天的事故审查与修复)
+- 事故：09-18 至 09-21 连续 4 天未执行。根因确认为创作者判断——ZCode 桌面端未运行时，应用内定时任务不触发，且错过的槽位不补跑（CronList 证据：lastRunAt=09-17 08:00:16，nextRunAt 直接跳到 09-22 08:00）。
+- 修复①（系统层）：Windows 任务计划程序注册「ZCode AutoStart for Paper Radar」，每日 07:55 启动 C:\Program Files\ZCode\ZCode.exe，含 WakeToRun（睡眠唤醒）与 StartWhenAvailable（错过后开机即补启动）。
+- 修复②（应用层）：08:00 例程指令加入 last-daily-run.txt 标记文件读写——开跑前检查防重复，成功后写入日期。午间 12:30 备份触发的 CronCreate 因「定时任务会话内不可再建任务」失败，待创作者在普通会话中补建。
+- 追加经验：图像生成类论文的附录 held-out 图会把 extract_figures 抽到 50+ 张（λ-GRPO 抽了 53 张），台账照记但只正文图入片；正文引用图谱统计数字（234 篇等）需在 sources.json 声明「知识图谱统计」claim 才能过溯源门。
+- 今日补跑双片：CodeMidas（BV1Vuh667EE7，10 场景 246.57s）与 λ-Controlled GRPO（BV1Guh667EJY，10 场景 253.24s），OpenAlex 恢复后图谱扩到 234 篇/1266 作者。

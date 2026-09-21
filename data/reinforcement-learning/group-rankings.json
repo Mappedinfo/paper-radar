@@ -5,8 +5,8 @@
   "authors": 62,
   "papers": 7,
   "citations": 755850,
-  "in_graph_cited": 620,
-  "score": 771572.8
+  "in_graph_cited": 744,
+  "score": 774717.4
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,8 @@
   "authors": 8,
   "papers": 7,
   "citations": 177087,
-  "in_graph_cited": 85,
-  "score": 179242.5
+  "in_graph_cited": 102,
+  "score": 179673.7
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -50,8 +50,8 @@
   "authors": 1,
   "papers": 4,
   "citations": 43290,
-  "in_graph_cited": 50,
-  "score": 44324.0
+  "in_graph_cited": 60,
+  "score": 44530.8
  },
  {
   "group_id": "group:universidad de granada",
@@ -77,8 +77,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 30,
-  "score": 26138.4
+  "in_graph_cited": 36,
+  "score": 26214.5
  },
  {
   "group_id": "group:university of toledo",
@@ -113,8 +113,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 10,
-  "score": 18036.8
+  "in_graph_cited": 12,
+  "score": 18062.2
  },
  {
   "group_id": "group:at&t (united states)",
@@ -167,8 +167,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 10,
-  "score": 9230.8
+  "in_graph_cited": 12,
+  "score": 9256.2
  },
  {
   "group_id": "group:university of edinburgh",
@@ -176,8 +176,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 10,
-  "score": 9230.8
+  "in_graph_cited": 12,
+  "score": 9256.2
  },
  {
   "group_id": "group:carnegie mellon university",
@@ -185,8 +185,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 5,
-  "score": 9018.4
+  "in_graph_cited": 6,
+  "score": 9031.1
  },
  {
   "group_id": "group:symbiosis international university",
@@ -257,8 +257,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 15,
-  "score": 7716.2
+  "in_graph_cited": 18,
+  "score": 7754.2
  },
  {
   "group_id": "group:university of oxford",
@@ -284,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 5,
-  "score": 6008.4
+  "in_graph_cited": 6,
+  "score": 6021.1
  },
  {
   "group_id": "group:university of milan",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 5,
-  "score": 6008.4
+  "in_graph_cited": 6,
+  "score": 6021.1
  },
  {
   "group_id": "group:tu dortmund university",
@@ -302,8 +302,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 5,
-  "score": 6008.4
+  "in_graph_cited": 6,
+  "score": 6021.1
  },
  {
   "group_id": "group:university of fribourg",
@@ -637,5 +637,104 @@
   "citations": 2,
   "in_graph_cited": 0,
   "score": 2.0
+ },
+ {
+  "group_id": "group:soochow university",
+  "group": "Soochow University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 1,
+  "in_graph_cited": 0,
+  "score": 1.0
+ },
+ {
+  "group_id": "group:krirk university",
+  "group": "Krirk University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 1,
+  "in_graph_cited": 0,
+  "score": 1.0
+ },
+ {
+  "group_id": "group:anhui university",
+  "group": "Anhui University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 1,
+  "in_graph_cited": 0,
+  "score": 1.0
+ },
+ {
+  "group_id": "group:xi’an university of posts and telecommunications",
+  "group": "Xi’an University of Posts and Telecommunications",
+  "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:china academy of space technology",
+  "group": "China Academy of Space Technology",
+  "authors": 2,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:xidian university",
+  "group": "Xidian University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:toyohashi university of technology",
+  "group": "Toyohashi University of Technology",
+  "authors": 4,
+  "papers": 2,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:guangdong ocean university",
+  "group": "Guangdong Ocean University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:ludwig-maximilians-universität münchen",
+  "group": "Ludwig-Maximilians-Universität München",
+  "authors": 5,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:quality and reliability (greece)",
+  "group": "Quality and Reliability (Greece)",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:university of exeter",
+  "group": "University of Exeter",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
  }
 ]

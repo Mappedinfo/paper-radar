@@ -82,5 +82,19 @@
   "slug": "impossiblerubrics-stress-testing-rubric-rewards",
   "bvid": "BV1CveK6GEKX",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-09-21",
+  "paper_id": "arxiv:2609.22068",
+  "slug": "codemidas-coding-rl-environments",
+  "bvid": "BV1Vuh667EE7",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-21",
+  "paper_id": "arxiv:2609.22041",
+  "slug": "lambda-controlled-grpo",
+  "bvid": "BV1Guh667EJY",
+  "status": "uploaded"
  }
 ]
