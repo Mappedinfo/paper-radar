@@ -10352,6 +10352,36 @@
    "id": "claim:buffered-quantile-objectives:6",
    "type": "claim",
    "label": "在资产出售最优停止问题与湿滑 FrozenLake 上与基于模型的 UCB-BQRL 及表格 PPO、TRPO 对照；资产出售中 Deep-BQRL 在报告目标水平的平均累计点分位数策略差距小于 PPO 与 TRPO，UCB-BQRL 保持最小差距。"
+  },
+  "claim:retrieval-aware-question-learning:1": {
+   "id": "claim:retrieval-aware-question-learning:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-22）：共 234 篇论文、1266 位作者。"
+  },
+  "claim:retrieval-aware-question-learning:2": {
+   "id": "claim:retrieval-aware-question-learning:2",
+   "type": "claim",
+   "label": "证据不全时的交互式检索是序列信息获取问题，智能体必须决定哪个问题能为下一次检索更新创造最有用的证据；现有系统靠模仿离线排序的问答对来训练这个决策，尽管问题的价值取决于它引出的回答及其对检索的下游影响。"
+  },
+  "claim:retrieval-aware-question-learning:3": {
+   "id": "claim:retrieval-aware-question-learning:3",
+   "type": "claim",
+   "label": "论文证明候选区分度与感知有用性对该目标只提供弱监督，并提出 RAVEL，面向交互式行人重识别的检索感知在线强化学习框架。"
+  },
+  "claim:retrieval-aware-question-learning:4": {
+   "id": "claim:retrieval-aware-question-learning:4",
+   "type": "claim",
+   "label": "RAVEL 从监督式问题生成初始化，直接观察当前 Top-4 候选，并用完整问题-回答-检索回路的排名反馈优化问题策略；有效性门保持探索在交互协议之内。"
+  },
+  "claim:retrieval-aware-question-learning:5": {
+   "id": "claim:retrieval-aware-question-learning:5",
+   "type": "claim",
+   "label": "在 Interactive-PEDES 基准上，RAVEL 五轮交互后达到 73.73 的 Rank-1，超过 LLaVA-ReID 5.79 个百分点，并超过全部交互式基线。"
+  },
+  "claim:retrieval-aware-question-learning:6": {
+   "id": "claim:retrieval-aware-question-learning:6",
+   "type": "claim",
+   "label": "分析显示 RAVEL 把提问预算重新分配给局部化开放式属性问题，这类问题提供更有用的检索证据，且在初始困难的查询上带来最大增益。"
   }
  },
  "edges": [
@@ -19873,6 +19903,36 @@
   {
    "s": "arxiv:2609.21327",
    "t": "claim:buffered-quantile-objectives:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21924",
+   "t": "claim:retrieval-aware-question-learning:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21924",
+   "t": "claim:retrieval-aware-question-learning:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21924",
+   "t": "claim:retrieval-aware-question-learning:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21924",
+   "t": "claim:retrieval-aware-question-learning:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21924",
+   "t": "claim:retrieval-aware-question-learning:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21924",
+   "t": "claim:retrieval-aware-question-learning:6",
    "rel": "claims"
   }
  ]
