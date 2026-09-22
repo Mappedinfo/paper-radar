@@ -98,3 +98,8 @@
 - dukou 集成点：例程第 4 步后新增（可选）——narration-script.md 轻改写为专栏文章后 `node dukou.js send <md> --dest bili --autofill`（B站专栏全自动）；`--dest x --autofill` 需用户点 Write；`--dest editor` 灌公众号排版器。填充后的发布/复制永远留给用户。Windows 下桥日志路径问题（脚本硬编码 /tmp）待上游修复，ping 前先 set TMP。
 - huashu-proofreading 定位为轻量备选：口播稿走 tramstop 深检（已是 prose 门超集），公众号长文用 proofreading 三遍法（内容→风格→节奏）足够。
 - v5 例程顺序：三门 → de-AI 报告清零 → （若分发）轻改写+dukou send。
+
+## 2026-09-22 (v5.5 · 接入 huashu-report 报告纪律)
+- 创作者指定接入 huashu-report（机构级研究报告 skill，已克隆 ~/.qoder/skills/huashu-report-repo），定位明确：我们虽不写论文，但做论文精读 = 科普型研究报告（读者无背景、理解领域并行动）。
+- 融合点：四角色映射到既有流水线（sources.json=数据表、图谱场景=文献定位、v4 设计系统=信息设计师、对照表=可视化师）；新增硬规矩三条——每个数字带分母（百分比必须携 N 上片）、图注写结论、局限场景升级为替代解释式（可能被什么推翻、排除了哪些、剩哪些没排除）；过程自述禁令扩展到正文。页数契约改为 15 页封顶（封面 1 + 场景 13-14）。
+- huashu-report 的「工作顺序不能颠倒」（定一句话→数据表→正文→机制与文献定位→图→逐页自检）验证了我们 sources.json 先于 storyboard 的既有顺序，机制定位靠图谱场景承担。
