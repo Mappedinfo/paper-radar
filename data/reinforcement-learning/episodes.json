@@ -1,121 +1,135 @@
 [
- {
-  "date": "2026-09-13",
-  "paper_id": "arxiv:2505.03335",
-  "slug": "absolute-zero-reinforced-self-play-reasoning",
-  "bvid": "BV1DnYe6aE1v",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-13",
-  "paper_id": "arxiv:2501.12948",
-  "slug": "deepseek-r1",
-  "bvid": "BV1RVYe6TEJ7",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-13",
-  "paper_id": "arxiv:2609.10776",
-  "slug": "a-bellman-optimality-equation-for-plasticity",
-  "bvid": "BV1k6Yi64EuD",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-13",
-  "paper_id": "arxiv:2609.11042",
-  "slug": "t1-terminal-agent-reinforcement-learning",
-  "bvid": "BV13wYq6VE7j",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-14",
-  "paper_id": "arxiv:2609.11061",
-  "slug": "fork-where-the-model-changes-its-mind",
-  "bvid": "BV1MfYr6SECA",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-14",
-  "paper_id": "arxiv:2609.10781",
-  "slug": "from-connectivity-to-rewards",
-  "bvid": "BV18ZYr6nEuh",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-15",
-  "paper_id": "arxiv:2609.10315",
-  "slug": "trace-causal-exploration-synthesized-rewards",
-  "bvid": "BV1iPe76AERy",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-15",
-  "paper_id": "arxiv:2609.11807",
-  "slug": "near-optimal-rl-multi-step-lookahead",
-  "bvid": "BV1rRej6uE88",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-16",
-  "paper_id": "arxiv:2609.15064",
-  "slug": "what-does-an-llm-learn-from-rl",
-  "bvid": "BV11Pex6NEVE",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-16",
-  "paper_id": "arxiv:2609.15987",
-  "slug": "bellman-policy-optimization",
-  "bvid": "BV1CPex6NESC",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-17",
-  "paper_id": "arxiv:2609.16648",
-  "slug": "growmtp-rl-draft-head",
-  "bvid": "BV1kveK6GEBD",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-17",
-  "paper_id": "arxiv:2609.16816",
-  "slug": "impossiblerubrics-stress-testing-rubric-rewards",
-  "bvid": "BV1CveK6GEKX",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-21",
-  "paper_id": "arxiv:2609.22068",
-  "slug": "codemidas-coding-rl-environments",
-  "bvid": "BV1Vuh667EE7",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-21",
-  "paper_id": "arxiv:2609.22041",
-  "slug": "lambda-controlled-grpo",
-  "bvid": "BV1Guh667EJY",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-22",
-  "paper_id": "arxiv:2609.21650",
-  "slug": "synthdemo-rl-vla-adaptation",
-  "bvid": "BV1bkhC6HEX3",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-22",
-  "paper_id": "arxiv:2609.21327",
-  "slug": "buffered-quantile-objectives",
-  "bvid": "BV1UkhC6HEmq",
-  "status": "uploaded"
- },
- {
-  "date": "2026-09-22",
-  "paper_id": "arxiv:2609.21924",
-  "slug": "retrieval-aware-question-learning",
-  "bvid": "BV1C5hC66EQ9",
-  "status": "uploaded"
- }
+  {
+    "date": "2026-09-13",
+    "paper_id": "arxiv:2505.03335",
+    "slug": "absolute-zero-reinforced-self-play-reasoning",
+    "bvid": "BV1DnYe6aE1v",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-13",
+    "paper_id": "arxiv:2501.12948",
+    "slug": "deepseek-r1",
+    "bvid": "BV1RVYe6TEJ7",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-13",
+    "paper_id": "arxiv:2609.10776",
+    "slug": "a-bellman-optimality-equation-for-plasticity",
+    "bvid": "BV1k6Yi64EuD",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-13",
+    "paper_id": "arxiv:2609.11042",
+    "slug": "t1-terminal-agent-reinforcement-learning",
+    "bvid": "BV13wYq6VE7j",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-14",
+    "paper_id": "arxiv:2609.11061",
+    "slug": "fork-where-the-model-changes-its-mind",
+    "bvid": "BV1MfYr6SECA",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-14",
+    "paper_id": "arxiv:2609.10781",
+    "slug": "from-connectivity-to-rewards",
+    "bvid": "BV18ZYr6nEuh",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-15",
+    "paper_id": "arxiv:2609.10315",
+    "slug": "trace-causal-exploration-synthesized-rewards",
+    "bvid": "BV1iPe76AERy",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-15",
+    "paper_id": "arxiv:2609.11807",
+    "slug": "near-optimal-rl-multi-step-lookahead",
+    "bvid": "BV1rRej6uE88",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-16",
+    "paper_id": "arxiv:2609.15064",
+    "slug": "what-does-an-llm-learn-from-rl",
+    "bvid": "BV11Pex6NEVE",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-16",
+    "paper_id": "arxiv:2609.15987",
+    "slug": "bellman-policy-optimization",
+    "bvid": "BV1CPex6NESC",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-17",
+    "paper_id": "arxiv:2609.16648",
+    "slug": "growmtp-rl-draft-head",
+    "bvid": "BV1kveK6GEBD",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-17",
+    "paper_id": "arxiv:2609.16816",
+    "slug": "impossiblerubrics-stress-testing-rubric-rewards",
+    "bvid": "BV1CveK6GEKX",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-21",
+    "paper_id": "arxiv:2609.22068",
+    "slug": "codemidas-coding-rl-environments",
+    "bvid": "BV1Vuh667EE7",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-21",
+    "paper_id": "arxiv:2609.22041",
+    "slug": "lambda-controlled-grpo",
+    "bvid": "BV1Guh667EJY",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-22",
+    "paper_id": "arxiv:2609.21650",
+    "slug": "synthdemo-rl-vla-adaptation",
+    "bvid": "BV1bkhC6HEX3",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-22",
+    "paper_id": "arxiv:2609.21327",
+    "slug": "buffered-quantile-objectives",
+    "bvid": "BV1UkhC6HEmq",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-22",
+    "paper_id": "arxiv:2609.21924",
+    "slug": "retrieval-aware-question-learning",
+    "bvid": "BV1C5hC66EQ9",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-22",
+    "paper_id": "arxiv:2609.24144",
+    "slug": "luck-is-not-skill-paired-rollouts-grpo",
+    "bvid": "BV1zqh76fEPZ",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-22",
+    "paper_id": "arxiv:2609.20807",
+    "slug": "score-centering-offpolicy-rl",
+    "bvid": "BV1kah76AE5n",
+    "status": "uploaded"
+  }
 ]

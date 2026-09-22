@@ -1,6 +1,6 @@
 # 强化学习专栏 · 每日雷达 2026-09-22
 
-- 图谱：234 篇论文 · 1266 位作者 · 83 个课题组 · 图内引用边 227
+- 图谱：272 篇论文 · 1445 位作者 · 83 个课题组 · 图内引用边 259
 
 ## 今日候选（下一期选题）
 - **0.93** Beyond static responses: multi-agent LLM systems as a new paradigm for social sc（Humanities and Social Sciences Communications 2026，被引 2，-）`doi:10.1057/s41599-026-08832-2`
@@ -9,6 +9,7 @@
 - **0.92** Integrated V2X-Enabled Multi-Agent Deep Reinforcement Learning for Coordinated E（International Journal of Innovative Science and Research Technology (IJISRT) 2026，被引 0，-）`doi:10.38124/ijisrt/26sep221`
 - **0.92** GAT-Based SLA-Aware Reinforcement Learning for Service Function Chain Placement（Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering 2026，被引 0，-）`doi:10.1007/978-3-032-39125-4_10`
 - **0.92** Optimization of Home-to-Home Energy Trading Using Multi-agent Deep Reinforcement（Lecture notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering 2026，被引 0，-）`doi:10.1007/978-3-032-39125-4_22`
+- **0.92** Learning Opportunities 2026/2027（DigitalCommons-IMSA (Illinois Mathematics and Science Academy) 2026，被引 0，-）`title:learning opportunities 2026 2027`
 
 ## 经典高被引 TOP 10
 - Human-level control through deep reinforcement learning（2015，被引 31045）
@@ -23,15 +24,15 @@
 - Introduction to Reinforcement Learning（1998，被引 6917）
 
 ## 课题组实力榜 TOP 10
-- 1. Google DeepMind (United Kingdom) · 7 篇 · 总被引 755850 · 图内被引 868 · 分 777862.0
-- 2. Google (United States) · 7 篇 · 总被引 177087 · 图内被引 119 · 分 180104.8
+- 1. Google DeepMind (United Kingdom) · 7 篇 · 总被引 755850 · 图内被引 992 · 分 781006.5
+- 2. Google (United States) · 7 篇 · 总被引 177087 · 图内被引 136 · 分 180535.9
 - 3. Worcester Polytechnic Institute · 1 篇 · 总被引 64155 · 图内被引 0 · 分 64155.0
 - 4. Friedrich-Alexander-Universität Erlangen-Nürnberg · 2 篇 · 总被引 61082 · 图内被引 0 · 分 61082.0
 - 5. College of Charleston · 1 篇 · 总被引 51324 · 图内被引 0 · 分 51324.0
-- 6. GTE Laboratories Incorporated, 40 Sylvan Road, Waltham, MA, 02254, USA · 4 篇 · 总被引 43290 · 图内被引 70 · 分 44737.6
+- 6. GTE Laboratories Incorporated, 40 Sylvan Road, Waltham, MA, 02254, USA · 4 篇 · 总被引 43290 · 图内被引 80 · 分 44944.4
 - 7. Universidad de Granada · 1 篇 · 总被引 39536 · 图内被引 0 · 分 39536.0
 - 8. Tecnalia · 1 篇 · 总被引 29652 · 图内被引 0 · 分 29652.0
-- 9. [MIT Press] · 1 篇 · 总被引 25758 · 图内被引 42 · 分 26290.5
+- 9. [MIT Press] · 1 篇 · 总被引 25758 · 图内被引 48 · 分 26366.6
 - 10. University of Toledo · 1 篇 · 总被引 26109 · 图内被引 0 · 分 26109.0
 
 ## 渲染命令

@@ -117,3 +117,12 @@
 - **图注三处卫生**：PDF 断词连字（`in- teraction`）在 extract_figures 去连字；超长截断走词边界+省略号（`[:200]` 字符切片产生过 `enviro` 半截词）；图注改为审计对象且高度实测推进（固定 0.32in 推进曾让两行图注压图 0.22in，审计打开后当场暴露 3 页）。
 - **教训：给"应该不会重叠"的组合留审计开关**。图注原本 kind=frame 不进 overlap 检查，改成 kind=text 后立即抓出 3 处真实压图。相邻元素的间距若靠固定常数而非实测高度，迟早压上。
 - **视觉模型读图会复述旧内容**：同路径同名 PNG 二次上传 CDN，视觉分析返回了上一版的画面（stale）。验证渲染结果要么用新文件名，要么用 PPTX XML/几何数据做 ground truth。
+
+## 2026-09-22 (v4.3 首跑 · 双期Luck Is Not Skill 与 Score Centering)
+- v4.3 全管线首跑两期（BV1zqh76fEPZ、BV1kah76AE5n），各 12 场景约 6 分钟，门全清、0 硬溢出、目检通过——context 行上片显著改善文字页密度，溯源门未新增拦截（claims 先写足）。
+- 扩展后的 prose 门（heading+body+context 全查）首跑即拦下自己新写句子里的翻案句与硬停词「说白了」，证明上片文字纳入门禁是对的。
+- deai 经验层「全段无专名无数字」的最佳解法是把论文自己的奇怪具体细节写进旁白（fp4 精度下 0.5+0.5+2 得 3 换加法顺序得 2），比硬塞数字自然。
+- paper-fetch CLI 对 arXiv URL/ID 仍走 DOI 模糊解析（两次 ambiguous），回退直连 PDF+HTML 稳定；作者名从 arXiv meta 标签核实（勿从 GitHub 链接猜）。
+- biliup tx 线路偶发 upos CDN 连接超时（os error 10060），换 --line bda2 一次成功；失败发生在传输阶段不会注册半截投稿，重试前 grep submissions 确认为 0 即安全。
+- svg2png 输出文件名会截断（local-arxiv-2609.24144.svg → local-arxiv-2609.png），同名前缀不同论文的 PNG 会互相覆盖——拷入项目前先 ls 确认目标 PNG 是刚渲染的。
+- plaindeck 布局诊断（lead 字号阈值）是密度信号灯：连续两期都在「首句过长」的场景触发，解法是把 lead 首句写短、细节后置，这同时让 v4.3 的 18pt lead 更有力。
