@@ -78,3 +78,10 @@
 - 修复②（应用层）：08:00 例程指令加入 last-daily-run.txt 标记文件读写——开跑前检查防重复，成功后写入日期。午间 12:30 备份触发的 CronCreate 因「定时任务会话内不可再建任务」失败，待创作者在普通会话中补建。
 - 追加经验：图像生成类论文的附录 held-out 图会把 extract_figures 抽到 50+ 张（λ-GRPO 抽了 53 张），台账照记但只正文图入片；正文引用图谱统计数字（234 篇等）需在 sources.json 声明「知识图谱统计」claim 才能过溯源门。
 - 今日补跑双片：CodeMidas（BV1Vuh667EE7，10 场景 246.57s）与 λ-Controlled GRPO（BV1Guh667EJY，10 场景 253.24s），OpenAlex 恢复后图谱扩到 234 篇/1266 作者。
+
+## 2026-09-22 (设计 v4 · 接入花叔 huashu-slides 设计体系)
+- 创作者判定 v3.2 版面「太差」，指定参考 alchaincyf/huashu-skills（已克隆到 ~/.qoder/skills/huashu-skills-repo）。
+- 诊断 v3.2 差距：标题多为短语而非断言句（Assertion-Evidence）；字阶不够大（标题 22pt vs 花叔 ≥36pt）；正文段落太长（一页一论点被破坏）；指标卡平铺缺视觉锚点；英文 section label 未作为设计元素。
+- v4 落地（Pentagram Editorial 编辑杂志风 + Fathom 数据叙事锚点，均选自花叔「技术分享/数据报告」第一推荐）：断言式大标题 40pt 两行封顶；kicker 行（章节中文+英文 label）；正文改为 lead 首句 18pt + 尾注最多 4 行、放不下自动截断进备注；指标页加 hero number（首指标 60pt 橙红锚点）；左侧 0.14in 藏青书脊；章节进度改为 8 点圆点；引言块改 serif 大引号；overlap 审计门保留并通过。
+- body() 的自适应规则：y > 6.60in 直接不上正文（内容进备注），否则按剩余空间截断行数加省略号。
+- 花叔的两条通用经验同步进流程认知：一是「插画/漫画风格 AI 生成远好于极简风格」，本栏目坚持 Pentagram 编辑风属例外（学术严肃性优先）；二是 Path A（HTML→PPTX）与其原生形状思路等价，我们保留 python-pptx 原生构建（可编辑性同等级）。

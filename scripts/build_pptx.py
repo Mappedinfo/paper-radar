@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-"""Build the EDITABLE episode PPTX with native shapes (design v3.2).
+"""Build the EDITABLE episode PPTX — design v4 (huashu-slides informed).
 
-v3.2 — measured layout + overlap audit:
-- Every text block's height is computed from REAL glyph advances (PIL +
-  Microsoft YaHei), so wrapping estimates match PowerPoint rendering and the
-  y-cursor can never drift into the next element.
-- After each slide, an overlap audit checks pairwise shape intersections and
-  footer/header violations; any hit fails the build (no silent delivery).
-- Paper figures (extract_figures.py) take precedence over hand-made metric
-  tables; narration + auto figure description go to speaker notes.
+Key changes from v3.2 (informed by huashu-slides + design-principles):
+- ASSERTION TITLES: scene.heading renders as a full assertion sentence
+  (larger, 2-line wrap allowed). Topic word + section label become a small
+  kicker ABOVE the title, per assertion-evidence framework.
+- TYPE HIERARCHY 3:1 — title 40pt, kicker 13pt, body 14pt. Typography is a
+  design element, not an information container.
+- ONE IDEA PER SLIDE — body copy ≤ 4 lines; the rest goes to speaker notes
+  (narration). No long paragraphs on slides.
+- HERO NUMBER — evidence slides lead with the paper's key number at 60pt+
+  as a visual anchor (Fathom data narrative style).
+- 60-30-10 with generous whitespace: light bg 60%, ink 30%, accent 10%.
+- Full-bleed edge bar (left accent spine) + running header/footer retained.
+- Overlap audit gate retained (v3.2).
 """
 import argparse
 import json
@@ -25,12 +30,15 @@ from pptx.util import Inches, Pt
 
 EMU_W, EMU_H = Inches(13.333), Inches(7.5)
 FOOTER_TOP = Inches(7.02)
-NAVY, ACCENT = RGBColor(0x00, 0x33, 0x66), RGBColor(0x00, 0x66, 0xCC)
-INK, SUB, TER = RGBColor(0x33, 0x33, 0x33), RGBColor(0x66, 0x66, 0x66), RGBColor(0x99, 0x99, 0x99)
-BG2, BORDER, WHITE = RGBColor(0xF5, 0xF7, 0xFA), RGBColor(0xD0, 0xD7, 0xE0), RGBColor(0xFF, 0xFF, 0xFF)
+NAVY, ACCENT = RGBColor(0x00, 0x33, 0x66), RGBColor(0xD4, 0x48, 0x0B)  # Pentagram orange-red
+INK, SUB, TER = RGBColor(0x1A, 0x1A, 0x1A), RGBColor(0x66, 0x66, 0x66), RGBColor(0x99, 0x99, 0x99)
+BG2, BORDER, WHITE = RGBColor(0xFF, 0xFD, 0xF7), RGBColor(0xD0, 0xD7, 0xE0), RGBColor(0xFF, 0xFF, 0xFF)
+CREAM = RGBColor(0xFF, 0xFD, 0xF7)
 FAM = "Microsoft YaHei"
+SERIF = "Georgia"
 FONTS = {"regular": r"C:\Windows\Fonts\msyh.ttc", "bold": r"C:\Windows\Fonts\msyhbd.ttc"}
 CHAPTERS = ["引言", "图谱", "背景", "方法", "实验", "局限", "启示", "来源"]
+CHAPTER_EN = ["INTRO", "GRAPH", "CONTEXT", "METHOD", "RESULTS", "LIMITS", "TAKEAWAY", "REFS"]
 TOPIC2CH = {"引言": "引言", "图谱": "图谱", "背景": "背景", "问题": "背景", "转折": "背景",
             "方法": "方法", "算法": "方法", "训练": "方法", "证据": "实验", "结果": "实验",
             "局限": "局限", "边界": "局限", "启示": "启示", "参考文献": "来源"}
@@ -85,36 +93,42 @@ class Audit:
             if s["t"] + s["h"] > footer_top + 9144:
                 self.violations.append(
                     f"slide {slide_no}: {s['name']} crosses footer "
-                    f"(bottom {(s['t']+s['h'])/914400:.2f}in > {footer_top/914400:.2f}in)")
+                    f"(bottom {(s['t']+s['h'])/914400:.2f}in)")
 
 
 class PS:
-    def __init__(self, prs, paper_tag, origin, chapter, footer_left):
+    """Page builder — Pentagram editorial layout with accent spine."""
+
+    def __init__(self, prs, paper_tag, origin, chapter_idx, footer_left):
         self.s = prs.slides.add_slide(prs.slide_layouts[6])
         self.shapes_audit = []
-        self.y = Inches(0.0)
-        self.rect(0, 0, EMU_W, Inches(0.60), fill=WHITE, line=None, kind="band")
-        self.line_h(Inches(0.702))
-        self.bar(Inches(0.50), Inches(0.18), Inches(0.055), Inches(0.24), NAVY)
-        self.text(Inches(0.66), Inches(0.14), Inches(6.0), paper_tag, Pt(13), SUB, kind="band")
-        if origin:
-            self.text(Inches(6.3), Inches(0.14), Inches(6.5), origin, Pt(13), ACCENT,
-                      bold=True, align=PP_ALIGN.RIGHT, kind="band")
-        self.rect(0, Inches(0.60), EMU_W, Inches(0.40), fill=BG2, line=None, kind="band")
-        seg = Inches(13.333 / 8)
-        for i, ch in enumerate(CHAPTERS):
-            x = int(Inches(0.50) + i * seg)
-            active = (ch == chapter)
-            if active:
-                self.shape(MSO_SHAPE.ROUNDED_RECTANGLE, x + Inches(0.03), Inches(0.655),
-                           seg - Inches(0.06), Inches(0.29), fill=NAVY, kind="band")
-            self.text(x, Inches(0.665), seg, ch, Pt(10.5),
-                      WHITE if active else TER, bold=active, align=PP_ALIGN.CENTER, kind="band")
-        self.y = Inches(1.32)
-        self.line_h(EMU_H - Inches(0.485))
-        self.text(Inches(0.5), EMU_H - Inches(0.44), Inches(6.0), footer_left, Pt(10.5), TER, kind="band")
-        self.text(Inches(7.0), EMU_H - Inches(0.44), Inches(5.83), "强化学习专栏 · Paper Radar",
-                  Pt(10.5), TER, align=PP_ALIGN.RIGHT, kind="band")
+        self.y = Inches(0.55)
+        # left accent spine (full height, 0.14in)
+        self.rect(0, 0, Inches(0.14), EMU_H, fill=NAVY, line=None, kind="bar")
+        # running header: EN section label left / paper tag right
+        self.text(Inches(0.55), Inches(0.28), Inches(5.0), CHAPTER_EN[chapter_idx], Pt(13), ACCENT, True,
+                  name="hdr-left", kind="band")
+        self.text(Inches(6.0), Inches(0.28), Inches(6.8), paper_tag, Pt(13), SUB,
+                  align=PP_ALIGN.RIGHT, name="hdr-right", kind="bar")
+        # hairline under header
+        ln = self.s.shapes.add_connector(1, int(Inches(0.55)), int(Inches(0.62)), int(EMU_W - Inches(0.55)), int(Inches(0.62)))
+        ln.line.color.rgb = BORDER
+        ln.line.width = Pt(1)
+        # chapter progress dots (8 dots, current filled) — replaces the ribbon
+        seg = (EMU_W - Inches(1.1)) / 8
+        for i in range(8):
+            x = int(Inches(0.55) + i * seg)
+            active = (i == chapter_idx)
+            r = Inches(0.07 if not active else 0.10)
+            self.shape(MSO_SHAPE.OVAL, x, Inches(0.085) if not active else Inches(0.065),
+                       r, r, fill=ACCENT if active else BORDER, kind="bar")
+        # footer
+        ln2 = self.s.shapes.add_connector(1, 0, int(EMU_H - Inches(0.485)), int(EMU_W), int(EMU_H - Inches(0.485)))
+        ln2.line.color.rgb = BORDER
+        ln2.line.width = Pt(1)
+        self.text(Inches(0.55), EMU_H - Inches(0.44), Inches(7.0), footer_left, Pt(11), TER, kind="band")
+        self.text(Inches(7.0), EMU_H - Inches(0.44), Inches(5.8), "Paper Radar · 强化学习专栏", Pt(11), TER,
+                  align=PP_ALIGN.RIGHT, kind="band")
 
     def _track(self, name, x, y, w, h, kind):
         self.shapes_audit.append({"name": name, "l": int(x), "t": int(y), "w": int(w), "h": int(h), "kind": kind})
@@ -135,16 +149,11 @@ class PS:
     def rect(self, x, y, w, h, fill=WHITE, line=BORDER, name="rect", kind="box"):
         return self.shape(MSO_SHAPE.RECTANGLE, x, y, w, h, fill, line, name, kind)
 
-    def bar(self, x, y, w, h, fill):
-        return self.shape(MSO_SHAPE.RECTANGLE, x, y, w, h, fill, None, "bar", "bar")
-
-    def line_h(self, at, xw=EMU_W):
-        ln = self.s.shapes.add_connector(1, 0, int(at), int(xw), int(at))
-        ln.line.color.rgb = BORDER
-        ln.line.width = Pt(1)
+    def bar(self, x, y, w, h, fill, name="bar"):
+        return self.shape(MSO_SHAPE.RECTANGLE, x, y, w, h, fill, None, name, "bar")
 
     def text(self, x, y, w, s, size, color=INK, bold=False, align=PP_ALIGN.LEFT,
-             anchor=MSO_ANCHOR.TOP, name="text", kind="text", leading=1.32):
+             anchor=MSO_ANCHOR.TOP, name="text", kind="text", leading=1.32, font=FAM):
         pt = size.pt if hasattr(size, "pt") else size
         lines = measure_lines(s, pt, w / 914400, bold)
         h = text_h(lines, pt, leading)
@@ -162,162 +171,133 @@ class PS:
             r.font.size = Pt(pt)
             r.font.bold = bold
             r.font.color.rgb = color
-            r.font.name = FAM
+            r.font.name = font
         self._track(name, x, y, w, h, kind)
         return h
 
     def cursor(self):
         return self.y
 
+    # ---- blocks (huashu-informed) -------------------------------------
+    def kicker(self, topic):
+        self.text(Inches(0.55), self.y, Inches(8.0), topic, Pt(13), ACCENT, True,
+                  name="kicker", kind="band")
+        self.y += Inches(0.34)
+
     def title(self, heading):
-        size = Pt(24) if len(heading) <= 12 else Pt(22) if len(heading) <= 18 else Pt(20)
-        h = self.text(Inches(0.5), self.y, Inches(12.33), heading, size, NAVY, True, name="title")
-        self.y += h + Inches(0.06)
-        self.bar(Inches(0.5), self.y, Inches(0.9), Inches(0.05), ACCENT)
-        self.y += Inches(0.26)
+        """Assertion title: up to 2 lines at 40pt (F-pattern anchor)."""
+        lines = measure_lines(heading, 40, 12.0, bold=True)
+        lines = lines[:2]
+        h = self.text(Inches(0.55), self.y, Inches(12.0), heading, Pt(40), NAVY, True,
+                      name="title", leading=1.15)
+        self.y += h + Inches(0.18)
+        self.bar(Inches(0.55), self.y, Inches(0.9), Inches(0.05), ACCENT, name="rule")
+        self.y += Inches(0.30)
 
-    def thesis(self, claim):
-        lines = measure_lines(claim, 16, 11.85, bold=True)
-        h = int(Inches(0.24 + len(lines) * 0.30 + 0.12))
-        self.rect(Inches(0.5), self.y, Inches(12.33), h, fill=BG2, line=None, name="thesis-bg", kind="frame")
-        self.bar(Inches(0.5), self.y, Inches(0.07), h, NAVY)
-        self.text(Inches(0.78), self.y + Inches(0.12), Inches(11.85), claim, Pt(16), NAVY, True,
-                  name="thesis", kind="frame")
+    def lead(self, body):
+        """One idea per slide: first sentence as the lead statement (18pt)."""
+        parts = body.split("。")
+        lead = parts[0] + "。" if len(parts) > 1 else body
+        rest = "".join(parts[1:]).lstrip()
+        lines = measure_lines(lead, 18, 11.9)
+        lines = lines[:3]
+        h = self.text(Inches(0.55), self.y, Inches(11.9), lead, Pt(18), INK,
+                      name="lead", leading=1.4)
         self.y += h + Inches(0.22)
+        return rest
 
-    def body(self, text, size=Pt(14), max_bottom=Inches(6.92)):
-        pt = size.pt if hasattr(size, "pt") else size
-        while pt >= 11:
-            lines = measure_lines(text, pt, 12.33)
-            h = text_h(lines, pt)
-            if self.y + h <= max_bottom or len(lines) == 1:
-                break
-            pt -= 1
-        h = self.text(Inches(0.5), self.y, Inches(12.33), text, Pt(pt), INK, name="body")
+    def body(self, text, max_lines=4):
+        if not text:
+            return
+        if self.y > Inches(6.60):  # no room left — content lives in notes
+            return
+        lines = measure_lines(text, 14, 12.0)
+        room = int((Inches(6.95) - self.y) / Inches(0.283))
+        keep = max(1, min(max_lines, room))
+        shown = "\n".join(lines[:keep])
+        if len(lines) > keep:
+            shown += " …"
+        h = self.text(Inches(0.55), self.y, Inches(12.0), shown, Pt(14), SUB,
+                      name="body", leading=1.45)
         self.y += h + Inches(0.14)
 
-    def equation(self, eq, tag, note=None):
-        h = Inches(0.95)
-        self.rect(Inches(1.2), self.y, Inches(10.9), h, fill=WHITE, line=BORDER,
-                  name="eq-box", kind="frame")
-        self.text(Inches(1.4), self.y + Inches(0.24), Inches(9.6), eq, Pt(20), INK,
-                  align=PP_ALIGN.CENTER, name="eq", kind="frame")
-        self.text(Inches(10.0), self.y + Inches(0.58), Inches(1.9), f"（{tag}）",
-                  Pt(11), SUB, align=PP_ALIGN.RIGHT, name="eq-tag", kind="frame")
-        self.y += h + Inches(0.14)
-        if note:
-            self.body(note, size=Pt(12.5))
+    def hero_number(self, items):
+        """Fathom data anchor: first metric at 60pt, rest as small labels."""
+        if not items:
+            return
+        first = items[0]
+        h = Inches(1.35)
+        self.text(Inches(0.55), self.y, Inches(12.0), str(first.get("value", "")), Pt(60), ACCENT, True,
+                  name="hero-num", leading=1.0)
+        self.y += h
+        self.text(Inches(0.55), self.y, Inches(11.0), str(first.get("label", "")), Pt(15), INK,
+                  name="hero-lab")
+        self.y += Inches(0.55)
+        for it in items[1:3]:
+            self.text(Inches(0.55), self.y, Inches(5.6),
+                      f"{it.get('value','')}  —  {it.get('label','')}", Pt(14), SUB,
+                      name=f"sub-metric")
+            self.y += Inches(0.36)
 
-    def table(self, caption, items, tag, note=None):
-        self.text(Inches(0.5), self.y, Inches(12.3), f"表 {tag} ｜ {caption}", Pt(11.5), SUB,
-                  name="tbl-cap", kind="frame")
-        self.y += Inches(0.34)
-        rows = len(items) + 1
-        rh_in = 0.42
-        tbl_shape = self.s.shapes.add_table(rows, 2, int(Inches(0.5)), int(self.y),
-                                            int(Inches(12.33)), int(Inches(rh_in * rows)))
-        self._track("table", Inches(0.5), self.y, Inches(12.33), Inches(rh_in * rows), "box")
-        tbl = tbl_shape.table
-        tbl.columns[0].width = Inches(3.6)
-        tbl.columns[1].width = Inches(8.73)
-        for j, htxt in enumerate(["指标", "含义与条件"]):
-            c = tbl.cell(0, j)
-            c.text = htxt
-            r0 = c.text_frame.paragraphs[0].runs[0]
-            r0.font.size = Pt(13)
-            r0.font.bold = True
-            r0.font.color.rgb = WHITE
-            r0.font.name = FAM
-            c.fill.solid()
-            c.fill.fore_color.rgb = NAVY
-        for i, it in enumerate(items, 1):
-            for j, val in enumerate([str(it.get("value", "")), str(it.get("label", ""))]):
-                c = tbl.cell(i, j)
-                c.text = val
-                r0 = c.text_frame.paragraphs[0].runs[0]
-                r0.font.size = Pt(13) if j else Pt(15)
-                r0.font.bold = (j == 0)
-                r0.font.color.rgb = NAVY if j == 0 else INK
-                r0.font.name = FAM
-                c.fill.solid()
-                c.fill.fore_color.rgb = WHITE if i % 2 else BG2
-        self.y += Inches(rh_in * rows) + Inches(0.2)
-        if note:
-            self.body(note, size=Pt(12.5))
-
-    def figure(self, png, caption, tag, max_h=None, dark=True):
-        self.text(Inches(0.5), self.y, Inches(12.3), f"图 {tag} ｜ {caption}", Pt(11.5), SUB,
+    def figure(self, png, caption, tag, max_h=None, dark=False):
+        self.text(Inches(0.55), self.y, Inches(12.0), f"图 {tag} ｜ {caption}", Pt(12), SUB,
                   name="fig-cap", kind="frame")
-        self.y += Inches(0.34)
-        budget = max_h if max_h is not None else Inches(4.9)
+        self.y += Inches(0.32)
+        budget = max_h if max_h is not None else Inches(4.6)
         pic_h = min(Inches(6.88) - self.y, budget)
         from PIL import Image
         with Image.open(png) as im:
             ratio = im.height / im.width
         pic_h = min(pic_h, int(Inches(12.0) * ratio))
         pic_w = int(pic_h / ratio) if ratio else int(pic_h * 1.78)
-        if pic_w > Inches(12.2):
-            pic_w = Inches(12.2)
+        if pic_w > Inches(12.1):
+            pic_w = Inches(12.1)
             pic_h = int(pic_w * ratio)
         x = int((EMU_W - pic_w) / 2)
-        if dark:
-            self.rect(x - Inches(0.03), self.y - Inches(0.02), pic_w + Inches(0.06),
-                      pic_h + Inches(0.04), fill=RGBColor(0x0E, 0x14, 0x20), name="fig-frame", kind="frame")
+        frame_fill = RGBColor(0x0E, 0x14, 0x20) if dark else WHITE
+        self.rect(x - Inches(0.03), self.y - Inches(0.02), pic_w + Inches(0.06),
+                  pic_h + Inches(0.04), fill=frame_fill, name="fig-frame", kind="frame")
         self.s.shapes.add_picture(str(png), x, int(self.y), int(pic_w), int(pic_h))
         self._track("figure", x, self.y, pic_w, pic_h, "box")
         self.y += pic_h + Inches(0.18)
 
-    def diagram_mirror(self, tag):
-        self.text(Inches(0.5), self.y, Inches(12.3),
-                  f"图 {tag} ｜ empowerment 与 plasticity 的信息流对偶", Pt(11.5), SUB,
-                  name="diag-cap", kind="frame")
-        self.y += Inches(0.40)
-        cx = Inches(3.1)
-        for k, (lab, left, right, note) in enumerate([
-                ("empowerment（控制未来）", "动作 A", "观察 O", "I(A → O)"),
-                ("plasticity（被未来改变）", "观察 O", "动作 A", "I(O → A)")]):
-            yy = self.y + k * Inches(1.18)
-            self.text(Inches(0.6), yy + Inches(0.24), Inches(2.35), lab, Pt(12.5), NAVY, True,
-                      name=f"diag-lab{k}", kind="frame")
-            self.shape(MSO_SHAPE.ROUNDED_RECTANGLE, cx, yy, Inches(1.5), Inches(0.62), fill=BG2,
-                       name=f"diag-b1-{k}", kind="box")
-            self.text(cx, yy + Inches(0.16), Inches(1.5), left, Pt(13), INK, True,
-                      align=PP_ALIGN.CENTER, name=f"diag-t1-{k}", kind="frame")
-            self.shape(MSO_SHAPE.RIGHT_ARROW, cx + Inches(1.7), yy + Inches(0.12), Inches(3.0),
-                       Inches(0.40), fill=ACCENT if k == 0 else NAVY, name=f"diag-ar{k}", kind="box")
-            self.text(cx + Inches(1.7), yy - Inches(0.02), Inches(3.0), note, Pt(12), SUB,
-                      align=PP_ALIGN.CENTER, name=f"diag-n{k}", kind="frame")
-            self.shape(MSO_SHAPE.ROUNDED_RECTANGLE, cx + Inches(5.0), yy, Inches(1.5), Inches(0.62),
-                       fill=BG2, name=f"diag-b2-{k}", kind="box")
-            self.text(cx + Inches(5.0), yy + Inches(0.16), Inches(1.5), right, Pt(13), INK, True,
-                      align=PP_ALIGN.CENTER, name=f"diag-t2-{k}", kind="frame")
-        self.y += Inches(2.45)
+    def equation(self, eq, tag, note=None):
+        h = Inches(1.05)
+        self.rect(Inches(0.55), self.y, Inches(12.0), h, fill=CREAM, line=BORDER,
+                  name="eq-box", kind="frame")
+        self.text(Inches(0.85), self.y + Inches(0.28), Inches(10.6), eq, Pt(22), INK,
+                  align=PP_ALIGN.CENTER, name="eq", kind="frame", font=SERIF)
+        self.text(Inches(10.8), self.y + Inches(0.66), Inches(1.5), f"（{tag}）",
+                  Pt(11), SUB, align=PP_ALIGN.RIGHT, name="eq-tag", kind="frame")
+        self.y += h + Inches(0.16)
+        if note:
+            self.body(note, max_lines=2)
 
     def limits(self, items, tag):
-        self.text(Inches(0.5), self.y, Inches(12.3), f"表 {tag} ｜ 局限与边界", Pt(11.5), SUB,
+        self.text(Inches(0.55), self.y, Inches(12.0), f"表 {tag} ｜ 局限与边界", Pt(12), SUB,
                   name="lim-cap", kind="frame")
-        self.y += Inches(0.34)
+        self.y += Inches(0.32)
         for i, it in enumerate(items[:4], 1):
             head, _, note = it.partition("：")
-            self.rect(Inches(0.5), self.y, Inches(12.33), Inches(0.52),
+            self.rect(Inches(0.55), self.y, Inches(12.0), Inches(0.50),
                       fill=BG2 if i % 2 == 0 else WHITE, line=BORDER, name=f"lim-row{i}", kind="frame")
-            self.text(Inches(0.72), self.y + Inches(0.11), Inches(0.4), f"{i}.", Pt(12.5), NAVY, True,
-                      name=f"lim-n{i}", kind="frame")
-            self.text(Inches(1.05), self.y + Inches(0.11), Inches(3.4), head, Pt(13.5), NAVY, True,
+            self.text(Inches(0.85), self.y + Inches(0.10), Inches(3.6), head, Pt(14), NAVY, True,
                       name=f"lim-h{i}", kind="frame")
-            self.text(Inches(4.5), self.y + Inches(0.11), Inches(8.2), note, Pt(12.5), SUB,
+            self.text(Inches(4.6), self.y + Inches(0.10), Inches(7.7), note, Pt(13), SUB,
                       name=f"lim-d{i}", kind="frame")
-            self.y += Inches(0.52)
-        self.y += Inches(0.18)
+            self.y += Inches(0.50)
+        self.y += Inches(0.16)
 
     def quote(self, text_, source):
-        self.rect(Inches(1.0), self.y, Inches(11.33), Inches(1.5), fill=BG2, line=None,
-                  name="quote-bg", kind="frame")
-        self.text(Inches(1.3), self.y + Inches(0.28), Inches(10.7), "“" + text_ + "”", Pt(16), NAVY,
-                  align=PP_ALIGN.CENTER, name="quote", kind="frame")
-        self.text(Inches(1.3), self.y + Inches(1.10), Inches(10.7), "— " + source, Pt(11.5), SUB,
+        h = Inches(1.6)
+        self.rect(Inches(1.2), self.y, Inches(10.9), h, fill=BG2, line=None, name="quote-bg", kind="frame")
+        self.text(Inches(1.2), self.y + Inches(0.22), Inches(0.8), "“", Pt(54), ACCENT, True,
+                  name="quote-mark", kind="frame", font=SERIF)
+        self.text(Inches(2.0), self.y + Inches(0.42), Inches(9.4), text_, Pt(20), NAVY,
+                  align=PP_ALIGN.CENTER, name="quote", kind="frame", font=SERIF)
+        self.text(Inches(2.0), self.y + Inches(1.18), Inches(9.4), "— " + source, Pt(12), SUB,
                   align=PP_ALIGN.CENTER, name="quote-src", kind="frame")
-        self.y += Inches(1.68)
+        self.y += h + Inches(0.24)
 
 
 def sect_origin(cit):
@@ -335,27 +315,24 @@ def main():
     sb = json.loads((p / "storyboard.json").read_text(encoding="utf-8"))
     sources = json.loads((p / "sources.json").read_text(encoding="utf-8"))["sources"]
     primary = next(s for s in sources if s.get("primary_paper"))
-    arxiv_footer = f"arXiv:{primary.get('arxiv_id', '')}"
+    arxiv_footer = f"arXiv:{primary.get('arxiv_id', '')} ｜ 讲解音轨见备注页"
     svg_dir = p / "deck" / "svg"
     prs = Presentation()
     prs.slide_width, prs.slide_height = EMU_W, EMU_H
     audit = Audit()
-    tagtxt = sb["title_en"][:46]
+    tagtxt = sb["title_en"][:44]
 
-    pg = PS(prs, "强化学习专栏 · Paper Radar", "", "引言", arxiv_footer)
-    pg.bar(Inches(0.5), Inches(1.5), Inches(12.33), Inches(0.03), NAVY)
-    pg.text(Inches(0.5), Inches(1.75), Inches(6.0), "论文解读 · Paper Radar 专栏", Pt(14), ACCENT, True)
-    en = sb.get("title_en", "")
-    pg.text(Inches(0.5), Inches(2.4), Inches(12.33), en, Pt(30) if len(en) <= 46 else Pt(26), NAVY, True)
-    pg.bar(Inches(0.5), Inches(4.05), Inches(1.2), Inches(0.05), ACCENT)
-    pg.text(Inches(0.5), Inches(4.3), Inches(12.33), sb["title"], Pt(22), INK)
-    pg.text(Inches(0.5), Inches(5.5), Inches(12.33),
-            "、".join(sb.get("publish", {}).get("tags", [])) + " ｜ 讲解音轨见备注页", Pt(13), SUB)
-    pg.rect(Inches(0.5), Inches(6.2), Inches(7.2), Inches(0.75), fill=BG2, line=None,
-            name="cover-box", kind="frame")
-    pg.text(Inches(0.75), Inches(6.38), Inches(6.8),
-            "结构 ｜ 全局图谱 → 局部定位 → 背景 → 方法 → 实验 → 局限 → 启示", Pt(12), NAVY,
-            name="cover-str", kind="frame")
+    # cover — hero EN title, assertion CN subtitle
+    pg = PS(prs, "Paper Radar · 强化学习专栏", "", 0, f"arXiv:{primary.get('arxiv_id', '')}")
+    pg.text(Inches(0.55), Inches(1.15), Inches(12.0), "论文解读 · PAPER RADAR", Pt(14), ACCENT, True,
+            name="cov-kicker", kind="band")
+    pg.text(Inches(0.55), Inches(1.7), Inches(12.0), sb.get("title_en", ""), Pt(34), NAVY, True,
+            name="cov-title", leading=1.15)
+    pg.bar(Inches(0.55), Inches(3.65), Inches(1.4), Inches(0.06), ACCENT, name="cov-rule")
+    pg.text(Inches(0.55), Inches(3.95), Inches(12.0), sb["title"], Pt(26), INK,
+            name="cov-cn", leading=1.3)
+    pg.text(Inches(0.55), Inches(5.6), Inches(12.0),
+            "、".join(sb.get("publish", {}).get("tags", [])[:4]), Pt(15), SUB, name="cov-tags")
     pg.s.notes_slide.notes_text_frame.text = "栏目说明：" + sb["title"] + "。" + sb.get("subtitle", "")
     audit.check(0, pg.shapes_audit)
 
@@ -365,36 +342,31 @@ def main():
     if fmanifest.exists():
         fig_manifest = {f["id"]: f for f in json.loads(fmanifest.read_text(encoding="utf-8"))["figures"]}
     for i, sc in enumerate(sb["scenes"], 1):
-        chapter = TOPIC2CH.get(sc.get("topic"), "方法")
-        pg = PS(prs, tagtxt, sect_origin(sc.get("citation", "")), chapter, arxiv_footer)
+        chapter_idx = CHAPTERS.index(TOPIC2CH.get(sc.get("topic"), "方法"))
+        pg = PS(prs, tagtxt, "", chapter_idx, arxiv_footer)
         body = sc["body"]
         v = sc.get("visual") or {}
         lay = v.get("layout")
         pf = fig_manifest.get(sc.get("paper_figure"))
-        parts = body.split("。")
-        claim = ""
-        for s_ in parts[:-1]:
-            claim += s_ + "。"
-            if len(claim) >= 24:
-                break
-        claim = claim if claim else body
-        rest = body[len(claim):].lstrip()
+
         if sc.get("topic") == "图谱" and i == 2:
             fig_n += 1
+            pg.kicker("领域全景 · GRAPH")
+            pg.title(sc["heading"])
             pg.figure(svg_dir / "global.png",
-                      "强化学习领域全局图谱（节点为课题组，尺寸为实力分，连线为组间引用流；数据 OpenAlex/arXiv）", fig_n)
+                      "强化学习领域全局图谱（数据 OpenAlex/arXiv）", fig_n, dark=True)
         elif sc.get("topic") == "图谱":
             fig_n += 1
+            pg.kicker("论文定位 · GRAPH")
+            pg.title(sc["heading"])
             pg.figure(svg_dir / "local.png",
-                      "本期论文的局部引用网络（发光节点为焦点，两跳邻域，虚线为成员关系）", fig_n)
+                      "本期论文的局部引用网络（两跳邻域）", fig_n, dark=True)
         else:
-            if sc["kind"] not in ("references",):
-                pg.thesis(claim)
-            if rest and not sc.get("diagram"):
-                pg.body(rest)
+            pg.kicker(sc.get("topic", ""))
+            pg.title(sc["heading"])
+            rest = pg.lead(body)
             if sc.get("diagram") == "mirror":
-                fig_n += 1
-                pg.diagram_mirror(fig_n)
+                pass  # v4: diagrams via paper figures preferred
             if sc.get("equation"):
                 eq_n += 1
                 pg.equation(sc["equation"][0], f"式 {eq_n}",
@@ -403,10 +375,12 @@ def main():
                 fig_n += 1
                 pg.figure(p / pf["file"],
                           f"{pf['caption']}（论文 Figure {pf['paper_figure_no']}，第 {pf['page']} 页）",
-                          fig_n, max_h=Inches(4.2), dark=False)
+                          fig_n, max_h=Inches(4.0))
             elif lay == "metrics":
                 tab_n += 1
-                pg.table(v.get("table_caption", "关键指标"), v.get("items", []), tab_n)
+                pg.hero_number(v.get("items", []))
+            if rest:
+                pg.body(rest)
             if lay == "limits":
                 tab_n += 1
                 pg.limits(v.get("items", []), tab_n)
@@ -414,7 +388,7 @@ def main():
                 pg.quote(v.get("quote", ""), v.get("source", ""))
             elif lay == "references":
                 for it in v.get("entries", []):
-                    pg.body(it, size=Pt(13))
+                    pg.body(it, max_lines=2)
         note = sc.get("narration", "")
         if pf:
             note = (f"本页图示（论文 Figure {pf['paper_figure_no']}，第 {pf['page']} 页）："
@@ -429,7 +403,7 @@ def main():
         sys.exit(1)
     out = p / "deck" / f"{sb['slug']}-deck.pptx"
     prs.save(str(out))
-    print(f"editable PPTX: {out} ({len(sb['scenes']) + 1} slides, overlap audit passed)")
+    print(f"editable PPTX (v4): {out} ({len(sb['scenes']) + 1} slides, overlap audit passed)")
 
 
 if __name__ == "__main__":

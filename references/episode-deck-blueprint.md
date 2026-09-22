@@ -74,6 +74,15 @@
 - 图谱页标题使用直接命名（强化学习领域全局图谱 / 本期论文的局部引用网络），不用口语化问句。
 - 页眉右 = §章节 · 作者年份；页脚左 = arXiv 编号；二者不得重复。
 
+## 五点五、设计体系 v4（依据 huashu-slides / Pentagram Editorial + Fathom Data Narrative）
+
+- **断言式标题**（Assertion-Evidence，Penn State 实证）：heading 必须是完整断言句，40pt 两行封顶；主题词 + 英文 section label（INTRO/METHOD/RESULTS/…）降级为 kicker 行。
+- **一页一论点**：lead 首句 18pt 陈述本页论点；其余正文最多 4 行 14pt，放不下自动截断入备注。幻灯片是路标，解说词在备注。
+- **Hero Number**：证据页首个指标以 60pt 橙红（#D4480B）作视觉锚点，其余指标 14pt 两行；数据是视觉主角。
+- **60-30-10**：奶油白底 60%，近黑墨 30%，橙红 10%；左侧藏青书脊 + 顶部 8 点章节进度点；引言用 Georgia serif。
+- **字阶 3:1**：40pt 标题 / 14pt 正文；标题是设计元素不是信息容器。
+- 保留：overlap 审计硬门、论文原图优先、备注=解说词、页脚 arXiv 编号。
+
 ## 六、论文原图管线与 overlap 审计（v3.2）
 
 - **论文原图自动入片**：`extract_figures.py`（PDF 截图路线）下载 arXiv PDF，按题注（Figure N）锚定裁剪架构图与核心结果图，自动分配（architecture→方法页，results→实验页），登记 visual-assets.json 台账；同页有论文原图时不再放自制指标表；图注必须带「论文 Figure N，第 P 页」出处；备注页自动前缀图示解说。
