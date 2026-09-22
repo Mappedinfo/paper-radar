@@ -18,6 +18,7 @@ Key changes from v3.2 (informed by huashu-slides + design-principles):
 import argparse
 import json
 import pathlib
+import re
 import sys
 from functools import lru_cache
 
@@ -50,24 +51,47 @@ def _font(pt, bold):
     return ImageFont.truetype(FONTS["bold" if bold else "regular"], int(round(pt * PX_PER_IN / 72)))
 
 
+# SAFETY < 1.0: PIL and PowerPoint metrics differ slightly; measure conservatively
+# so PowerPoint never re-wraps a line we already fit (which produced orphan breaks).
+SAFETY = 0.97
+_ASCII_WORD = re.compile(r"[A-Za-z0-9][A-Za-z0-9'.+/&_-]*")
+
+
+def _tokens(paragraph):
+    """Latin words stay whole tokens; every CJK char is its own token; spaces pass through."""
+    toks = []
+    i = 0
+    while i < len(paragraph):
+        m = _ASCII_WORD.match(paragraph, i)
+        if m:
+            toks.append(m.group(0))
+            i = m.end()
+        else:
+            toks.append(paragraph[i])
+            i += 1
+    return toks
+
+
 def measure_lines(text, pt, width_in, bold=False):
     f = _font(pt, bold)
-    max_px = width_in * PX_PER_IN
+    max_px = width_in * PX_PER_IN * SAFETY
     out = []
     for para in str(text).split("\n"):
         if not para:
             out.append("")
             continue
         cur = ""
-        for ch in para:
-            trial = cur + ch
+        for tok in _tokens(para):
+            if tok == " " and not cur:
+                continue
+            trial = cur + tok
             if f.getlength(trial) <= max_px or not cur:
                 cur = trial
             else:
-                out.append(cur)
-                cur = ch
-        out.append(cur)
-    return out
+                out.append(cur.rstrip())
+                cur = tok.lstrip() if tok == " " else tok
+        out.append(cur.rstrip())
+    return [ln for ln in out]
 
 
 def text_h(lines, pt, leading=1.32):
@@ -162,6 +186,7 @@ class PS:
         tf.word_wrap = True
         tf.vertical_anchor = anchor
         tf.margin_top = tf.margin_bottom = 0
+        tf.margin_left = tf.margin_right = 0
         for i, ln in enumerate(lines):
             p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
             p.alignment = align
@@ -185,41 +210,59 @@ class PS:
         self.y += Inches(0.34)
 
     def title(self, heading):
-        """Assertion title: up to 2 lines at 40pt (F-pattern anchor)."""
-        lines = measure_lines(heading, 40, 12.0, bold=True)
-        lines = lines[:2]
-        h = self.text(Inches(0.55), self.y, Inches(12.0), heading, Pt(40), NAVY, True,
-                      name="title", leading=1.15)
-        self.y += h + Inches(0.18)
+        """Assertion title: up to 2 lines at 34pt (F-pattern anchor)."""
+        h = self.text(Inches(0.55), self.y, Inches(12.2), heading, Pt(34), NAVY, True,
+                      name="title", leading=1.18)
+        self.y += h + Inches(0.16)
         self.bar(Inches(0.55), self.y, Inches(0.9), Inches(0.05), ACCENT, name="rule")
-        self.y += Inches(0.30)
+        self.y += Inches(0.28)
 
     def lead(self, body):
-        """One idea per slide: first sentence as the lead statement (18pt)."""
+        """Lead statement: first sentence at 18pt dark ink."""
         parts = body.split("。")
         lead = parts[0] + "。" if len(parts) > 1 else body
         rest = "".join(parts[1:]).lstrip()
         lines = measure_lines(lead, 18, 11.9)
         lines = lines[:3]
         h = self.text(Inches(0.55), self.y, Inches(11.9), lead, Pt(18), INK,
-                      name="lead", leading=1.4)
-        self.y += h + Inches(0.22)
+                      name="lead", leading=1.38)
+        self.y += h + Inches(0.20)
         return rest
 
-    def body(self, text, max_lines=4):
+    def body(self, text, max_lines=99):
+        """Detail paragraph: 16pt ink, fills remaining space (no aggressive cap)."""
         if not text:
             return
-        if self.y > Inches(6.60):  # no room left — content lives in notes
+        if self.y > Inches(6.70):  # truly no room — content lives in notes
             return
-        lines = measure_lines(text, 14, 12.0)
-        room = int((Inches(6.95) - self.y) / Inches(0.283))
+        lines = measure_lines(text, 16, 12.2)
+        room = int((Inches(6.95) - self.y) / Inches(0.311))
         keep = max(1, min(max_lines, room))
         shown = "\n".join(lines[:keep])
         if len(lines) > keep:
             shown += " …"
-        h = self.text(Inches(0.55), self.y, Inches(12.0), shown, Pt(14), SUB,
-                      name="body", leading=1.45)
-        self.y += h + Inches(0.14)
+        h = self.text(Inches(0.55), self.y, Inches(12.2), shown, Pt(16), INK,
+                      name="body", leading=1.40)
+        self.y += h + Inches(0.12)
+
+    def context_block(self, ctx):
+        """Reading aid under the argument: setup + implication from storyboard context."""
+        if isinstance(ctx, str):
+            rows = [ctx.strip()] if ctx.strip() else []
+        else:
+            rows = [str(ctx.get(k, "")).strip() for k in ("setup", "implication")]
+            rows = [r for r in rows if r]
+        if not rows or self.y > Inches(6.70):
+            return
+        self.rect(Inches(0.55), self.y, Inches(0.5), 9144, fill=ACCENT,
+                  name="ctx-rule", kind="line")
+        self.y += Inches(0.14)
+        for r in rows:
+            if self.y > Inches(6.70):
+                break
+            h = self.text(Inches(0.55), self.y, Inches(12.2), r, Pt(15), SUB,
+                          name="ctx", leading=1.36)
+            self.y += h + Inches(0.08)
 
     def hero_number(self, items):
         """Fathom data anchor: first metric at 60pt, rest as small labels."""
@@ -230,19 +273,19 @@ class PS:
         self.text(Inches(0.55), self.y, Inches(12.0), str(first.get("value", "")), Pt(60), ACCENT, True,
                   name="hero-num", leading=1.0)
         self.y += h
-        self.text(Inches(0.55), self.y, Inches(11.0), str(first.get("label", "")), Pt(15), INK,
+        self.text(Inches(0.55), self.y, Inches(11.0), str(first.get("label", "")), Pt(16), INK,
                   name="hero-lab")
         self.y += Inches(0.55)
         for it in items[1:3]:
-            self.text(Inches(0.55), self.y, Inches(5.6),
-                      f"{it.get('value','')}  —  {it.get('label','')}", Pt(14), SUB,
+            self.text(Inches(0.55), self.y, Inches(5.9),
+                      f"{it.get('value','')}  —  {it.get('label','')}", Pt(15), SUB,
                       name=f"sub-metric")
-            self.y += Inches(0.36)
+            self.y += Inches(0.38)
 
     def figure(self, png, caption, tag, max_h=None, dark=False):
-        self.text(Inches(0.55), self.y, Inches(12.0), f"图 {tag} ｜ {caption}", Pt(12), SUB,
-                  name="fig-cap", kind="frame")
-        self.y += Inches(0.32)
+        cap_h = self.text(Inches(0.55), self.y, Inches(12.2), f"图 {tag} ｜ {caption}", Pt(12), SUB,
+                          name="fig-cap", kind="text")
+        self.y += cap_h + Inches(0.10)
         budget = max_h if max_h is not None else Inches(4.6)
         pic_h = min(Inches(6.88) - self.y, budget)
         from PIL import Image
@@ -281,9 +324,9 @@ class PS:
             head, _, note = it.partition("：")
             self.rect(Inches(0.55), self.y, Inches(12.0), Inches(0.50),
                       fill=BG2 if i % 2 == 0 else WHITE, line=BORDER, name=f"lim-row{i}", kind="frame")
-            self.text(Inches(0.85), self.y + Inches(0.10), Inches(3.6), head, Pt(14), NAVY, True,
+            self.text(Inches(0.85), self.y + Inches(0.09), Inches(3.6), head, Pt(15), NAVY, True,
                       name=f"lim-h{i}", kind="frame")
-            self.text(Inches(4.6), self.y + Inches(0.10), Inches(7.7), note, Pt(13), SUB,
+            self.text(Inches(4.6), self.y + Inches(0.09), Inches(7.7), note, Pt(14), SUB,
                       name=f"lim-d{i}", kind="frame")
             self.y += Inches(0.50)
         self.y += Inches(0.16)
@@ -320,7 +363,17 @@ def main():
     prs = Presentation()
     prs.slide_width, prs.slide_height = EMU_W, EMU_H
     audit = Audit()
-    tagtxt = sb["title_en"][:44]
+    def _short_en(t, limit=44):
+        words = t.split()
+        out = ""
+        for w_ in words:
+            trial = (out + " " + w_).strip()
+            if len(trial) <= limit:
+                out = trial
+            else:
+                break
+        return out + ("…" if out != t else "")
+    tagtxt = _short_en(sb["title_en"])
 
     # cover — hero EN title, assertion CN subtitle
     pg = PS(prs, "Paper Radar · 强化学习专栏", "", 0, f"arXiv:{primary.get('arxiv_id', '')}")
@@ -381,6 +434,8 @@ def main():
                 pg.hero_number(v.get("items", []))
             if rest:
                 pg.body(rest)
+            if sc.get("context"):
+                pg.context_block(sc["context"])
             if lay == "limits":
                 tab_n += 1
                 pg.limits(v.get("items", []), tab_n)
@@ -388,7 +443,7 @@ def main():
                 pg.quote(v.get("quote", ""), v.get("source", ""))
             elif lay == "references":
                 for it in v.get("entries", []):
-                    pg.body(it, max_lines=2)
+                    pg.body(it, max_lines=3)
         note = sc.get("narration", "")
         if pf:
             note = (f"本页图示（论文 Figure {pf['paper_figure_no']}，第 {pf['page']} 页）："

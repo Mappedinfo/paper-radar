@@ -120,6 +120,11 @@ def extract(project, arxiv_id):
             path = outdir / f"{fid}.png"
             pix.save(path)
             cap_clean = re.sub(r"\s+", " ", cap).strip()
+            # PDF line-break hyphenation artifact: "in- teraction" -> "interaction"
+            cap_clean = re.sub(r"([A-Za-z])-\s+([a-z])", r"\1\2", cap_clean)
+            if len(cap_clean) > 200:  # truncate on a word boundary, never mid-word
+                cut = cap_clean[:200].rsplit(" ", 1)[0]
+                cap_clean = cut.rstrip(" ,;") + " …"
             ftype = "results" if RES_KW.search(cap_clean) else (
                 "architecture" if ARCH_KW.search(cap_clean) else "other")
             figures.append({"id": fid, "paper_figure_no": fno, "page": pno,

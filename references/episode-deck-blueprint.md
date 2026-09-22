@@ -48,12 +48,13 @@
 - **字体体系**：单一字族（YaHei），固定字阶 40/27/24/22/20/18，仅 regular/bold 两档字重，公式用 serif。
 - **不上片的字段**：`context.setup`（为什么是这一页）与 `context.implication`（这一页带来什么）是创作辅助信息，只保留在 storyboard 与解说稿中，不渲染上片。
 
-## 三、写作规则（每页 narration，进 TTS 前必须全过 `check:narration-prose`）
+## 三、写作规则（narration 与上片文字，进 TTS/构建前必须全过 `check:narration-prose`）
 
 1. 90-240 字，直接陈述句，读起来是口语。
-2. 硬禁令：全角/半角冒号、破折号、`不是…而是…` 类翻案句、`看似…其实…`、路标词（值得注意的是等）、黑话（赋能、对齐、沉淀、范式等）、比喻词域（赛道、引擎、地基等）。
+2. 硬禁令：全角/半角冒号、破折号、`不是…而是…` 类翻案句、`看似…其实…`、路标词（值得注意的是等）、黑话（赋能、对齐、沉淀、范式、闭环等）、比喻词域（赛道、引擎、地基等）。
 3. 数字三要件：对象、条件、分母先于百分比；图上口播的图谱数字必须与 `data/<channel>/graph.json` 一致。
 4. 中文数字写法（三百多轮）与阿拉伯数字（64.0%）可以混用，但同一页同类对象保持一致。
+5. **门覆盖上片文字（v4.3）**：门不只查 `narration`，还查每场景的 `heading`+`body`+`context.setup/implication`（slide text 检查项）——观众读到的每个字都过同一套禁令；黑话先漏进标题再上片的路径已封死。
 
 ## 四、字段到页面的映射
 
@@ -74,13 +75,17 @@
 - 图谱页标题使用直接命名（强化学习领域全局图谱 / 本期论文的局部引用网络），不用口语化问句。
 - 页眉右 = §章节 · 作者年份；页脚左 = arXiv 编号；二者不得重复。
 
-## 五点五、设计体系 v4（依据 huashu-slides / Pentagram Editorial + Fathom Data Narrative）
+## 五点五、设计体系 v4.3（依据 huashu-slides / Pentagram Editorial + Fathom Data Narrative）
 
-- **断言式标题**（Assertion-Evidence，Penn State 实证）：heading 必须是完整断言句，40pt 两行封顶；主题词 + 英文 section label（INTRO/METHOD/RESULTS/…）降级为 kicker 行。
-- **一页一论点**：lead 首句 18pt 陈述本页论点；其余正文最多 4 行 14pt，放不下自动截断入备注。幻灯片是路标，解说词在备注。
-- **Hero Number**：证据页首个指标以 60pt 橙红（#D4480B）作视觉锚点，其余指标 14pt 两行；数据是视觉主角。
+- **断言式标题**（Assertion-Evidence，Penn State 实证）：heading 必须是完整断言句，34pt 两行封顶；主题词 + 英文 section label（INTRO/METHOD/RESULTS/…）降级为 kicker 行。
+- **一页一论点，但不做饥饿排版**：lead 首句 18pt 陈述本页论点；正文 16pt 墨色（不是灰色辅助色）动态填充到页脚预留线上（约 y=6.95），放不下才截断入备注——**没有全局行数硬帽**，密度由空间决定。幻灯片承载内容，解说词在备注展开。
+- **context 阅读辅助行**：每页 body 之下渲染 storyboard 的 `context.setup` 与 `context.implication`（15pt 辅助色 + 0.5in 橙红短线分隔）——这两句写稿时已存在，v4.3 起上片，不再只存在于旁白。
+- **换行引擎（v4.3 修复）**：文本框左右边距必须归零（python-pptx 默认 0.1in 会让 PowerPoint 实际可用宽度比 PIL 测量少 0.2in，触发二次换行产生孤字断行）；`measure_lines` 用 0.97 安全系数保守测量，英文按 ASCII 词整体换行（`_ASCII_WORD`，不拦腰拆词）；构建后另做整行硬溢出校验（每行实宽 > 框宽即失败）。
+- **页眉英文标题按词截断**：`_short_en` 词边界 + 省略号，禁止字符数切片产生「Que」式半截词。
+- **Hero Number**：证据页首个指标以 60pt 橙红（#D4480B）作视觉锚点，其余指标 15pt 两行；数据是视觉主角。
 - **60-30-10**：奶油白底 60%，近黑墨 30%，橙红 10%；左侧藏青书脊 + 顶部 8 点章节进度点；引言用 Georgia serif。
-- **字阶 3:1**：40pt 标题 / 14pt 正文；标题是设计元素不是信息容器。
+- **字阶 2:1 骨架**：34pt 标题 / 18pt lead / 16pt 正文 / 15pt context 与 sub-metric / 12pt 图注；标题是断言，正文是论证，二者都是信息容器。
+- **图注卫生**：PDF 抽取的题注先去断词连字（`in- teraction`→`interaction`），超长截断走词边界 + 省略号；图注是审计对象（kind=text），与图片的重叠会被 overlap 门拦下；图注高度实测后推进 y（禁止固定 0.32in 猜测）。
 - 保留：overlap 审计硬门、论文原图优先、备注=解说词、页脚 arXiv 编号。
 
 ## 五点五五、报告纪律 v5.5（依据 huashu-report，论文精读按科普型报告执行）
