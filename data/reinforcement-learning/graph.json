@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-21T23:40:53",
+ "updated_at": "2026-09-22T08:03:13",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -10292,6 +10292,66 @@
    "id": "claim:lambda-controlled-grpo:6",
    "type": "claim",
    "label": "更新的两个尺度由标准策略选择固定，未引入新的自由调参；在文生图模型的两种奖励设置下，以光学字符识别评估困难目标文本的渲染，该方法以更少的训练步数超越先前基线。"
+  },
+  "claim:synthdemo-rl-vla-adaptation:1": {
+   "id": "claim:synthdemo-rl-vla-adaptation:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-22）：共 234 篇论文、1266 位作者。"
+  },
+  "claim:synthdemo-rl-vla-adaptation:2": {
+   "id": "claim:synthdemo-rl-vla-adaptation:2",
+   "type": "claim",
+   "label": "微调视觉-语言-动作模型通常依赖人类遥操作演示，而稀疏二元奖励的强化学习在成功轨迹极少被采样到时面临探索困难。"
+  },
+  "claim:synthdemo-rl-vla-adaptation:3": {
+   "id": "claim:synthdemo-rl-vla-adaptation:3",
+   "type": "claim",
+   "label": "SynthDemo-RL 是师生框架，自动化教师把模拟器特权状态转换为成功的操作轨迹，VLA 学生通过监督微调从中蒸馏，再由二元任务成功奖励的 PPO 精调。"
+  },
+  "claim:synthdemo-rl-vla-adaptation:4": {
+   "id": "claim:synthdemo-rl-vla-adaptation:4",
+   "type": "claim",
+   "label": "论文研究奖励覆盖率，即在固定评估协议下至少观察到一次成功的任务比例，作为平均成功率的补充指标。"
+  },
+  "claim:synthdemo-rl-vla-adaptation:5": {
+   "id": "claim:synthdemo-rl-vla-adaptation:5",
+   "type": "claim",
+   "label": "LIBERO-PRO 是一个扰动 LIBERO 任务公开基准，无演示存在；在原始 LIBERO 任务上微调的 pi0.5 策略在 57 个计分任务中有 27 个恰好 0% 成功。"
+  },
+  "claim:synthdemo-rl-vla-adaptation:6": {
+   "id": "claim:synthdemo-rl-vla-adaptation:6",
+   "type": "claim",
+   "label": "相同 PPO 配方与相同 RL 算力下，直接 PPO 从该策略出发仅救回 27 个任务中的 10 个，剩余 17 个仍为 0%；SynthDemo-RL 以每任务 50 条合成轨迹且零新增人类演示救回全部 27 个，在 LIBERO-PRO 的 Position 与 Task 轴分别达到 97.8% 与 97.1% 平均成功率。"
+  },
+  "claim:buffered-quantile-objectives:1": {
+   "id": "claim:buffered-quantile-objectives:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-22）：共 234 篇论文、1266 位作者。"
+  },
+  "claim:buffered-quantile-objectives:2": {
+   "id": "claim:buffered-quantile-objectives:2",
+   "type": "claim",
+   "label": "分位数强化学习通过优化累计回报分布的指定分位数，为风险敏感决策提供可解释途径，但点分位数目标学习困难，分位数在回报分布的小扰动下可能突变，且精确的分位数敏感规划需要计算量大的分布式优化。"
+  },
+  "claim:buffered-quantile-objectives:3": {
+   "id": "claim:buffered-quantile-objectives:3",
+   "type": "claim",
+   "label": "下缓冲分位数通过对目标水平以下相邻分位数取平均来缓解突变问题，提供更平滑的替代目标同时保留原点分位数目标；现有基于此原理的方法仍是基于模型的，依赖显式回报律规划，只适用于小规模表格问题。"
+  },
+  "claim:buffered-quantile-objectives:4": {
+   "id": "claim:buffered-quantile-objectives:4",
+   "type": "claim",
+   "label": "Deep-BQRL 是无模型的分布式强化学习框架，把缓冲分位数学习扩展到神经函数逼近，直接从采样转移学习条件回报分位数，从学到的分位数函数的相关区域构造缓冲行动分数，并用集成分歧引导探索。"
+  },
+  "claim:buffered-quantile-objectives:5": {
+   "id": "claim:buffered-quantile-objectives:5",
+   "type": "claim",
+   "label": "增强输入表示让学到的策略响应轨迹信息，无需显式重现精确规划所需的分位数状态递归。"
+  },
+  "claim:buffered-quantile-objectives:6": {
+   "id": "claim:buffered-quantile-objectives:6",
+   "type": "claim",
+   "label": "在资产出售最优停止问题与湿滑 FrozenLake 上与基于模型的 UCB-BQRL 及表格 PPO、TRPO 对照；资产出售中 Deep-BQRL 在报告目标水平的平均累计点分位数策略差距小于 PPO 与 TRPO，UCB-BQRL 保持最小差距。"
   }
  },
  "edges": [
@@ -19526,16 +19586,6 @@
    "rel": "member_of"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2609.22068",
    "t": "claim:codemidas-coding-rl-environments:1",
    "rel": "claims"
@@ -19593,6 +19643,236 @@
   {
    "s": "arxiv:2609.22041",
    "t": "claim:lambda-controlled-grpo:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.21650",
+   "t": "claim:synthdemo-rl-vla-adaptation:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21650",
+   "t": "claim:synthdemo-rl-vla-adaptation:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21650",
+   "t": "claim:synthdemo-rl-vla-adaptation:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21650",
+   "t": "claim:synthdemo-rl-vla-adaptation:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21650",
+   "t": "claim:synthdemo-rl-vla-adaptation:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21650",
+   "t": "claim:synthdemo-rl-vla-adaptation:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21327",
+   "t": "claim:buffered-quantile-objectives:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21327",
+   "t": "claim:buffered-quantile-objectives:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21327",
+   "t": "claim:buffered-quantile-objectives:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21327",
+   "t": "claim:buffered-quantile-objectives:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21327",
+   "t": "claim:buffered-quantile-objectives:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.21327",
+   "t": "claim:buffered-quantile-objectives:6",
    "rel": "claims"
   }
  ]

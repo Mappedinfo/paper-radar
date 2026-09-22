@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="soft"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1920" height="1080" fill="#0E1420"/>
+<text x="60" y="70" fill="#F2F6FA" font-family="Georgia, 'Songti SC', serif" font-size="34" font-weight="bold">Deep Reinforcement Learning with Buffered Quan</text>
+<text x="60" y="108" fill="#8FA0B3" font-family="Georgia, serif" font-size="19">局部视图 · 2 跳邻域 · 3 节点 · 高亮=当前讲述对象</text>
+<line x1="960.0" y1="160.0" x2="960.0" y2="540.0" stroke="#C99A3F" stroke-width="2.2" opacity="0.95"/>
+<text x="960.0" y="342.0" text-anchor="middle" fill="#E8C87A" font-family="Georgia, serif" font-size="15">著文</text>
+<line x1="960.0" y1="920.0" x2="960.0" y2="540.0" stroke="#C99A3F" stroke-width="2.2" opacity="0.95"/>
+<text x="960.0" y="722.0" text-anchor="middle" fill="#E8C87A" font-family="Georgia, serif" font-size="15">著文</text>
+<circle cx="960.0" cy="540.0" r="44.0" fill="#4AC6F5" stroke="#0B5470" stroke-width="2" opacity="1.0" filter="url(#glow)"/>
+<text x="960.0" y="608.0" text-anchor="middle" fill="#BFE9F8" font-family="Georgia, serif" font-size="17" opacity="1.0">Deep Reinforcement</text>
+<text x="960.0" y="629.0" text-anchor="middle" fill="#BFE9F8" font-family="Georgia, serif" font-size="17" opacity="1.0"> Learning with Bu…</text>
+<text x="960.0" y="486.0" text-anchor="middle" fill="#BFE9F8" font-family="Georgia, serif" font-size="16" opacity="1.0">被引 0</text>
+<circle cx="960.0" cy="160.0" r="20.0" fill="#B08CF2" stroke="#4A2E86" stroke-width="2" opacity="0.35"/>
+<text x="960.0" y="204.0" text-anchor="middle" fill="#DCD0FA" font-family="Georgia, serif" font-size="18" opacity="0.35">Mohammad Alip…</text>
+<circle cx="960.0" cy="920.0" r="20.0" fill="#B08CF2" stroke="#4A2E86" stroke-width="2" opacity="0.35"/>
+<text x="960.0" y="964.0" text-anchor="middle" fill="#DCD0FA" font-family="Georgia, serif" font-size="18" opacity="0.35">Sajad Khodada…</text>
+<circle cx="68" cy="864" r="8" fill="#F5B84A" stroke="#8A5A00"/>
+<text x="86" y="870" fill="#F5B84A" font-family="Georgia, serif" font-size="17">课题组</text>
+<circle cx="68" cy="898" r="8" fill="#B08CF2" stroke="#4A2E86"/>
+<text x="86" y="904" fill="#DCD0FA" font-family="Georgia, serif" font-size="17">作者</text>
+<circle cx="68" cy="932" r="8" fill="#4AC6F5" stroke="#0B5470"/>
+<text x="86" y="938" fill="#BFE9F8" font-family="Georgia, serif" font-size="17">论文</text>
+<circle cx="68" cy="966" r="8" fill="#F27E9D" stroke="#7E2743"/>
+<text x="86" y="972" fill="#F9CFDB" font-family="Georgia, serif" font-size="17">论点</text>
+<circle cx="68" cy="1000" r="8" fill="#7ED9A0" stroke="#1E6B42"/>
+<text x="86" y="1006" fill="#CDF0DC" font-family="Georgia, serif" font-size="17">论据</text>
+<text x="60" y="1052" fill="#6E8098" font-family="Georgia, serif" font-size="16">实线箭头=引用 · 虚线=成员关系 · 发光=高亮</text>
+</svg>

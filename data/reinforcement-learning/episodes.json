@@ -96,5 +96,19 @@
   "slug": "lambda-controlled-grpo",
   "bvid": "BV1Guh667EJY",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.21650",
+  "slug": "synthdemo-rl-vla-adaptation",
+  "bvid": "BV1bkhC6HEX3",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.21327",
+  "slug": "buffered-quantile-objectives",
+  "bvid": "BV1UkhC6HEmq",
+  "status": "uploaded"
  }
 ]
