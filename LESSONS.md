@@ -91,3 +91,10 @@
 - v4 首跑体感：断言标题 + hero number 在证据页效果显著；prose 门新拦截「不只是…也」「不是…而是」跨句变体（前者为「不只(?:是)?…还/也」正则命中但出现在无「还/也」收尾的句式，实际是误报边缘——本轮按规则改写规避）；图谱统计 claim 模板已固化进例程指令。
 - OpenAlex 连续第 5 天 503；arXiv API 429 一次后重试成功（重试机制生效）。
 - 单次上传防护连续第 5 天生效。
+
+## 2026-09-22 (v5 · 接入去AI味与稿件分发两个花叔 skill)
+- 创作者指定新增两个能力并升级 v5：①tramstop-skill（重装备，四层AI味模型+经验注入，已克隆 ~/.qoder/skills/tramstop-skill-repo）与内置 huashu-proofreading（轻量三遍审校）用于文章去AI味；②dukou（渡口，Chrome 插件+本地桥 127.0.0.1:8787，已克隆 ~/.qoder/skills/dukou-repo）用于稿件分发到 X Articles / B站专栏 / 公众号排版器。
+- tramstop 核心洞见进流程认知：AI味分四层（词汇<句式<结构<经验），词汇句式两层已被 human-writing prose 门覆盖，深度两层新增 scripts/deai_narration.py 做报告（结构层：导游路标/金句收束/回扣升华；经验层：两头堵/模糊量词/无专名无数字的可替换细节），排布按权重 experience≥structure；只报告不改稿，改写在 storyboard 完成后重跑 prose 门与报告直至清零。白熊隔离原则：诊断与改写分开，坏例清单不进成稿阶段。
+- dukou 集成点：例程第 4 步后新增（可选）——narration-script.md 轻改写为专栏文章后 `node dukou.js send <md> --dest bili --autofill`（B站专栏全自动）；`--dest x --autofill` 需用户点 Write；`--dest editor` 灌公众号排版器。填充后的发布/复制永远留给用户。Windows 下桥日志路径问题（脚本硬编码 /tmp）待上游修复，ping 前先 set TMP。
+- huashu-proofreading 定位为轻量备选：口播稿走 tramstop 深检（已是 prose 门超集），公众号长文用 proofreading 三遍法（内容→风格→节奏）足够。
+- v5 例程顺序：三门 → de-AI 报告清零 → （若分发）轻改写+dukou send。

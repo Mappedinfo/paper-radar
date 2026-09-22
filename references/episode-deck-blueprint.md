@@ -83,6 +83,13 @@
 - **字阶 3:1**：40pt 标题 / 14pt 正文；标题是设计元素不是信息容器。
 - 保留：overlap 审计硬门、论文原图优先、备注=解说词、页脚 arXiv 编号。
 
+## 五点六、去 AI 味与稿件分发（v5）
+
+- **去 AI 味（tramstop 四层模型）**：词汇层与句式层由既有 `check:narration-prose` 门覆盖（禁令清单即前两层清单）。结构层（导游路标、金句收束、回扣升华、过度对偶）与经验层（两头堵、模糊量词、可替换细节）由 `scripts/deai_narration.py` 报告，按 experience ≥ structure 权重排序；改写后重跑两门直至报告清零。诊断与改写分离（白熊隔离）。
+- **改写方向（tramstop 铁律）**：判断改成可押注的具体陈述；砍路标式开头；结尾停在思考停处；真实而奇怪的具体细节（「电车站」）即使对论点无用也保留；绝不编造作者经历。
+- **稿件分发（dukou 渡口）**：`node ~/.qoder/skills/dukou-repo/skill/dukou/scripts/dukou.js send <md> --dest bili --autofill`（B站专栏全自动填入）、`--dest x --autofill`（用户点 Write）、`--dest editor`（公众号排版器）。填充后发布动作永远留给用户。插件未装时引导安装，不阻塞视频主流程。
+- 轻量备选：公众号长文可用 huashu-proofreading 三遍法（内容→风格→节奏），口播稿一律走 tramstop 深检。
+
 ## 六、论文原图管线与 overlap 审计（v3.2）
 
 - **论文原图自动入片**：`extract_figures.py`（PDF 截图路线）下载 arXiv PDF，按题注（Figure N）锚定裁剪架构图与核心结果图，自动分配（architecture→方法页，results→实验页），登记 visual-assets.json 台账；同页有论文原图时不再放自制指标表；图注必须带「论文 Figure N，第 P 页」出处；备注页自动前缀图示解说。
