@@ -25,7 +25,8 @@ def find_chrome():
 
 def convert(chrome, svg, out, bg=None):
     url = svg.resolve().as_uri() + "?x=" + str(svg.stat().st_size)
-    out = out.with_suffix(".png")
+    # stem may itself contain dots (arxiv ids); with_suffix would eat them
+    out = out.parent / (out.name + ".png") if not out.name.endswith(".png") else out
     cmd = [chrome, "--headless", "--disable-gpu", "--no-sandbox",
            f"--screenshot={out}", "--window-size=1920,1080",
            "--hide-scrollbars", "--force-device-scale-factor=1"]

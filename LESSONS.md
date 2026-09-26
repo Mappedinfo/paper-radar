@@ -126,3 +126,11 @@
 - biliup tx 线路偶发 upos CDN 连接超时（os error 10060），换 --line bda2 一次成功；失败发生在传输阶段不会注册半截投稿，重试前 grep submissions 确认为 0 即安全。
 - svg2png 输出文件名会截断（local-arxiv-2609.24144.svg → local-arxiv-2609.png），同名前缀不同论文的 PNG 会互相覆盖——拷入项目前先 ls 确认目标 PNG 是刚渲染的。
 - plaindeck 布局诊断（lead 字号阈值）是密度信号灯：连续两期都在「首句过长」的场景触发，解法是把 lead 首句写短、细节后置，这同时让 v4.3 的 18pt lead 更有力。
+
+## 2026-09-26 (v4.4 白底体系 · 单日三期)
+- 站点默认白底（CSS 变量双主题 + 右上角切换 + localStorage，canvas 连线/标签/选中环随主题切换）；render_graph --bg light/dark（默认 light，标签连线自动换深色系）；svg2png --bg 透传；build_pptx 图谱页不再加深色框。白底图谱直接融入奶油白版面，目检确认标签可读、无深色块。
+- **svg2png 沉默截断 bug**：stem 含点（arXiv id）时 with_suffix('.png') 会把 '.24489' 当后缀吃掉，多张 local 图互相覆盖。修复为 parent/(name+'.png')。教训：文件名里带版本号/ID 的管线，别用 with_suffix。
+- 单日三期（BV1DvhD6gEZZ RLVR-核、BV1G4hD61EQq LBLP、BV1TBhD6ME8Q FP8），全 v4.3 管线+白底图谱。扩展 prose 门继续立功：拦下局限页标题里的全角冒号、三期旁白里的三处翻案句变体；溯源门拦下未入 claims 的 12.2 个百分点差值。
+- TTS 后台任务会用 0 字节日志静默死掉（无 python 进程、GPU 占用残留）——磁盘产物判定+进程数探测双保险，restart 后 scene checkpoint 断点续传有效。
+- `A && B &` 会把整条链后台化，compose 在会话回收时写坏 final.mp4（moov atom not found，7.8MB 假成品）。长命令链要么整体前台，要么分两次发。
+- 图谱刷到 282 篇/1520 作者；新选题照旧从 arXiv 近两周列表挑，OpenAlex 当日候选被社科期刊污染不可用。

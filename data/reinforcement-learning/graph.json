@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-22T12:39:14",
+ "updated_at": "2026-09-26T10:19:10",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -11799,6 +11799,771 @@
    "id": "claim:score-centering-offpolicy-rl:6",
    "type": "claim",
    "label": "玩具对照实验用 Qwen3-1.7B 在 Countdown 任务上训练并给采样器权重加受控扰动，离线训练只有非负奖励稳定，在线训练在有失配时组中心化奖励最稳、非负奖励最不稳，说明在线不稳定的机制来自全正奖励下的漂移反馈回路。"
+  },
+  "author:david lawrence silver": {
+   "id": "author:david lawrence silver",
+   "type": "author",
+   "label": "David Lawrence Silver",
+   "openalex": "https://openalex.org/A5091771290"
+  },
+  "author:alex m graves": {
+   "id": "author:alex m graves",
+   "type": "author",
+   "label": "Alex M Graves",
+   "openalex": "https://openalex.org/A5043473089"
+  },
+  "author:andreas k. fidjeland": {
+   "id": "author:andreas k. fidjeland",
+   "type": "author",
+   "label": "Andreas K. Fidjeland",
+   "openalex": "https://openalex.org/A5032865587"
+  },
+  "group:institut national de recherche en sciences et technologies du numérique": {
+   "id": "group:institut national de recherche en sciences et technologies du numérique",
+   "type": "group",
+   "label": "Institut national de recherche en sciences et technologies du numérique"
+  },
+  "author:christopher j. c. h. watkins": {
+   "id": "author:christopher j. c. h. watkins",
+   "type": "author",
+   "label": "Christopher J. C. H. Watkins",
+   "openalex": "https://openalex.org/A5109045866"
+  },
+  "author:john m. o'keefe": {
+   "id": "author:john m. o'keefe",
+   "type": "author",
+   "label": "John M. O'Keefe",
+   "openalex": "https://openalex.org/A5053583655"
+  },
+  "author:peter l. auer": {
+   "id": "author:peter l. auer",
+   "type": "author",
+   "label": "Peter L. Auer",
+   "openalex": "https://openalex.org/A5073954294"
+  },
+  "author:satinder pal singh": {
+   "id": "author:satinder pal singh",
+   "type": "author",
+   "label": "Satinder Pal Singh",
+   "openalex": "https://openalex.org/A5065366930"
+  },
+  "author:anil anthony bharath": {
+   "id": "author:anil anthony bharath",
+   "type": "author",
+   "label": "Anil Anthony Bharath",
+   "openalex": "https://openalex.org/A5027222571"
+  },
+  "author:yogesh kumar dwivedi": {
+   "id": "author:yogesh kumar dwivedi",
+   "type": "author",
+   "label": "Yogesh Kumar Dwivedi",
+   "openalex": "https://openalex.org/A5048622877"
+  },
+  "author:emma louise slade": {
+   "id": "author:emma louise slade",
+   "type": "author",
+   "label": "Emma Louise Slade",
+   "openalex": "https://openalex.org/A5081524121"
+  },
+  "author:abdullah mohammed baabdullah": {
+   "id": "author:abdullah mohammed baabdullah",
+   "type": "author",
+   "label": "Abdullah Mohammed Baabdullah",
+   "openalex": "https://openalex.org/A5017453435"
+  },
+  "author:alex a. koohang": {
+   "id": "author:alex a. koohang",
+   "type": "author",
+   "label": "Alex A. Koohang",
+   "openalex": "https://openalex.org/A5008571658"
+  },
+  "author:manju k. ahuja": {
+   "id": "author:manju k. ahuja",
+   "type": "author",
+   "label": "Manju K. Ahuja",
+   "openalex": "https://openalex.org/A5018408477"
+  },
+  "author:lemuria d. carter": {
+   "id": "author:lemuria d. carter",
+   "type": "author",
+   "label": "Lemuria D. Carter",
+   "openalex": "https://openalex.org/A5067377847"
+  },
+  "author:john steven edwards": {
+   "id": "author:john steven edwards",
+   "type": "author",
+   "label": "John Steven Edwards",
+   "openalex": "https://openalex.org/A5007695310"
+  },
+  "author:robin d. c. gauld": {
+   "id": "author:robin d. c. gauld",
+   "type": "author",
+   "label": "Robin D. C. Gauld",
+   "openalex": "https://openalex.org/A5065964282"
+  },
+  "author:iris a. junglas": {
+   "id": "author:iris a. junglas",
+   "type": "author",
+   "label": "Iris A. Junglas",
+   "openalex": "https://openalex.org/A5001364826"
+  },
+  "author:kai r. t. larsen": {
+   "id": "author:kai r. t. larsen",
+   "type": "author",
+   "label": "Kai R. T. Larsen",
+   "openalex": "https://openalex.org/A5075496480"
+  },
+  "author:siobhan m. o'connor": {
+   "id": "author:siobhan m. o'connor",
+   "type": "author",
+   "label": "Siobhan M. O'Connor",
+   "openalex": "https://openalex.org/A5067043429"
+  },
+  "author:fevzi okumuş": {
+   "id": "author:fevzi okumuş",
+   "type": "author",
+   "label": "Fevzi Okumuş",
+   "openalex": "https://openalex.org/A5049773475"
+  },
+  "author:nripendra pratap rana": {
+   "id": "author:nripendra pratap rana",
+   "type": "author",
+   "label": "Nripendra Pratap Rana",
+   "openalex": "https://openalex.org/A5034248834"
+  },
+  "group:humans and management in society": {
+   "id": "group:humans and management in society",
+   "type": "group",
+   "label": "Humans and management in society"
+  },
+  "author:samuel ribeiro navarrete": {
+   "id": "author:samuel ribeiro navarrete",
+   "type": "author",
+   "label": "Samuel Ribeiro Navarrete",
+   "openalex": "https://openalex.org/A5006215958"
+  },
+  "author:manoj kumar tiwari": {
+   "id": "author:manoj kumar tiwari",
+   "type": "author",
+   "label": "Manoj Kumar Tiwari",
+   "openalex": "https://openalex.org/A5101785022"
+  },
+  "author:wil m. p. van der aalst": {
+   "id": "author:wil m. p. van der aalst",
+   "type": "author",
+   "label": "Wil M. P. van der Aalst",
+   "openalex": "https://openalex.org/A5149070535"
+  },
+  "author:michael r. wade": {
+   "id": "author:michael r. wade",
+   "type": "author",
+   "label": "Michael R. Wade",
+   "openalex": "https://openalex.org/A5008575290"
+  },
+  "author:ryan t. wright": {
+   "id": "author:ryan t. wright",
+   "type": "author",
+   "label": "Ryan T. Wright",
+   "openalex": "https://openalex.org/A5060691228"
+  },
+  "author:michael g. h. coles": {
+   "id": "author:michael g. h. coles",
+   "type": "author",
+   "label": "MICHAEL G. H. COLES",
+   "openalex": "https://openalex.org/A5109219775"
+  },
+  "author:quoc viet le": {
+   "id": "author:quoc viet le",
+   "type": "author",
+   "label": "Quoc Viet Le",
+   "openalex": "https://openalex.org/A5088551093"
+  },
+  "author:brian d knutson": {
+   "id": "author:brian d knutson",
+   "type": "author",
+   "label": "Brian D Knutson",
+   "openalex": "https://openalex.org/A5052014576"
+  },
+  "author:ningbing yu": {
+   "id": "author:ningbing yu",
+   "type": "author",
+   "label": "Ningbing Yu",
+   "openalex": "https://openalex.org/A5017547515"
+  },
+  "doi:10.1007/978-3-032-38236-8_49": {
+   "id": "doi:10.1007/978-3-032-38236-8_49",
+   "type": "paper",
+   "label": "SutureFormer: Learning Surgical Trajectories via Goal-Conditioned Offline RL in Pixel Space",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-38236-8_49",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7147069775"
+  },
+  "venue:lecture notes in computer science": {
+   "id": "venue:lecture notes in computer science",
+   "type": "venue",
+   "label": "Lecture notes in computer science"
+  },
+  "author:huanrong liu": {
+   "id": "author:huanrong liu",
+   "type": "author",
+   "label": "Huanrong Liu",
+   "openalex": "https://openalex.org/A5132699745"
+  },
+  "author:chunlin tian": {
+   "id": "author:chunlin tian",
+   "type": "author",
+   "label": "Chunlin Tian",
+   "openalex": "https://openalex.org/A5132580308"
+  },
+  "author:tongyu jia": {
+   "id": "author:tongyu jia",
+   "type": "author",
+   "label": "Tongyu Jia",
+   "openalex": "https://openalex.org/A5102566892"
+  },
+  "author:tailai zhou": {
+   "id": "author:tailai zhou",
+   "type": "author",
+   "label": "Tailai Zhou",
+   "openalex": "https://openalex.org/A5132638835"
+  },
+  "author:qin liu": {
+   "id": "author:qin liu",
+   "type": "author",
+   "label": "Qin Liu",
+   "openalex": "https://openalex.org/A5100432512"
+  },
+  "author:yu gao": {
+   "id": "author:yu gao",
+   "type": "author",
+   "label": "Yu Gao",
+   "openalex": "https://openalex.org/A5132567980"
+  },
+  "author:yutong ban": {
+   "id": "author:yutong ban",
+   "type": "author",
+   "label": "Yutong Ban",
+   "openalex": "https://openalex.org/A5011762462"
+  },
+  "author:yun gu": {
+   "id": "author:yun gu",
+   "type": "author",
+   "label": "Yun Gu",
+   "openalex": "https://openalex.org/A5132654516"
+  },
+  "author:guy rosman": {
+   "id": "author:guy rosman",
+   "type": "author",
+   "label": "Guy Rosman",
+   "openalex": "https://openalex.org/A5000400312"
+  },
+  "author:xin ma": {
+   "id": "author:xin ma",
+   "type": "author",
+   "label": "Xin Ma",
+   "openalex": "https://openalex.org/A5132679697"
+  },
+  "author:qingbiao li": {
+   "id": "author:qingbiao li",
+   "type": "author",
+   "label": "Qingbiao Li",
+   "openalex": "https://openalex.org/A5132670035"
+  },
+  "doi:10.1007/978-3-032-38082-1_32": {
+   "id": "doi:10.1007/978-3-032-38082-1_32",
+   "type": "paper",
+   "label": "MedVol-R1: Reward-Driven Evidence Grounding for Volumetric Reasoning Segmentation",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-38082-1_32",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7162528700"
+  },
+  "author:zichun wang": {
+   "id": "author:zichun wang",
+   "type": "author",
+   "label": "Zichun Wang",
+   "openalex": "https://openalex.org/A5137136664"
+  },
+  "group:beihang university": {
+   "id": "group:beihang university",
+   "type": "group",
+   "label": "Beihang University"
+  },
+  "author:hairong shi": {
+   "id": "author:hairong shi",
+   "type": "author",
+   "label": "Hairong Shi",
+   "openalex": "https://openalex.org/A5100859438"
+  },
+  "group:keio university": {
+   "id": "group:keio university",
+   "type": "group",
+   "label": "Keio University"
+  },
+  "author:bingzheng wei": {
+   "id": "author:bingzheng wei",
+   "type": "author",
+   "label": "Bingzheng Wei",
+   "openalex": "https://openalex.org/A5033792432"
+  },
+  "group:bytedance (china)": {
+   "id": "group:bytedance (china)",
+   "type": "group",
+   "label": "ByteDance (China)"
+  },
+  "author:xu yan": {
+   "id": "author:xu yan",
+   "type": "author",
+   "label": "Xu Yan",
+   "openalex": "https://openalex.org/A5139942562"
+  },
+  "author:zihua wang": {
+   "id": "author:zihua wang",
+   "type": "author",
+   "label": "Zihua Wang",
+   "openalex": "https://openalex.org/A5152661397"
+  },
+  "doi:10.1007/978-3-032-39395-1_1": {
+   "id": "doi:10.1007/978-3-032-39395-1_1",
+   "type": "paper",
+   "label": "Contract-Based Compositional Shielding for Safe Multi-agent Reinforcement Learning",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-39395-1_1",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7164857603"
+  },
+  "author:omar adalat": {
+   "id": "author:omar adalat",
+   "type": "author",
+   "label": "Omar Adalat",
+   "openalex": "https://openalex.org/A5120505981"
+  },
+  "group:imperial college london": {
+   "id": "group:imperial college london",
+   "type": "group",
+   "label": "Imperial College London"
+  },
+  "author:edwin hamel-de le court": {
+   "id": "author:edwin hamel-de le court",
+   "type": "author",
+   "label": "Edwin Hamel-De le Court",
+   "openalex": "https://openalex.org/A5117106200"
+  },
+  "author:francesco belardinelli": {
+   "id": "author:francesco belardinelli",
+   "type": "author",
+   "label": "Francesco Belardinelli",
+   "openalex": "https://openalex.org/A5055883955"
+  },
+  "doi:10.1007/978-3-032-38082-1_44": {
+   "id": "doi:10.1007/978-3-032-38082-1_44",
+   "type": "paper",
+   "label": "RADIANT-PET: Reasoning-Augmented PET/CT Lesion Segmentation with Large Language Models and Reinforcement Learning",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-38082-1_44",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7166734170"
+  },
+  "author:jiasheng wang": {
+   "id": "author:jiasheng wang",
+   "type": "author",
+   "label": "Jiasheng Wang",
+   "openalex": "https://openalex.org/A5139656520"
+  },
+  "group:the ohio state university": {
+   "id": "group:the ohio state university",
+   "type": "group",
+   "label": "The Ohio State University"
+  },
+  "author:tanun jitwatcharakomol": {
+   "id": "author:tanun jitwatcharakomol",
+   "type": "author",
+   "label": "Tanun Jitwatcharakomol",
+   "openalex": "https://openalex.org/A5083513919"
+  },
+  "group:mahidol university": {
+   "id": "group:mahidol university",
+   "type": "group",
+   "label": "Mahidol University"
+  },
+  "author:piyawadee jongpradubgiat": {
+   "id": "author:piyawadee jongpradubgiat",
+   "type": "author",
+   "label": "Piyawadee Jongpradubgiat",
+   "openalex": "https://openalex.org/A5044493245"
+  },
+  "group:charoenkrung pracharak hospital": {
+   "id": "group:charoenkrung pracharak hospital",
+   "type": "group",
+   "label": "Charoenkrung Pracharak Hospital"
+  },
+  "author:s j zhu": {
+   "id": "author:s j zhu",
+   "type": "author",
+   "label": "S J Zhu",
+   "openalex": "https://openalex.org/A5105989284"
+  },
+  "doi:10.1007/978-3-032-38091-3_37": {
+   "id": "doi:10.1007/978-3-032-38091-3_37",
+   "type": "paper",
+   "label": "Learning Where to Look: A Reinforcement Learning Framework for Robust Micro-ultrasound Prostate Cancer Detection",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-38091-3_37",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7166832826"
+  },
+  "author:mohammad mahdi abootorabi": {
+   "id": "author:mohammad mahdi abootorabi",
+   "type": "author",
+   "label": "Mohammad Mahdi Abootorabi",
+   "openalex": "https://openalex.org/A5126700876"
+  },
+  "group:university of british columbia": {
+   "id": "group:university of british columbia",
+   "type": "group",
+   "label": "University of British Columbia"
+  },
+  "author:sina namazi": {
+   "id": "author:sina namazi",
+   "type": "author",
+   "label": "Sina Namazi",
+   "openalex": "https://openalex.org/A5139850706"
+  },
+  "author:armin saadat": {
+   "id": "author:armin saadat",
+   "type": "author",
+   "label": "Armin Saadat",
+   "openalex": "https://openalex.org/A5089174533"
+  },
+  "author:lyuyang wang": {
+   "id": "author:lyuyang wang",
+   "type": "author",
+   "label": "Lyuyang Wang",
+   "openalex": "https://openalex.org/A5073187618"
+  },
+  "author:obed korshie dzikunu": {
+   "id": "author:obed korshie dzikunu",
+   "type": "author",
+   "label": "Obed Korshie Dzikunu",
+   "openalex": "https://openalex.org/A5005061068"
+  },
+  "author:paul wilson": {
+   "id": "author:paul wilson",
+   "type": "author",
+   "label": "Paul Wilson",
+   "openalex": "https://openalex.org/A5100637126"
+  },
+  "group:queen's university": {
+   "id": "group:queen's university",
+   "type": "group",
+   "label": "Queen's University"
+  },
+  "author:zhuoxin guo": {
+   "id": "author:zhuoxin guo",
+   "type": "author",
+   "label": "Zhuoxin Guo",
+   "openalex": "https://openalex.org/A5001905104"
+  },
+  "author:brian wodlinger": {
+   "id": "author:brian wodlinger",
+   "type": "author",
+   "label": "Brian Wodlinger",
+   "openalex": "https://openalex.org/A5002777285"
+  },
+  "group:exact imaging, markham, on, canada": {
+   "id": "group:exact imaging, markham, on, canada",
+   "type": "group",
+   "label": "Exact Imaging, Markham, ON, Canada"
+  },
+  "author:parvin mousavi": {
+   "id": "author:parvin mousavi",
+   "type": "author",
+   "label": "Parvin Mousavi",
+   "openalex": "https://openalex.org/A5143938387"
+  },
+  "author:purang abolmaesumi": {
+   "id": "author:purang abolmaesumi",
+   "type": "author",
+   "label": "Purang Abolmaesumi",
+   "openalex": "https://openalex.org/A5140795318"
+  },
+  "doi:10.1007/978-3-032-39395-1_24": {
+   "id": "doi:10.1007/978-3-032-39395-1_24",
+   "type": "paper",
+   "label": "Agent4cs: A Multi-agent System for Code Summarization in Large Hierarchical Codebases",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-39395-1_24",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7167244863"
+  },
+  "author:yongjian tang": {
+   "id": "author:yongjian tang",
+   "type": "author",
+   "label": "Yongjian Tang",
+   "openalex": "https://openalex.org/A5140022040"
+  },
+  "group:siemens (germany)": {
+   "id": "group:siemens (germany)",
+   "type": "group",
+   "label": "Siemens (Germany)"
+  },
+  "author:ezgi sarıkayak": {
+   "id": "author:ezgi sarıkayak",
+   "type": "author",
+   "label": "Ezgi Sarıkayak",
+   "openalex": "https://openalex.org/A5139307588"
+  },
+  "author:doruk tuncel": {
+   "id": "author:doruk tuncel",
+   "type": "author",
+   "label": "Doruk Tuncel",
+   "openalex": "https://openalex.org/A5057114929"
+  },
+  "author:jie m. zhang": {
+   "id": "author:jie m. zhang",
+   "type": "author",
+   "label": "Jie M. Zhang",
+   "openalex": "https://openalex.org/A5139954116"
+  },
+  "group:king's college london": {
+   "id": "group:king's college london",
+   "type": "group",
+   "label": "King's College London"
+  },
+  "author:thomas runkler": {
+   "id": "author:thomas runkler",
+   "type": "author",
+   "label": "Thomas Runkler",
+   "openalex": "https://openalex.org/A5133795756"
+  },
+  "doi:10.1007/978-3-032-39395-1_11": {
+   "id": "doi:10.1007/978-3-032-39395-1_11",
+   "type": "paper",
+   "label": "Normative Profiles in Reinforcement Learning",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-39395-1_11",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7168246804"
+  },
+  "author:benoît alcaraz": {
+   "id": "author:benoît alcaraz",
+   "type": "author",
+   "label": "Benoît Alcaraz",
+   "openalex": "https://openalex.org/A5079582735"
+  },
+  "group:university of luxembourg": {
+   "id": "group:university of luxembourg",
+   "type": "group",
+   "label": "University of Luxembourg"
+  },
+  "author:marcello ceci": {
+   "id": "author:marcello ceci",
+   "type": "author",
+   "label": "Marcello Ceci",
+   "openalex": "https://openalex.org/A5103231935"
+  },
+  "author:domenico bianculli": {
+   "id": "author:domenico bianculli",
+   "type": "author",
+   "label": "Domenico Bianculli",
+   "openalex": "https://openalex.org/A5038017715"
+  },
+  "doi:10.1007/s40998-026-01230-z": {
+   "id": "doi:10.1007/s40998-026-01230-z",
+   "type": "paper",
+   "label": "Shape-Reconfigurable Pinching Antennas: Manifold-Constrained Beamforming via Tucker Decomposition and Deep Reinforcement Learning",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Iranian Journal of Science and Technology Transactions of Electrical Engineering",
+   "doi": "10.1007/s40998-026-01230-z",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7214195366"
+  },
+  "venue:iranian journal of science and technology transactions of electrical engineering": {
+   "id": "venue:iranian journal of science and technology transactions of electrical engineering",
+   "type": "venue",
+   "label": "Iranian Journal of Science and Technology Transactions of Electrical Engineering"
+  },
+  "author:mandalika jrm prasad": {
+   "id": "author:mandalika jrm prasad",
+   "type": "author",
+   "label": "Mandalika JRM Prasad",
+   "openalex": "https://openalex.org/A5152625704"
+  },
+  "group:jawaharlal nehru technological university, kakinada": {
+   "id": "group:jawaharlal nehru technological university, kakinada",
+   "type": "group",
+   "label": "Jawaharlal Nehru Technological University, Kakinada"
+  },
+  "author:prasad a.m.": {
+   "id": "author:prasad a.m.",
+   "type": "author",
+   "label": "Prasad A.M.",
+   "openalex": "https://openalex.org/A5095691091"
+  },
+  "doi:10.1007/978-3-032-39717-1_25": {
+   "id": "doi:10.1007/978-3-032-39717-1_25",
+   "type": "paper",
+   "label": "Intelligent Control of PMSM Using Deep Reinforcement Learning for High-Performance Drive Systems",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Communications in computer and information science",
+   "doi": "10.1007/978-3-032-39717-1_25",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7214200796"
+  },
+  "venue:communications in computer and information science": {
+   "id": "venue:communications in computer and information science",
+   "type": "venue",
+   "label": "Communications in computer and information science"
+  },
+  "author:siwei zhang": {
+   "id": "author:siwei zhang",
+   "type": "author",
+   "label": "Siwei Zhang",
+   "openalex": "https://openalex.org/A5100633936"
+  },
+  "group:shenyang university of technology": {
+   "id": "group:shenyang university of technology",
+   "type": "group",
+   "label": "Shenyang University of Technology"
+  },
+  "doi:10.1007/978-3-032-39717-1_26": {
+   "id": "doi:10.1007/978-3-032-39717-1_26",
+   "type": "paper",
+   "label": "Physics-Informed Multi-Objective Deep Reinforcement Learning for Lightweight Mechanical Structure Topology Optimization with Strength and Dynamic Performance Constraints",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Communications in computer and information science",
+   "doi": "10.1007/978-3-032-39717-1_26",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7214202478"
+  },
+  "author:qianyi wang": {
+   "id": "author:qianyi wang",
+   "type": "author",
+   "label": "Qianyi Wang",
+   "openalex": "https://openalex.org/A5152658365"
+  },
+  "group:ba, sino-european school of technology, shanghai university, shanghai, china": {
+   "id": "group:ba, sino-european school of technology, shanghai university, shanghai, china",
+   "type": "group",
+   "label": "BA, Sino-European School of Technology, Shanghai University, Shanghai, China"
+  },
+  "claim:rlvr-is-a-kernel-passk-crossover:1": {
+   "id": "claim:rlvr-is-a-kernel-passk-crossover:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-26）：共 282 篇论文、1520 位作者。"
+  },
+  "claim:rlvr-is-a-kernel-passk-crossover:2": {
+   "id": "claim:rlvr-is-a-kernel-passk-crossover:2",
+   "type": "claim",
+   "label": "RLVR 常提升 pass@1 却在大采样预算 pass@k 上落后基座，曲线交叉被读作 RLVR 只锐化既有能力的证据；论文指出这个读法有两个限度，一是可见交叉未必统计成立，二是基座成功率单独不能决定 RLVR 对一道题做了什么。"
+  },
+  "claim:rlvr-is-a-kernel-passk-crossover:3": {
+   "id": "claim:rlvr-is-a-kernel-passk-crossover:3",
+   "type": "claim",
+   "label": "论文在同一批 prompt 上配对比较两个模型，构造跨采样预算 k 的置信带，交叉判据要求早期增益与后期损失同时统计成立；五个公开 RLVR 模型对的初始评估中无一交叉统计成立，ProRL 在 k 为 56 处的交叉 p 值为 0.20，DeepScaleR 在 16k token 下是最强初始发现，p 值 0.029 但不满足交叉判据且在五对发现族下 Holm 校正后不显著。"
+  },
+  "claim:rlvr-is-a-kernel-passk-crossover:4": {
+   "id": "claim:rlvr-is-a-kernel-passk-crossover:4",
+   "type": "claim",
+   "label": "预注册的 32k token 新题评估在 1060 道去重题目上确认 DeepScaleR 交叉成立，首次损失出现在第 11 到 61 个样本之间，支配性检验 p 值 0.0027；点估计为 k 为 1 处增益 7.6 个百分点、k 为 128 处损失 2.0 个百分点，后期损失幅度比早期增益小一个量级。"
+  },
+  "claim:rlvr-is-a-kernel-passk-crossover:5": {
+   "id": "claim:rlvr-is-a-kernel-passk-crossover:5",
+   "type": "claim",
+   "label": "协议敏感性方面，2048 token 限制下两个模型在每个 k 都差于基座，8192 下两者 pass@1 都改善且无统计显著；167 题分片上 k 为 18 处的交叉被全样本推翻；代码域 HumanEval+ 与 MBPP+ 上两对均不满足交叉判据（p 值 0.38 与 0.55）；功率分析显示未检出交叉不等于没有交叉，加题比加答案更划算，DeepScaleR-16k 设计下支配性检验功率 0.63，题数加到 4000 时到 0.877。"
+  },
+  "claim:rlvr-is-a-kernel-passk-crossover:6": {
+   "id": "claim:rlvr-is-a-kernel-passk-crossover:6",
+   "type": "claim",
+   "label": "分半生成检验把每题的 RL 后生成拆成不相交两半并检查残差跨题协方差，十三个模型对全部拒绝函数假设（p 值小于 0.002），可重复的弥散均方根标准差在 DeepScaleR、ProRL 与全部受控训练上为 0.10 到 0.15，远高于二项噪声的约 0.03，域内 ProRL 的弥散是迁移 DeepScaleR 的 2.2 倍；基座成功率相同的题在 RL 后成功率不同且在独立两半间重复，说明 RLVR 的作用是条件分布即马尔可夫核而非单一曲线。"
+  },
+  "claim:lifted-bellman-lp-offline-rl:1": {
+   "id": "claim:lifted-bellman-lp-offline-rl:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-26）：共 282 篇论文、1520 位作者。"
+  },
+  "claim:lifted-bellman-lp-offline-rl:2": {
+   "id": "claim:lifted-bellman-lp-offline-rl:2",
+   "type": "claim",
+   "label": "离线强化学习的核心障碍是价值高估，Bellman 最大化会选中数据外动作上的外推值并随每次回传扩散；现有路线要么把策略改进约束在行为策略附近，要么改造 Bellman 更新（值惩罚或样本内回归），后者依赖对自举目标的回归，需要目标网络与 EMA 更新来稳住目标，且多步回报中来自行为策略的中间动作带来偏差。"
+  },
+  "claim:lifted-bellman-lp-offline-rl:3": {
+   "id": "claim:lifted-bellman-lp-offline-rl:3",
+   "type": "claim",
+   "label": "Bellman 最优性的线性规划刻画中，最优值函数是满足一族 Bellman 不等式的最小函数；动作值形式要对下一状态的每个动作列不等式（要求数据外动作评估），状态值形式消去下一动作但只能辨识最优状态值，需从对偶占据测度恢复策略；LBLP 把规划提升到 Q 与 V 的联合空间，用上镜面变量把 V 大于等于 max Q 写成每个动作一条不等式 Q(s,a) 小于等于 V(s)，Bellman 不等式只关 Q 与 V，不含下一动作，且 Q 与 V 在目标中都有正权重，唯一最小化子直接同时确定 Q 与 V，无需对偶步骤。"
+  },
+  "claim:lifted-bellman-lp-offline-rl:4": {
+   "id": "claim:lifted-bellman-lp-offline-rl:4",
+   "type": "claim",
+   "label": "在数据诱导的经验 MDP 上实例化 LBLP，每条约束由数据的状态动作对索引，沿数据轨迹加 K 步 rollout 约束不改变可行集与唯一最小化子；确定性动力学下最小化子介于数据最优回报与最优值之间，且不需要值惩罚系数；神经函数近似下把约束松弛为铰链惩罚，表格情形中惩罚系数超过有限值时松弛精确。"
+  },
+  "claim:lifted-bellman-lp-offline-rl:5": {
+   "id": "claim:lifted-bellman-lp-offline-rl:5",
+   "type": "claim",
+   "label": "ALBUM（Approximate Lifted Bellman Unconstrained Minimization）用神经网络实现该松弛并用 stop gradient 分离 K 步 rollout 目标；目标中没有对自举目标的平方回归，因此不需要目标网络或 EMA 更新，最大化只通过约束施加，单个评论家即可稳定训练；确定性动力学下多步惩罚沿轨迹提供下界，无需离策略校正或动作分块。"
+  },
+  "claim:lifted-bellman-lp-offline-rl:6": {
+   "id": "claim:lifted-bellman-lp-offline-rl:6",
+   "type": "claim",
+   "label": "OGBench 状态任务上比较，8 个种子、每种子 50 个评估回合、100 万梯度步，五个评论家系数全领域固定不逐环境调参；ALBUM 与 FQL 取得表中两个最高的状态任务平均分，在 antmaze-large-navigate、antmaze-giant-navigate、scene-play、puzzle-3x3-play 上得分最高，后两个大幅领先，四个域都需要长程价值传播；与同用高斯策略的 ReBRAC 相比平均高 12.4 分、十个域中八个领先，最弱项是 humanoidmaze-large-navigate。"
+  },
+  "claim:fp8-rl-calibrated-clipping:1": {
+   "id": "claim:fp8-rl-calibrated-clipping:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-26）：共 282 篇论文、1520 位作者。"
+  },
+  "claim:fp8-rl-calibrated-clipping:2": {
+   "id": "claim:fp8-rl-calibrated-clipping:2",
+   "type": "claim",
+   "label": "FP8 量化能加速 LLM 强化学习，但全管线 FP8（训练与 rollout 都量化）仍严重不稳定，表现为训练中途的熵激增与乱码输出；此前工作用 TIS 等修正技术处理训练推理失配后，不稳定性依然存在，说明另有原因。"
+  },
+  "claim:fp8-rl-calibrated-clipping:3": {
+   "id": "claim:fp8-rl-calibrated-clipping:3",
+   "type": "claim",
+   "label": "论文把不稳定溯源到一个此前被忽视的机制，FP8 量化噪声复合进重要性比率，扭曲量化空间中的有效信任域；在下截断界处负优势 token 被不成比例地过度截断，本应压制病态生成的梯度被错误清零，病态输出得不到惩罚并在训练中累积，最终爆发为熵激增与乱码。"
+  },
+  "claim:fp8-rl-calibrated-clipping:4": {
+   "id": "claim:fp8-rl-calibrated-clipping:4",
+   "type": "claim",
+   "label": "Calibrated Clipping 用高精度 BF16 参照周期性校准下截断界（匹配下界的截断分位数）并相应再平衡上界，恢复量化空间中的信任域语义，开销可以忽略。"
+  },
+  "claim:fp8-rl-calibrated-clipping:5": {
+   "id": "claim:fp8-rl-calibrated-clipping:5",
+   "type": "claim",
+   "label": "GRPO 实验（Qwen3-8B-Base），朴素 FP8 训练使平均分在 tensorwise、rowwise、blockwise 三种缩放粒度下分别下降 11.5 分、10.6 分、3.5 分；Calibrated Clipping 大幅收窄差距，blockwise FP8 平均 58.6 分与 BF16 基线 57.6 分相当；Qwen2.5-32B 的病态熵激增同样被消除。"
+  },
+  "claim:fp8-rl-calibrated-clipping:6": {
+   "id": "claim:fp8-rl-calibrated-clipping:6",
+   "type": "claim",
+   "label": "DAPO 实验（Qwen3-14B-Base，17K 数据集，200 步，每 10 步评 AIME24 Avg@32），BF16 基线 50.9％，BF16 训练加 FP8 rollout 为 47.4％；朴素 FP8 全管线 tensorwise 35.7％、rowwise 38.1％、blockwise 41.6％，加 Calibrated Clipping 后分别恢复到 47.9％、46.5％、47.4％，其中 tensorwise 档收回 12.2 个百分点。"
   }
  },
  "edges": [
@@ -22468,16 +23233,6 @@
    "rel": "authored"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2609.24144",
    "t": "claim:luck-is-not-skill-paired-rollouts-grpo:1",
    "rel": "claims"
@@ -22535,6 +23290,1051 @@
   {
    "s": "arxiv:2609.20807",
    "t": "claim:score-centering-offpolicy-rl:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "author:david lawrence silver",
+   "t": "doi:10.1038/nature14236",
+   "rel": "authored"
+  },
+  {
+   "s": "author:david lawrence silver",
+   "t": "group:google deepmind (united kingdom)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:alex m graves",
+   "t": "doi:10.1038/nature14236",
+   "rel": "authored"
+  },
+  {
+   "s": "author:alex m graves",
+   "t": "group:google deepmind (united kingdom)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:andreas k. fidjeland",
+   "t": "doi:10.1038/nature14236",
+   "rel": "authored"
+  },
+  {
+   "s": "author:andreas k. fidjeland",
+   "t": "group:google deepmind (united kingdom)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:natalia díaz-rodríguez",
+   "t": "group:institut national de recherche en sciences et technologies du numérique",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:adrien bennetot",
+   "t": "group:institut national de recherche en sciences et technologies du numérique",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:christopher j. c. h. watkins",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "authored"
+  },
+  {
+   "s": "author:christopher j. c. h. watkins",
+   "t": "group:the fram centre",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:john m. o'keefe",
+   "t": "doi:10.1038/297681a0",
+   "rel": "authored"
+  },
+  {
+   "s": "author:john m. o'keefe",
+   "t": "group:university of london",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:david lawrence silver",
+   "t": "doi:10.1609/aaai.v30i1.10295",
+   "rel": "authored"
+  },
+  {
+   "s": "author:david lawrence silver",
+   "t": "group:google (united states)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:peter l. auer",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "authored"
+  },
+  {
+   "s": "author:peter l. auer",
+   "t": "group:graz university of technology",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:david lawrence silver",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:david lawrence silver",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "authored"
+  },
+  {
+   "s": "author:alex m graves",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "authored"
+  },
+  {
+   "s": "author:satinder pal singh",
+   "t": "title:policy gradient methods for reinforcement learning with function approximation",
+   "rel": "authored"
+  },
+  {
+   "s": "author:satinder pal singh",
+   "t": "group:at&t (united states)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:anil anthony bharath",
+   "t": "doi:10.1109/msp.2017.2743240",
+   "rel": "authored"
+  },
+  {
+   "s": "author:anil anthony bharath",
+   "t": "group:institution of engineering and technology",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:yogesh kumar dwivedi",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yogesh kumar dwivedi",
+   "t": "group:symbiosis international university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:emma louise slade",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:emma louise slade",
+   "t": "group:university of bristol",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:abdullah mohammed baabdullah",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:abdullah mohammed baabdullah",
+   "t": "group:king abdulaziz university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:alex a. koohang",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:alex a. koohang",
+   "t": "group:georgia state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:manju k. ahuja",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:manju k. ahuja",
+   "t": "group:university of louisville",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:lemuria d. carter",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:lemuria d. carter",
+   "t": "group:unsw sydney",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:john steven edwards",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:john steven edwards",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:robin d. c. gauld",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:robin d. c. gauld",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:iris a. junglas",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:iris a. junglas",
+   "t": "group:friedrich-alexander-universität erlangen-nürnberg",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:kai r. t. larsen",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:kai r. t. larsen",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:siobhan m. o'connor",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:siobhan m. o'connor",
+   "t": "group:university of manchester",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:fevzi okumuş",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:fevzi okumuş",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:nripendra pratap rana",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:nripendra pratap rana",
+   "t": "group:college of charleston",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:sven‐volker rehm",
+   "t": "group:humans and management in society",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:samuel ribeiro navarrete",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:samuel ribeiro navarrete",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:manoj kumar tiwari",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:manoj kumar tiwari",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:wil m. p. van der aalst",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wil m. p. van der aalst",
+   "t": "group:worcester polytechnic institute",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:viswanath venkatesh",
+   "t": "group:swansea university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:michael r. wade",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:michael r. wade",
+   "t": "group:prin. l. n. welingkar institute of management development and research",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:ryan t. wright",
+   "t": "doi:10.1016/j.ijinfomgt.2023.102642",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ryan t. wright",
+   "t": "group:college of charleston",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:michael g. h. coles",
+   "t": "doi:10.1037/0033-295x.109.4.679",
+   "rel": "authored"
+  },
+  {
+   "s": "author:michael g. h. coles",
+   "t": "group:u illinois",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:quoc viet le",
+   "t": "doi:10.48550/arxiv.1611.01578",
+   "rel": "authored"
+  },
+  {
+   "s": "author:brian d knutson",
+   "t": "doi:10.1038/npp.2009.129",
+   "rel": "authored"
+  },
+  {
+   "s": "author:brian d knutson",
+   "t": "group:stanford university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:ningbing yu",
+   "t": "doi:10.1057/s41599-026-08958-3",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ningbing yu",
+   "t": "group:anhui university",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-38236-8_49",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:huanrong liu",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:chunlin tian",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tongyu jia",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tailai zhou",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:qin liu",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yu gao",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yutong ban",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yun gu",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:guy rosman",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xin ma",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "author:qingbiao li",
+   "t": "doi:10.1007/978-3-032-38236-8_49",
+   "rel": "authored"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-38082-1_32",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:zichun wang",
+   "t": "doi:10.1007/978-3-032-38082-1_32",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zichun wang",
+   "t": "group:beihang university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:hairong shi",
+   "t": "doi:10.1007/978-3-032-38082-1_32",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hairong shi",
+   "t": "group:keio university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:bingzheng wei",
+   "t": "doi:10.1007/978-3-032-38082-1_32",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bingzheng wei",
+   "t": "group:bytedance (china)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:xu yan",
+   "t": "doi:10.1007/978-3-032-38082-1_32",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xu yan",
+   "t": "group:beihang university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:zihua wang",
+   "t": "doi:10.1007/978-3-032-38082-1_32",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zihua wang",
+   "t": "group:beihang university",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-39395-1_1",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:omar adalat",
+   "t": "doi:10.1007/978-3-032-39395-1_1",
+   "rel": "authored"
+  },
+  {
+   "s": "author:omar adalat",
+   "t": "group:imperial college london",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:edwin hamel-de le court",
+   "t": "doi:10.1007/978-3-032-39395-1_1",
+   "rel": "authored"
+  },
+  {
+   "s": "author:edwin hamel-de le court",
+   "t": "group:university of manchester",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:francesco belardinelli",
+   "t": "doi:10.1007/978-3-032-39395-1_1",
+   "rel": "authored"
+  },
+  {
+   "s": "author:francesco belardinelli",
+   "t": "group:imperial college london",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-38082-1_44",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:jiasheng wang",
+   "t": "doi:10.1007/978-3-032-38082-1_44",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiasheng wang",
+   "t": "group:the ohio state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:tanun jitwatcharakomol",
+   "t": "doi:10.1007/978-3-032-38082-1_44",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tanun jitwatcharakomol",
+   "t": "group:mahidol university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:piyawadee jongpradubgiat",
+   "t": "doi:10.1007/978-3-032-38082-1_44",
+   "rel": "authored"
+  },
+  {
+   "s": "author:piyawadee jongpradubgiat",
+   "t": "group:charoenkrung pracharak hospital",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:s j zhu",
+   "t": "doi:10.1007/978-3-032-38082-1_44",
+   "rel": "authored"
+  },
+  {
+   "s": "author:s j zhu",
+   "t": "group:the ohio state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-38091-3_37",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:mohammad mahdi abootorabi",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mohammad mahdi abootorabi",
+   "t": "group:university of british columbia",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:sina namazi",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sina namazi",
+   "t": "group:university of british columbia",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:armin saadat",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:armin saadat",
+   "t": "group:university of british columbia",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:lyuyang wang",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:lyuyang wang",
+   "t": "group:university of british columbia",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:obed korshie dzikunu",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:obed korshie dzikunu",
+   "t": "group:university of british columbia",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:paul wilson",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:paul wilson",
+   "t": "group:queen's university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:zhuoxin guo",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhuoxin guo",
+   "t": "group:queen's university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:brian wodlinger",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:brian wodlinger",
+   "t": "group:exact imaging, markham, on, canada",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:parvin mousavi",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:parvin mousavi",
+   "t": "group:queen's university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:purang abolmaesumi",
+   "t": "doi:10.1007/978-3-032-38091-3_37",
+   "rel": "authored"
+  },
+  {
+   "s": "author:purang abolmaesumi",
+   "t": "group:university of british columbia",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-39395-1_24",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:yongjian tang",
+   "t": "doi:10.1007/978-3-032-39395-1_24",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yongjian tang",
+   "t": "group:siemens (germany)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:ezgi sarıkayak",
+   "t": "doi:10.1007/978-3-032-39395-1_24",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ezgi sarıkayak",
+   "t": "group:siemens (germany)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:doruk tuncel",
+   "t": "doi:10.1007/978-3-032-39395-1_24",
+   "rel": "authored"
+  },
+  {
+   "s": "author:doruk tuncel",
+   "t": "group:siemens (germany)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:jie m. zhang",
+   "t": "doi:10.1007/978-3-032-39395-1_24",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jie m. zhang",
+   "t": "group:king's college london",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:thomas runkler",
+   "t": "doi:10.1007/978-3-032-39395-1_24",
+   "rel": "authored"
+  },
+  {
+   "s": "author:thomas runkler",
+   "t": "group:siemens (germany)",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-39395-1_11",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:benoît alcaraz",
+   "t": "doi:10.1007/978-3-032-39395-1_11",
+   "rel": "authored"
+  },
+  {
+   "s": "author:benoît alcaraz",
+   "t": "group:university of luxembourg",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:marcello ceci",
+   "t": "doi:10.1007/978-3-032-39395-1_11",
+   "rel": "authored"
+  },
+  {
+   "s": "author:marcello ceci",
+   "t": "group:university of luxembourg",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:domenico bianculli",
+   "t": "doi:10.1007/978-3-032-39395-1_11",
+   "rel": "authored"
+  },
+  {
+   "s": "author:domenico bianculli",
+   "t": "group:university of luxembourg",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/s40998-026-01230-z",
+   "t": "venue:iranian journal of science and technology transactions of electrical engineering",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:mandalika jrm prasad",
+   "t": "doi:10.1007/s40998-026-01230-z",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mandalika jrm prasad",
+   "t": "group:jawaharlal nehru technological university, kakinada",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:prasad a.m.",
+   "t": "doi:10.1007/s40998-026-01230-z",
+   "rel": "authored"
+  },
+  {
+   "s": "author:prasad a.m.",
+   "t": "group:jawaharlal nehru technological university, kakinada",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-39717-1_25",
+   "t": "venue:communications in computer and information science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:siwei zhang",
+   "t": "doi:10.1007/978-3-032-39717-1_25",
+   "rel": "authored"
+  },
+  {
+   "s": "author:siwei zhang",
+   "t": "group:shenyang university of technology",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-39717-1_26",
+   "t": "venue:communications in computer and information science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:qianyi wang",
+   "t": "doi:10.1007/978-3-032-39717-1_26",
+   "rel": "authored"
+  },
+  {
+   "s": "author:qianyi wang",
+   "t": "group:ba, sino-european school of technology, shanghai university, shanghai, china",
+   "rel": "member_of"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.22547",
+   "t": "claim:rlvr-is-a-kernel-passk-crossover:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22547",
+   "t": "claim:rlvr-is-a-kernel-passk-crossover:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22547",
+   "t": "claim:rlvr-is-a-kernel-passk-crossover:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22547",
+   "t": "claim:rlvr-is-a-kernel-passk-crossover:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22547",
+   "t": "claim:rlvr-is-a-kernel-passk-crossover:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22547",
+   "t": "claim:rlvr-is-a-kernel-passk-crossover:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24489",
+   "t": "claim:lifted-bellman-lp-offline-rl:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24489",
+   "t": "claim:lifted-bellman-lp-offline-rl:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24489",
+   "t": "claim:lifted-bellman-lp-offline-rl:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24489",
+   "t": "claim:lifted-bellman-lp-offline-rl:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24489",
+   "t": "claim:lifted-bellman-lp-offline-rl:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24489",
+   "t": "claim:lifted-bellman-lp-offline-rl:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22870",
+   "t": "claim:fp8-rl-calibrated-clipping:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22870",
+   "t": "claim:fp8-rl-calibrated-clipping:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22870",
+   "t": "claim:fp8-rl-calibrated-clipping:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22870",
+   "t": "claim:fp8-rl-calibrated-clipping:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22870",
+   "t": "claim:fp8-rl-calibrated-clipping:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.22870",
+   "t": "claim:fp8-rl-calibrated-clipping:6",
    "rel": "claims"
   }
  ]

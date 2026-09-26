@@ -131,5 +131,26 @@
     "slug": "score-centering-offpolicy-rl",
     "bvid": "BV1kah76AE5n",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-09-26",
+    "paper_id": "arxiv:2609.22547",
+    "slug": "rlvr-is-a-kernel-passk-crossover",
+    "bvid": "BV1DvhD6gEZZ",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-26",
+    "paper_id": "arxiv:2609.24489",
+    "slug": "lifted-bellman-lp-offline-rl",
+    "bvid": "BV1G4hD61EQq",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-26",
+    "paper_id": "arxiv:2609.22870",
+    "slug": "fp8-rl-calibrated-clipping",
+    "bvid": "BV1TBhD6ME8Q",
+    "status": "uploaded"
   }
 ]

@@ -2,47 +2,47 @@
  {
   "group_id": "group:google deepmind (united kingdom)",
   "group": "Google DeepMind (United Kingdom)",
-  "authors": 62,
+  "authors": 64,
   "papers": 7,
-  "citations": 755850,
-  "in_graph_cited": 992,
-  "score": 781006.5
+  "citations": 823046,
+  "in_graph_cited": 1242,
+  "score": 854542.4
  },
  {
   "group_id": "group:google (united states)",
   "group": "Google (United States)",
-  "authors": 8,
+  "authors": 9,
   "papers": 7,
-  "citations": 177087,
-  "in_graph_cited": 136,
-  "score": 180535.9
+  "citations": 224898,
+  "in_graph_cited": 225,
+  "score": 230603.9
  },
  {
   "group_id": "group:worcester polytechnic institute",
   "group": "Worcester Polytechnic Institute",
-  "authors": 15,
+  "authors": 22,
   "papers": 1,
-  "citations": 64155,
+  "citations": 94094,
   "in_graph_cited": 0,
-  "score": 64155.0
+  "score": 94094.0
  },
  {
   "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
   "group": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
-  "authors": 6,
+  "authors": 7,
   "papers": 2,
-  "citations": 61082,
+  "citations": 65359,
   "in_graph_cited": 0,
-  "score": 61082.0
+  "score": 65359.0
  },
  {
   "group_id": "group:college of charleston",
   "group": "College of Charleston",
-  "authors": 12,
+  "authors": 14,
   "papers": 1,
-  "citations": 51324,
+  "citations": 59878,
   "in_graph_cited": 0,
-  "score": 51324.0
+  "score": 59878.0
  },
  {
   "group_id": "group:gte laboratories incorporated, 40 sylvan road, waltham, ma, 02254, usa",
@@ -50,8 +50,8 @@
   "authors": 1,
   "papers": 4,
   "citations": 43290,
-  "in_graph_cited": 80,
-  "score": 44944.4
+  "in_graph_cited": 90,
+  "score": 45151.2
  },
  {
   "group_id": "group:universidad de granada",
@@ -77,8 +77,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 48,
-  "score": 26366.6
+  "in_graph_cited": 54,
+  "score": 26442.7
  },
  {
   "group_id": "group:university of toledo",
@@ -90,8 +90,17 @@
   "score": 26109.0
  },
  {
-  "group_id": "group:école nationale supérieure de techniques avancées",
-  "group": "École Nationale Supérieure de Techniques Avancées",
+  "group_id": "group:at&t (united states)",
+  "group": "AT&T (United States)",
+  "authors": 4,
+  "papers": 1,
+  "citations": 19864,
+  "in_graph_cited": 0,
+  "score": 19864.0
+ },
+ {
+  "group_id": "group:institut national de recherche en sciences et technologies du numérique",
+  "group": "Institut national de recherche en sciences et technologies du numérique",
   "authors": 2,
   "papers": 1,
   "citations": 19768,
@@ -108,22 +117,31 @@
   "score": 19768.0
  },
  {
+  "group_id": "group:the fram centre",
+  "group": "The FRAM Centre",
+  "authors": 2,
+  "papers": 1,
+  "citations": 18208,
+  "in_graph_cited": 36,
+  "score": 18664.5
+ },
+ {
   "group_id": "group:brown university",
   "group": "Brown University",
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 16,
-  "score": 18112.9
+  "in_graph_cited": 18,
+  "score": 18138.2
  },
  {
-  "group_id": "group:at&t (united states)",
-  "group": "AT&T (United States)",
-  "authors": 3,
+  "group_id": "group:swansea university",
+  "group": "Swansea University",
+  "authors": 4,
   "papers": 1,
-  "citations": 14898,
+  "citations": 17108,
   "in_graph_cited": 0,
-  "score": 14898.0
+  "score": 17108.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -135,8 +153,35 @@
   "score": 12836.0
  },
  {
-  "group_id": "group:swansea university",
-  "group": "Swansea University",
+  "group_id": "group:university of london",
+  "group": "University of London",
+  "authors": 2,
+  "papers": 1,
+  "citations": 12836,
+  "in_graph_cited": 0,
+  "score": 12836.0
+ },
+ {
+  "group_id": "group:symbiosis international university",
+  "group": "Symbiosis International University",
+  "authors": 3,
+  "papers": 1,
+  "citations": 12831,
+  "in_graph_cited": 0,
+  "score": 12831.0
+ },
+ {
+  "group_id": "group:university of bristol",
+  "group": "University of Bristol",
+  "authors": 3,
+  "papers": 1,
+  "citations": 12831,
+  "in_graph_cited": 0,
+  "score": 12831.0
+ },
+ {
+  "group_id": "group:university of louisville",
+  "group": "University of Louisville",
   "authors": 3,
   "papers": 1,
   "citations": 12831,
@@ -153,6 +198,24 @@
   "score": 12831.0
  },
  {
+  "group_id": "group:university of manchester",
+  "group": "University of Manchester",
+  "authors": 4,
+  "papers": 2,
+  "citations": 12831,
+  "in_graph_cited": 0,
+  "score": 12831.0
+ },
+ {
+  "group_id": "group:graz university of technology",
+  "group": "Graz University of Technology",
+  "authors": 2,
+  "papers": 1,
+  "citations": 11890,
+  "in_graph_cited": 18,
+  "score": 12118.2
+ },
+ {
   "group_id": "group:sorbonne université",
   "group": "Sorbonne Université",
   "authors": 1,
@@ -162,22 +225,13 @@
   "score": 9884.0
  },
  {
-  "group_id": "group:the fram centre",
-  "group": "The FRAM Centre",
-  "authors": 1,
-  "papers": 1,
-  "citations": 9104,
-  "in_graph_cited": 16,
-  "score": 9306.9
- },
- {
   "group_id": "group:university of edinburgh",
   "group": "University of Edinburgh",
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 16,
-  "score": 9306.9
+  "in_graph_cited": 18,
+  "score": 9332.2
  },
  {
   "group_id": "group:carnegie mellon university",
@@ -185,12 +239,21 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 8,
-  "score": 9056.4
+  "in_graph_cited": 9,
+  "score": 9069.1
  },
  {
-  "group_id": "group:symbiosis international university",
-  "group": "Symbiosis International University",
+  "group_id": "group:institution of engineering and technology",
+  "group": "Institution of Engineering and Technology",
+  "authors": 2,
+  "papers": 1,
+  "citations": 8890,
+  "in_graph_cited": 0,
+  "score": 8890.0
+ },
+ {
+  "group_id": "group:king abdulaziz university",
+  "group": "King Abdulaziz University",
   "authors": 2,
   "papers": 1,
   "citations": 8554,
@@ -198,17 +261,8 @@
   "score": 8554.0
  },
  {
-  "group_id": "group:university of bristol",
-  "group": "University of Bristol",
-  "authors": 2,
-  "papers": 1,
-  "citations": 8554,
-  "in_graph_cited": 0,
-  "score": 8554.0
- },
- {
-  "group_id": "group:university of louisville",
-  "group": "University of Louisville",
+  "group_id": "group:georgia state university",
+  "group": "Georgia State University",
   "authors": 2,
   "papers": 1,
   "citations": 8554,
@@ -234,8 +288,8 @@
   "score": 8554.0
  },
  {
-  "group_id": "group:university of manchester",
-  "group": "University of Manchester",
+  "group_id": "group:unsw sydney",
+  "group": "UNSW Sydney",
   "authors": 2,
   "papers": 1,
   "citations": 8554,
@@ -243,13 +297,22 @@
   "score": 8554.0
  },
  {
-  "group_id": "group:king fahd security college",
-  "group": "King Fahd Security College",
+  "group_id": "group:prin. l. n. welingkar institute of management development and research",
+  "group": "Prin. L. N. Welingkar Institute of Management Development and Research",
   "authors": 2,
   "papers": 1,
   "citations": 8554,
   "in_graph_cited": 0,
   "score": 8554.0
+ },
+ {
+  "group_id": "group:u illinois",
+  "group": "U Illinois",
+  "authors": 2,
+  "papers": 1,
+  "citations": 8050,
+  "in_graph_cited": 0,
+  "score": 8050.0
  },
  {
   "group_id": "group:northeastern university",
@@ -257,8 +320,17 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 24,
-  "score": 7830.3
+  "in_graph_cited": 27,
+  "score": 7868.4
+ },
+ {
+  "group_id": "group:stanford university",
+  "group": "Stanford University",
+  "authors": 2,
+  "papers": 1,
+  "citations": 7596,
+  "in_graph_cited": 0,
+  "score": 7596.0
  },
  {
   "group_id": "group:university of oxford",
@@ -270,31 +342,13 @@
   "score": 6418.0
  },
  {
-  "group_id": "group:university of london",
-  "group": "University of London",
-  "authors": 1,
-  "papers": 1,
-  "citations": 6418,
-  "in_graph_cited": 0,
-  "score": 6418.0
- },
- {
-  "group_id": "group:graz university of technology",
-  "group": "Graz University of Technology",
-  "authors": 1,
-  "papers": 1,
-  "citations": 5945,
-  "in_graph_cited": 8,
-  "score": 6046.4
- },
- {
   "group_id": "group:university of milan",
   "group": "University of Milan",
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 8,
-  "score": 6046.4
+  "in_graph_cited": 9,
+  "score": 6059.1
  },
  {
   "group_id": "group:tu dortmund university",
@@ -302,8 +356,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 8,
-  "score": 6046.4
+  "in_graph_cited": 9,
+  "score": 6059.1
  },
  {
   "group_id": "group:university of fribourg",
@@ -342,15 +396,6 @@
   "score": 4445.0
  },
  {
-  "group_id": "group:institution of engineering and technology",
-  "group": "Institution of Engineering and Technology",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4445,
-  "in_graph_cited": 0,
-  "score": 4445.0
- },
- {
   "group_id": "group:university of north carolina at greensboro",
   "group": "University of North Carolina at Greensboro",
   "authors": 1,
@@ -371,24 +416,6 @@
  {
   "group_id": "group:indian institute of technology delhi",
   "group": "Indian Institute of Technology Delhi",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4277,
-  "in_graph_cited": 0,
-  "score": 4277.0
- },
- {
-  "group_id": "group:king abdulaziz university",
-  "group": "King Abdulaziz University",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4277,
-  "in_graph_cited": 0,
-  "score": 4277.0
- },
- {
-  "group_id": "group:georgia state university",
-  "group": "Georgia State University",
   "authors": 1,
   "papers": 1,
   "citations": 4277,
@@ -468,15 +495,6 @@
   "score": 4277.0
  },
  {
-  "group_id": "group:unsw sydney",
-  "group": "UNSW Sydney",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4277,
-  "in_graph_cited": 0,
-  "score": 4277.0
- },
- {
   "group_id": "group:tbs education",
   "group": "TBS Education",
   "authors": 1,
@@ -549,8 +567,8 @@
   "score": 4277.0
  },
  {
-  "group_id": "group:laboratoire d'economie et de management de nantes atlantique",
-  "group": "Laboratoire d'Economie et de Management de Nantes Atlantique",
+  "group_id": "group:humans and management in society",
+  "group": "Humans and management in society",
   "authors": 1,
   "papers": 1,
   "citations": 4277,
@@ -558,8 +576,8 @@
   "score": 4277.0
  },
  {
-  "group_id": "group:prin. l. n. welingkar institute of management development and research",
-  "group": "Prin. L. N. Welingkar Institute of Management Development and Research",
+  "group_id": "group:laboratoire d'economie et de management de nantes atlantique",
+  "group": "Laboratoire d'Economie et de Management de Nantes Atlantique",
   "authors": 1,
   "papers": 1,
   "citations": 4277,
@@ -585,26 +603,8 @@
   "score": 4025.0
  },
  {
-  "group_id": "group:u illinois",
-  "group": "U Illinois",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4025,
-  "in_graph_cited": 0,
-  "score": 4025.0
- },
- {
   "group_id": "group:university of rochester",
   "group": "University of Rochester",
-  "authors": 1,
-  "papers": 1,
-  "citations": 3798,
-  "in_graph_cited": 0,
-  "score": 3798.0
- },
- {
-  "group_id": "group:stanford university",
-  "group": "Stanford University",
   "authors": 1,
   "papers": 1,
   "citations": 3798,
@@ -639,6 +639,15 @@
   "score": 2.0
  },
  {
+  "group_id": "group:anhui university",
+  "group": "Anhui University",
+  "authors": 2,
+  "papers": 1,
+  "citations": 2,
+  "in_graph_cited": 0,
+  "score": 2.0
+ },
+ {
   "group_id": "group:soochow university",
   "group": "Soochow University",
   "authors": 1,
@@ -650,15 +659,6 @@
  {
   "group_id": "group:krirk university",
   "group": "Krirk University",
-  "authors": 1,
-  "papers": 1,
-  "citations": 1,
-  "in_graph_cited": 0,
-  "score": 1.0
- },
- {
-  "group_id": "group:anhui university",
-  "group": "Anhui University",
   "authors": 1,
   "papers": 1,
   "citations": 1,
@@ -731,6 +731,150 @@
  {
   "group_id": "group:university of exeter",
   "group": "University of Exeter",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:beihang university",
+  "group": "Beihang University",
+  "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:keio university",
+  "group": "Keio University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:bytedance (china)",
+  "group": "ByteDance (China)",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:imperial college london",
+  "group": "Imperial College London",
+  "authors": 2,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:the ohio state university",
+  "group": "The Ohio State University",
+  "authors": 2,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:mahidol university",
+  "group": "Mahidol University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:charoenkrung pracharak hospital",
+  "group": "Charoenkrung Pracharak Hospital",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:university of british columbia",
+  "group": "University of British Columbia",
+  "authors": 6,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:queen's university",
+  "group": "Queen's University",
+  "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:exact imaging, markham, on, canada",
+  "group": "Exact Imaging, Markham, ON, Canada",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:siemens (germany)",
+  "group": "Siemens (Germany)",
+  "authors": 4,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:king's college london",
+  "group": "King's College London",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:university of luxembourg",
+  "group": "University of Luxembourg",
+  "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:jawaharlal nehru technological university, kakinada",
+  "group": "Jawaharlal Nehru Technological University, Kakinada",
+  "authors": 2,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:shenyang university of technology",
+  "group": "Shenyang University of Technology",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:ba, sino-european school of technology, shanghai university, shanghai, china",
+  "group": "BA, Sino-European School of Technology, Shanghai University, Shanghai, China",
   "authors": 1,
   "papers": 1,
   "citations": 0,
