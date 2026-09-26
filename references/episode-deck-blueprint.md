@@ -112,6 +112,12 @@
 - **overlap 自动审计门**：`build_pptx.py` 用 PIL+微软雅黑真实字宽测量计算每块高度（禁用字数估算），构建后对每页做两两形状包围盒相交检测与页脚越界检测，任何命中构建失败。交付的 PPTX 必须 overlap audit passed。
 - **flash 视觉质检（可选）**：裁剪图可经 Read 上 CDN 后用视觉模型复核裁剪质量与分类，反馈进 extract_figures 的过滤规则。
 
+## 六点五、图谱导出与站点背景（v4.4）
+
+- **图谱导出默认白底**：`render_graph.py --bg light`（默认）产出白色背景 SVG/PNG，标签与连线配色自动切到深色系；`--bg dark` 保留旧深色版。视频 PPT 为白底，图谱页直接融入版面（build_pptx 图谱页不再加深色框）。
+- **svg2png --bg**：可为透明 SVG 指定 8 位十六进制页面底色（如 FFFFFFFF）。
+- **站点默认白底**：docs/index.html 以 CSS 变量定义 light/dark 两套主题，light 为默认；右上角按钮切换并 localStorage 持久化；canvas 的连线、标签、选中环颜色随主题切换。节点填色两主题通用（饱和色在白/深底均可读）。
+
 ## 七、可扩展位
 
 - 新增内容页类型时，先在本文档登记布局契约，再改 `make_deck_svg.py`，改完在 LESSONS.md 记录。

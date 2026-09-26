@@ -23,13 +23,17 @@ def find_chrome():
     raise SystemExit("chrome-headless-shell not found under ms-playwright")
 
 
-def convert(chrome, svg, out):
+def convert(chrome, svg, out, bg=None):
     url = svg.resolve().as_uri() + "?x=" + str(svg.stat().st_size)
     out = out.with_suffix(".png")
-    subprocess.run([chrome, "--headless", "--disable-gpu", "--no-sandbox",
-                    f"--screenshot={out}", "--window-size=1920,1080",
-                    "--hide-scrollbars", "--force-device-scale-factor=1", url],
-                   check=True, capture_output=True, timeout=120)
+    cmd = [chrome, "--headless", "--disable-gpu", "--no-sandbox",
+           f"--screenshot={out}", "--window-size=1920,1080",
+           "--hide-scrollbars", "--force-device-scale-factor=1"]
+    if bg:
+        # page background behind transparent SVGs, e.g. FFFFFFFF for white
+        cmd.append(f"--default-background-color={bg}")
+    cmd.append(url)
+    subprocess.run(cmd, check=True, capture_output=True, timeout=120)
     if not out.exists() or out.stat().st_size < 5000:
         raise SystemExit(f"screenshot failed for {svg}")
     return out
@@ -39,6 +43,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("svgs", nargs="+")
     ap.add_argument("--out-dir")
+    ap.add_argument("--bg", help="8-digit hex page background under transparent SVGs, e.g. FFFFFFFF")
     args = ap.parse_args()
     chrome = find_chrome()
     outs = []
@@ -47,7 +52,7 @@ def main():
             out = pathlib.Path(args.out_dir) / svg.stem if args.out_dir else svg.parent
             if args.out_dir:
                 out.mkdir(parents=True, exist_ok=True)
-            outs.append(convert(chrome, svg, out / svg.stem))
+            outs.append(convert(chrome, svg, out / svg.stem, args.bg))
             print(f"{svg.name} -> {outs[-1].name} ({outs[-1].stat().st_size//1024} KB)")
     print(f"{len(outs)} PNGs rendered")
 

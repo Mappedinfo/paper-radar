@@ -26,6 +26,24 @@ STYLE = {
     "claim":   {"fill": "#F27E9D", "stroke": "#7E2743", "label": "#F9CFDB"},
     "evidence":{"fill": "#7ED9A0", "stroke": "#1E6B42", "label": "#CDF0DC"},
 }
+# Light theme: same node fills (saturated, readable on white), labels switch to
+# the dark stroke colors for contrast; edges get light grays.
+STYLE_LIGHT = {
+    "group":   {"fill": "#F5B84A", "stroke": "#8A5A00", "label": "#7A4E00"},
+    "paper":   {"fill": "#4AC6F5", "stroke": "#0B5470", "label": "#0A4A63"},
+    "author":  {"fill": "#B08CF2", "stroke": "#4A2E86", "label": "#3F2A75"},
+    "venue":   {"fill": "#9AA5B1", "stroke": "#3E4854", "label": "#3E4854"},
+    "claim":   {"fill": "#F27E9D", "stroke": "#7E2743", "label": "#7E2743"},
+    "evidence":{"fill": "#7ED9A0", "stroke": "#1E6B42", "label": "#1E6B42"},
+}
+THEMES = {
+    "dark": {"bg": "#0E1420", "title": "#F2F6FA", "sub": "#8FA0B3", "note": "#6E8098",
+             "edge": "#3A4A61", "edge_hot": "#C99A3F", "edge_dim": "#31435C",
+             "edge_label": "#9FB2C8", "styles": STYLE},
+    "light": {"bg": "#FFFFFF", "title": "#1A1A1A", "sub": "#5A6572", "note": "#8A94A0",
+              "edge": "#C3CCD6", "edge_hot": "#B07E1E", "edge_dim": "#DAE0E7",
+              "edge_label": "#5A6572", "styles": STYLE_LIGHT},
+}
 W, H = 1920, 1080
 REL_ZH = {"cites": "引用", "authored": "著文", "member_of": "属于", "published_in": "刊于", "supports": "支撑", "claims": "主张"}
 
@@ -54,7 +72,10 @@ def wrap(text, n=26, lines=2):
 
 
 class Canvas:
-    def __init__(self, title, subtitle):
+    def __init__(self, title, subtitle, theme="light"):
+        t = THEMES.get(theme, THEMES["light"])
+        self.t = t
+        self.styles = t["styles"]
         self.parts = [
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
             '<defs>'
@@ -63,12 +84,14 @@ class Canvas:
             '<filter id="soft"><feGaussianBlur stdDeviation="4" result="b"/>'
             '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
             '</defs>',
-            f'<rect width="{W}" height="{H}" fill="#0E1420"/>',
-            f'<text x="60" y="70" fill="#F2F6FA" font-family="Georgia, \'Songti SC\', serif" font-size="34" font-weight="bold">{esc(title)}</text>',
-            f'<text x="60" y="108" fill="#8FA0B3" font-family="Georgia, serif" font-size="19">{esc(subtitle)}</text>',
+            f'<rect width="{W}" height="{H}" fill="{t["bg"]}"/>',
+            f'<text x="60" y="70" fill="{t["title"]}" font-family="Georgia, \'Songti SC\', serif" font-size="34" font-weight="bold">{esc(title)}</text>',
+            f'<text x="60" y="108" fill="{t["sub"]}" font-family="Georgia, serif" font-size="19">{esc(subtitle)}</text>',
         ]
 
-    def line(self, x1, y1, x2, y2, stroke="#3A4A61", w=1.4, opacity=1.0, dashed=False, arrow=False):
+    def line(self, x1, y1, x2, y2, stroke=None, w=1.4, opacity=1.0, dashed=False, arrow=False):
+        if stroke is None:
+            stroke = self.t["edge"]
         d = ' stroke-dasharray="7 6"' if dashed else ""
         self.parts.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" '
                           f'stroke="{stroke}" stroke-width="{w}" opacity="{opacity}"{d}/>')
@@ -79,7 +102,7 @@ class Canvas:
             self.parts.append(f'<circle cx="{ax:.1f}" cy="{ay:.1f}" r="3.2" fill="{stroke}" opacity="{opacity}"/>')
 
     def node(self, x, y, r, ntype, label_lines, glow=False, dim=False, sub=""):
-        st = STYLE.get(ntype, STYLE["venue"])
+        st = self.styles.get(ntype, self.styles["venue"])
         op = 0.35 if dim else 1.0
         f = ' filter="url(#glow)"' if glow else ""
         self.parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="{st["fill"]}" '
@@ -94,19 +117,22 @@ class Canvas:
             self.parts.append(f'<text x="{x:.1f}" y="{y - r - 10:.1f}" text-anchor="middle" fill="{st["label"]}" '
                               f'font-family="Georgia, serif" font-size="16" opacity="{op}">{esc(sub)}</text>')
 
-    def edge_label(self, x, y, text, color="#9FB2C8"):
+    def edge_label(self, x, y, text, color=None):
+        if color is None:
+            color = self.t["edge_label"]
         self.parts.append(f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="middle" fill="{color}" '
                           f'font-family="Georgia, serif" font-size="15">{esc(text)}</text>')
 
     def legend(self, entries, note=""):
         x, y = 60, H - 46 - 34 * len(entries)
         for t, lab in entries:
-            st = STYLE[t]
+            st = self.styles[t]
             self.parts.append(f'<circle cx="{x+8}" cy="{y}" r="8" fill="{st["fill"]}" stroke="{st["stroke"]}"/>')
             self.parts.append(f'<text x="{x+26}" y="{y+6}" fill="{st["label"]}" font-family="Georgia, serif" font-size="17">{esc(lab)}</text>')
             y += 34
         if note:
-            self.parts.append(f'<text x="{x}" y="{H-28}" fill="#6E8098" font-family="Georgia, serif" font-size="16">{esc(note)}</text>')
+            note_c = self.t["note"]
+            self.parts.append(f'<text x="{x}" y="{H-28}" fill="{note_c}" font-family="Georgia, serif" font-size="16">{esc(note)}</text>')
 
     def save(self, path):
         self.parts.append("</svg>")
@@ -130,7 +156,7 @@ def paper_group(nodes, edges):
     return p2g
 
 
-def render_global(channel_dir, top_n=12):
+def render_global(channel_dir, top_n=12, theme="light"):
     g = json.loads((channel_dir / "graph.json").read_text(encoding="utf-8"))
     nodes, edges = g["nodes"], g["edges"]
     rankings = []
@@ -155,13 +181,13 @@ def render_global(channel_dir, top_n=12):
     for i, gid in enumerate(ids):
         ang = -math.pi / 2 + 2 * math.pi * i / len(ids)
         pos[gid] = (cx + R * math.cos(ang), cy + R * math.sin(ang))
-    c = Canvas(f"{g['channel']} · 领域全局图", f"top {len(ids)} 课题组 · 节点大小=实力分 · 连线=组间引用流 · {g['updated_at'][:10]}")
+    c = Canvas(f"{g['channel']} · 领域全局图", f"top {len(ids)} 课题组 · 节点大小=实力分 · 连线=组间引用流 · {g['updated_at'][:10]}", theme=theme)
     maxw = max(flow.values(), default=1)
     for (gs, gt), w in flow.items():
         if gs in pos and gt in pos:
             x1, y1 = pos[gs]
             x2, y2 = pos[gt]
-            c.line(x1, y1, x2, y2, stroke="#31435C", w=1 + 5 * w / maxw, opacity=0.25 + 0.5 * w / maxw, arrow=True)
+            c.line(x1, y1, x2, y2, stroke=c.t["edge_dim"], w=1 + 5 * w / maxw, opacity=0.25 + 0.5 * w / maxw, arrow=True)
     for r in top:
         gid = r["group_id"]
         x, y = pos[gid]
@@ -175,7 +201,7 @@ def render_global(channel_dir, top_n=12):
     c.save(out_dir / "global.svg")
 
 
-def render_local(channel_dir, focus, hops=2, highlight=()):
+def render_local(channel_dir, focus, hops=2, highlight=(), theme="light"):
     g = json.loads((channel_dir / "graph.json").read_text(encoding="utf-8"))
     nodes, edges = g["nodes"], g["edges"]
     if focus not in nodes:
@@ -200,7 +226,7 @@ def render_local(channel_dir, focus, hops=2, highlight=()):
             break
     sub = set().union(*layers.values())
     relabeled = set(highlight) | {focus}
-    c = Canvas(f"{nodes[focus]['label'][:46]}", f"局部视图 · {hops} 跳邻域 · {len(sub)} 节点 · 高亮=当前讲述对象")
+    c = Canvas(f"{nodes[focus]['label'][:46]}", f"局部视图 · {hops} 跳邻域 · {len(sub)} 节点 · 高亮=当前讲述对象", theme=theme)
     cx, cy = W / 2, H / 2
     # radial by hop layer
     pos = {focus: (cx, cy)}
@@ -219,7 +245,7 @@ def render_local(channel_dir, focus, hops=2, highlight=()):
         hot = e["s"] in relabeled or e["t"] in relabeled
         x1, y1 = pos[e["s"]]
         x2, y2 = pos[e["t"]]
-        c.line(x1, y1, x2, y2, stroke="#C99A3F" if hot else "#3A4A61", w=2.2 if hot else 1.3,
+        c.line(x1, y1, x2, y2, stroke=c.t["edge_hot"] if hot else c.t["edge"], w=2.2 if hot else 1.3,
                opacity=0.95 if hot else 0.5, arrow=e["rel"] == "cites", dashed=e["rel"] == "member_of")
         if e["s"] == focus or e["t"] == focus:
             c.edge_label((x1 + x2) / 2, (y1 + y2) / 2 - 8, REL_ZH.get(e["rel"], e["rel"]), "#E8C87A")
@@ -248,15 +274,17 @@ def main():
     ap.add_argument("--focus")
     ap.add_argument("--hops", type=int, default=2)
     ap.add_argument("--highlight", default="")
+    ap.add_argument("--bg", choices=["light", "dark"], default="light",
+                    help="export background theme (light matches white deck)")
     ap.add_argument("--top", type=int, default=12)
     args = ap.parse_args()
     cd = pathlib.Path(args.root) / "data" / args.channel
     if args.mode == "global":
-        render_global(cd, args.top)
+        render_global(cd, args.top, theme=args.bg)
     else:
         if not args.focus:
             sys.exit("--focus required for local mode")
-        render_local(cd, args.focus, args.hops, tuple(x for x in args.highlight.split(",") if x))
+        render_local(cd, args.focus, args.hops, tuple(x for x in args.highlight.split(",") if x), theme=args.bg)
 
 
 if __name__ == "__main__":

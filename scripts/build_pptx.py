@@ -407,13 +407,13 @@ def main():
             pg.kicker("领域全景 · GRAPH")
             pg.title(sc["heading"])
             pg.figure(svg_dir / "global.png",
-                      "强化学习领域全局图谱（数据 OpenAlex/arXiv）", fig_n, dark=True)
+                      "强化学习领域全局图谱（数据 OpenAlex/arXiv）", fig_n)
         elif sc.get("topic") == "图谱":
             fig_n += 1
             pg.kicker("论文定位 · GRAPH")
             pg.title(sc["heading"])
             pg.figure(svg_dir / "local.png",
-                      "本期论文的局部引用网络（两跳邻域）", fig_n, dark=True)
+                      "本期论文的局部引用网络（两跳邻域）", fig_n)
         else:
             pg.kicker(sc.get("topic", ""))
             pg.title(sc["heading"])
