@@ -134,3 +134,10 @@
 - TTS 后台任务会用 0 字节日志静默死掉（无 python 进程、GPU 占用残留）——磁盘产物判定+进程数探测双保险，restart 后 scene checkpoint 断点续传有效。
 - `A && B &` 会把整条链后台化，compose 在会话回收时写坏 final.mp4（moov atom not found，7.8MB 假成品）。长命令链要么整体前台，要么分两次发。
 - 图谱刷到 282 篇/1520 作者；新选题照旧从 arXiv 近两周列表挑，OpenAlex 当日候选被社科期刊污染不可用。
+
+## 2026-09-27 (每日例程 · 第 23-24 期 · 上游 API 变更)
+- OpenAlex 两个 fetcher 连续 406/503/504：假邮箱 mailto（paper-radar@example.org）被拒 + 复杂 filter（default.search+日期+来源名搜索）触发 503；已改真实 UA 并去掉假 mailto，复杂 filter 仍偶发 503。回退路径：arXiv Atom API 单类目查询（cat:cs.LG / cat:cs.AI 各 100 条）+ 本地 reinforcement 关键词过滤，产出同格式 raw 文件，图谱照常增量（296 篇/1621 作者）。
+- **arXiv Atom API 拒绝复合查询与引号短语（406）**，AND/OR 编码后必挂；单子句 cat: 查询稳定，max_results=200 会触发限速，100 + 3 秒间隔安全。已把单类目+本地过滤作为 fetch_arxiv 的备用路径记入本条。
+- 两期（BV1JEa46oEu8 Self-Play Pretraining、BV1WVa46cEJh PoEM）全 v4.3 管线，门全清 0 溢出。de-AI 经验层对 2 字母缩写不识别（KL/RL 不算专名），需要在段内自然带出 3+ 字母术语（PoEM/PCA/coverage/product of experts）。
+- biliup tx 线路再次 upos CDN TLS 握手失败（22 号以来第二次），bda2 一次成功；传输阶段失败不产生半截投稿，grep 确认 0 后直接换线重试，本期起直接预生成 bda2 命令文件。
+- dukou 分发：桥服务在 Windows 上日志路径解析到 E:\tmp 失败（ENOENT），跳过本期专栏分发，不阻塞主流程；待 dukou 修复 Windows 路径后再启用。

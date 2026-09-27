@@ -22,8 +22,8 @@ def fetch_via_openalex(channel_dir, cfg, today):
     url = ("https://api.openalex.org/works?filter=default.search:" + q +
            f",from_publication_date:{since},locations.source.display_name.search:arXiv"
            f"&sort=publication_date:desc&per-page={min(cfg['arxiv']['max_results'], 100)}"
-           "&mailto=paper-radar@example.org")
-    req = urllib.request.Request(url, headers={"User-Agent": "paper-radar/0.1"})
+           "")
+    req = urllib.request.Request(url, headers={"User-Agent": "paper-radar/1.0 (github.com/mappedinfo/paper-radar)"})
     with urllib.request.urlopen(req, timeout=60) as r:
         data = json.loads(r.read().decode("utf-8"))
     works = []
@@ -65,7 +65,7 @@ def fetch(channel_dir, cfg):
     query = f"({cats}) AND abs:{ac['query']}"
     url = (f"{API}?search_query={urllib.parse.quote(query)}"
            f"&sortBy=submittedDate&sortOrder=descending&max_results={ac['max_results']}")
-    req = urllib.request.Request(url, headers={"User-Agent": "paper-radar/0.1"})
+    req = urllib.request.Request(url, headers={"User-Agent": "paper-radar/1.0 (github.com/mappedinfo/paper-radar)"})
     import time
     xml = None
     for attempt in range(4):
