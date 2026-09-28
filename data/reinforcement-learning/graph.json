@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-27T08:05:12",
+ "updated_at": "2026-09-28T08:02:18",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -13297,6 +13297,66 @@
    "id": "claim:poem-predicting-rl-outcomes:6",
    "type": "claim",
    "label": "覆盖率指标在解码前即可预测 PoEM 对某个奖励能恢复多少（留一专家检验），覆盖高则恢复多、相对 KL 低；对照方法中 DeRa 只取最高权重专家、MOD 按前向 KL 融合，PoEM 与其反向 KL 规则在特定设置下重合但整体更近目标。"
+  },
+  "claim:selective-token-supervision-opd:1": {
+   "id": "claim:selective-token-supervision-opd:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-28）：共 296 篇论文、1621 位作者。"
+  },
+  "claim:selective-token-supervision-opd:2": {
+   "id": "claim:selective-token-supervision-opd:2",
+   "type": "claim",
+   "label": "Direct On-Policy Distillation（Direct-OPD）把小模型 RL 后获得的策略改进迁移到更大学生模型，用 RL 前后两个检查点在 token 层的对数比率作为学生自身 rollout 上的密集监督；大模型的 RL 成本随规模增长，这条迁移路线的动机是用小模型的 RL 结果放大。"
+  },
+  "claim:selective-token-supervision-opd:3": {
+   "id": "claim:selective-token-supervision-opd:3",
+   "type": "claim",
+   "label": "Direct-OPD 的缺陷是对数比率只度量相对变化，论文给出精确的质量不变构造（命题一），教师与参照在学生候选 token 上的概率质量同步缩放时每个对数比率不变，Direct-OPD 的奖励与更新完全不变，而教师与参照之间的 Jensen-Shannon 散度与两个方向的 KL 都随质量一同趋零；小的 JSD 界住了教师行为改变的大小。"
+  },
+  "claim:selective-token-supervision-opd:4": {
+   "id": "claim:selective-token-supervision-opd:4",
+   "type": "claim",
+   "label": "S2D-OPD 按教师与参照的 JSD 给学生采样到的状态打分，在每个响应内屏蔽低散度状态的监督，只保留散度前 10％ 的状态，不需要额外前向传播。"
+  },
+  "claim:selective-token-supervision-opd:5": {
+   "id": "claim:selective-token-supervision-opd:5",
+   "type": "claim",
+   "label": "两个教师对与四个 1.7B 到 8B 的学生模型上，S2D-OPD 在 AIME 与 HMMT 基准的八个设置中七个提升留出集准确率、第八个打平；对 93 道留出题（每题 32 个响应）做配对自助与符号翻转检验，平均留出准确率从 46.36％ 升到 47.31％，增益 0.95 个百分点（95％ 区间 0.40 到 1.54，p 值 6.4 乘 10 的负 4 次方）。"
+  },
+  "claim:selective-token-supervision-opd:6": {
+   "id": "claim:selective-token-supervision-opd:6",
+   "type": "claim",
+   "label": "分位数分箱实验把状态按 JSD 排序分十箱、每箱单独训一个学生，均匀随机 10％ 对照的峰值验证准确率 51.2 与密集 Direct-OPD 相当，说明密集监督大量冗余；低散度箱的训练有害，高散度箱最有价值。"
+  },
+  "claim:distributional-rl-pomdp:1": {
+   "id": "claim:distributional-rl-pomdp:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-09-28）：共 296 篇论文、1621 位作者。"
+  },
+  "claim:distributional-rl-pomdp:2": {
+   "id": "claim:distributional-rl-pomdp:2",
+   "type": "claim",
+   "label": "分布式强化学习为完全可观察的 MDP 建模整个回报分布而而非只建模期望，能捕捉变异性与高阶统计；现实规划任务里智能体同时面对环境状态不确定与策略结果变异两类不确定性，而部分可观察场景下的分布式方法此前几乎空白，论文做了该方向的首个系统研究。"
+  },
+  "claim:distributional-rl-pomdp:3": {
+   "id": "claim:distributional-rl-pomdp:3",
+   "type": "claim",
+   "label": "论文把 DistRL 扩展到 POMDP，为每个条件计划学习回报分布；引入部分可观察的分布式 Bellman 算子（策略版与最优版），并证明两者在上确界 p-Wasserstein 度量（p 大于等于 1 且有限）下是 γ 压缩，把完全可观察情形的压缩性结论推广到部分可观察。"
+  },
+  "claim:distributional-rl-pomdp:4": {
+   "id": "claim:distributional-rl-pomdp:4",
+   "type": "claim",
+   "label": "论文提出 ψ 向量作为经典 POMDP 求解器中 α 向量的分布式推广，给出回报分布的有限表示；在风险中性准则下最优分布式值函数的期望恢复最优标量值函数。"
+  },
+  "claim:distributional-rl-pomdp:5": {
+   "id": "claim:distributional-rl-pomdp:5",
+   "type": "claim",
+   "label": "DPBVI（Distributional Point-Based Value Iteration）把 ψ 向量集成进标准点备份流程，连接 DistRL 与 POMDP 规划；实验在 MiniGrid DoorKey 5x5 与两状态噪声传感器两个小环境上验证，目标是确认 DPBVI 收敛到与 PBVI 相同的风险中性解而并非提升其性能或效率，处理分布使它更慢。"
+  },
+  "claim:distributional-rl-pomdp:6": {
+   "id": "claim:distributional-rl-pomdp:6",
+   "type": "claim",
+   "label": "两状态噪声传感器环境的相对误差在前约 1500 次备份内上升、峰值低于 3e-4，随后下降并在约 5e-5 处趋平，支持误差来自自举、浮点与分类投影而随时间不累积的判断；两个环境上 DPBVI 都恢复与 PBVI 相同的最优风险中性策略。"
   }
  },
  "edges": [
@@ -25921,16 +25981,6 @@
    "rel": "cites"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2609.30063",
    "t": "claim:selfplay-pretraining-zero-data:1",
    "rel": "claims"
@@ -25988,6 +26038,236 @@
   {
    "s": "arxiv:2609.30226",
    "t": "claim:poem-predicting-rl-outcomes:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.29142",
+   "t": "claim:selective-token-supervision-opd:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.29142",
+   "t": "claim:selective-token-supervision-opd:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.29142",
+   "t": "claim:selective-token-supervision-opd:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.29142",
+   "t": "claim:selective-token-supervision-opd:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.29142",
+   "t": "claim:selective-token-supervision-opd:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.29142",
+   "t": "claim:selective-token-supervision-opd:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24103",
+   "t": "claim:distributional-rl-pomdp:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24103",
+   "t": "claim:distributional-rl-pomdp:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24103",
+   "t": "claim:distributional-rl-pomdp:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24103",
+   "t": "claim:distributional-rl-pomdp:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24103",
+   "t": "claim:distributional-rl-pomdp:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.24103",
+   "t": "claim:distributional-rl-pomdp:6",
    "rel": "claims"
   }
  ]

@@ -166,5 +166,19 @@
     "slug": "poem-predicting-rl-outcomes",
     "bvid": "BV1WVa46cEJh",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-09-28",
+    "paper_id": "arxiv:2609.29142",
+    "slug": "selective-token-supervision-opd",
+    "bvid": "BV1qZae6VEqe",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-28",
+    "paper_id": "arxiv:2609.24103",
+    "slug": "distributional-rl-pomdp",
+    "bvid": "BV18jav6cEMh",
+    "status": "uploaded"
   }
 ]

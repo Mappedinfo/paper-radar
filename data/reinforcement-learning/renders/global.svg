@@ -2,7 +2,7 @@
 <defs><filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="soft"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <rect width="1920" height="1080" fill="#FFFFFF"/>
 <text x="60" y="70" fill="#1A1A1A" font-family="Georgia, 'Songti SC', serif" font-size="34" font-weight="bold">reinforcement-learning · 领域全局图</text>
-<text x="60" y="108" fill="#5A6572" font-family="Georgia, serif" font-size="19">top 12 课题组 · 节点大小=实力分 · 连线=组间引用流 · 2026-09-27</text>
+<text x="60" y="108" fill="#5A6572" font-family="Georgia, serif" font-size="19">top 12 课题组 · 节点大小=实力分 · 连线=组间引用流 · 2026-09-28</text>
 <line x1="960.0" y1="230.0" x2="674.2" y2="725.0" stroke="#DAE0E7" stroke-width="4.0" opacity="0.55"/>
 <circle cx="821.6" cy="469.7" r="3.2" fill="#DAE0E7" opacity="0.55"/>
 <line x1="960.0" y1="230.0" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="4.0" opacity="0.55"/>
@@ -24,19 +24,19 @@
 <text x="960.0" y="325.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">d Kingdom)</text>
 <text x="960.0" y="170.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">7篇 · 引823046</text>
 <circle cx="1125.0" cy="274.2" r="33.6" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="1125.0" y="331.9" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">Google (United States)</text>
+<text x="1125.0" y="331.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">Google (United States)</text>
 <text x="1125.0" y="230.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">7篇 · 引224898</text>
 <circle cx="1245.8" cy="395.0" r="27.2" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="1245.8" y="446.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Worcester Polytechnic </text>
 <text x="1245.8" y="467.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Institute</text>
 <text x="1245.8" y="357.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引94094</text>
-<circle cx="1290.0" cy="560.0" r="25.4" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="1290.0" y="609.4" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Friedrich-Alexander-Un</text>
-<text x="1290.0" y="630.4" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">iversität Erlangen-Nü…</text>
-<text x="1290.0" y="524.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">2篇 · 引65359</text>
-<circle cx="1245.8" cy="725.0" r="25.0" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="1245.8" y="774.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">College of Charleston</text>
-<text x="1245.8" y="690.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引59878</text>
+<circle cx="1290.0" cy="560.0" r="25.3" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="1290.0" y="609.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Friedrich-Alexander-Un</text>
+<text x="1290.0" y="630.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">iversität Erlangen-Nü…</text>
+<text x="1290.0" y="524.7" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">2篇 · 引65359</text>
+<circle cx="1245.8" cy="725.0" r="24.9" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="1245.8" y="773.9" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">College of Charleston</text>
+<text x="1245.8" y="690.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引59878</text>
 <circle cx="1125.0" cy="845.8" r="23.8" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="1125.0" y="893.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">GTE Laboratories Incor</text>
 <text x="1125.0" y="914.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">porated, 40 Sylvan Ro…</text>
@@ -56,7 +56,7 @@
 <circle cx="674.2" cy="395.0" r="21.2" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="674.2" y="440.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">AT&amp;T (United States)</text>
 <text x="674.2" y="363.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引19864</text>
-<circle cx="795.0" cy="274.2" r="21.2" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<circle cx="795.0" cy="274.2" r="21.1" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="795.0" y="319.4" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Institut national de r</text>
 <text x="795.0" y="340.4" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">echerche en sciences …</text>
 <text x="795.0" y="243.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引19768</text>

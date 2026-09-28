@@ -5,8 +5,8 @@
   "authors": 64,
   "papers": 7,
   "citations": 823046,
-  "in_graph_cited": 1518,
-  "score": 861541.6
+  "in_graph_cited": 1656,
+  "score": 865041.2
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,8 @@
   "authors": 9,
   "papers": 7,
   "citations": 224898,
-  "in_graph_cited": 275,
-  "score": 231871.8
+  "in_graph_cited": 300,
+  "score": 232505.8
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -50,8 +50,8 @@
   "authors": 1,
   "papers": 4,
   "citations": 43290,
-  "in_graph_cited": 110,
-  "score": 45564.8
+  "in_graph_cited": 120,
+  "score": 45771.6
  },
  {
   "group_id": "group:universidad de granada",
@@ -77,8 +77,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 66,
-  "score": 26594.9
+  "in_graph_cited": 72,
+  "score": 26670.9
  },
  {
   "group_id": "group:university of toledo",
@@ -122,8 +122,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 18208,
-  "in_graph_cited": 44,
-  "score": 18765.9
+  "in_graph_cited": 48,
+  "score": 18816.6
  },
  {
   "group_id": "group:brown university",
@@ -131,8 +131,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 22,
-  "score": 18189.0
+  "in_graph_cited": 24,
+  "score": 18214.3
  },
  {
   "group_id": "group:swansea university",
@@ -212,8 +212,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 11890,
-  "in_graph_cited": 22,
-  "score": 12169.0
+  "in_graph_cited": 24,
+  "score": 12194.3
  },
  {
   "group_id": "group:sorbonne université",
@@ -230,8 +230,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 22,
-  "score": 9383.0
+  "in_graph_cited": 24,
+  "score": 9408.3
  },
  {
   "group_id": "group:carnegie mellon university",
@@ -239,8 +239,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 11,
-  "score": 9094.5
+  "in_graph_cited": 12,
+  "score": 9107.2
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -320,8 +320,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 33,
-  "score": 7944.4
+  "in_graph_cited": 36,
+  "score": 7982.5
  },
  {
   "group_id": "group:stanford university",
@@ -347,8 +347,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 11,
-  "score": 6084.5
+  "in_graph_cited": 12,
+  "score": 6097.2
  },
  {
   "group_id": "group:tu dortmund university",
@@ -356,8 +356,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 11,
-  "score": 6084.5
+  "in_graph_cited": 12,
+  "score": 6097.2
  },
  {
   "group_id": "group:university of fribourg",

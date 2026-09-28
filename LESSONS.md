@@ -141,3 +141,8 @@
 - 两期（BV1JEa46oEu8 Self-Play Pretraining、BV1WVa46cEJh PoEM）全 v4.3 管线，门全清 0 溢出。de-AI 经验层对 2 字母缩写不识别（KL/RL 不算专名），需要在段内自然带出 3+ 字母术语（PoEM/PCA/coverage/product of experts）。
 - biliup tx 线路再次 upos CDN TLS 握手失败（22 号以来第二次），bda2 一次成功；传输阶段失败不产生半截投稿，grep 确认 0 后直接换线重试，本期起直接预生成 bda2 命令文件。
 - dukou 分发：桥服务在 Windows 上日志路径解析到 E:\tmp 失败（ENOENT），跳过本期专栏分发，不阻塞主流程；待 dukou 修复 Windows 路径后再启用。
+
+## 2026-09-28 (每日例程 · 第 25-26 期 · 连续第二天上游故障)
+- OpenAlex 持续 503/504，fetch_arxiv 的 OpenAlex 回退路径 406（连续第二天）；arXiv Atom 单类目+本地过滤回退稳定供数（14 条，周末无新稿，选题从存量池补）。arXiv 原子 API 对 max_results=200 限速、复合查询 406 的结论复验一致。
+- 两期（BV1qZae6VEqe S2D-OPD、BV18jav6cEMh DistRL-POMDP）全 v4.3 管线，门全清 0 溢出；bda2 线路直连两次一次成功（tx 线路本周弃用）。
+- 选题池观察：周末 arXiv 不更新索引，周二例程可能面临选题池耗尽，届时从 09-22 存量文件（60 条）补选即可，已在例程提示词中隐含覆盖。
