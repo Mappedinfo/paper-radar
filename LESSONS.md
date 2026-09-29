@@ -146,3 +146,8 @@
 - OpenAlex 持续 503/504，fetch_arxiv 的 OpenAlex 回退路径 406（连续第二天）；arXiv Atom 单类目+本地过滤回退稳定供数（14 条，周末无新稿，选题从存量池补）。arXiv 原子 API 对 max_results=200 限速、复合查询 406 的结论复验一致。
 - 两期（BV1qZae6VEqe S2D-OPD、BV18jav6cEMh DistRL-POMDP）全 v4.3 管线，门全清 0 溢出；bda2 线路直连两次一次成功（tx 线路本周弃用）。
 - 选题池观察：周末 arXiv 不更新索引，周二例程可能面临选题池耗尽，届时从 09-22 存量文件（60 条）补选即可，已在例程提示词中隐含覆盖。
+
+## 2026-09-29 (每日例程 · 第 27-28 期 · 上游故障第三天)
+- OpenAlex 连续第三天 503/504，arXiv Atom 单类目回退稳定供数；09-25 新稿 13 条入库，图谱 +13 到 309 篇/1681 作者。三天的模式确认 OpenAlex 复杂 filter 已事实性失效，考虑把 arXiv Atom 提为主路径（待 OpenAlex 恢复再降级回）。
+- **溯源门的全角百分号盲区**：claims 用全角％而幻灯片用半角% 时，normNumeric 只识别半角单位，25% 报「不可溯源」。修复方式是 claims 统一写半角%。这应该进 build-plaindeck 的规范化（把％归一为%），本期先在写作侧规避，遗留待修。
+- 两期（BV1iXaE6aETN ConfSFT、BV12uaJ6SEdH 挖掘机 MBRC）全 v4.3 管线，门全清 0 溢出，bda2 一次成功。de-AI 门拦下黑话「打法」与三段无专名旁白。

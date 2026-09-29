@@ -180,5 +180,19 @@
     "slug": "distributional-rl-pomdp",
     "bvid": "BV18jav6cEMh",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-09-29",
+    "paper_id": "arxiv:2609.31619",
+    "slug": "learning-to-stop-confidence",
+    "bvid": "BV1iXaE6aETN",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-29",
+    "paper_id": "arxiv:2609.31025",
+    "slug": "precision-at-speed-mbrc",
+    "bvid": "BV12uaJ6SEdH",
+    "status": "uploaded"
   }
 ]
