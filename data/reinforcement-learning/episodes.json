@@ -194,5 +194,19 @@
     "slug": "precision-at-speed-mbrc",
     "bvid": "BV12uaJ6SEdH",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-09-30",
+    "paper_id": "arxiv:2609.35677",
+    "slug": "verifier-errors-rlvr",
+    "bvid": "BV1WNaR6gEcd",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-09-30",
+    "paper_id": "arxiv:2609.35505",
+    "slug": "rl-view-of-opd-lspd",
+    "bvid": "BV12fa965EKg",
+    "status": "uploaded"
   }
 ]
