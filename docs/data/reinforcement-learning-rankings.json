@@ -2,11 +2,11 @@
  {
   "group_id": "group:google deepmind (united kingdom)",
   "group": "Google DeepMind (United Kingdom)",
-  "authors": 64,
+  "authors": 65,
   "papers": 7,
-  "citations": 823046,
-  "in_graph_cited": 1932,
-  "score": 872040.4
+  "citations": 829336,
+  "in_graph_cited": 2097,
+  "score": 882514.7
  },
  {
   "group_id": "group:google (united states)",
@@ -14,17 +14,17 @@
   "authors": 9,
   "papers": 7,
   "citations": 224898,
-  "in_graph_cited": 350,
-  "score": 233773.8
+  "in_graph_cited": 397,
+  "score": 234965.7
  },
  {
   "group_id": "group:worcester polytechnic institute",
   "group": "Worcester Polytechnic Institute",
-  "authors": 22,
+  "authors": 21,
   "papers": 1,
-  "citations": 94094,
+  "citations": 89817,
   "in_graph_cited": 0,
-  "score": 94094.0
+  "score": 89817.0
  },
  {
   "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
@@ -32,26 +32,26 @@
   "authors": 7,
   "papers": 2,
   "citations": 65359,
-  "in_graph_cited": 0,
-  "score": 65359.0
+  "in_graph_cited": 5,
+  "score": 65439.0
  },
  {
   "group_id": "group:college of charleston",
   "group": "College of Charleston",
-  "authors": 14,
+  "authors": 13,
   "papers": 1,
-  "citations": 59878,
+  "citations": 55601,
   "in_graph_cited": 0,
-  "score": 59878.0
+  "score": 55601.0
  },
  {
-  "group_id": "group:gte laboratories incorporated, 40 sylvan road, waltham, ma, 02254, usa",
-  "group": "GTE Laboratories Incorporated, 40 Sylvan Road, Waltham, MA, 02254, USA",
+  "group_id": "group:gte (united states)",
+  "group": "GTE (United States)",
   "authors": 1,
   "papers": 4,
   "citations": 43290,
-  "in_graph_cited": 140,
-  "score": 46185.2
+  "in_graph_cited": 150,
+  "score": 46392.0
  },
  {
   "group_id": "group:universidad de granada",
@@ -77,8 +77,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 84,
-  "score": 26823.1
+  "in_graph_cited": 90,
+  "score": 26899.2
  },
  {
   "group_id": "group:university of toledo",
@@ -88,6 +88,15 @@
   "citations": 26109,
   "in_graph_cited": 0,
   "score": 26109.0
+ },
+ {
+  "group_id": "group:king fahd university of petroleum and minerals",
+  "group": "King Fahd University of Petroleum and Minerals",
+  "authors": 5,
+  "papers": 1,
+  "citations": 21385,
+  "in_graph_cited": 0,
+  "score": 21385.0
  },
  {
   "group_id": "group:at&t (united states)",
@@ -117,31 +126,13 @@
   "score": 19768.0
  },
  {
-  "group_id": "group:the fram centre",
-  "group": "The FRAM Centre",
-  "authors": 2,
-  "papers": 1,
-  "citations": 18208,
-  "in_graph_cited": 56,
-  "score": 18918.1
- },
- {
   "group_id": "group:brown university",
   "group": "Brown University",
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 28,
-  "score": 18265.0
- },
- {
-  "group_id": "group:swansea university",
-  "group": "Swansea University",
-  "authors": 4,
-  "papers": 1,
-  "citations": 17108,
-  "in_graph_cited": 0,
-  "score": 17108.0
+  "in_graph_cited": 30,
+  "score": 18290.4
  },
  {
   "group_id": "group:university of st andrews",
@@ -164,6 +155,15 @@
  {
   "group_id": "group:symbiosis international university",
   "group": "Symbiosis International University",
+  "authors": 3,
+  "papers": 1,
+  "citations": 12831,
+  "in_graph_cited": 0,
+  "score": 12831.0
+ },
+ {
+  "group_id": "group:swansea university",
+  "group": "Swansea University",
   "authors": 3,
   "papers": 1,
   "citations": 12831,
@@ -212,8 +212,17 @@
   "authors": 2,
   "papers": 1,
   "citations": 11890,
-  "in_graph_cited": 28,
-  "score": 12245.0
+  "in_graph_cited": 30,
+  "score": 12270.4
+ },
+ {
+  "group_id": "group:university of oxford",
+  "group": "University of Oxford",
+  "authors": 2,
+  "papers": 2,
+  "citations": 10863,
+  "in_graph_cited": 0,
+  "score": 10863.0
  },
  {
   "group_id": "group:sorbonne université",
@@ -225,13 +234,31 @@
   "score": 9884.0
  },
  {
+  "group_id": "group:the fram centre",
+  "group": "The FRAM Centre",
+  "authors": 1,
+  "papers": 1,
+  "citations": 9104,
+  "in_graph_cited": 30,
+  "score": 9484.4
+ },
+ {
   "group_id": "group:university of edinburgh",
   "group": "University of Edinburgh",
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 28,
-  "score": 9459.0
+  "in_graph_cited": 30,
+  "score": 9484.4
+ },
+ {
+  "group_id": "group:25b framfield road, n5 iuu, highbury, london, england",
+  "group": "25b Framfield Road, N5 IUU, Highbury, London, England",
+  "authors": 1,
+  "papers": 1,
+  "citations": 9104,
+  "in_graph_cited": 30,
+  "score": 9484.4
  },
  {
   "group_id": "group:carnegie mellon university",
@@ -239,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 14,
-  "score": 9132.5
+  "in_graph_cited": 15,
+  "score": 9145.2
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -254,15 +281,6 @@
  {
   "group_id": "group:king abdulaziz university",
   "group": "King Abdulaziz University",
-  "authors": 2,
-  "papers": 1,
-  "citations": 8554,
-  "in_graph_cited": 0,
-  "score": 8554.0
- },
- {
-  "group_id": "group:georgia state university",
-  "group": "Georgia State University",
   "authors": 2,
   "papers": 1,
   "citations": 8554,
@@ -311,12 +329,12 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 42,
-  "score": 8058.5
+  "in_graph_cited": 46,
+  "score": 8109.3
  },
  {
-  "group_id": "group:u illinois",
-  "group": "U Illinois",
+  "group_id": "group:university of illinois urbana-champaign",
+  "group": "University of Illinois Urbana-Champaign",
   "authors": 2,
   "papers": 1,
   "citations": 8050,
@@ -333,22 +351,13 @@
   "score": 7596.0
  },
  {
-  "group_id": "group:university of oxford",
-  "group": "University of Oxford",
-  "authors": 1,
-  "papers": 1,
-  "citations": 6418,
-  "in_graph_cited": 0,
-  "score": 6418.0
- },
- {
   "group_id": "group:university of milan",
   "group": "University of Milan",
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 14,
-  "score": 6122.5
+  "in_graph_cited": 15,
+  "score": 6135.2
  },
  {
   "group_id": "group:tu dortmund university",
@@ -356,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 14,
-  "score": 6122.5
+  "in_graph_cited": 15,
+  "score": 6135.2
  },
  {
   "group_id": "group:university of fribourg",
@@ -380,15 +389,6 @@
  {
   "group_id": "group:department of computing, prowler.io",
   "group": "Department of Computing, PROWLER.io",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4445,
-  "in_graph_cited": 0,
-  "score": 4445.0
- },
- {
-  "group_id": "group:arizona state university",
-  "group": "Arizona State University",
   "authors": 1,
   "papers": 1,
   "citations": 4445,
@@ -423,6 +423,15 @@
   "score": 4277.0
  },
  {
+  "group_id": "group:georgia state university",
+  "group": "Georgia State University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 4277,
+  "in_graph_cited": 0,
+  "score": 4277.0
+ },
+ {
   "group_id": "group:niit (india)",
   "group": "NIIT (India)",
   "authors": 1,
@@ -434,15 +443,6 @@
  {
   "group_id": "group:northumbria university",
   "group": "Northumbria University",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4277,
-  "in_graph_cited": 0,
-  "score": 4277.0
- },
- {
-  "group_id": "group:king fahd university of petroleum and minerals",
-  "group": "King Fahd University of Petroleum and Minerals",
   "authors": 1,
   "papers": 1,
   "citations": 4277,
@@ -513,15 +513,6 @@
   "score": 4277.0
  },
  {
-  "group_id": "group:swansea bay university health board",
-  "group": "Swansea Bay University Health Board",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4277,
-  "in_graph_cited": 0,
-  "score": 4277.0
- },
- {
   "group_id": "group:university of bedfordshire",
   "group": "University of Bedfordshire",
   "authors": 1,
@@ -567,15 +558,6 @@
   "score": 4277.0
  },
  {
-  "group_id": "group:humans and management in society",
-  "group": "Humans and management in society",
-  "authors": 1,
-  "papers": 1,
-  "citations": 4277,
-  "in_graph_cited": 0,
-  "score": 4277.0
- },
- {
   "group_id": "group:laboratoire d'economie et de management de nantes atlantique",
   "group": "Laboratoire d'Economie et de Management de Nantes Atlantique",
   "authors": 1,
@@ -594,8 +576,26 @@
   "score": 4277.0
  },
  {
-  "group_id": "group:university of illinois urbana-champaign",
-  "group": "University of Illinois Urbana-Champaign",
+  "group_id": "group:middle georgia state university",
+  "group": "Middle Georgia State University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 4277,
+  "in_graph_cited": 0,
+  "score": 4277.0
+ },
+ {
+  "group_id": "group:university of central florida",
+  "group": "University of Central Florida",
+  "authors": 1,
+  "papers": 1,
+  "citations": 4277,
+  "in_graph_cited": 0,
+  "score": 4277.0
+ },
+ {
+  "group_id": "group:u illinois",
+  "group": "U Illinois",
   "authors": 1,
   "papers": 1,
   "citations": 4025,
@@ -603,8 +603,8 @@
   "score": 4025.0
  },
  {
-  "group_id": "group:university of rochester",
-  "group": "University of Rochester",
+  "group_id": "group:university of rochester medicine",
+  "group": "University of Rochester Medicine",
   "authors": 1,
   "papers": 1,
   "citations": 3798,

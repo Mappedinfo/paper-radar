@@ -208,5 +208,19 @@
     "slug": "rl-view-of-opd-lspd",
     "bvid": "BV12fa965EKg",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-01",
+    "paper_id": "arxiv:2609.35426",
+    "slug": "frontier-learning-llm-reasoners",
+    "bvid": "BV1i9Yw6SELc",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-01",
+    "paper_id": "arxiv:2609.35525",
+    "slug": "devote-epistemic-exploration",
+    "bvid": "BV1BmYw69EXi",
+    "status": "uploaded"
   }
 ]

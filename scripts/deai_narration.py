@@ -33,7 +33,7 @@ STRUCTURE_PATTERNS = [
 ]
 # experience layer proxies
 EXPERIENCE_CHECKS = [
-    (re.compile(r"可能|或许|在某些情况下|具体取决于", re.M), "两头堵限定（hedged judgment）"),
+    (re.compile(r"(?<![不也只])可能|或许|在某些情况下|具体取决于", re.M), "两头堵限定（hedged judgment）"),  # 排除「不可能/也可能」
     (re.compile(r"许多|不少|大量|显著|一定程度", re.M), "不给数字的模糊量词（swappable detail）"),
 ]
 

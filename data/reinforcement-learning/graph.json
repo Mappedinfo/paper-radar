@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-09-30T08:05:03",
+ "updated_at": "2026-10-01T08:06:46",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -1874,7 +1874,8 @@
   "author:sergey levine": {
    "id": "author:sergey levine",
    "type": "author",
-   "label": "Sergey Levine"
+   "label": "Sergey Levine",
+   "openalex": "https://openalex.org/A5026322200"
   },
   "author:aviral kumar": {
    "id": "author:aviral kumar",
@@ -14798,6 +14799,151 @@
    "id": "claim:rl-view-of-opd-lspd:6",
    "type": "claim",
    "label": "Pass@k 评估做到 k 为 64，LSPD 随 k 增长性能持续增强，显示其更好保留策略多样性与解的覆盖；完全离策略变体只用前 25% 的 rollout 批次就达到与原版 OPD 相当的性能，LSPD-RB 约 10 个 rollout 批次即饱和，而单更新的 LSPD 需要 40 批次以上。"
+  },
+  "group:25b framfield road, n5 iuu, highbury, london, england": {
+   "id": "group:25b framfield road, n5 iuu, highbury, london, england",
+   "type": "group",
+   "label": "25b Framfield Road, N5 IUU, Highbury, London, England"
+  },
+  "author:hado p. van hasselt": {
+   "id": "author:hado p. van hasselt",
+   "type": "author",
+   "label": "Hado P. van Hasselt",
+   "openalex": "https://openalex.org/A5033135596"
+  },
+  "group:middle georgia state university": {
+   "id": "group:middle georgia state university",
+   "type": "group",
+   "label": "Middle Georgia State University"
+  },
+  "group:university of central florida": {
+   "id": "group:university of central florida",
+   "type": "group",
+   "label": "University of Central Florida"
+  },
+  "group:gte (united states)": {
+   "id": "group:gte (united states)",
+   "type": "group",
+   "label": "GTE (United States)"
+  },
+  "group:university of rochester medicine": {
+   "id": "group:university of rochester medicine",
+   "type": "group",
+   "label": "University of Rochester Medicine"
+  },
+  "doi:10.48550/arxiv.1801.01290": {
+   "id": "doi:10.48550/arxiv.1801.01290",
+   "type": "paper",
+   "label": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+   "year": 2018,
+   "citations": 3754,
+   "venue": "arXiv (Cornell University)",
+   "doi": "10.48550/arxiv.1801.01290",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W2781726626"
+  },
+  "author:tuomas haarnoja": {
+   "id": "author:tuomas haarnoja",
+   "type": "author",
+   "label": "Tuomas Haarnoja",
+   "openalex": "https://openalex.org/A5030073861"
+  },
+  "author:aurick zhou": {
+   "id": "author:aurick zhou",
+   "type": "author",
+   "label": "Aurick Zhou",
+   "openalex": "https://openalex.org/A5070399587"
+  },
+  "author:pieter abbeel": {
+   "id": "author:pieter abbeel",
+   "type": "author",
+   "label": "Pieter Abbeel",
+   "openalex": "https://openalex.org/A5049349154"
+  },
+  "doi:10.1007/978-3-032-39882-6_10": {
+   "id": "doi:10.1007/978-3-032-39882-6_10",
+   "type": "paper",
+   "label": "Learning to Order: GNN-Based Deep Reinforcement Learning Policies for Autoregressive Graph Models",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-39882-6_10",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7214712026"
+  },
+  "author:alysson amaral da silva": {
+   "id": "author:alysson amaral da silva",
+   "type": "author",
+   "label": "Alysson Amaral da Silva",
+   "openalex": "https://openalex.org/A5153534761"
+  },
+  "author:andré luís vignatti": {
+   "id": "author:andré luís vignatti",
+   "type": "author",
+   "label": "André Luís Vignatti",
+   "openalex": "https://openalex.org/A5114116069"
+  },
+  "claim:frontier-learning-llm-reasoners:1": {
+   "id": "claim:frontier-learning-llm-reasoners:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-01）：共 331 篇论文、1812 位作者。"
+  },
+  "claim:frontier-learning-llm-reasoners:2": {
+   "id": "claim:frontier-learning-llm-reasoners:2",
+   "type": "claim",
+   "label": "标准 RL 后训练在固定题池上用 GRPO 微调，GRPO 对组内奖励全同的题没有优化信号，因此学习信号只在策略 rollout 有成功有失败时出现，固定题池的有效部分随模型进步迅速过期，题池全解后方法失效；现有改进（过滤、重加权、PLR 等）仍受固定池覆盖限制。"
+  },
+  "claim:frontier-learning-llm-reasoners:3": {
+   "id": "claim:frontier-learning-llm-reasoners:3",
+   "type": "claim",
+   "label": "frontier learning 是开放式后训练方法，用程序化生成器在线持续产出有信息量的训练题，把生成器的任务参数当作搜索空间，用 regret 信号 R(ℓ) 优先探索前沿难度层级，把训练聚焦在模型演化中的能力边缘；难度由任务属性缩放（如推箱子的网格边长、箱子数、最短解步数）。"
+  },
+  "claim:frontier-learning-llm-reasoners:4": {
+   "id": "claim:frontier-learning-llm-reasoners:4",
+   "type": "claim",
+   "label": "主结果（200 步 GRPO、固定锚点评估集，Qwen3-4B-Base 与 Qwen3-4B）上，frontier learning 在 Countdown 得 50.9 对最强基线 PLR 的 44.3（相对增益 13.9%），Sokoban 得 45.2 对 41.1（相对增益 10.0%），Decimal Arithmetic 得 34.7 对 31.0（相对增益 11.9%）。"
+  },
+  "claim:frontier-learning-llm-reasoners:5": {
+   "id": "claim:frontier-learning-llm-reasoners:5",
+   "type": "claim",
+   "label": "Dice 任务上 frontier learning 得 71.8，最强基线 SEC 为 33.3，相对增益 115.6%；组件消融显示 Unif+变异 47.1、PLR+变异 62.5，regret 探索与变异缺一不可；基线含 Domain Randomization、Uniform、SEC、PLR、ACE-GRPO 与 DAPO。"
+  },
+  "claim:frontier-learning-llm-reasoners:6": {
+   "id": "claim:frontier-learning-llm-reasoners:6",
+   "type": "claim",
+   "label": "Largest Island 任务（500 步、Olmo-3-7B-Instruct）上 frontier learning 得 73.7 对 PLR 的 52.0 与 ACE-GRPO 的 45.3；端到端算力核算显示其运行时 52.4 小时与响应长度 1498 token 都处于基线跨度的中段，优势不能归因于更多算力或更长响应。"
+  },
+  "claim:devote-epistemic-exploration:1": {
+   "id": "claim:devote-epistemic-exploration:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-01）：共 331 篇论文、1812 位作者。"
+  },
+  "claim:devote-epistemic-exploration:2": {
+   "id": "claim:devote-epistemic-exploration:2",
+   "type": "claim",
+   "label": "有原则的探索要求智能体量化自身认知不确定性并主动消除它，值函数的不确定性是探索的天然信号，但既有的深度近似脆弱且表现不稳定，核心挑战是如何让这些思想稳健地规模化；论文对深度认知值函数中不确定性的表示、传播与优化三根轴做了系统实证研究，并在每根轴上找出不同的失败模式。"
+  },
+  "claim:devote-epistemic-exploration:3": {
+   "id": "claim:devote-epistemic-exploration:3",
+   "type": "claim",
+   "label": "DEVOTE 是由此导出的无模型强化学习算法，组合三件工具应对三轴挑战，结构化函数空间先验控制不确定性如何向数据外泛化，TUD（Temporal Uncertainty Difference）学习稳定不确定性的时间传播，可塑性正则保持对新非平稳探索目标的适应能力。"
+  },
+  "claim:devote-epistemic-exploration:4": {
+   "id": "claim:devote-epistemic-exploration:4",
+   "type": "claim",
+   "label": "网络架构把值函数写成基网络加先验加修正网络的形式，基网络不以不确定性为条件，先验固定，修正网络承载学习的不确定性修正，先验抵消可在有数据处压低不确定性的同时保留陌生状态处的不确定性。"
+  },
+  "claim:devote-epistemic-exploration:5": {
+   "id": "claim:devote-epistemic-exploration:5",
+   "type": "claim",
+   "label": "回归基准与合成 GP 任务上的校准比较显示，集成在 UCI 数据上平均相关性最高，随机特征网络在合成 GP 任务上更好，且区分陌生区域与准确排序预测误差是两种不同的能力；固定策略猎豹评估上 TUD 在先验长度尺度 2.5 及以上改善两项校准指标。"
+  },
+  "claim:devote-epistemic-exploration:6": {
+   "id": "claim:devote-epistemic-exploration:6",
+   "type": "claim",
+   "label": "无奖励探索与连续控制任务上 DEVOTE 比强无模型与有模型探索基线更快到达新颖状态并取得更高任务回报；U 形 PointMaze 的 4M 步无奖励探索按软重置强度 0 到 0.75 五档做消融，每档五个种子；AntMaze 与 PickAndPlace 的状态覆盖上 DEVOTE 扩张最快，RND 在 AntMaze 也能满覆盖但在 PickAndPlace 的覆盖低于 SAC。"
   }
  },
  "edges": [
@@ -29057,16 +29203,6 @@
    "rel": "cites"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2609.35677",
    "t": "claim:verifier-errors-rlvr:1",
    "rel": "claims"
@@ -29124,6 +29260,376 @@
   {
    "s": "arxiv:2609.35505",
    "t": "claim:rl-view-of-opd-lspd:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "author:christopher j. c. h. watkins",
+   "t": "group:25b framfield road, n5 iuu, highbury, london, england",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:hado p. van hasselt",
+   "t": "doi:10.1609/aaai.v30i1.10295",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hado p. van hasselt",
+   "t": "group:google deepmind (united kingdom)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:miles brundage",
+   "t": "group:university of oxford",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "author:alex a. koohang",
+   "t": "group:middle georgia state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:denis dennehy",
+   "t": "group:college of charleston",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:paul jones",
+   "t": "group:king fahd university of petroleum and minerals",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:fevzi okumuş",
+   "t": "group:university of central florida",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:sven‐volker rehm",
+   "t": "group:king fahd university of petroleum and minerals",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:viswanath venkatesh",
+   "t": "group:king fahd university of petroleum and minerals",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:giampaolo viglia",
+   "t": "group:king fahd university of petroleum and minerals",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:michael g. h. coles",
+   "t": "group:university of illinois urbana-champaign",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:richard s. sutton",
+   "t": "group:gte (united states)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:suzanne n. haber",
+   "t": "group:university of rochester medicine",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "venue:arxiv (cornell university)",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:tuomas haarnoja",
+   "t": "doi:10.48550/arxiv.1801.01290",
+   "rel": "authored"
+  },
+  {
+   "s": "author:aurick zhou",
+   "t": "doi:10.48550/arxiv.1801.01290",
+   "rel": "authored"
+  },
+  {
+   "s": "author:pieter abbeel",
+   "t": "doi:10.48550/arxiv.1801.01290",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sergey levine",
+   "t": "doi:10.48550/arxiv.1801.01290",
+   "rel": "authored"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-39882-6_10",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:alysson amaral da silva",
+   "t": "doi:10.1007/978-3-032-39882-6_10",
+   "rel": "authored"
+  },
+  {
+   "s": "author:andré luís vignatti",
+   "t": "doi:10.1007/978-3-032-39882-6_10",
+   "rel": "authored"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2609.35426",
+   "t": "claim:frontier-learning-llm-reasoners:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35426",
+   "t": "claim:frontier-learning-llm-reasoners:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35426",
+   "t": "claim:frontier-learning-llm-reasoners:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35426",
+   "t": "claim:frontier-learning-llm-reasoners:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35426",
+   "t": "claim:frontier-learning-llm-reasoners:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35426",
+   "t": "claim:frontier-learning-llm-reasoners:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35525",
+   "t": "claim:devote-epistemic-exploration:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35525",
+   "t": "claim:devote-epistemic-exploration:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35525",
+   "t": "claim:devote-epistemic-exploration:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35525",
+   "t": "claim:devote-epistemic-exploration:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35525",
+   "t": "claim:devote-epistemic-exploration:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2609.35525",
+   "t": "claim:devote-epistemic-exploration:6",
    "rel": "claims"
   }
  ]

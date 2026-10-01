@@ -2,64 +2,61 @@
 <defs><filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="soft"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <rect width="1920" height="1080" fill="#FFFFFF"/>
 <text x="60" y="70" fill="#1A1A1A" font-family="Georgia, 'Songti SC', serif" font-size="34" font-weight="bold">reinforcement-learning · 领域全局图</text>
-<text x="60" y="108" fill="#5A6572" font-family="Georgia, serif" font-size="19">top 12 课题组 · 节点大小=实力分 · 连线=组间引用流 · 2026-09-30</text>
+<text x="60" y="108" fill="#5A6572" font-family="Georgia, serif" font-size="19">top 12 课题组 · 节点大小=实力分 · 连线=组间引用流 · 2026-10-01</text>
 <line x1="960.0" y1="230.0" x2="674.2" y2="725.0" stroke="#DAE0E7" stroke-width="4.0" opacity="0.55"/>
 <circle cx="821.6" cy="469.7" r="3.2" fill="#DAE0E7" opacity="0.55"/>
-<line x1="960.0" y1="230.0" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="4.0" opacity="0.55"/>
-<circle cx="1040.2" cy="529.2" r="3.2" fill="#DAE0E7" opacity="0.55"/>
+<line x1="960.0" y1="230.0" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="6.0" opacity="0.75"/>
+<circle cx="1040.2" cy="529.2" r="3.2" fill="#DAE0E7" opacity="0.75"/>
 <line x1="674.2" y1="725.0" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="2.0" opacity="0.35"/>
 <circle cx="890.9" cy="783.1" r="3.2" fill="#DAE0E7" opacity="0.35"/>
 <line x1="1290.0" y1="560.0" x2="960.0" y2="230.0" stroke="#DAE0E7" stroke-width="2.0" opacity="0.35"/>
 <circle cx="1131.4" cy="401.4" r="3.2" fill="#DAE0E7" opacity="0.35"/>
-<line x1="1125.0" y1="274.2" x2="960.0" y2="230.0" stroke="#DAE0E7" stroke-width="6.0" opacity="0.75"/>
-<circle cx="1051.2" cy="254.4" r="3.2" fill="#DAE0E7" opacity="0.75"/>
-<line x1="1125.0" y1="274.2" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="3.0" opacity="0.45"/>
-<circle cx="1125.0" cy="551.0" r="3.2" fill="#DAE0E7" opacity="0.45"/>
-<line x1="674.2" y1="395.0" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="2.0" opacity="0.35"/>
-<circle cx="893.2" cy="614.0" r="3.2" fill="#DAE0E7" opacity="0.35"/>
-<line x1="674.2" y1="395.0" x2="674.2" y2="725.0" stroke="#DAE0E7" stroke-width="2.0" opacity="0.35"/>
-<circle cx="674.2" cy="551.0" r="3.2" fill="#DAE0E7" opacity="0.35"/>
+<line x1="1125.0" y1="274.2" x2="960.0" y2="230.0" stroke="#DAE0E7" stroke-width="5.0" opacity="0.65"/>
+<circle cx="1051.2" cy="254.4" r="3.2" fill="#DAE0E7" opacity="0.65"/>
+<line x1="795.0" y1="274.2" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="2.0" opacity="0.35"/>
+<circle cx="955.5" cy="552.2" r="3.2" fill="#DAE0E7" opacity="0.35"/>
+<line x1="795.0" y1="274.2" x2="674.2" y2="725.0" stroke="#DAE0E7" stroke-width="2.0" opacity="0.35"/>
+<circle cx="736.9" cy="490.9" r="3.2" fill="#DAE0E7" opacity="0.35"/>
 <circle cx="960.0" cy="230.0" r="50.0" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="960.0" y="304.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Google DeepMind (Unite</text>
 <text x="960.0" y="325.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">d Kingdom)</text>
-<text x="960.0" y="170.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">7篇 · 引823046</text>
-<circle cx="1125.0" cy="274.2" r="33.6" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="960.0" y="170.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">7篇 · 引829336</text>
+<circle cx="1125.0" cy="274.2" r="33.5" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="1125.0" y="331.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">Google (United States)</text>
-<text x="1125.0" y="230.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">7篇 · 引224898</text>
-<circle cx="1245.8" cy="395.0" r="27.2" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="1245.8" y="446.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Worcester Polytechnic </text>
-<text x="1245.8" y="467.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Institute</text>
-<text x="1245.8" y="357.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引94094</text>
+<text x="1125.0" y="230.7" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">7篇 · 引224898</text>
+<circle cx="1245.8" cy="395.0" r="26.8" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="1245.8" y="445.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Worcester Polytechnic </text>
+<text x="1245.8" y="466.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Institute</text>
+<text x="1245.8" y="358.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引89817</text>
 <circle cx="1290.0" cy="560.0" r="25.3" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="1290.0" y="609.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Friedrich-Alexander-Un</text>
 <text x="1290.0" y="630.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">iversität Erlangen-Nü…</text>
 <text x="1290.0" y="524.7" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">2篇 · 引65359</text>
-<circle cx="1245.8" cy="725.0" r="24.9" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="1245.8" y="773.9" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">College of Charleston</text>
-<text x="1245.8" y="690.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引59878</text>
+<circle cx="1245.8" cy="725.0" r="24.5" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="1245.8" y="773.5" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">College of Charleston</text>
+<text x="1245.8" y="690.5" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引55601</text>
 <circle cx="1125.0" cy="845.8" r="23.8" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="1125.0" y="893.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">GTE Laboratories Incor</text>
-<text x="1125.0" y="914.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">porated, 40 Sylvan Ro…</text>
+<text x="1125.0" y="893.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">GTE (United States)</text>
 <text x="1125.0" y="812.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">4篇 · 引43290</text>
 <circle cx="960.0" cy="890.0" r="23.2" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
 <text x="960.0" y="937.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">Universidad de Granada</text>
 <text x="960.0" y="856.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引39536</text>
-<circle cx="795.0" cy="845.8" r="22.3" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="795.0" y="892.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">Tecnalia</text>
-<text x="795.0" y="813.5" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引29652</text>
-<circle cx="674.2" cy="725.0" r="22.0" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="674.2" y="771.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">[MIT Press]</text>
-<text x="674.2" y="693.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引25758</text>
-<circle cx="630.0" cy="560.0" r="21.9" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="630.0" y="605.9" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">University of Toledo</text>
-<text x="630.0" y="528.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引26109</text>
-<circle cx="674.2" cy="395.0" r="21.1" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="674.2" y="440.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">AT&amp;T (United States)</text>
-<text x="674.2" y="363.9" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引19864</text>
+<circle cx="795.0" cy="845.8" r="22.2" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="795.0" y="892.0" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">Tecnalia</text>
+<text x="795.0" y="813.6" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引29652</text>
+<circle cx="674.2" cy="725.0" r="21.9" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="674.2" y="770.9" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">[MIT Press]</text>
+<text x="674.2" y="693.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引25758</text>
+<circle cx="630.0" cy="560.0" r="21.8" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="630.0" y="605.8" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">University of Toledo</text>
+<text x="630.0" y="528.2" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引26109</text>
+<circle cx="674.2" cy="395.0" r="21.3" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
+<text x="674.2" y="440.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">King Fahd University o</text>
+<text x="674.2" y="461.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">f Petroleum and Miner…</text>
+<text x="674.2" y="363.7" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引21385</text>
 <circle cx="795.0" cy="274.2" r="21.1" fill="#F5B84A" stroke="#8A5A00" stroke-width="2" opacity="1.0"/>
-<text x="795.0" y="319.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">Institut national de r</text>
-<text x="795.0" y="340.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="17" opacity="1.0">echerche en sciences …</text>
-<text x="795.0" y="243.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引19768</text>
+<text x="795.0" y="319.3" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="18" opacity="1.0">AT&amp;T (United States)</text>
+<text x="795.0" y="243.1" text-anchor="middle" fill="#7A4E00" font-family="Georgia, serif" font-size="16" opacity="1.0">1篇 · 引19864</text>
 <circle cx="68" cy="864" r="8" fill="#F5B84A" stroke="#8A5A00"/>
 <text x="86" y="870" fill="#7A4E00" font-family="Georgia, serif" font-size="17">课题组</text>
 <circle cx="68" cy="898" r="8" fill="#4AC6F5" stroke="#0B5470"/>
@@ -70,5 +67,5 @@
 <text x="86" y="972" fill="#7E2743" font-family="Georgia, serif" font-size="17">论点</text>
 <circle cx="68" cy="1000" r="8" fill="#7ED9A0" stroke="#1E6B42"/>
 <text x="86" y="1006" fill="#1E6B42" font-family="Georgia, serif" font-size="17">论据</text>
-<text x="60" y="1052" fill="#8A94A0" font-family="Georgia, serif" font-size="16">共 329 篇论文 · 12 个头部课题组 · 数据源 OpenAlex/arXiv</text>
+<text x="60" y="1052" fill="#8A94A0" font-family="Georgia, serif" font-size="16">共 331 篇论文 · 12 个头部课题组 · 数据源 OpenAlex/arXiv</text>
 </svg>
