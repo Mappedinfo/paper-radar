@@ -222,5 +222,19 @@
     "slug": "devote-epistemic-exploration",
     "bvid": "BV1BmYw69EXi",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-08",
+    "paper_id": "arxiv:2610.09804",
+    "slug": "bot-grpo-process-reward",
+    "bvid": "BV1XbHm65ETg",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-08",
+    "paper_id": "arxiv:2610.09117",
+    "slug": "workhorse-humanoid-locomanip",
+    "bvid": "BV1uEHD6UEbt",
+    "status": "uploaded"
   }
 ]
