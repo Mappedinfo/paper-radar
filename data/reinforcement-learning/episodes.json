@@ -236,5 +236,19 @@
     "slug": "workhorse-humanoid-locomanip",
     "bvid": "BV1uEHD6UEbt",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-09",
+    "paper_id": "arxiv:2610.10536",
+    "slug": "xd-rlvr-exploration-distill",
+    "bvid": "BV1vhpx64Es6",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-09",
+    "paper_id": "arxiv:2610.10326",
+    "slug": "avg-reward-multichain-mdp",
+    "bvid": "BV1MSpx6LEEW",
+    "status": "uploaded"
   }
 ]

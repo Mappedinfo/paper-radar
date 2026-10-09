@@ -2,7 +2,7 @@
 <defs><filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="soft"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <rect width="1920" height="1080" fill="#FFFFFF"/>
 <text x="60" y="70" fill="#1A1A1A" font-family="Georgia, 'Songti SC', serif" font-size="34" font-weight="bold">reinforcement-learning · 领域全局图</text>
-<text x="60" y="108" fill="#5A6572" font-family="Georgia, serif" font-size="19">top 12 课题组 · 节点大小=实力分 · 连线=组间引用流 · 2026-10-08</text>
+<text x="60" y="108" fill="#5A6572" font-family="Georgia, serif" font-size="19">top 12 课题组 · 节点大小=实力分 · 连线=组间引用流 · 2026-10-09</text>
 <line x1="960.0" y1="230.0" x2="674.2" y2="725.0" stroke="#DAE0E7" stroke-width="4.0" opacity="0.55"/>
 <circle cx="821.6" cy="469.7" r="3.2" fill="#DAE0E7" opacity="0.55"/>
 <line x1="960.0" y1="230.0" x2="1125.0" y2="845.8" stroke="#DAE0E7" stroke-width="6.0" opacity="0.75"/>
@@ -67,5 +67,5 @@
 <text x="86" y="972" fill="#7E2743" font-family="Georgia, serif" font-size="17">论点</text>
 <circle cx="68" cy="1000" r="8" fill="#7ED9A0" stroke="#1E6B42"/>
 <text x="86" y="1006" fill="#1E6B42" font-family="Georgia, serif" font-size="17">论据</text>
-<text x="60" y="1052" fill="#8A94A0" font-family="Georgia, serif" font-size="16">共 395 篇论文 · 12 个头部课题组 · 数据源 OpenAlex/arXiv</text>
+<text x="60" y="1052" fill="#8A94A0" font-family="Georgia, serif" font-size="16">共 397 篇论文 · 12 个头部课题组 · 数据源 OpenAlex/arXiv</text>
 </svg>
