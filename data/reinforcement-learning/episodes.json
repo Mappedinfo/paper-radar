@@ -250,5 +250,19 @@
     "slug": "avg-reward-multichain-mdp",
     "bvid": "BV1MSpx6LEEW",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-10",
+    "paper_id": "arxiv:2610.11064",
+    "slug": "remax-mode-collapse-rlvr",
+    "bvid": "BV1Snpe6KEJH",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-10",
+    "paper_id": "arxiv:2610.11247",
+    "slug": "opd-vanishing-learning-signal",
+    "bvid": "BV1fBpe69EQb",
+    "status": "uploaded"
   }
 ]
