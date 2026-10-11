@@ -264,5 +264,19 @@
     "slug": "opd-vanishing-learning-signal",
     "bvid": "BV1fBpe69EQb",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-11",
+    "paper_id": "arxiv:2610.11854",
+    "slug": "grpodropout-rollout-filtering",
+    "bvid": "BV1yRp563EVn",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-11",
+    "paper_id": "arxiv:2610.12135",
+    "slug": "q-shaped-options-hrl",
+    "bvid": "BV1iGpL6fEzv",
+    "status": "uploaded"
   }
 ]

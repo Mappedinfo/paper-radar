@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-10T09:05:31",
+ "updated_at": "2026-10-11T09:06:14",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -19853,6 +19853,66 @@
    "id": "claim:opd-vanishing-learning-signal:6",
    "type": "claim",
    "label": "无论是否出现平台期，OPD 前后学生的相对参数变化都很小（0.025% 到 0.098%），各层表示的线性 CKA 相似度大于 0.98；自 RL 教师与其初始学生的相对位移为 0.030% 到 0.50%、最小 CKA 在 0.967 到 0.9998 之间；论文据此提出有限的表示适应能力可能约束向其他教师的学习这一假设，并注明位移幅度本身并不能区分成功与停滞的运行。"
+  },
+  "claim:grpodropout-rollout-filtering:1": {
+   "id": "claim:grpodropout-rollout-filtering:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-11）：共 453 篇论文、2441 位作者。"
+  },
+  "claim:grpodropout-rollout-filtering:2": {
+   "id": "claim:grpodropout-rollout-filtering:2",
+   "type": "claim",
+   "label": "GRPO 等在线 RL 大幅提升大语言模型推理能力但常受策略熵坍缩困扰，采样多样性的丢失削弱探索并限制进一步提升；现有方法走算法级干预（奖励修改、熵与 KL 正则）或 token 级重加权两条路，论文研究互补的第三条路，改变哪些 rollout 参与策略更新，相同采样预算下并非所有 rollout 都对更新有益，选择性排除一些反而学得更好。"
+  },
+  "claim:grpodropout-rollout-filtering:3": {
+   "id": "claim:grpodropout-rollout-filtering:3",
+   "type": "claim",
+   "label": "rollout 级理论分析发现高概率正优势 rollout 与低概率负优势 rollout 都会降低策略熵，前者效应更显著；直觉是高概率正样本在当前策略下已充分表示，继续强化的边际收益有限却明显压熵，GRPODropout 据此在标准更新前选择性移除少量高概率正优势 rollout 并对保留的优势重新中心化。"
+  },
+  "claim:grpodropout-rollout-filtering:4": {
+   "id": "claim:grpodropout-rollout-filtering:4",
+   "type": "claim",
+   "label": "训练配置为三个基座（含 Qwen3-1.7B 与 Qwen3-8B）用 DAPO-17K 数学数据训练一个 epoch，每批 128 prompt 每 prompt 8 rollout 共 1024 个候选，vLLM 温度 1.0 采样，最大响应 8192 token；方法只改 rollout 用法，计算开销可忽略。"
+  },
+  "claim:grpodropout-rollout-filtering:5": {
+   "id": "claim:grpodropout-rollout-filtering:5",
+   "type": "claim",
+   "label": "跨三个模型十个基准（GSM8K、Math500、AMC23、Olympiad、AIME24、AIME25、HMMT25、ARC-C、MMLU-Pro、GPQA），选择性删除加重中心化平均比原始 GRPO 高 1.55 个百分点，同时平均少用 12.1% 的保留 rollout 做更新；比最强熵感知基线 KL-Cov 也高 0.11 分；Qwen3-4B 上训练结束时 GRPODropout 的熵分别比 GRPO 高 446.1% 与 256.0%（DAPO-17K 与留出 MMLU-Pro）。"
+  },
+  "claim:grpodropout-rollout-filtering:6": {
+   "id": "claim:grpodropout-rollout-filtering:6",
+   "type": "claim",
+   "label": "消融显示只删正优势候选比只删负优势得到更高熵与更高准确率，与理论一致；双删熵增益最大但略损准确率，支持尽量少删的动机；删除后不做重中心化会导致严重性能下降，重中心化是必要组件。"
+  },
+  "claim:q-shaped-options-hrl:1": {
+   "id": "claim:q-shaped-options-hrl:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-11）：共 453 篇论文、2441 位作者。"
+  },
+  "claim:q-shaped-options-hrl:2": {
+   "id": "claim:q-shaped-options-hrl:2",
+   "type": "claim",
+   "label": "长视野目标条件任务要求跨长时间尺度推理并跨广泛状态行动，分层强化学习靠动作抽象（把时间延伸行为表示为选项以缩短有效视野）与状态抽象（每层允许不同抽象以聚合数据）应对，但收益取决于学到合适的动作抽象；现有方法用重构损失或目标条件策略学抽象，不保证保留最优控制所需的区分。"
+  },
+  "claim:q-shaped-options-hrl:3": {
+   "id": "claim:q-shaped-options-hrl:3",
+   "type": "claim",
+   "label": "论文给出控制充分动作抽象的形式化定义并证明精确的低层 Q-shaping 满足控制充分性；把有限状态动作 MDP 的 PAC 误差界扩展到选项层，论证应丢弃对最优控制不必要的选项区分；据此提出 Q-Shaped Options（QSO），据其所知是首个在离线分层 RL 中用上下两层的 Q 函数联合训练选项表示的方法。"
+  },
+  "claim:q-shaped-options-hrl:4": {
+   "id": "claim:q-shaped-options-hrl:4",
+   "type": "claim",
+   "label": "QSO 把层间动作抽象学成两层共享的编码器，由两层的保守 IQL 评论家损失联合塑形（两层损失直接相加，k 步选项回报做归一化使满长选项与单个原始动作成本相同，两层同折扣因子，从而无需平衡两层损失的超级参数）；选项空间连续，MLP 后接长度归一化到超球面，避免离散选项的任意边界并保持选项在低层分布内；部署时高层每步重采选项使意图在选项空间缓慢漂移。"
+  },
+  "claim:q-shaped-options-hrl:5": {
+   "id": "claim:q-shaped-options-hrl:5",
+   "type": "claim",
+   "label": "OGBench 离线基准的 11 个环境上，QSO 平均成功率 54%，次优方法 DSHARSA 为 49%；动作空间维度最大（21 维对其他环境至多 8 维）的 humanoidmaze 上 QSO 达 90% 对次优 82%、为 DSHARSA 的三倍；puzzle-4x4 达 92% 对任意基线至多 74%；最难的操作环境 cube-quadruple 上 QSO 是在三个任务中两个取得非零成功的唯一方法。"
+  },
+  "claim:q-shaped-options-hrl:6": {
+   "id": "claim:q-shaped-options-hrl:6",
+   "type": "claim",
+   "label": "方法性质表显示 QSO 的抽象以 st 与 st+k 编码选项、用 Qh 与 Ql 学习、既鼓励保留最优控制所需区分又实证表现出丢弃不必要区分，HIQL/OPAL/SHARSA/DSHARSA/ASO 各有缺失；消融包含高层目标采样与奖励标注的状态抽象表（Table 8）及选项嵌入可视化。"
   }
  },
  "edges": [
@@ -39057,16 +39117,6 @@
    "rel": "member_of"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.11064",
    "t": "claim:remax-mode-collapse-rlvr:1",
    "rel": "claims"
@@ -39124,6 +39174,476 @@
   {
    "s": "arxiv:2610.11247",
    "t": "claim:opd-vanishing-learning-signal:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1023/a:1022633531479",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.11854",
+   "t": "claim:grpodropout-rollout-filtering:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.11854",
+   "t": "claim:grpodropout-rollout-filtering:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.11854",
+   "t": "claim:grpodropout-rollout-filtering:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.11854",
+   "t": "claim:grpodropout-rollout-filtering:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.11854",
+   "t": "claim:grpodropout-rollout-filtering:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.11854",
+   "t": "claim:grpodropout-rollout-filtering:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.12135",
+   "t": "claim:q-shaped-options-hrl:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.12135",
+   "t": "claim:q-shaped-options-hrl:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.12135",
+   "t": "claim:q-shaped-options-hrl:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.12135",
+   "t": "claim:q-shaped-options-hrl:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.12135",
+   "t": "claim:q-shaped-options-hrl:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.12135",
+   "t": "claim:q-shaped-options-hrl:6",
    "rel": "claims"
   }
  ]
