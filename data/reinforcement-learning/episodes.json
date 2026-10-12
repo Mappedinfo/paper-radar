@@ -278,5 +278,19 @@
     "slug": "q-shaped-options-hrl",
     "bvid": "BV1iGpL6fEzv",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-12",
+    "paper_id": "arxiv:2610.13015",
+    "slug": "gppo-fdivergence-trust-region",
+    "bvid": "BV1uKpD6DE6e",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-12",
+    "paper_id": "arxiv:2610.13504",
+    "slug": "explanatory-world-models",
+    "bvid": "BV15FpD6REPy",
+    "status": "uploaded"
   }
 ]
