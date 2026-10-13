@@ -292,5 +292,19 @@
     "slug": "explanatory-world-models",
     "bvid": "BV15FpD6REPy",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-13",
+    "paper_id": "arxiv:2610.13438",
+    "slug": "rti-rollout-intervention",
+    "bvid": "BV1UGWw6LEz6",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-13",
+    "paper_id": "arxiv:2610.13653",
+    "slug": "power-sampling-critique",
+    "bvid": "BV1taWc6CEeg",
+    "status": "uploaded"
   }
 ]
