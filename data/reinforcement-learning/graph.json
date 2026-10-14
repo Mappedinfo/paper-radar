@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-13T09:12:48",
+ "updated_at": "2026-10-14T09:08:33",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -21179,6 +21179,66 @@
    "id": "claim:power-sampling-critique:6",
    "type": "claim",
    "label": "论文结论为幂采样的价值在于提取基座已视为可能的高概率序列这一更简单的目标，领域应重新考虑幂采样作为推理提升的通用路径。"
+  },
+  "claim:adac-grpo-visual-sudoku:1": {
+   "id": "claim:adac-grpo-visual-sudoku:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-14）：共 483 篇论文、2590 位作者。"
+  },
+  "claim:adac-grpo-visual-sudoku:2": {
+   "id": "claim:adac-grpo-visual-sudoku:2",
+   "type": "claim",
+   "label": "RLVR 提升大语言模型推理，但在长视野多模态任务上的效力探索不足；视觉数独是有代表性的挑战，需要在局部约束与全局依赖链上做多步演绎推理；论文引入 FG-Sudoku 基准，按网格大小与所需演绎步数分级（训练集每档 1024 题、测试集每档 256 题，A 为 4 乘 4、B 为 6 乘 6、C 为 9 乘 9，难度各分四级）。"
+  },
+  "claim:adac-grpo-visual-sudoku:3": {
+   "id": "claim:adac-grpo-visual-sudoku:3",
+   "type": "claim",
+   "label": "评估显示前沿多模态模型在复杂长程依赖上失败（如 9 乘 9 题），后训练时接近零的成功率造成严重奖励稀疏，标准 RLVR 直接停摆。"
+  },
+  "claim:adac-grpo-visual-sudoku:4": {
+   "id": "claim:adac-grpo-visual-sudoku:4",
+   "type": "claim",
+   "label": "AdaC-GRPO 与固定或基于先验的课表不同，通过在线 rollout 准确率追踪模型的最邻近发展区（Zone of Proximal Development），动态构造训练批次，排除已平凡解出的任务与奖励饥饿的任务。"
+  },
+  "claim:adac-grpo-visual-sudoku:5": {
+   "id": "claim:adac-grpo-visual-sudoku:5",
+   "type": "claim",
+   "label": "实验显示 AdaC-GRPO 使 Qwen2.5-VL-7B 的 C 组（9 乘 9）准确率从接近零的基线升到 0.219，大幅超过标准 GRPO 与现有课程学习方法，并逼近 Gemini-2.5-Flash 在最难档的表现，弥合对 Gemini-2.5-Pro 总体准确率差距的 62.2%。"
+  },
+  "claim:adac-grpo-visual-sudoku:6": {
+   "id": "claim:adac-grpo-visual-sudoku:6",
+   "type": "claim",
+   "label": "泛化性在 InternVL-3.5 与 Qwen3-VL 上进一步验证；训练方法对照在相同 Qwen2.5-VL-7B 基座、SFT 热启动、奖励与 rollout 预算下进行；GRPO 与 AdaC-GRPO 各重复三个训练种子。"
+  },
+  "claim:swe-critix-verifiers:1": {
+   "id": "claim:swe-critix-verifiers:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-14）：共 483 篇论文、2590 位作者。"
+  },
+  "claim:swe-critix-verifiers:2": {
+   "id": "claim:swe-critix-verifiers:2",
+   "type": "claim",
+   "label": "编程智能体越来越多被部署到端到端软件工程任务，现成定义成功判据的裁判评估器常常缺席，需要能可靠判断并解释其行为的验证器；智能体执行轨迹可以极长，包含与代码仓库和外部工具的数百次迭代交互；现有验证器要么用未经专门训练的通用 LLM，要么训练只产标量奖励的专用评论家，训练型通才验证探索有限。"
+  },
+  "claim:swe-critix-verifiers:3": {
+   "id": "claim:swe-critix-verifiers:3",
+   "type": "claim",
+   "label": "SWE-Critix 是训练编程智能体轨迹通才验证器的后训练管线，给定任务与执行轨迹，学到的验证器预测完成标签并生成解释其判断的自然语言分析；管线组合监督微调与强化学习，在 CodeForge-Preview 的轨迹上训练一系列 30B 模型。"
+  },
+  "claim:swe-critix-verifiers:4": {
+   "id": "claim:swe-critix-verifiers:4",
+   "type": "claim",
+   "label": "留出测试集上，分类准确率从基座 Qwen3-30B-A3B 推理模型的 57% 经 SFT 升到 66%、再经 RL 升到 78%；SFT 主要纠正基座强烈偏向判对的偏差（基座负类召回接近零），RL 进一步把正类召回从 67% 恢复到 85% 而基本不牺牲负类召回。"
+  },
+  "claim:swe-critix-verifiers:5": {
+   "id": "claim:swe-critix-verifiers:5",
+   "type": "claim",
+   "label": "RL 阶段用 GRPO、组大小 8，一个 epoch 为 3396 次迭代耗时约 533 小时，得到的检查点开放发布；评估用 vLLM Ascend 在单节点 16 张 Ascend 910C-64GB 上服务，测试集超过 43K 条长轨迹。"
+  },
+  "claim:swe-critix-verifiers:6": {
+   "id": "claim:swe-critix-verifiers:6",
+   "type": "claim",
+   "label": "基座 Qwen3 MoE 模型表现出强烈判对偏差（各子集负类召回接近零）且指令遵循受限；在 R2E-Gym 上的表现明显低于 SWE-Rebench 等子集，跨分布泛化仍是短板。"
   }
  },
  "edges": [
@@ -42268,16 +42328,6 @@
    "rel": "member_of"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.13438",
    "t": "claim:rti-rollout-intervention:1",
    "rel": "claims"
@@ -42335,6 +42385,286 @@
   {
    "s": "arxiv:2610.13653",
    "t": "claim:power-sampling-critique:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.13184",
+   "t": "claim:adac-grpo-visual-sudoku:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13184",
+   "t": "claim:adac-grpo-visual-sudoku:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13184",
+   "t": "claim:adac-grpo-visual-sudoku:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13184",
+   "t": "claim:adac-grpo-visual-sudoku:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13184",
+   "t": "claim:adac-grpo-visual-sudoku:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13184",
+   "t": "claim:adac-grpo-visual-sudoku:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13356",
+   "t": "claim:swe-critix-verifiers:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13356",
+   "t": "claim:swe-critix-verifiers:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13356",
+   "t": "claim:swe-critix-verifiers:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13356",
+   "t": "claim:swe-critix-verifiers:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13356",
+   "t": "claim:swe-critix-verifiers:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.13356",
+   "t": "claim:swe-critix-verifiers:6",
    "rel": "claims"
   }
  ]

@@ -306,5 +306,19 @@
     "slug": "power-sampling-critique",
     "bvid": "BV1taWc6CEeg",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-14",
+    "paper_id": "arxiv:2610.13184",
+    "slug": "adac-grpo-visual-sudoku",
+    "bvid": "BV116pk6sECg",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-14",
+    "paper_id": "arxiv:2610.13356",
+    "slug": "swe-critix-verifiers",
+    "bvid": "BV1nupk62E8K",
+    "status": "uploaded"
   }
 ]
