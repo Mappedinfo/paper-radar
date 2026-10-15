@@ -5,8 +5,8 @@
   "authors": 65,
   "papers": 7,
   "citations": 829336,
-  "in_graph_cited": 3639,
-  "score": 921618.9
+  "in_graph_cited": 3823,
+  "score": 926285.0
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,8 @@
   "authors": 9,
   "papers": 7,
   "citations": 224898,
-  "in_graph_cited": 829,
-  "score": 245920.9
+  "in_graph_cited": 879,
+  "score": 247188.9
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -32,8 +32,8 @@
   "authors": 7,
   "papers": 2,
   "citations": 65359,
-  "in_graph_cited": 50,
-  "score": 66159.0
+  "in_graph_cited": 55,
+  "score": 66239.0
  },
  {
   "group_id": "group:college of charleston",
@@ -50,8 +50,8 @@
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 249,
-  "score": 53963.3
+  "in_graph_cited": 260,
+  "score": 54210.3
  },
  {
   "group_id": "group:universidad de granada",
@@ -77,8 +77,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 144,
-  "score": 27583.9
+  "in_graph_cited": 150,
+  "score": 27660.0
  },
  {
   "group_id": "group:university of toledo",
@@ -131,8 +131,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 54,
-  "score": 18594.7
+  "in_graph_cited": 58,
+  "score": 18645.4
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -149,8 +149,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 57,
-  "score": 13930.0
+  "in_graph_cited": 60,
+  "score": 13978.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -158,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 57,
-  "score": 13930.0
+  "in_graph_cited": 60,
+  "score": 13978.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -239,8 +239,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 11890,
-  "in_graph_cited": 48,
-  "score": 12498.6
+  "in_graph_cited": 50,
+  "score": 12524.0
  },
  {
   "group_id": "group:university of oxford",
@@ -266,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 48,
-  "score": 9712.6
+  "in_graph_cited": 50,
+  "score": 9738.0
  },
  {
   "group_id": "group:carnegie mellon university",
@@ -275,8 +275,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 27,
-  "score": 9297.4
+  "in_graph_cited": 29,
+  "score": 9322.7
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 82,
-  "score": 8565.7
+  "in_graph_cited": 86,
+  "score": 8616.5
  },
  {
   "group_id": "group:king abdulaziz university",
@@ -356,8 +356,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 24,
-  "score": 6249.3
+  "in_graph_cited": 25,
+  "score": 6262.0
  },
  {
   "group_id": "group:tu dortmund university",
@@ -365,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 24,
-  "score": 6249.3
+  "in_graph_cited": 25,
+  "score": 6262.0
  },
  {
   "group_id": "group:university of fribourg",

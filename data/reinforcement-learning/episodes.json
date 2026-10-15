@@ -320,5 +320,19 @@
     "slug": "swe-critix-verifiers",
     "bvid": "BV1nupk62E8K",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-15",
+    "paper_id": "arxiv:2610.18853",
+    "slug": "two-clocks-batch-scaling",
+    "bvid": "BV11VJr6VE97",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-15",
+    "paper_id": "arxiv:2610.18738",
+    "slug": "token-is-offpolicy-rlvr",
+    "bvid": "BV1rrJ66KEGc",
+    "status": "uploaded"
   }
 ]
