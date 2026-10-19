@@ -3,19 +3,19 @@
   "group_id": "group:google deepmind (united kingdom)",
   "group": "Google DeepMind (United Kingdom)",
   "authors": 65,
-  "papers": 7,
-  "citations": 829336,
-  "in_graph_cited": 3823,
-  "score": 926285.0
+  "papers": 8,
+  "citations": 857860,
+  "in_graph_cited": 4070,
+  "score": 966022.0
  },
  {
   "group_id": "group:google (united states)",
   "group": "Google (United States)",
   "authors": 9,
-  "papers": 7,
-  "citations": 224898,
-  "in_graph_cited": 879,
-  "score": 247188.9
+  "papers": 8,
+  "citations": 232029,
+  "in_graph_cited": 952,
+  "score": 257328.8
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -29,11 +29,11 @@
  {
   "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
   "group": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
-  "authors": 7,
+  "authors": 8,
   "papers": 2,
-  "citations": 65359,
-  "in_graph_cited": 55,
-  "score": 66239.0
+  "citations": 76720,
+  "in_graph_cited": 72,
+  "score": 77872.0
  },
  {
   "group_id": "group:college of charleston",
@@ -50,8 +50,8 @@
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 260,
-  "score": 54210.3
+  "in_graph_cited": 271,
+  "score": 54457.3
  },
  {
   "group_id": "group:universidad de granada",
@@ -63,6 +63,15 @@
   "score": 39536.0
  },
  {
+  "group_id": "group:university of toledo",
+  "group": "University of Toledo",
+  "authors": 4,
+  "papers": 1,
+  "citations": 34812,
+  "in_graph_cited": 0,
+  "score": 34812.0
+ },
+ {
   "group_id": "group:tecnalia",
   "group": "Tecnalia",
   "authors": 3,
@@ -72,31 +81,31 @@
   "score": 29652.0
  },
  {
+  "group_id": "group:university of california, berkeley",
+  "group": "University of California, Berkeley",
+  "authors": 5,
+  "papers": 5,
+  "citations": 29353,
+  "in_graph_cited": 10,
+  "score": 29577.6
+ },
+ {
   "group_id": "group:[mit press]",
   "group": "[MIT Press]",
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 150,
-  "score": 27660.0
- },
- {
-  "group_id": "group:university of toledo",
-  "group": "University of Toledo",
-  "authors": 3,
-  "papers": 1,
-  "citations": 26109,
-  "in_graph_cited": 0,
-  "score": 26109.0
+  "in_graph_cited": 157,
+  "score": 27748.7
  },
  {
   "group_id": "group:king fahd university of petroleum and minerals",
   "group": "King Fahd University of Petroleum and Minerals",
-  "authors": 5,
+  "authors": 6,
   "papers": 1,
-  "citations": 21385,
+  "citations": 25662,
   "in_graph_cited": 0,
-  "score": 21385.0
+  "score": 25662.0
  },
  {
   "group_id": "group:at&t (united states)",
@@ -131,8 +140,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 58,
-  "score": 18645.4
+  "in_graph_cited": 62,
+  "score": 18696.1
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -149,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 60,
-  "score": 13978.0
+  "in_graph_cited": 64,
+  "score": 14042.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -158,8 +167,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 60,
-  "score": 13978.0
+  "in_graph_cited": 64,
+  "score": 14042.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -236,11 +245,11 @@
  {
   "group_id": "group:graz university of technology",
   "group": "Graz University of Technology",
-  "authors": 2,
-  "papers": 1,
-  "citations": 11890,
-  "in_graph_cited": 50,
-  "score": 12524.0
+  "authors": 4,
+  "papers": 2,
+  "citations": 11892,
+  "in_graph_cited": 52,
+  "score": 12724.0
  },
  {
   "group_id": "group:university of oxford",
@@ -266,8 +275,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 50,
-  "score": 9738.0
+  "in_graph_cited": 53,
+  "score": 9776.0
  },
  {
   "group_id": "group:carnegie mellon university",
@@ -275,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 29,
-  "score": 9322.7
+  "in_graph_cited": 31,
+  "score": 9348.1
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -293,8 +302,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 86,
-  "score": 8616.5
+  "in_graph_cited": 91,
+  "score": 8679.9
  },
  {
   "group_id": "group:king abdulaziz university",
@@ -356,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 25,
-  "score": 6262.0
+  "in_graph_cited": 26,
+  "score": 6274.7
  },
  {
   "group_id": "group:tu dortmund university",
@@ -365,8 +374,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 25,
-  "score": 6262.0
+  "in_graph_cited": 26,
+  "score": 6274.7
  },
  {
   "group_id": "group:university of fribourg",
@@ -621,6 +630,33 @@
   "score": 3518.0
  },
  {
+  "group_id": "group:it university of copenhagen",
+  "group": "IT University of Copenhagen",
+  "authors": 3,
+  "papers": 1,
+  "citations": 6,
+  "in_graph_cited": 0,
+  "score": 6.0
+ },
+ {
+  "group_id": "group:hec montréal",
+  "group": "HEC Montréal",
+  "authors": 2,
+  "papers": 1,
+  "citations": 4,
+  "in_graph_cited": 0,
+  "score": 4.0
+ },
+ {
+  "group_id": "group:university of münster",
+  "group": "University of Münster",
+  "authors": 4,
+  "papers": 1,
+  "citations": 4,
+  "in_graph_cited": 0,
+  "score": 4.0
+ },
+ {
   "group_id": "group:humboldt-universität zu berlin",
   "group": "Humboldt-Universität zu Berlin",
   "authors": 1,
@@ -768,7 +804,7 @@
   "group_id": "group:imperial college london",
   "group": "Imperial College London",
   "authors": 2,
-  "papers": 1,
+  "papers": 2,
   "citations": 0,
   "in_graph_cited": 0,
   "score": 0.0
@@ -1020,6 +1056,51 @@
   "group_id": "group:university of waterloo",
   "group": "University of Waterloo",
   "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:vrije universiteit amsterdam",
+  "group": "Vrije Universiteit Amsterdam",
+  "authors": 7,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:institut supérieur de l'aéronautique et de l'espace (isae-supaero)",
+  "group": "Institut Supérieur de l'Aéronautique et de l'Espace (ISAE-SUPAERO)",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:university of saskatchewan",
+  "group": "University of Saskatchewan",
+  "authors": 2,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:ollscoil na gaillimhe – university of galway",
+  "group": "Ollscoil na Gaillimhe – University of Galway",
+  "authors": 4,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:advanced institute of industrial technology",
+  "group": "Advanced Institute of Industrial Technology",
+  "authors": 1,
   "papers": 1,
   "citations": 0,
   "in_graph_cited": 0,

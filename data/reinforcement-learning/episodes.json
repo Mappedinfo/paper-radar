@@ -334,5 +334,19 @@
     "slug": "token-is-offpolicy-rlvr",
     "bvid": "BV1rrJ66KEGc",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-19",
+    "paper_id": "arxiv:2610.23185",
+    "slug": "moe-self-teacher-rlvr",
+    "bvid": "BV1aKJR6xEoH",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-19",
+    "paper_id": "arxiv:2610.22887",
+    "slug": "ccr-batched-context-rl",
+    "bvid": "BV1psJR6VEZg",
+    "status": "uploaded"
   }
 ]
