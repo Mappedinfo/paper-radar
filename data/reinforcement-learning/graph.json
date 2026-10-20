@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-19T21:40:46",
+ "updated_at": "2026-10-20T09:06:43",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -22995,6 +22995,66 @@
    "id": "claim:ccr-batched-context-rl:6",
    "type": "claim",
    "label": "论文把奖励保留的训练结构识别为短窗口 RLVR 降低每步成本的实用路线；三题并发是结构选择，题数与预算的联合标定为后续工作。"
+  },
+  "claim:lm-improving-lm-rl:1": {
+   "id": "claim:lm-improving-lm-rl:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-20）：共 526 篇论文、2798 位作者。"
+  },
+  "claim:lm-improving-lm-rl:2": {
+   "id": "claim:lm-improving-lm-rl:2",
+   "type": "claim",
+   "label": "LLM 越来越多地被用于自动化 AI 研究含语言模型开发，通向递归自我改进；把实验反馈变成跨模型提出有效改进的学习能力面临两个挑战，真反馈太贵（RL 要评估数万条提议、每条可能要一次完整训练，按每次十个 GPU 小时算仅收集奖励就要数十万 GPU 小时），代理反馈又会随策略优化偏向高估的提议而失真。"
+  },
+  "claim:lm-improving-lm-rl:3": {
+   "id": "claim:lm-improving-lm-rl:3",
+   "type": "claim",
+   "label": "LM2LM 用 RL 训练 LLM 生成有效的语言模型改进提议；为提供可扩展反馈，用研究世界模型（RWM）——一个冻结的 LLM，从上下文中提供的真实实验记录预测提议增益——作为 RL 的奖励模型；为维持反馈可靠性，周期性执行 RWM 排名靠前的当前策略提议，把实测结果加进它的上下文。"
+  },
+  "claim:lm-improving-lm-rl:4": {
+   "id": "claim:lm-improving-lm-rl:4",
+   "type": "claim",
+   "label": "八个自回归与扩散语言模型开发环境上，留出任务的真实执行评估显示，LM2LM 使 Qwen3.8-27B 超过 GPT-6-sol，即使 GPT-6-sol 上下文里给 300 条真实实验记录；同时数据生成成本低 33%（4.01 万美元对 6.00 万美元，343 小时对 510 小时），计入 RL 训练后总成本仍更低（5.61 万对 6.00 万美元）。"
+  },
+  "claim:lm-improving-lm-rl:5": {
+   "id": "claim:lm-improving-lm-rl:5",
+   "type": "claim",
+   "label": "训练步 40 到 96 之间，LM2LM 在自回归任务上把 Avg@4 从 10.85 提到 17.06、扩散任务从 2.28 提到 7.10，仅花 1.18 万美元额外数据生成成本；LM2LM 还泛化到训练中未见过的模型家族。"
+  },
+  "claim:lm-improving-lm-rl:6": {
+   "id": "claim:lm-improving-lm-rl:6",
+   "type": "claim",
+   "label": "实验增益按 AR 家族的 BPB 千分之一与扩散家族每 token nats 百分之一报告，指标含 Avg@4、Best@4、负增益比例、Row vs Base 与成对胜率。"
+  },
+  "claim:reward-engine-self-evolution:1": {
+   "id": "claim:reward-engine-self-evolution:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-20）：共 526 篇论文、2798 位作者。"
+  },
+  "claim:reward-engine-self-evolution:2": {
+   "id": "claim:reward-engine-self-evolution:2",
+   "type": "claim",
+   "label": "开放式工具智能体能通过不同工具路径完成同一目标，质量同时取决于交互轨迹、环境状态与最终产物，这类任务几乎没有可执行的真值奖励；核心挑战是从既有经验中构造一个奖励，它既要暴露当前策略的失败，又要在优化过程中保持平稳。"
+  },
+  "claim:reward-engine-self-evolution:3": {
+   "id": "claim:reward-engine-self-evolution:3",
+   "type": "claim",
+   "label": "Reward Engine 像一个自驱的学生，先想清楚成功需要什么再朝它优化；从任务与初始轨迹出发构建 RewardPack，包含必需正确性的测试用例与分级质量的评分量规，每一项都作为带证据返回判断的可执行检查执行。"
+  },
+  "claim:reward-engine-self-evolution:4": {
+   "id": "claim:reward-engine-self-evolution:4",
+   "type": "claim",
+   "label": "冻结后的 RewardPack 引导智能体修订和选择输出，也可作为强化学习的奖励；RL 分支是可能的扩展，论文未评估。"
+  },
+  "claim:reward-engine-self-evolution:5": {
+   "id": "claim:reward-engine-self-evolution:5",
+   "type": "claim",
+   "label": "在 WorkBuddy Bench Office 与 Claw-Eval 上，构造的奖励与基准判分器大体一致，分别在不推翻 82.3% 与 80.5% 的候选对排序上保持一致；用于修订执行时，它把三次运行一致性 Pass³ 相对基线从 45.0% 提到 54.0%、从 78.4% 提到 83.7%。"
+  },
+  "claim:reward-engine-self-evolution:6": {
+   "id": "claim:reward-engine-self-evolution:6",
+   "type": "claim",
+   "label": "设计动机上，平稳性由冻结保证（奖励构造一次后不再变），失败暴露由测试用例与量规的检查粒度保证（每个判断带证据）；与从任务中学习奖励模型或用 LLM 直接打分的路线相比，可执行检查天然抗幻判。"
   }
  },
  "edges": [
@@ -46369,16 +46429,6 @@
    "rel": "cites"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.23185",
    "t": "claim:moe-self-teacher-rlvr:1",
    "rel": "claims"
@@ -46436,6 +46486,351 @@
   {
    "s": "arxiv:2610.22887",
    "t": "claim:ccr-batched-context-rl:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.23344",
+   "t": "claim:lm-improving-lm-rl:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.23344",
+   "t": "claim:lm-improving-lm-rl:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.23344",
+   "t": "claim:lm-improving-lm-rl:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.23344",
+   "t": "claim:lm-improving-lm-rl:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.23344",
+   "t": "claim:lm-improving-lm-rl:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.23344",
+   "t": "claim:lm-improving-lm-rl:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.22915",
+   "t": "claim:reward-engine-self-evolution:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.22915",
+   "t": "claim:reward-engine-self-evolution:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.22915",
+   "t": "claim:reward-engine-self-evolution:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.22915",
+   "t": "claim:reward-engine-self-evolution:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.22915",
+   "t": "claim:reward-engine-self-evolution:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.22915",
+   "t": "claim:reward-engine-self-evolution:6",
    "rel": "claims"
   }
  ]

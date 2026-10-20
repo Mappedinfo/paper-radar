@@ -348,5 +348,19 @@
     "slug": "ccr-batched-context-rl",
     "bvid": "BV1psJR6VEZg",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-20",
+    "paper_id": "arxiv:2610.23344",
+    "slug": "lm-improving-lm-rl",
+    "bvid": "BV11SnF6hEti",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-20",
+    "paper_id": "arxiv:2610.22915",
+    "slug": "reward-engine-self-evolution",
+    "bvid": "BV1qMnc6EEhA",
+    "status": "uploaded"
   }
 ]
