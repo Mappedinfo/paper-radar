@@ -362,5 +362,19 @@
     "slug": "reward-engine-self-evolution",
     "bvid": "BV1qMnc6EEhA",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-21",
+    "paper_id": "arxiv:2610.26685",
+    "slug": "frda-rubric-hacking",
+    "bvid": "BV1jSnv6EEvB",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-21",
+    "paper_id": "arxiv:2610.26551",
+    "slug": "natural-schemers-rl",
+    "bvid": "BV1uMni6KE7f",
+    "status": "uploaded"
   }
 ]
