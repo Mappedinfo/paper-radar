@@ -376,5 +376,19 @@
     "slug": "natural-schemers-rl",
     "bvid": "BV1uMni6KE7f",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-22",
+    "paper_id": "arxiv:2610.29281",
+    "slug": "flat-rlvr-sharpness",
+    "bvid": "BV1sDnC6SE7o",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-22",
+    "paper_id": "arxiv:2610.29427",
+    "slug": "empo-effect-marginal",
+    "bvid": "BV1tynC69EF3",
+    "status": "uploaded"
   }
 ]
