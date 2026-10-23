@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-22T09:06:27",
+ "updated_at": "2026-10-23T09:08:29",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -11087,7 +11087,8 @@
   "author:zhen zhang": {
    "id": "author:zhen zhang",
    "type": "author",
-   "label": "Zhen Zhang"
+   "label": "Zhen Zhang",
+   "openalex": "https://openalex.org/A5159254588"
   },
   "author:yude gao": {
    "id": "author:yude gao",
@@ -24498,6 +24499,653 @@
    "id": "claim:empo-effect-marginal:6",
    "type": "claim",
    "label": "熵动力学给出协调更新的分布级视角，策略更新分析与效果单元统计显示效果级共享跨不同优势估计粒度保持；理论部分含效果-策略恒等式与局部分解证明、条件方差分析与优势聚合的关系。"
+  },
+  "arxiv:2610.30132": {
+   "id": "arxiv:2610.30132",
+   "type": "paper",
+   "label": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.30132",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:zhennan wan": {
+   "id": "author:zhennan wan",
+   "type": "author",
+   "label": "Zhennan Wan"
+  },
+  "author:jianfei chen": {
+   "id": "author:jianfei chen",
+   "type": "author",
+   "label": "Jianfei Chen"
+  },
+  "arxiv:2610.30105": {
+   "id": "arxiv:2610.30105",
+   "type": "paper",
+   "label": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.30105",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:sriyash poddar": {
+   "id": "author:sriyash poddar",
+   "type": "author",
+   "label": "Sriyash Poddar"
+  },
+  "author:yanda bao": {
+   "id": "author:yanda bao",
+   "type": "author",
+   "label": "Yanda Bao"
+  },
+  "author:jacob krantz": {
+   "id": "author:jacob krantz",
+   "type": "author",
+   "label": "Jacob Krantz"
+  },
+  "author:matthew chang": {
+   "id": "author:matthew chang",
+   "type": "author",
+   "label": "Matthew Chang"
+  },
+  "author:xavier puig": {
+   "id": "author:xavier puig",
+   "type": "author",
+   "label": "Xavier Puig"
+  },
+  "author:roozbeh mottaghi": {
+   "id": "author:roozbeh mottaghi",
+   "type": "author",
+   "label": "Roozbeh Mottaghi"
+  },
+  "arxiv:2610.30099": {
+   "id": "arxiv:2610.30099",
+   "type": "paper",
+   "label": "Differentially Private Sparse Reward Estimation with Preference Feedback",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.30099",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:meng ding": {
+   "id": "author:meng ding",
+   "type": "author",
+   "label": "Meng Ding"
+  },
+  "author:mingxi lei": {
+   "id": "author:mingxi lei",
+   "type": "author",
+   "label": "Mingxi Lei"
+  },
+  "author:jie zhang": {
+   "id": "author:jie zhang",
+   "type": "author",
+   "label": "Jie Zhang"
+  },
+  "author:jinyan liu": {
+   "id": "author:jinyan liu",
+   "type": "author",
+   "label": "Jinyan Liu"
+  },
+  "author:di wang": {
+   "id": "author:di wang",
+   "type": "author",
+   "label": "Di Wang"
+  },
+  "arxiv:2610.29999": {
+   "id": "arxiv:2610.29999",
+   "type": "paper",
+   "label": "EPIC: Rethinking Trust Regions for Autoregressive LLM Policies via Exact-KL Prefix Importance-Ratio Clipping",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.29999",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:jingjing liu": {
+   "id": "author:jingjing liu",
+   "type": "author",
+   "label": "Jingjing Liu"
+  },
+  "arxiv:2610.29965": {
+   "id": "arxiv:2610.29965",
+   "type": "paper",
+   "label": "CORD: Conflict-Aware Optimization for Joint RL and Distillation in Agents",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.29965",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:wenhao yu": {
+   "id": "author:wenhao yu",
+   "type": "author",
+   "label": "Wenhao Yu"
+  },
+  "author:zhengcheng wang": {
+   "id": "author:zhengcheng wang",
+   "type": "author",
+   "label": "Zhengcheng Wang"
+  },
+  "author:jiahong liu": {
+   "id": "author:jiahong liu",
+   "type": "author",
+   "label": "Jiahong Liu"
+  },
+  "author:zexuan qiu": {
+   "id": "author:zexuan qiu",
+   "type": "author",
+   "label": "Zexuan Qiu"
+  },
+  "author:minda hu": {
+   "id": "author:minda hu",
+   "type": "author",
+   "label": "Minda Hu"
+  },
+  "author:shaohang wei": {
+   "id": "author:shaohang wei",
+   "type": "author",
+   "label": "Shaohang Wei"
+  },
+  "author:jiafei lyu": {
+   "id": "author:jiafei lyu",
+   "type": "author",
+   "label": "Jiafei Lyu"
+  },
+  "author:junyan lyu": {
+   "id": "author:junyan lyu",
+   "type": "author",
+   "label": "Junyan Lyu"
+  },
+  "author:haobo fu": {
+   "id": "author:haobo fu",
+   "type": "author",
+   "label": "Haobo Fu"
+  },
+  "author:irwin king": {
+   "id": "author:irwin king",
+   "type": "author",
+   "label": "Irwin King"
+  },
+  "arxiv:2610.29845": {
+   "id": "arxiv:2610.29845",
+   "type": "paper",
+   "label": "RangeNav: Task-Aligned LiDAR Range-Image Pretraining for Robot Navigation",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.29845",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:samuel foo enze": {
+   "id": "author:samuel foo enze",
+   "type": "author",
+   "label": "Samuel Foo Enze"
+  },
+  "author:manthan patel": {
+   "id": "author:manthan patel",
+   "type": "author",
+   "label": "Manthan Patel"
+  },
+  "author:linus kramer": {
+   "id": "author:linus kramer",
+   "type": "author",
+   "label": "Linus Kramer"
+  },
+  "author:pascal roth": {
+   "id": "author:pascal roth",
+   "type": "author",
+   "label": "Pascal Roth"
+  },
+  "author:cesar cadena": {
+   "id": "author:cesar cadena",
+   "type": "author",
+   "label": "Cesar Cadena"
+  },
+  "arxiv:2610.29676": {
+   "id": "arxiv:2610.29676",
+   "type": "paper",
+   "label": "DriveMLP: When Training Strategy Outperforms Model Complexity in Autonomous Driving",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.29676",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:alessandro canevaro": {
+   "id": "author:alessandro canevaro",
+   "type": "author",
+   "label": "Alessandro Canevaro"
+  },
+  "author:julian schmidt": {
+   "id": "author:julian schmidt",
+   "type": "author",
+   "label": "Julian Schmidt"
+  },
+  "author:ye jin": {
+   "id": "author:ye jin",
+   "type": "author",
+   "label": "Ye Jin"
+  },
+  "author:sajad marvi": {
+   "id": "author:sajad marvi",
+   "type": "author",
+   "label": "Sajad Marvi"
+  },
+  "author:georg martius": {
+   "id": "author:georg martius",
+   "type": "author",
+   "label": "Georg Martius"
+  },
+  "author:julian jordan": {
+   "id": "author:julian jordan",
+   "type": "author",
+   "label": "Julian Jordan"
+  },
+  "arxiv:2610.30116": {
+   "id": "arxiv:2610.30116",
+   "type": "paper",
+   "label": "Environment Duels: A Microcosm of LLM Co-Evolution",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.30116",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:shibo jin": {
+   "id": "author:shibo jin",
+   "type": "author",
+   "label": "Shibo Jin"
+  },
+  "author:zhiqiu xu": {
+   "id": "author:zhiqiu xu",
+   "type": "author",
+   "label": "Zhiqiu Xu"
+  },
+  "author:yiling zou": {
+   "id": "author:yiling zou",
+   "type": "author",
+   "label": "Yiling Zou"
+  },
+  "author:shangyu gong": {
+   "id": "author:shangyu gong",
+   "type": "author",
+   "label": "Shangyu Gong"
+  },
+  "author:mayur naik": {
+   "id": "author:mayur naik",
+   "type": "author",
+   "label": "Mayur Naik"
+  },
+  "arxiv:2610.30097": {
+   "id": "arxiv:2610.30097",
+   "type": "paper",
+   "label": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.30097",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:likui zhang": {
+   "id": "author:likui zhang",
+   "type": "author",
+   "label": "Likui Zhang"
+  },
+  "author:zhe zhu": {
+   "id": "author:zhe zhu",
+   "type": "author",
+   "label": "Zhe Zhu"
+  },
+  "author:zhihao zhan": {
+   "id": "author:zhihao zhan",
+   "type": "author",
+   "label": "Zhihao Zhan"
+  },
+  "author:yibo bai": {
+   "id": "author:yibo bai",
+   "type": "author",
+   "label": "Yibo Bai"
+  },
+  "author:hanlin wang": {
+   "id": "author:hanlin wang",
+   "type": "author",
+   "label": "Hanlin Wang"
+  },
+  "author:dongwei li": {
+   "id": "author:dongwei li",
+   "type": "author",
+   "label": "Dongwei Li"
+  },
+  "author:bin wang": {
+   "id": "author:bin wang",
+   "type": "author",
+   "label": "Bin Wang"
+  },
+  "author:tianle zhang": {
+   "id": "author:tianle zhang",
+   "type": "author",
+   "label": "Tianle Zhang"
+  },
+  "author:xiaodan liang": {
+   "id": "author:xiaodan liang",
+   "type": "author",
+   "label": "Xiaodan Liang"
+  },
+  "author:liang lin": {
+   "id": "author:liang lin",
+   "type": "author",
+   "label": "Liang Lin"
+  },
+  "arxiv:2610.29501": {
+   "id": "arxiv:2610.29501",
+   "type": "paper",
+   "label": "Parallel Thinking for Large Language Model with Path Diversity",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.29501",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:jiaru qian": {
+   "id": "author:jiaru qian",
+   "type": "author",
+   "label": "Jiaru Qian"
+  },
+  "author:yihong dong": {
+   "id": "author:yihong dong",
+   "type": "author",
+   "label": "Yihong Dong"
+  },
+  "author:xue jiang": {
+   "id": "author:xue jiang",
+   "type": "author",
+   "label": "Xue Jiang"
+  },
+  "author:chun-wah hsu": {
+   "id": "author:chun-wah hsu",
+   "type": "author",
+   "label": "Chun-Wah Hsu"
+  },
+  "author:zhi jin": {
+   "id": "author:zhi jin",
+   "type": "author",
+   "label": "Zhi Jin"
+  },
+  "author:ge li": {
+   "id": "author:ge li",
+   "type": "author",
+   "label": "Ge Li"
+  },
+  "doi:10.54644/jte.2026.2455": {
+   "id": "doi:10.54644/jte.2026.2455",
+   "type": "paper",
+   "label": "Reinforcement Learning-Based Control for Smooth and Accurate Circular Trajectory Tracking in Mobile Robots",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Technical Education Science/Giáo dục Kỹ thuật",
+   "doi": "10.54644/jte.2026.2455",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223114771"
+  },
+  "venue:technical education science/giáo dục kỹ thuật": {
+   "id": "venue:technical education science/giáo dục kỹ thuật",
+   "type": "venue",
+   "label": "Technical Education Science/Giáo dục Kỹ thuật"
+  },
+  "author:thi minh tam le": {
+   "id": "author:thi minh tam le",
+   "type": "author",
+   "label": "Thi Minh Tam Le",
+   "openalex": "https://openalex.org/A5144233744"
+  },
+  "group:hung yen university of technology and education": {
+   "id": "group:hung yen university of technology and education",
+   "type": "group",
+   "label": "Hung Yen University of Technology and Education"
+  },
+  "author:nguyen viet ngu": {
+   "id": "author:nguyen viet ngu",
+   "type": "author",
+   "label": "Nguyen Viet Ngu",
+   "openalex": "https://openalex.org/A5159201774"
+  },
+  "author:nguyen ba dung": {
+   "id": "author:nguyen ba dung",
+   "type": "author",
+   "label": "Nguyen Ba Dung",
+   "openalex": "https://openalex.org/A5033131431"
+  },
+  "doi:10.3233/nicsp260059": {
+   "id": "doi:10.3233/nicsp260059",
+   "type": "paper",
+   "label": "Deep Reinforcement Learning with Graph Neural Networks for Multi-Commodity Multi-Modal Network Flow Optimization in Humanitarian Logistics",
+   "year": 2026,
+   "citations": 0,
+   "venue": "NATO science for peace and security series. D, Information and communication security",
+   "doi": "10.3233/nicsp260059",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223171318"
+  },
+  "venue:nato science for peace and security series. d, information and communication sec": {
+   "id": "venue:nato science for peace and security series. d, information and communication sec",
+   "type": "venue",
+   "label": "NATO science for peace and security series. D, Information and communication security"
+  },
+  "author:bülent soykan": {
+   "id": "author:bülent soykan",
+   "type": "author",
+   "label": "Bülent Soykan",
+   "openalex": "https://openalex.org/A5090326272"
+  },
+  "group:nato allied command transformation norfolk, va, usa": {
+   "id": "group:nato allied command transformation norfolk, va, usa",
+   "type": "group",
+   "label": "NATO Allied Command Transformation Norfolk, VA, USA"
+  },
+  "doi:10.25073/2588-1086/vnucsce.7456": {
+   "id": "doi:10.25073/2588-1086/vnucsce.7456",
+   "type": "paper",
+   "label": "6G Semantic Intelligence for UAV Anti Jamming: A Transformer Augmented Predictive Deep Reinforcement Learning Framework",
+   "year": 2026,
+   "citations": 0,
+   "venue": "VNU Journal of Science Computer Science and Communication Engineering",
+   "doi": "10.25073/2588-1086/vnucsce.7456",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223185917"
+  },
+  "venue:vnu journal of science computer science and communication engineering": {
+   "id": "venue:vnu journal of science computer science and communication engineering",
+   "type": "venue",
+   "label": "VNU Journal of Science Computer Science and Communication Engineering"
+  },
+  "author:le hoang hiep": {
+   "id": "author:le hoang hiep",
+   "type": "author",
+   "label": "Le Hoang Hiep",
+   "openalex": "https://openalex.org/A5140322384"
+  },
+  "group:thai nguyen university of information and communication technology": {
+   "id": "group:thai nguyen university of information and communication technology",
+   "type": "group",
+   "label": "Thai Nguyen University of Information and Communication Technology"
+  },
+  "author:ngo huu-huy": {
+   "id": "author:ngo huu-huy",
+   "type": "author",
+   "label": "Ngo Huu-Huy",
+   "openalex": "https://openalex.org/A5064549575"
+  },
+  "group:thai nguyen university": {
+   "id": "group:thai nguyen university",
+   "type": "group",
+   "label": "Thai Nguyen University"
+  },
+  "doi:10.1007/s13369-026-11753-6": {
+   "id": "doi:10.1007/s13369-026-11753-6",
+   "type": "paper",
+   "label": "Multi-UAV Autonomous Cooperative Control Based on MASAC and MPC",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Arabian Journal for Science and Engineering",
+   "doi": "10.1007/s13369-026-11753-6",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223188599"
+  },
+  "venue:arabian journal for science and engineering": {
+   "id": "venue:arabian journal for science and engineering",
+   "type": "venue",
+   "label": "Arabian Journal for Science and Engineering"
+  },
+  "author:liang hua": {
+   "id": "author:liang hua",
+   "type": "author",
+   "label": "Liang Hua",
+   "openalex": "https://openalex.org/A5159223071"
+  },
+  "group:nantong university": {
+   "id": "group:nantong university",
+   "type": "group",
+   "label": "Nantong University"
+  },
+  "author:bowen wang": {
+   "id": "author:bowen wang",
+   "type": "author",
+   "label": "Bowen Wang",
+   "openalex": "https://openalex.org/A5159229971"
+  },
+  "author:yun cheng": {
+   "id": "author:yun cheng",
+   "type": "author",
+   "label": "Yun Cheng",
+   "openalex": "https://openalex.org/A5072204397"
+  },
+  "author:yinlong yuan": {
+   "id": "author:yinlong yuan",
+   "type": "author",
+   "label": "Yinlong Yuan",
+   "openalex": "https://openalex.org/A5101184091"
+  },
+  "doi:10.1007/s41060-026-01339-8": {
+   "id": "doi:10.1007/s41060-026-01339-8",
+   "type": "paper",
+   "label": "Sentiment-enhanced deep reinforcement learning framework for stock market forecasting and portfolio optimization",
+   "year": 2026,
+   "citations": 0,
+   "venue": "International Journal of Data Science and Analytics",
+   "doi": "10.1007/s41060-026-01339-8",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223133885"
+  },
+  "venue:international journal of data science and analytics": {
+   "id": "venue:international journal of data science and analytics",
+   "type": "venue",
+   "label": "International Journal of Data Science and Analytics"
+  },
+  "author:hunain altaf": {
+   "id": "author:hunain altaf",
+   "type": "author",
+   "label": "Hunain Altaf",
+   "openalex": "https://openalex.org/A5020494195"
+  },
+  "group:national institute of technology srinagar": {
+   "id": "group:national institute of technology srinagar",
+   "type": "group",
+   "label": "National Institute of Technology Srinagar"
+  },
+  "author:pramod kumar yadav": {
+   "id": "author:pramod kumar yadav",
+   "type": "author",
+   "label": "Pramod Kumar Yadav",
+   "openalex": "https://openalex.org/A5007332727"
+  },
+  "claim:epic-trust-region-arl:1": {
+   "id": "claim:epic-trust-region-arl:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-23）：共 575 篇论文、3049 位作者。"
+  },
+  "claim:epic-trust-region-arl:2": {
+   "id": "claim:epic-trust-region-arl:2",
+   "type": "claim",
+   "label": "PPO 式截断的 token 级裁剪只通过当前 token 的条件概率度量策略变化，而前缀条件上下文本身由策略生成；这一错配在长响应与离策略训练中变得严重。论文把自回归生成重构为有限视野马尔可夫决策过程，推导行为策略采样下的性能差恒等式，测度变换识别出累积前缀比率是每个逐步改进项的精确重要性权重。"
+  },
+  "claim:epic-trust-region-arl:3": {
+   "id": "claim:epic-trust-region-arl:3",
+   "type": "claim",
+   "label": "应用 TRPO 的单调改进原理得到行为策略与更新策略诱导的前缀分布之间的信任域；前缀比率既度量每个自回归改进项，又提供其 KL 约束的比率坐标。"
+  },
+  "claim:epic-trust-region-arl:4": {
+   "id": "claim:epic-trust-region-arl:4",
+   "type": "claim",
+   "label": "EPIC 是面向离策略 LLM RL 的前缀感知截断目标，基于前缀策略比率用精确反向 KL 坐标（r_pre 减 1 减 log r_pre，其行为策略下的期望恰等于两前缀分布间的 KL），把前缀级信任域转化为实用的 PPO 式截断目标。"
+  },
+  "claim:epic-trust-region-arl:5": {
+   "id": "claim:epic-trust-region-arl:5",
+   "type": "claim",
+   "label": "该构造稳定了强离策略的 MoE 训练而无需专家路由重放，省去记录与重放专家分配的额外存储与系统复杂度；实验配置含 2048 加 16384 的最大 prompt 加响应长度、512 响应的 rollout 批、每 token 选八个专家，路由重放的稠密张量表示所需存储是压缩表示的四倍。"
+  },
+  "claim:epic-trust-region-arl:6": {
+   "id": "claim:epic-trust-region-arl:6",
+   "type": "claim",
+   "label": "更新深度为八的主比较中（每方法选四个验证 mean@8 等权平均最高的单一检查点），EPIC 取得最高四基准平均 39.34%，超过 GRPO 与 GSPO 分别 10.69 与 6.50 个百分点，在 AIME 2024 与 HMMT 2025 上改进尤其显著。"
+  },
+  "claim:quantile-distrl-minimax:1": {
+   "id": "claim:quantile-distrl-minimax:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-23）：共 575 篇论文、3049 位作者。"
+  },
+  "claim:quantile-distrl-minimax:2": {
+   "id": "claim:quantile-distrl-minimax:2",
+   "type": "claim",
+   "label": "论文研究分位数分布式策略评估，即用分位数 Bellman 不动点近似给定策略下的回报分布，考察不同分位数分辨率下估计的统计精度（Wasserstein 距离）；假设可访问生成式模型，从经验 MDP 构造分位数不动点估计量并建立非渐近误差界。"
+  },
+  "claim:quantile-distrl-minimax:3": {
+   "id": "claim:quantile-distrl-minimax:3",
+   "type": "claim",
+   "label": "奖励密度一致远离零时，得到对所有分辨率 m 与所有 Wasserstein 阶数（p 从 1 到无穷）同时成立的根号 n 高概率界。"
+  },
+  "claim:quantile-distrl-minimax:4": {
+   "id": "claim:quantile-distrl-minimax:4",
+   "type": "claim",
+   "label": "奖励密度在支撑端点趋于零时，连续性与端点单调性足以对 p 从 1 到 2 保持同样的分辨率无关速率；对 p 大于 2，建立带系数 m 的二分之一减 p 分之一次方的根号 n 界，并对每个有限 p 大于 2 给出更慢的分辨率无关的 n 的负 p 分之一次方界；还得到由奖励分位数函数连续模支配的分辨率无关 W 无穷一致性。"
+  },
+  "claim:quantile-distrl-minimax:5": {
+   "id": "claim:quantile-distrl-minimax:5",
+   "type": "claim",
+   "label": "为考察界的尖锐性，论文刻画每个固定分辨率下的精确局部渐近极小极大风险（等于有效高斯极限的期望 Wasserstein 坐标范数），并证明所提估计量达到该风险。"
+  },
+  "claim:quantile-distrl-minimax:6": {
+   "id": "claim:quantile-distrl-minimax:6",
+   "type": "claim",
+   "label": "考察该最优局部风险的分辨率依赖：正则单状态实例的局部风险常数与分辨率无关；单个端点趋零的两状态实例对每个 p 大于 2 在某分辨率子序列上呈现 m 的二分之一减 p 分之一次方增长（至对数因子）。"
   }
  },
  "edges": [
@@ -49897,16 +50545,6 @@
    "rel": "cites"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.29281",
    "t": "claim:flat-rlvr-sharpness:1",
    "rel": "claims"
@@ -49964,6 +50602,841 @@
   {
    "s": "arxiv:2610.29427",
    "t": "claim:empo-effect-marginal:6",
+   "rel": "claims"
+  },
+  {
+   "s": "author:zhennan wan",
+   "t": "arxiv:2610.30132",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jianfei chen",
+   "t": "arxiv:2610.30132",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sriyash poddar",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yanda bao",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jacob krantz",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:matthew chang",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xavier puig",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:roozbeh mottaghi",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:natasha jaques",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:abhishek gupta",
+   "t": "arxiv:2610.30105",
+   "rel": "authored"
+  },
+  {
+   "s": "author:meng ding",
+   "t": "arxiv:2610.30099",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mingxi lei",
+   "t": "arxiv:2610.30099",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jie zhang",
+   "t": "arxiv:2610.30099",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jinyan liu",
+   "t": "arxiv:2610.30099",
+   "rel": "authored"
+  },
+  {
+   "s": "author:di wang",
+   "t": "arxiv:2610.30099",
+   "rel": "authored"
+  },
+  {
+   "s": "author:chengxi li",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hanlin wu",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhicheng cai",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:huan-ang gao",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wei-ying ma",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jingjing liu",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hao zhou",
+   "t": "arxiv:2610.29999",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wenhao yu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhengcheng wang",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiahong liu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zexuan qiu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:minda hu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shaohang wei",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiafei lyu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:junyan lyu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:haobo fu",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:irwin king",
+   "t": "arxiv:2610.29965",
+   "rel": "authored"
+  },
+  {
+   "s": "author:samuel foo enze",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:manthan patel",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:fan yang",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:linus kramer",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:pascal roth",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:marco hutter",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:cesar cadena",
+   "t": "arxiv:2610.29845",
+   "rel": "authored"
+  },
+  {
+   "s": "author:alessandro canevaro",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:julian schmidt",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hang yu",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ye jin",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sajad marvi",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:georg martius",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:julian jordan",
+   "t": "arxiv:2610.29676",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shibo jin",
+   "t": "arxiv:2610.30116",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhiqiu xu",
+   "t": "arxiv:2610.30116",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yiling zou",
+   "t": "arxiv:2610.30116",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shangyu gong",
+   "t": "arxiv:2610.30116",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mayur naik",
+   "t": "arxiv:2610.30116",
+   "rel": "authored"
+  },
+  {
+   "s": "author:likui zhang",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhe zhu",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhihao zhan",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yibo bai",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hanlin wang",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:dongwei li",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bin wang",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tianle zhang",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xiaodan liang",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:liang lin",
+   "t": "arxiv:2610.30097",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiaru qian",
+   "t": "arxiv:2610.29501",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yihong dong",
+   "t": "arxiv:2610.29501",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xue jiang",
+   "t": "arxiv:2610.29501",
+   "rel": "authored"
+  },
+  {
+   "s": "author:chun-wah hsu",
+   "t": "arxiv:2610.29501",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhi jin",
+   "t": "arxiv:2610.29501",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ge li",
+   "t": "arxiv:2610.29501",
+   "rel": "authored"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.54644/jte.2026.2455",
+   "t": "venue:technical education science/giáo dục kỹ thuật",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:thi minh tam le",
+   "t": "doi:10.54644/jte.2026.2455",
+   "rel": "authored"
+  },
+  {
+   "s": "author:thi minh tam le",
+   "t": "group:hung yen university of technology and education",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:nguyen viet ngu",
+   "t": "doi:10.54644/jte.2026.2455",
+   "rel": "authored"
+  },
+  {
+   "s": "author:nguyen viet ngu",
+   "t": "group:hung yen university of technology and education",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:nguyen ba dung",
+   "t": "doi:10.54644/jte.2026.2455",
+   "rel": "authored"
+  },
+  {
+   "s": "author:nguyen ba dung",
+   "t": "group:hung yen university of technology and education",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.3233/nicsp260059",
+   "t": "venue:nato science for peace and security series. d, information and communication sec",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:bülent soykan",
+   "t": "doi:10.3233/nicsp260059",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bülent soykan",
+   "t": "group:nato allied command transformation norfolk, va, usa",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.25073/2588-1086/vnucsce.7456",
+   "t": "venue:vnu journal of science computer science and communication engineering",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:le hoang hiep",
+   "t": "doi:10.25073/2588-1086/vnucsce.7456",
+   "rel": "authored"
+  },
+  {
+   "s": "author:le hoang hiep",
+   "t": "group:thai nguyen university of information and communication technology",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:ngo huu-huy",
+   "t": "doi:10.25073/2588-1086/vnucsce.7456",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ngo huu-huy",
+   "t": "group:thai nguyen university",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/s13369-026-11753-6",
+   "t": "venue:arabian journal for science and engineering",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:liang hua",
+   "t": "doi:10.1007/s13369-026-11753-6",
+   "rel": "authored"
+  },
+  {
+   "s": "author:liang hua",
+   "t": "group:nantong university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:bowen wang",
+   "t": "doi:10.1007/s13369-026-11753-6",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bowen wang",
+   "t": "group:nantong university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:zhen zhang",
+   "t": "doi:10.1007/s13369-026-11753-6",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhen zhang",
+   "t": "group:nantong university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:yun cheng",
+   "t": "doi:10.1007/s13369-026-11753-6",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yun cheng",
+   "t": "group:nantong university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:yinlong yuan",
+   "t": "doi:10.1007/s13369-026-11753-6",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yinlong yuan",
+   "t": "group:nantong university",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/s41060-026-01339-8",
+   "t": "venue:international journal of data science and analytics",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:hunain altaf",
+   "t": "doi:10.1007/s41060-026-01339-8",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hunain altaf",
+   "t": "group:national institute of technology srinagar",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:pramod kumar yadav",
+   "t": "doi:10.1007/s41060-026-01339-8",
+   "rel": "authored"
+  },
+  {
+   "s": "author:pramod kumar yadav",
+   "t": "group:national institute of technology srinagar",
+   "rel": "member_of"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.29999",
+   "t": "claim:epic-trust-region-arl:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29999",
+   "t": "claim:epic-trust-region-arl:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29999",
+   "t": "claim:epic-trust-region-arl:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29999",
+   "t": "claim:epic-trust-region-arl:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29999",
+   "t": "claim:epic-trust-region-arl:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29999",
+   "t": "claim:epic-trust-region-arl:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29595",
+   "t": "claim:quantile-distrl-minimax:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29595",
+   "t": "claim:quantile-distrl-minimax:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29595",
+   "t": "claim:quantile-distrl-minimax:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29595",
+   "t": "claim:quantile-distrl-minimax:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29595",
+   "t": "claim:quantile-distrl-minimax:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29595",
+   "t": "claim:quantile-distrl-minimax:6",
    "rel": "claims"
   }
  ]

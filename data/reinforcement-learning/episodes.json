@@ -390,5 +390,19 @@
     "slug": "empo-effect-marginal",
     "bvid": "BV1tynC69EF3",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-23",
+    "paper_id": "arxiv:2610.29999",
+    "slug": "epic-trust-region-arl",
+    "bvid": "BV1B4ns6WEE2",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-23",
+    "paper_id": "arxiv:2610.29595",
+    "slug": "quantile-distrl-minimax",
+    "bvid": "BV1kEns6fE7k",
+    "status": "uploaded"
   }
 ]
