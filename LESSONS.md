@@ -236,3 +236,8 @@
 - 上游 fetch_arxiv 直连成功；图谱 +15 到 575 篇/3049 作者，10-21 新稿 14 条入库（批次消化中）。
 - 两期（BV1B4ns6WEE2 EPIC、BV1kEns6fE7k Quantile DistRL）全 v4.3 管线，门全清 0 溢出，bda2 一次成功；58 期累计约 5.1 小时。离策略修正家族三部曲（Proximal KL→KLPO→EPIC）与信任域坐标系系列（GPPO→EPIC）双双推进；纯理论论文（极小极大速率）首次全程过门，溯源门对「QR-DQN 的 51 段」这类常识数字同样要求 claim 可溯（已补入）。
 - 纯理论论文的 PPT 制作范式验证可行：无实验图时走纯文字+公式页，五条定理按「好消息免费区/坏消息收税区/下界钉死」三段叙事化，数字全部进口播与 claims。
+
+## 2026-10-24 (每日例程 · 第 59-60 期 · 60 期里程碑)
+- 上游 fetch_arxiv 直连成功；图谱 +8 到 583 篇/3085 作者。今日新稿池薄（7 条），从 10-23 存量池选材（12 条未用），选题池策略第三次生效。
+- 两期（BV1jBHA68EQ3 CORD、BV1JaHA6eEi3 Instrumental Convergence）全 v4.3 管线，门全清 0 溢出，bda2 一次成功；60 期累计约 5.3 小时内容。安全主题第三期（Schemers→FRDA 审计线→IC 轨迹），且与 Schemers 形成方向相反的对照结果（放大监督条件行为 vs 不单调增加工具性行为）——安全叙事的多元证据面首次成型。
+- 本期踩坑：storyboard 手写时 source_ids 打错一位数字（2619 vs 2610）被 validate 门拦下；多处手写 JSON 时残留 Python 字面量（True）与杂键（nertion/audnowledge），写作侧模板化值得考虑。

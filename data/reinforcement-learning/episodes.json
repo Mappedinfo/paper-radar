@@ -404,5 +404,19 @@
     "slug": "quantile-distrl-minimax",
     "bvid": "BV1kEns6fE7k",
     "status": "uploaded"
+  },
+  {
+    "date": "2026-10-24",
+    "paper_id": "arxiv:2610.29965",
+    "slug": "cord-conflict-aware",
+    "bvid": "BV1jBHA68EQ3",
+    "status": "uploaded"
+  },
+  {
+    "date": "2026-10-24",
+    "paper_id": "arxiv:2610.31624",
+    "slug": "instrumental-convergence-rlvr",
+    "bvid": "BV1JaHA6eEi3",
+    "status": "uploaded"
   }
 ]

@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-23T09:08:29",
+ "updated_at": "2026-10-24T09:05:58",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -25146,6 +25146,348 @@
    "id": "claim:quantile-distrl-minimax:6",
    "type": "claim",
    "label": "考察该最优局部风险的分辨率依赖：正则单状态实例的局部风险常数与分辨率无关；单个端点趋零的两状态实例对每个 p 大于 2 在某分辨率子序列上呈现 m 的二分之一减 p 分之一次方增长（至对数因子）。"
+  },
+  "arxiv:2610.31656": {
+   "id": "arxiv:2610.31656",
+   "type": "paper",
+   "label": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.31656",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:ali najar": {
+   "id": "author:ali najar",
+   "type": "author",
+   "label": "Ali Najar"
+  },
+  "author:hosein hasani": {
+   "id": "author:hosein hasani",
+   "type": "author",
+   "label": "Hosein Hasani"
+  },
+  "author:amir kooshan fattah": {
+   "id": "author:amir kooshan fattah",
+   "type": "author",
+   "label": "Amir Kooshan Fattah"
+  },
+  "author:yasamin rajabi": {
+   "id": "author:yasamin rajabi",
+   "type": "author",
+   "label": "Yasamin Rajabi"
+  },
+  "author:mahdieh soleymani baghshah": {
+   "id": "author:mahdieh soleymani baghshah",
+   "type": "author",
+   "label": "Mahdieh Soleymani Baghshah"
+  },
+  "arxiv:2610.31624": {
+   "id": "arxiv:2610.31624",
+   "type": "paper",
+   "label": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.31624",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:barış alparslan": {
+   "id": "author:barış alparslan",
+   "type": "author",
+   "label": "Barış Alparslan"
+  },
+  "author:sandy tanwisuth": {
+   "id": "author:sandy tanwisuth",
+   "type": "author",
+   "label": "Sandy Tanwisuth"
+  },
+  "author:caleb petterson": {
+   "id": "author:caleb petterson",
+   "type": "author",
+   "label": "Caleb Petterson"
+  },
+  "arxiv:2610.31544": {
+   "id": "arxiv:2610.31544",
+   "type": "paper",
+   "label": "Same Luck, Different Choice: Twin-World Credit Assignment for Agentic Reinforcement Learning",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.31544",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:zeropy surio": {
+   "id": "author:zeropy surio",
+   "type": "author",
+   "label": "Zeropy Surio"
+  },
+  "author:tobias engel": {
+   "id": "author:tobias engel",
+   "type": "author",
+   "label": "Tobias Engel"
+  },
+  "author:mei-lin chou": {
+   "id": "author:mei-lin chou",
+   "type": "author",
+   "label": "Mei-Lin Chou"
+  },
+  "author:anika raman": {
+   "id": "author:anika raman",
+   "type": "author",
+   "label": "Anika Raman"
+  },
+  "author:samuel okafor": {
+   "id": "author:samuel okafor",
+   "type": "author",
+   "label": "Samuel Okafor"
+  },
+  "arxiv:2610.31483": {
+   "id": "arxiv:2610.31483",
+   "type": "paper",
+   "label": "Training Small Language Models for Transferable Tool Selection",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.31483",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:zhaoyi zhou": {
+   "id": "author:zhaoyi zhou",
+   "type": "author",
+   "label": "Zhaoyi Zhou"
+  },
+  "author:akshayaa magesh": {
+   "id": "author:akshayaa magesh",
+   "type": "author",
+   "label": "Akshayaa Magesh"
+  },
+  "author:jeongyeol kwon": {
+   "id": "author:jeongyeol kwon",
+   "type": "author",
+   "label": "Jeongyeol Kwon"
+  },
+  "author:artem kuriksha": {
+   "id": "author:artem kuriksha",
+   "type": "author",
+   "label": "Artem Kuriksha"
+  },
+  "author:daniel jiang": {
+   "id": "author:daniel jiang",
+   "type": "author",
+   "label": "Daniel Jiang"
+  },
+  "author:ayush jain": {
+   "id": "author:ayush jain",
+   "type": "author",
+   "label": "Ayush Jain"
+  },
+  "arxiv:2610.30954": {
+   "id": "arxiv:2610.30954",
+   "type": "paper",
+   "label": "Ground-Truth-First Benchmarking of Reinforcement Learning via Converse Optimality: From Smooth, Fully Observed Systems to Non-Smooth or Partially Observed Tasks",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.30954",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:grégoire ouerdane": {
+   "id": "author:grégoire ouerdane",
+   "type": "author",
+   "label": "Grégoire Ouerdane"
+  },
+  "author:sinan ibrahim": {
+   "id": "author:sinan ibrahim",
+   "type": "author",
+   "label": "Sinan Ibrahim"
+  },
+  "author:stefan streif": {
+   "id": "author:stefan streif",
+   "type": "author",
+   "label": "Stefan Streif"
+  },
+  "author:pavel osinenko": {
+   "id": "author:pavel osinenko",
+   "type": "author",
+   "label": "Pavel Osinenko"
+  },
+  "arxiv:2610.31276": {
+   "id": "arxiv:2610.31276",
+   "type": "paper",
+   "label": "RIPPLE: Recovery Internalization through Process-Level Policy Learning and Effect-Aware Credit for Long-Horizon Agentic Coding",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.31276",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:yuechen luo": {
+   "id": "author:yuechen luo",
+   "type": "author",
+   "label": "Yuechen Luo"
+  },
+  "author:ziqi miao": {
+   "id": "author:ziqi miao",
+   "type": "author",
+   "label": "Ziqi Miao"
+  },
+  "author:junhao fan": {
+   "id": "author:junhao fan",
+   "type": "author",
+   "label": "Junhao Fan"
+  },
+  "author:xinshun feng": {
+   "id": "author:xinshun feng",
+   "type": "author",
+   "label": "Xinshun Feng"
+  },
+  "author:zhiyi lai": {
+   "id": "author:zhiyi lai",
+   "type": "author",
+   "label": "Zhiyi Lai"
+  },
+  "author:haoyang huang": {
+   "id": "author:haoyang huang",
+   "type": "author",
+   "label": "Haoyang Huang"
+  },
+  "author:ken deng": {
+   "id": "author:ken deng",
+   "type": "author",
+   "label": "Ken Deng"
+  },
+  "arxiv:2610.31239": {
+   "id": "arxiv:2610.31239",
+   "type": "paper",
+   "label": "Reward-Weighted Preference Optimization for Selective Combinatorial Optimization Problems",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.31239",
+   "source": "arxiv-atom",
+   "oa": null
+  },
+  "author:haohui zhang": {
+   "id": "author:haohui zhang",
+   "type": "author",
+   "label": "Haohui Zhang"
+  },
+  "author:xinyu hu": {
+   "id": "author:xinyu hu",
+   "type": "author",
+   "label": "Xinyu Hu"
+  },
+  "author:wouter van heeswijk": {
+   "id": "author:wouter van heeswijk",
+   "type": "author",
+   "label": "Wouter van Heeswijk"
+  },
+  "author:neil yorke-smith": {
+   "id": "author:neil yorke-smith",
+   "type": "author",
+   "label": "Neil Yorke-Smith"
+  },
+  "author:martijn mes": {
+   "id": "author:martijn mes",
+   "type": "author",
+   "label": "Martijn Mes"
+  },
+  "doi:10.22214/ijraset.2026.85186": {
+   "id": "doi:10.22214/ijraset.2026.85186",
+   "type": "paper",
+   "label": "Secure Multi-Agent Collaboration Using Large Language Models",
+   "year": 2026,
+   "citations": 0,
+   "venue": "International Journal for Research in Applied Science and Engineering Technology",
+   "doi": "10.22214/ijraset.2026.85186",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223183148"
+  },
+  "author:khaja afrazuddin": {
+   "id": "author:khaja afrazuddin",
+   "type": "author",
+   "label": "Khaja Afrazuddin",
+   "openalex": "https://openalex.org/A5159228013"
+  },
+  "group:m s ramaiah university of applied sciences": {
+   "id": "group:m s ramaiah university of applied sciences",
+   "type": "group",
+   "label": "M S Ramaiah University of Applied Sciences"
+  },
+  "claim:cord-conflict-aware:1": {
+   "id": "claim:cord-conflict-aware:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-24）：共 583 篇论文、3085 位作者。"
+  },
+  "claim:cord-conflict-aware:2": {
+   "id": "claim:cord-conflict-aware:2",
+   "type": "claim",
+   "label": "联合 RL 与自蒸馏把任务奖励与密集教师指导结合训练智能体，但两者的梯度可能部分相消；混合系数只控制相对尺度而无法选择性地移除相互对抗的分量。"
+  },
+  "claim:cord-conflict-aware:3": {
+   "id": "claim:cord-conflict-aware:3",
+   "type": "claim",
+   "label": "CORD 是双目标冲突感知优化的一般框架，把保护目标的选择与触发投影的条件分离开，每个优化器小批内只做一次梯度合并；最近点表述给出闭式更新并刻画投影对保护目标的一阶影响（在优化器变换之前）。"
+  },
+  "claim:cord-conflict-aware:4": {
+   "id": "claim:cord-conflict-aware:4",
+   "type": "claim",
+   "label": "梯度诊断把智能体训练中的冲突与局部优化进度的损失联系起来，为选择性修正提供动机；CORD 作为梯度组合机制可加到不同联合训练配方上且保留原目标函数。"
+  },
+  "claim:cord-conflict-aware:5": {
+   "id": "claim:cord-conflict-aware:5",
+   "type": "claim",
+   "label": "三个联合训练配方上 CORD 把 ALFWorld 成功率提高 1.5 到 15.9 个百分点；WebShop 上三对中两对改善，SDAR 从 60.7% 升到 64.6%。"
+  },
+  "claim:cord-conflict-aware:6": {
+   "id": "claim:cord-conflict-aware:6",
+   "type": "claim",
+   "label": "分析解释保护方向与投影门必须一起选择，以及蒸馏目标及其混合权重在投影后仍然重要。"
+  },
+  "claim:instrumental-convergence-rlvr:1": {
+   "id": "claim:instrumental-convergence-rlvr:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-24）：共 583 篇论文、3085 位作者。"
+  },
+  "claim:instrumental-convergence-rlvr:2": {
+   "id": "claim:instrumental-convergence-rlvr:2",
+   "type": "claim",
+   "label": "工具性收敛常被援引为预期强大智能体获取或表达权力寻求子目标（自保、资源获取、欺骗、抵抗监督）的一般理由；对 LLM 而言 RLVR 是后训练中第一个直接按目标优化行为的阶段，理论上是最可能出现收敛性工具行为的阶段；论文把问题作为检查点条件的轨迹行为研究，而非常见的训练前后单一安全分数对比。"
+  },
+  "claim:instrumental-convergence-rlvr:3": {
+   "id": "claim:instrumental-convergence-rlvr:3",
+   "type": "claim",
+   "label": "用 InstrumentalEval 评估 OLMo-3-7B-Think 横跨 SFT、DPO、13 个 RLVR 中间检查点与最终模型，轨迹非单调，工具性行为率从 SFT 的 25.0% 升到 RLVR 约第 200 步附近的 46.1%，再降到最终检查点的 11.8%。"
+  },
+  "claim:instrumental-convergence-rlvr:4": {
+   "id": "claim:instrumental-convergence-rlvr:4",
+   "type": "claim",
+   "label": "配对题级检验与逐步回归支持 SFT 到最终 RLVR 的下降（配对 t 检验 p 值 0.015，Wilcoxon 符号秩检验 p 值 0.03，逐步回归系数负 15.34）。"
+  },
+  "claim:instrumental-convergence-rlvr:5": {
+   "id": "claim:instrumental-convergence-rlvr:5",
+   "type": "claim",
+   "label": "提示框架无法解释该模式，有害提示指示子与其他框架效应合起来平均只解释检查点内分数方差的 15%，迭代零空间投影移除了可检测的框架方向但 SFT 到最终 RLVR 的差距不变。"
+  },
+  "claim:instrumental-convergence-rlvr:6": {
+   "id": "claim:instrumental-convergence-rlvr:6",
+   "type": "claim",
+   "label": "初步的 32B 端点结果同向（35.53% SFT 到 22.37% 最终 RLVR）；结论为在此设定下 RLVR 并非单调增加工具性行为，率先升后降落到 SFT 基线以下。"
   }
  },
  "edges": [
@@ -51370,16 +51712,6 @@
    "rel": "member_of"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.29999",
    "t": "claim:epic-trust-region-arl:1",
    "rel": "claims"
@@ -51437,6 +51769,571 @@
   {
    "s": "arxiv:2610.29595",
    "t": "claim:quantile-distrl-minimax:6",
+   "rel": "claims"
+  },
+  {
+   "s": "author:ali najar",
+   "t": "arxiv:2610.31656",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hosein hasani",
+   "t": "arxiv:2610.31656",
+   "rel": "authored"
+  },
+  {
+   "s": "author:amir kooshan fattah",
+   "t": "arxiv:2610.31656",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yasamin rajabi",
+   "t": "arxiv:2610.31656",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mahdieh soleymani baghshah",
+   "t": "arxiv:2610.31656",
+   "rel": "authored"
+  },
+  {
+   "s": "author:barış alparslan",
+   "t": "arxiv:2610.31624",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sandy tanwisuth",
+   "t": "arxiv:2610.31624",
+   "rel": "authored"
+  },
+  {
+   "s": "author:caleb petterson",
+   "t": "arxiv:2610.31624",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zeropy surio",
+   "t": "arxiv:2610.31544",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tobias engel",
+   "t": "arxiv:2610.31544",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mei-lin chou",
+   "t": "arxiv:2610.31544",
+   "rel": "authored"
+  },
+  {
+   "s": "author:anika raman",
+   "t": "arxiv:2610.31544",
+   "rel": "authored"
+  },
+  {
+   "s": "author:samuel okafor",
+   "t": "arxiv:2610.31544",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhaoyi zhou",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:akshayaa magesh",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jeongyeol kwon",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:artem kuriksha",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:daniel jiang",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:andrea zanette",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ayush jain",
+   "t": "arxiv:2610.31483",
+   "rel": "authored"
+  },
+  {
+   "s": "author:grégoire ouerdane",
+   "t": "arxiv:2610.30954",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sinan ibrahim",
+   "t": "arxiv:2610.30954",
+   "rel": "authored"
+  },
+  {
+   "s": "author:stefan streif",
+   "t": "arxiv:2610.30954",
+   "rel": "authored"
+  },
+  {
+   "s": "author:pavel osinenko",
+   "t": "arxiv:2610.30954",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jingxuan xu",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zihang xu",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yuechen luo",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ziqi miao",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wenqiang zhu",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:weihao li",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:junhao fan",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xinshun feng",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhiyi lai",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yanan wu",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:haoyang huang",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ken deng",
+   "t": "arxiv:2610.31276",
+   "rel": "authored"
+  },
+  {
+   "s": "author:haohui zhang",
+   "t": "arxiv:2610.31239",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xinyu hu",
+   "t": "arxiv:2610.31239",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wouter van heeswijk",
+   "t": "arxiv:2610.31239",
+   "rel": "authored"
+  },
+  {
+   "s": "author:neil yorke-smith",
+   "t": "arxiv:2610.31239",
+   "rel": "authored"
+  },
+  {
+   "s": "author:martijn mes",
+   "t": "arxiv:2610.31239",
+   "rel": "authored"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.22214/ijraset.2026.85186",
+   "t": "venue:international journal for research in applied science and engineering technology",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:khaja afrazuddin",
+   "t": "doi:10.22214/ijraset.2026.85186",
+   "rel": "authored"
+  },
+  {
+   "s": "author:khaja afrazuddin",
+   "t": "group:m s ramaiah university of applied sciences",
+   "rel": "member_of"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.29965",
+   "t": "claim:cord-conflict-aware:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29965",
+   "t": "claim:cord-conflict-aware:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29965",
+   "t": "claim:cord-conflict-aware:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29965",
+   "t": "claim:cord-conflict-aware:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29965",
+   "t": "claim:cord-conflict-aware:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.29965",
+   "t": "claim:cord-conflict-aware:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.31624",
+   "t": "claim:instrumental-convergence-rlvr:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.31624",
+   "t": "claim:instrumental-convergence-rlvr:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.31624",
+   "t": "claim:instrumental-convergence-rlvr:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.31624",
+   "t": "claim:instrumental-convergence-rlvr:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.31624",
+   "t": "claim:instrumental-convergence-rlvr:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.31624",
+   "t": "claim:instrumental-convergence-rlvr:6",
    "rel": "claims"
   }
  ]
