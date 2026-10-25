@@ -1,422 +1,436 @@
 [
-  {
-    "date": "2026-09-13",
-    "paper_id": "arxiv:2505.03335",
-    "slug": "absolute-zero-reinforced-self-play-reasoning",
-    "bvid": "BV1DnYe6aE1v",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-13",
-    "paper_id": "arxiv:2501.12948",
-    "slug": "deepseek-r1",
-    "bvid": "BV1RVYe6TEJ7",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-13",
-    "paper_id": "arxiv:2609.10776",
-    "slug": "a-bellman-optimality-equation-for-plasticity",
-    "bvid": "BV1k6Yi64EuD",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-13",
-    "paper_id": "arxiv:2609.11042",
-    "slug": "t1-terminal-agent-reinforcement-learning",
-    "bvid": "BV13wYq6VE7j",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-14",
-    "paper_id": "arxiv:2609.11061",
-    "slug": "fork-where-the-model-changes-its-mind",
-    "bvid": "BV1MfYr6SECA",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-14",
-    "paper_id": "arxiv:2609.10781",
-    "slug": "from-connectivity-to-rewards",
-    "bvid": "BV18ZYr6nEuh",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-15",
-    "paper_id": "arxiv:2609.10315",
-    "slug": "trace-causal-exploration-synthesized-rewards",
-    "bvid": "BV1iPe76AERy",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-15",
-    "paper_id": "arxiv:2609.11807",
-    "slug": "near-optimal-rl-multi-step-lookahead",
-    "bvid": "BV1rRej6uE88",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-16",
-    "paper_id": "arxiv:2609.15064",
-    "slug": "what-does-an-llm-learn-from-rl",
-    "bvid": "BV11Pex6NEVE",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-16",
-    "paper_id": "arxiv:2609.15987",
-    "slug": "bellman-policy-optimization",
-    "bvid": "BV1CPex6NESC",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-17",
-    "paper_id": "arxiv:2609.16648",
-    "slug": "growmtp-rl-draft-head",
-    "bvid": "BV1kveK6GEBD",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-17",
-    "paper_id": "arxiv:2609.16816",
-    "slug": "impossiblerubrics-stress-testing-rubric-rewards",
-    "bvid": "BV1CveK6GEKX",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-21",
-    "paper_id": "arxiv:2609.22068",
-    "slug": "codemidas-coding-rl-environments",
-    "bvid": "BV1Vuh667EE7",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-21",
-    "paper_id": "arxiv:2609.22041",
-    "slug": "lambda-controlled-grpo",
-    "bvid": "BV1Guh667EJY",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-22",
-    "paper_id": "arxiv:2609.21650",
-    "slug": "synthdemo-rl-vla-adaptation",
-    "bvid": "BV1bkhC6HEX3",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-22",
-    "paper_id": "arxiv:2609.21327",
-    "slug": "buffered-quantile-objectives",
-    "bvid": "BV1UkhC6HEmq",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-22",
-    "paper_id": "arxiv:2609.21924",
-    "slug": "retrieval-aware-question-learning",
-    "bvid": "BV1C5hC66EQ9",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-22",
-    "paper_id": "arxiv:2609.24144",
-    "slug": "luck-is-not-skill-paired-rollouts-grpo",
-    "bvid": "BV1zqh76fEPZ",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-22",
-    "paper_id": "arxiv:2609.20807",
-    "slug": "score-centering-offpolicy-rl",
-    "bvid": "BV1kah76AE5n",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-26",
-    "paper_id": "arxiv:2609.22547",
-    "slug": "rlvr-is-a-kernel-passk-crossover",
-    "bvid": "BV1DvhD6gEZZ",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-26",
-    "paper_id": "arxiv:2609.24489",
-    "slug": "lifted-bellman-lp-offline-rl",
-    "bvid": "BV1G4hD61EQq",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-26",
-    "paper_id": "arxiv:2609.22870",
-    "slug": "fp8-rl-calibrated-clipping",
-    "bvid": "BV1TBhD6ME8Q",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-27",
-    "paper_id": "arxiv:2609.30063",
-    "slug": "selfplay-pretraining-zero-data",
-    "bvid": "BV1JEa46oEu8",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-27",
-    "paper_id": "arxiv:2609.30226",
-    "slug": "poem-predicting-rl-outcomes",
-    "bvid": "BV1WVa46cEJh",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-28",
-    "paper_id": "arxiv:2609.29142",
-    "slug": "selective-token-supervision-opd",
-    "bvid": "BV1qZae6VEqe",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-28",
-    "paper_id": "arxiv:2609.24103",
-    "slug": "distributional-rl-pomdp",
-    "bvid": "BV18jav6cEMh",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-29",
-    "paper_id": "arxiv:2609.31619",
-    "slug": "learning-to-stop-confidence",
-    "bvid": "BV1iXaE6aETN",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-29",
-    "paper_id": "arxiv:2609.31025",
-    "slug": "precision-at-speed-mbrc",
-    "bvid": "BV12uaJ6SEdH",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-30",
-    "paper_id": "arxiv:2609.35677",
-    "slug": "verifier-errors-rlvr",
-    "bvid": "BV1WNaR6gEcd",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-09-30",
-    "paper_id": "arxiv:2609.35505",
-    "slug": "rl-view-of-opd-lspd",
-    "bvid": "BV12fa965EKg",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-01",
-    "paper_id": "arxiv:2609.35426",
-    "slug": "frontier-learning-llm-reasoners",
-    "bvid": "BV1i9Yw6SELc",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-01",
-    "paper_id": "arxiv:2609.35525",
-    "slug": "devote-epistemic-exploration",
-    "bvid": "BV1BmYw69EXi",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-08",
-    "paper_id": "arxiv:2610.09804",
-    "slug": "bot-grpo-process-reward",
-    "bvid": "BV1XbHm65ETg",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-08",
-    "paper_id": "arxiv:2610.09117",
-    "slug": "workhorse-humanoid-locomanip",
-    "bvid": "BV1uEHD6UEbt",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-09",
-    "paper_id": "arxiv:2610.10536",
-    "slug": "xd-rlvr-exploration-distill",
-    "bvid": "BV1vhpx64Es6",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-09",
-    "paper_id": "arxiv:2610.10326",
-    "slug": "avg-reward-multichain-mdp",
-    "bvid": "BV1MSpx6LEEW",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-10",
-    "paper_id": "arxiv:2610.11064",
-    "slug": "remax-mode-collapse-rlvr",
-    "bvid": "BV1Snpe6KEJH",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-10",
-    "paper_id": "arxiv:2610.11247",
-    "slug": "opd-vanishing-learning-signal",
-    "bvid": "BV1fBpe69EQb",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-11",
-    "paper_id": "arxiv:2610.11854",
-    "slug": "grpodropout-rollout-filtering",
-    "bvid": "BV1yRp563EVn",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-11",
-    "paper_id": "arxiv:2610.12135",
-    "slug": "q-shaped-options-hrl",
-    "bvid": "BV1iGpL6fEzv",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-12",
-    "paper_id": "arxiv:2610.13015",
-    "slug": "gppo-fdivergence-trust-region",
-    "bvid": "BV1uKpD6DE6e",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-12",
-    "paper_id": "arxiv:2610.13504",
-    "slug": "explanatory-world-models",
-    "bvid": "BV15FpD6REPy",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-13",
-    "paper_id": "arxiv:2610.13438",
-    "slug": "rti-rollout-intervention",
-    "bvid": "BV1UGWw6LEz6",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-13",
-    "paper_id": "arxiv:2610.13653",
-    "slug": "power-sampling-critique",
-    "bvid": "BV1taWc6CEeg",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-14",
-    "paper_id": "arxiv:2610.13184",
-    "slug": "adac-grpo-visual-sudoku",
-    "bvid": "BV116pk6sECg",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-14",
-    "paper_id": "arxiv:2610.13356",
-    "slug": "swe-critix-verifiers",
-    "bvid": "BV1nupk62E8K",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-15",
-    "paper_id": "arxiv:2610.18853",
-    "slug": "two-clocks-batch-scaling",
-    "bvid": "BV11VJr6VE97",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-15",
-    "paper_id": "arxiv:2610.18738",
-    "slug": "token-is-offpolicy-rlvr",
-    "bvid": "BV1rrJ66KEGc",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-19",
-    "paper_id": "arxiv:2610.23185",
-    "slug": "moe-self-teacher-rlvr",
-    "bvid": "BV1aKJR6xEoH",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-19",
-    "paper_id": "arxiv:2610.22887",
-    "slug": "ccr-batched-context-rl",
-    "bvid": "BV1psJR6VEZg",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-20",
-    "paper_id": "arxiv:2610.23344",
-    "slug": "lm-improving-lm-rl",
-    "bvid": "BV11SnF6hEti",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-20",
-    "paper_id": "arxiv:2610.22915",
-    "slug": "reward-engine-self-evolution",
-    "bvid": "BV1qMnc6EEhA",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-21",
-    "paper_id": "arxiv:2610.26685",
-    "slug": "frda-rubric-hacking",
-    "bvid": "BV1jSnv6EEvB",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-21",
-    "paper_id": "arxiv:2610.26551",
-    "slug": "natural-schemers-rl",
-    "bvid": "BV1uMni6KE7f",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-22",
-    "paper_id": "arxiv:2610.29281",
-    "slug": "flat-rlvr-sharpness",
-    "bvid": "BV1sDnC6SE7o",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-22",
-    "paper_id": "arxiv:2610.29427",
-    "slug": "empo-effect-marginal",
-    "bvid": "BV1tynC69EF3",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-23",
-    "paper_id": "arxiv:2610.29999",
-    "slug": "epic-trust-region-arl",
-    "bvid": "BV1B4ns6WEE2",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-23",
-    "paper_id": "arxiv:2610.29595",
-    "slug": "quantile-distrl-minimax",
-    "bvid": "BV1kEns6fE7k",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-24",
-    "paper_id": "arxiv:2610.29965",
-    "slug": "cord-conflict-aware",
-    "bvid": "BV1jBHA68EQ3",
-    "status": "uploaded"
-  },
-  {
-    "date": "2026-10-24",
-    "paper_id": "arxiv:2610.31624",
-    "slug": "instrumental-convergence-rlvr",
-    "bvid": "BV1JaHA6eEi3",
-    "status": "uploaded"
-  }
+ {
+  "date": "2026-09-13",
+  "paper_id": "arxiv:2505.03335",
+  "slug": "absolute-zero-reinforced-self-play-reasoning",
+  "bvid": "BV1DnYe6aE1v",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-13",
+  "paper_id": "arxiv:2501.12948",
+  "slug": "deepseek-r1",
+  "bvid": "BV1RVYe6TEJ7",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-13",
+  "paper_id": "arxiv:2609.10776",
+  "slug": "a-bellman-optimality-equation-for-plasticity",
+  "bvid": "BV1k6Yi64EuD",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-13",
+  "paper_id": "arxiv:2609.11042",
+  "slug": "t1-terminal-agent-reinforcement-learning",
+  "bvid": "BV13wYq6VE7j",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-14",
+  "paper_id": "arxiv:2609.11061",
+  "slug": "fork-where-the-model-changes-its-mind",
+  "bvid": "BV1MfYr6SECA",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-14",
+  "paper_id": "arxiv:2609.10781",
+  "slug": "from-connectivity-to-rewards",
+  "bvid": "BV18ZYr6nEuh",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-15",
+  "paper_id": "arxiv:2609.10315",
+  "slug": "trace-causal-exploration-synthesized-rewards",
+  "bvid": "BV1iPe76AERy",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-15",
+  "paper_id": "arxiv:2609.11807",
+  "slug": "near-optimal-rl-multi-step-lookahead",
+  "bvid": "BV1rRej6uE88",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-16",
+  "paper_id": "arxiv:2609.15064",
+  "slug": "what-does-an-llm-learn-from-rl",
+  "bvid": "BV11Pex6NEVE",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-16",
+  "paper_id": "arxiv:2609.15987",
+  "slug": "bellman-policy-optimization",
+  "bvid": "BV1CPex6NESC",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-17",
+  "paper_id": "arxiv:2609.16648",
+  "slug": "growmtp-rl-draft-head",
+  "bvid": "BV1kveK6GEBD",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-17",
+  "paper_id": "arxiv:2609.16816",
+  "slug": "impossiblerubrics-stress-testing-rubric-rewards",
+  "bvid": "BV1CveK6GEKX",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-21",
+  "paper_id": "arxiv:2609.22068",
+  "slug": "codemidas-coding-rl-environments",
+  "bvid": "BV1Vuh667EE7",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-21",
+  "paper_id": "arxiv:2609.22041",
+  "slug": "lambda-controlled-grpo",
+  "bvid": "BV1Guh667EJY",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.21650",
+  "slug": "synthdemo-rl-vla-adaptation",
+  "bvid": "BV1bkhC6HEX3",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.21327",
+  "slug": "buffered-quantile-objectives",
+  "bvid": "BV1UkhC6HEmq",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.21924",
+  "slug": "retrieval-aware-question-learning",
+  "bvid": "BV1C5hC66EQ9",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.24144",
+  "slug": "luck-is-not-skill-paired-rollouts-grpo",
+  "bvid": "BV1zqh76fEPZ",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-22",
+  "paper_id": "arxiv:2609.20807",
+  "slug": "score-centering-offpolicy-rl",
+  "bvid": "BV1kah76AE5n",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-26",
+  "paper_id": "arxiv:2609.22547",
+  "slug": "rlvr-is-a-kernel-passk-crossover",
+  "bvid": "BV1DvhD6gEZZ",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-26",
+  "paper_id": "arxiv:2609.24489",
+  "slug": "lifted-bellman-lp-offline-rl",
+  "bvid": "BV1G4hD61EQq",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-26",
+  "paper_id": "arxiv:2609.22870",
+  "slug": "fp8-rl-calibrated-clipping",
+  "bvid": "BV1TBhD6ME8Q",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-27",
+  "paper_id": "arxiv:2609.30063",
+  "slug": "selfplay-pretraining-zero-data",
+  "bvid": "BV1JEa46oEu8",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-27",
+  "paper_id": "arxiv:2609.30226",
+  "slug": "poem-predicting-rl-outcomes",
+  "bvid": "BV1WVa46cEJh",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-28",
+  "paper_id": "arxiv:2609.29142",
+  "slug": "selective-token-supervision-opd",
+  "bvid": "BV1qZae6VEqe",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-28",
+  "paper_id": "arxiv:2609.24103",
+  "slug": "distributional-rl-pomdp",
+  "bvid": "BV18jav6cEMh",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-29",
+  "paper_id": "arxiv:2609.31619",
+  "slug": "learning-to-stop-confidence",
+  "bvid": "BV1iXaE6aETN",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-29",
+  "paper_id": "arxiv:2609.31025",
+  "slug": "precision-at-speed-mbrc",
+  "bvid": "BV12uaJ6SEdH",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-30",
+  "paper_id": "arxiv:2609.35677",
+  "slug": "verifier-errors-rlvr",
+  "bvid": "BV1WNaR6gEcd",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-09-30",
+  "paper_id": "arxiv:2609.35505",
+  "slug": "rl-view-of-opd-lspd",
+  "bvid": "BV12fa965EKg",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-01",
+  "paper_id": "arxiv:2609.35426",
+  "slug": "frontier-learning-llm-reasoners",
+  "bvid": "BV1i9Yw6SELc",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-01",
+  "paper_id": "arxiv:2609.35525",
+  "slug": "devote-epistemic-exploration",
+  "bvid": "BV1BmYw69EXi",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-08",
+  "paper_id": "arxiv:2610.09804",
+  "slug": "bot-grpo-process-reward",
+  "bvid": "BV1XbHm65ETg",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-08",
+  "paper_id": "arxiv:2610.09117",
+  "slug": "workhorse-humanoid-locomanip",
+  "bvid": "BV1uEHD6UEbt",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-09",
+  "paper_id": "arxiv:2610.10536",
+  "slug": "xd-rlvr-exploration-distill",
+  "bvid": "BV1vhpx64Es6",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-09",
+  "paper_id": "arxiv:2610.10326",
+  "slug": "avg-reward-multichain-mdp",
+  "bvid": "BV1MSpx6LEEW",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-10",
+  "paper_id": "arxiv:2610.11064",
+  "slug": "remax-mode-collapse-rlvr",
+  "bvid": "BV1Snpe6KEJH",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-10",
+  "paper_id": "arxiv:2610.11247",
+  "slug": "opd-vanishing-learning-signal",
+  "bvid": "BV1fBpe69EQb",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-11",
+  "paper_id": "arxiv:2610.11854",
+  "slug": "grpodropout-rollout-filtering",
+  "bvid": "BV1yRp563EVn",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-11",
+  "paper_id": "arxiv:2610.12135",
+  "slug": "q-shaped-options-hrl",
+  "bvid": "BV1iGpL6fEzv",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-12",
+  "paper_id": "arxiv:2610.13015",
+  "slug": "gppo-fdivergence-trust-region",
+  "bvid": "BV1uKpD6DE6e",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-12",
+  "paper_id": "arxiv:2610.13504",
+  "slug": "explanatory-world-models",
+  "bvid": "BV15FpD6REPy",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-13",
+  "paper_id": "arxiv:2610.13438",
+  "slug": "rti-rollout-intervention",
+  "bvid": "BV1UGWw6LEz6",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-13",
+  "paper_id": "arxiv:2610.13653",
+  "slug": "power-sampling-critique",
+  "bvid": "BV1taWc6CEeg",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-14",
+  "paper_id": "arxiv:2610.13184",
+  "slug": "adac-grpo-visual-sudoku",
+  "bvid": "BV116pk6sECg",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-14",
+  "paper_id": "arxiv:2610.13356",
+  "slug": "swe-critix-verifiers",
+  "bvid": "BV1nupk62E8K",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-15",
+  "paper_id": "arxiv:2610.18853",
+  "slug": "two-clocks-batch-scaling",
+  "bvid": "BV11VJr6VE97",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-15",
+  "paper_id": "arxiv:2610.18738",
+  "slug": "token-is-offpolicy-rlvr",
+  "bvid": "BV1rrJ66KEGc",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-19",
+  "paper_id": "arxiv:2610.23185",
+  "slug": "moe-self-teacher-rlvr",
+  "bvid": "BV1aKJR6xEoH",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-19",
+  "paper_id": "arxiv:2610.22887",
+  "slug": "ccr-batched-context-rl",
+  "bvid": "BV1psJR6VEZg",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-20",
+  "paper_id": "arxiv:2610.23344",
+  "slug": "lm-improving-lm-rl",
+  "bvid": "BV11SnF6hEti",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-20",
+  "paper_id": "arxiv:2610.22915",
+  "slug": "reward-engine-self-evolution",
+  "bvid": "BV1qMnc6EEhA",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-21",
+  "paper_id": "arxiv:2610.26685",
+  "slug": "frda-rubric-hacking",
+  "bvid": "BV1jSnv6EEvB",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-21",
+  "paper_id": "arxiv:2610.26551",
+  "slug": "natural-schemers-rl",
+  "bvid": "BV1uMni6KE7f",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-22",
+  "paper_id": "arxiv:2610.29281",
+  "slug": "flat-rlvr-sharpness",
+  "bvid": "BV1sDnC6SE7o",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-22",
+  "paper_id": "arxiv:2610.29427",
+  "slug": "empo-effect-marginal",
+  "bvid": "BV1tynC69EF3",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-23",
+  "paper_id": "arxiv:2610.29999",
+  "slug": "epic-trust-region-arl",
+  "bvid": "BV1B4ns6WEE2",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-23",
+  "paper_id": "arxiv:2610.29595",
+  "slug": "quantile-distrl-minimax",
+  "bvid": "BV1kEns6fE7k",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-24",
+  "paper_id": "arxiv:2610.29965",
+  "slug": "cord-conflict-aware",
+  "bvid": "BV1jBHA68EQ3",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-24",
+  "paper_id": "arxiv:2610.31624",
+  "slug": "instrumental-convergence-rlvr",
+  "bvid": "BV1JaHA6eEi3",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-25",
+  "paper_id": "arxiv:2610.31544",
+  "slug": "twin-world-credit",
+  "bvid": "BV1XpH36kENh",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-25",
+  "paper_id": "arxiv:2610.28977",
+  "slug": "icrl-posterior-test",
+  "bvid": "BV1mXHg6AE9M",
+  "status": "uploaded"
+ }
 ]

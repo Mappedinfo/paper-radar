@@ -241,3 +241,11 @@
 - 上游 fetch_arxiv 直连成功；图谱 +8 到 583 篇/3085 作者。今日新稿池薄（7 条），从 10-23 存量池选材（12 条未用），选题池策略第三次生效。
 - 两期（BV1jBHA68EQ3 CORD、BV1JaHA6eEi3 Instrumental Convergence）全 v4.3 管线，门全清 0 溢出，bda2 一次成功；60 期累计约 5.3 小时内容。安全主题第三期（Schemers→FRDA 审计线→IC 轨迹），且与 Schemers 形成方向相反的对照结果（放大监督条件行为 vs 不单调增加工具性行为）——安全叙事的多元证据面首次成型。
 - 本期踩坑：storyboard 手写时 source_ids 打错一位数字（2619 vs 2610）被 validate 门拦下；多处手写 JSON 时残留 Python 字面量（True）与杂键（nertion/audnowledge），写作侧模板化值得考虑。
+
+## 2026-10-25（第 61-62 期 · TWICE 双世界信用分配 / ICRL 贝叶斯身份检验）
+- 环境断裂：PATH 首位变成 hermes-agent venv（无 pip），Python312 丢 pymupdf/python-pptx/pywin32。已全部重装进 Python312，本机管线统一用 `C:\Users\Admin\AppData\Local\Programs\Python\Python312\python.exe`；skill 脚本若需 fitz/pptx 记得用这个解释器。
+- paper-figure 版式的 caption 盒是固定小盒（fill='fill'），caption 恒被压到 25px 上下，与文字长度无关 → 近期继续用 text/metrics 版式上片，论文原图只进台账。
+- 溯源门对“个百分点”只绑定紧邻数字：claims 写“高 5.3 与 4.5 个百分点”时，4.5 会归一成百分数而 5.3 保持裸值；slide 上要用 4.5 必须同样带单位，或在 claims 补一份裸数字口径（本期用括号补裸数字解决）。
+- de-AI 新假阳性：「显著水平 0.05」的“显著”命中模糊量词 → 统计术语改说「检验水平 0.05」。
+- extract_figures 台账 schema 升级：visual-assets.json 现在要求 video_slug + assets[]（id/kind/source_id/paper_label/page/derivative_path/acquisition/sha256(64位)/rights_status/use_note）；storyboard 用 paper-figure 时 asset 路径相对 deck/ 且必须放 deck/ 里。
+- bash 里 `cmd1 && cmd2 & cmd3` 会把 & 前整段丢后台造成下载竞态；并行下载用显式子shell或分条执行。
