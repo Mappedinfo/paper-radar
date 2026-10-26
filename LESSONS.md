@@ -249,3 +249,9 @@
 - de-AI 新假阳性：「显著水平 0.05」的“显著”命中模糊量词 → 统计术语改说「检验水平 0.05」。
 - extract_figures 台账 schema 升级：visual-assets.json 现在要求 video_slug + assets[]（id/kind/source_id/paper_label/page/derivative_path/acquisition/sha256(64位)/rights_status/use_note）；storyboard 用 paper-figure 时 asset 路径相对 deck/ 且必须放 deck/ 里。
 - bash 里 `cmd1 && cmd2 & cmd3` 会把 & 前整段丢后台造成下载竞态；并行下载用显式子shell或分条执行。
+
+## 2026-10-26（第 63-64 期 · OVC 视觉信用 / Learning to Be Monitored 因果界）
+- paper-fetch CLI 对 arXiv URL 查询返回 DOI 歧义候选（不可用），例程回退 arXiv 直连一次成功；后续可考虑给 CLI 加 --arxiv-id 直通参数。
+- de-AI 新假阳性两枚：「价值释放」命中黑话（改「才真正发挥作用」）；裸「可能」命中两头堵（负向前缀不也只才豁免，改写为确定性陈述）。
+- 溯源门单位陷阱：metrics 版式的 value 是独立字符串，数值与 label 里的「个百分点」不相邻不会归一成百分数 → value 直接写 "+30.52%"（claims 同样以「30.52 个百分点」形式归一为百分数即可匹配）；另注意 label 首字母为 M/K/万 时 `\s*[单位]` 会把前一个数字吞成 M/K 倍率。
+- 今日 fetch 首跑全通（OpenAlex 5 条 + arXiv 60 条），Atom 回退未动用；图谱 616→640。

@@ -432,5 +432,19 @@
   "slug": "icrl-posterior-test",
   "bvid": "BV1mXHg6AE9M",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-10-26",
+  "paper_id": "arxiv:2610.32324",
+  "slug": "ovc-visual-credit",
+  "bvid": "BV1U9nQ6SEd3",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-26",
+  "paper_id": "arxiv:2610.31733",
+  "slug": "learning-to-be-monitored",
+  "bvid": "BV11WnQ6gEVy",
+  "status": "uploaded"
  }
 ]

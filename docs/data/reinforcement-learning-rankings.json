@@ -5,8 +5,8 @@
   "authors": 65,
   "papers": 8,
   "citations": 857860,
-  "in_graph_cited": 5552,
-  "score": 1005406.8
+  "in_graph_cited": 5799,
+  "score": 1011970.9
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,8 @@
   "authors": 9,
   "papers": 8,
   "citations": 232029,
-  "in_graph_cited": 1390,
-  "score": 268968.8
+  "in_graph_cited": 1463,
+  "score": 270908.8
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -32,8 +32,8 @@
   "authors": 8,
   "papers": 2,
   "citations": 76720,
-  "in_graph_cited": 108,
-  "score": 78448.0
+  "in_graph_cited": 114,
+  "score": 78544.0
  },
  {
   "group_id": "group:gte (united states)",
@@ -41,8 +41,8 @@
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 337,
-  "score": 55939.6
+  "in_graph_cited": 348,
+  "score": 56186.7
  },
  {
   "group_id": "group:college of charleston",
@@ -74,11 +74,11 @@
  {
   "group_id": "group:university of california, berkeley",
   "group": "University of California, Berkeley",
-  "authors": 5,
-  "papers": 5,
+  "authors": 6,
+  "papers": 6,
   "citations": 29353,
-  "in_graph_cited": 70,
-  "score": 30925.1
+  "in_graph_cited": 80,
+  "score": 31273.0
  },
  {
   "group_id": "group:tecnalia",
@@ -95,8 +95,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 199,
-  "score": 28281.3
+  "in_graph_cited": 206,
+  "score": 28370.0
  },
  {
   "group_id": "group:king fahd university of petroleum and minerals",
@@ -140,8 +140,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 86,
-  "score": 19000.5
+  "in_graph_cited": 90,
+  "score": 19051.2
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -158,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 88,
-  "score": 14426.0
+  "in_graph_cited": 92,
+  "score": 14490.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -167,8 +167,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 88,
-  "score": 14426.0
+  "in_graph_cited": 92,
+  "score": 14490.0
  },
  {
   "group_id": "group:graz university of technology",
@@ -176,8 +176,8 @@
   "authors": 4,
   "papers": 2,
   "citations": 11892,
-  "in_graph_cited": 64,
-  "score": 12916.0
+  "in_graph_cited": 66,
+  "score": 12948.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -266,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 71,
-  "score": 10004.3
+  "in_graph_cited": 74,
+  "score": 10042.3
  },
  {
   "group_id": "group:sorbonne université",
@@ -284,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 43,
-  "score": 9500.2
+  "in_graph_cited": 45,
+  "score": 9525.6
  },
  {
   "group_id": "group:northeastern university",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 121,
-  "score": 9060.2
+  "in_graph_cited": 126,
+  "score": 9123.6
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -365,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 32,
-  "score": 6350.8
+  "in_graph_cited": 33,
+  "score": 6363.4
  },
  {
   "group_id": "group:tu dortmund university",
@@ -374,8 +374,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 32,
-  "score": 6350.8
+  "in_graph_cited": 33,
+  "score": 6363.4
  },
  {
   "group_id": "group:university of fribourg",
@@ -927,6 +927,15 @@
   "score": 0.0
  },
  {
+  "group_id": "group:university of north carolina at chapel hill",
+  "group": "University of North Carolina at Chapel Hill",
+  "authors": 2,
+  "papers": 2,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
   "group_id": "group:technische informationsbibliothek (tib)",
   "group": "Technische Informationsbibliothek (TIB)",
   "authors": 1,
@@ -1163,6 +1172,60 @@
  {
   "group_id": "group:m s ramaiah university of applied sciences",
   "group": "M S Ramaiah University of Applied Sciences",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:california institute of technology",
+  "group": "California Institute of Technology",
+  "authors": 4,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:university of maryland, college park",
+  "group": "University of Maryland, College Park",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:centre for addiction and mental health",
+  "group": "Centre for Addiction and Mental Health",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:university of california, los angeles",
+  "group": "University of California, Los Angeles",
+  "authors": 7,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:national taiwan university",
+  "group": "National Taiwan University",
+  "authors": 4,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:california nanosystems institute",
+  "group": "California NanoSystems Institute",
   "authors": 1,
   "papers": 1,
   "citations": 0,
