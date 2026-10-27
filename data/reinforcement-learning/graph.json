@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-26T09:04:32",
+ "updated_at": "2026-10-27T09:00:53",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -27958,6 +27958,841 @@
    "id": "claim:learning-to-be-monitored:6",
    "type": "claim",
    "label": "结果：上界复合分在全部 27 个方法与模型与监控器组合上提升，下界复合分在 27 个组合中 26 个提升；Qwen3.5-4B 两个分数分别提升 2.81 到 8.89 分与 2.90 到 13.70 分，Qwen3.5-9B 提升 0.01 到 5.83 分与 0.07 到 6.07 分；最大单项来自 Mistral Small 3.2-24B 的 RL，两个分数从 45.76 升到 76.28（提升 30.52 个百分点）与从 36.55 升到 61.60（提升 25.05 个百分点），监控器为 GPT-OSS-120B；OPSD 在 Llama3.3-70B 下有 0.21 个百分点的小幅下降。"
+  },
+  "arxiv:2610.33882": {
+   "id": "arxiv:2610.33882",
+   "type": "paper",
+   "label": "Intervention-Certified Amplification: A Validity Gate for $σ$-Weighted Post-Training",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33882",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:leiyue chen": {
+   "id": "author:leiyue chen",
+   "type": "author",
+   "label": "Leiyue Chen"
+  },
+  "author:meng wei": {
+   "id": "author:meng wei",
+   "type": "author",
+   "label": "Meng Wei"
+  },
+  "author:xuefeng hu": {
+   "id": "author:xuefeng hu",
+   "type": "author",
+   "label": "Xuefeng Hu"
+  },
+  "arxiv:2610.33839": {
+   "id": "arxiv:2610.33839",
+   "type": "paper",
+   "label": "EdgeDeID: A 0.6B Clinical De-identifier Trained Without Real Patient Data",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33839",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:sina daneshgar": {
+   "id": "author:sina daneshgar",
+   "type": "author",
+   "label": "Sina Daneshgar"
+  },
+  "author:raya namazi": {
+   "id": "author:raya namazi",
+   "type": "author",
+   "label": "Raya Namazi"
+  },
+  "author:amirali khosravi": {
+   "id": "author:amirali khosravi",
+   "type": "author",
+   "label": "Amirali Khosravi"
+  },
+  "author:pouria rouzrokh": {
+   "id": "author:pouria rouzrokh",
+   "type": "author",
+   "label": "Pouria Rouzrokh"
+  },
+  "author:bardia khosravi": {
+   "id": "author:bardia khosravi",
+   "type": "author",
+   "label": "Bardia Khosravi"
+  },
+  "arxiv:2610.33817": {
+   "id": "arxiv:2610.33817",
+   "type": "paper",
+   "label": "EnvLunch: The Environment as a Free Lunch for Learning to Interact",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33817",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:min gao": {
+   "id": "author:min gao",
+   "type": "author",
+   "label": "Min Gao"
+  },
+  "author:yali du": {
+   "id": "author:yali du",
+   "type": "author",
+   "label": "Yali Du"
+  },
+  "author:yulan he": {
+   "id": "author:yulan he",
+   "type": "author",
+   "label": "Yulan He"
+  },
+  "arxiv:2610.33778": {
+   "id": "arxiv:2610.33778",
+   "type": "paper",
+   "label": "RoboReason: Boosting Robotics-Relevant VLM Reasoning Through Scalable Data Generation",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33778",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:sagnik anupam": {
+   "id": "author:sagnik anupam",
+   "type": "author",
+   "label": "Sagnik Anupam"
+  },
+  "author:utkarsh lal": {
+   "id": "author:utkarsh lal",
+   "type": "author",
+   "label": "Utkarsh Lal"
+  },
+  "author:aneesh edara": {
+   "id": "author:aneesh edara",
+   "type": "author",
+   "label": "Aneesh Edara"
+  },
+  "author:botong zhang": {
+   "id": "author:botong zhang",
+   "type": "author",
+   "label": "Botong Zhang"
+  },
+  "author:yao tang": {
+   "id": "author:yao tang",
+   "type": "author",
+   "label": "Yao Tang"
+  },
+  "author:jiatao gu": {
+   "id": "author:jiatao gu",
+   "type": "author",
+   "label": "Jiatao Gu"
+  },
+  "author:dinesh jayaraman": {
+   "id": "author:dinesh jayaraman",
+   "type": "author",
+   "label": "Dinesh Jayaraman"
+  },
+  "author:osbert bastani": {
+   "id": "author:osbert bastani",
+   "type": "author",
+   "label": "Osbert Bastani"
+  },
+  "arxiv:2610.33775": {
+   "id": "arxiv:2610.33775",
+   "type": "paper",
+   "label": "The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33775",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:haggai roitman": {
+   "id": "author:haggai roitman",
+   "type": "author",
+   "label": "Haggai Roitman"
+  },
+  "arxiv:2610.33740": {
+   "id": "arxiv:2610.33740",
+   "type": "paper",
+   "label": "A Distribution-Matching Perspective on LLM Training Algorithms",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33740",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:yanxing huang": {
+   "id": "author:yanxing huang",
+   "type": "author",
+   "label": "Yanxing Huang"
+  },
+  "author:bingzhang yan": {
+   "id": "author:bingzhang yan",
+   "type": "author",
+   "label": "Bingzhang Yan"
+  },
+  "author:zihan tang": {
+   "id": "author:zihan tang",
+   "type": "author",
+   "label": "Zihan Tang"
+  },
+  "author:wenzhe li": {
+   "id": "author:wenzhe li",
+   "type": "author",
+   "label": "Wenzhe Li"
+  },
+  "author:peng li": {
+   "id": "author:peng li",
+   "type": "author",
+   "label": "Peng Li"
+  },
+  "arxiv:2610.33726": {
+   "id": "arxiv:2610.33726",
+   "type": "paper",
+   "label": "Human-Feedback-Guided Multi-Agent Inverse Reinforcement Learning for Interactive Driving Behavior Modeling",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33726",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:longhao yan": {
+   "id": "author:longhao yan",
+   "type": "author",
+   "label": "Longhao Yan"
+  },
+  "author:jinhao liang": {
+   "id": "author:jinhao liang",
+   "type": "author",
+   "label": "Jinhao Liang"
+  },
+  "author:kaidi yang": {
+   "id": "author:kaidi yang",
+   "type": "author",
+   "label": "Kaidi Yang"
+  },
+  "arxiv:2610.33667": {
+   "id": "arxiv:2610.33667",
+   "type": "paper",
+   "label": "SWE-Ladder: Learning to Localize, Reproduce, and Patch via Progressive Privileged Self-Distillation",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33667",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:xudong cai": {
+   "id": "author:xudong cai",
+   "type": "author",
+   "label": "Xudong Cai"
+  },
+  "author:yueting zhuang": {
+   "id": "author:yueting zhuang",
+   "type": "author",
+   "label": "Yueting Zhuang"
+  },
+  "arxiv:2610.33654": {
+   "id": "arxiv:2610.33654",
+   "type": "paper",
+   "label": "Physics-Informed Graph-Based Safe RL with Constraint-Specific Critics for Community Battery Coordination in Distribution Network",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33654",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:chenghao huang": {
+   "id": "author:chenghao huang",
+   "type": "author",
+   "label": "Chenghao Huang"
+  },
+  "author:yue yang": {
+   "id": "author:yue yang",
+   "type": "author",
+   "label": "Yue Yang"
+  },
+  "arxiv:2610.33494": {
+   "id": "arxiv:2610.33494",
+   "type": "paper",
+   "label": "RBGA: Residual-Budget Guide Arbitration for Offline-to-Online Safe Reinforcement Learning in Dexterous Manipulation",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33494",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:zongyou yu": {
+   "id": "author:zongyou yu",
+   "type": "author",
+   "label": "Zongyou Yu"
+  },
+  "author:ao zhou": {
+   "id": "author:ao zhou",
+   "type": "author",
+   "label": "Ao Zhou"
+  },
+  "author:xiongbo shi": {
+   "id": "author:xiongbo shi",
+   "type": "author",
+   "label": "Xiongbo Shi"
+  },
+  "author:jiayi guan": {
+   "id": "author:jiayi guan",
+   "type": "author",
+   "label": "Jiayi Guan"
+  },
+  "author:shihang du": {
+   "id": "author:shihang du",
+   "type": "author",
+   "label": "Shihang Du"
+  },
+  "author:xudong zhang": {
+   "id": "author:xudong zhang",
+   "type": "author",
+   "label": "Xudong Zhang"
+  },
+  "author:shangding gu": {
+   "id": "author:shangding gu",
+   "type": "author",
+   "label": "Shangding Gu"
+  },
+  "author:junqiao zhao": {
+   "id": "author:junqiao zhao",
+   "type": "author",
+   "label": "Junqiao Zhao"
+  },
+  "author:hanli wang": {
+   "id": "author:hanli wang",
+   "type": "author",
+   "label": "Hanli Wang"
+  },
+  "author:guang chen": {
+   "id": "author:guang chen",
+   "type": "author",
+   "label": "Guang Chen"
+  },
+  "arxiv:2610.33451": {
+   "id": "arxiv:2610.33451",
+   "type": "paper",
+   "label": "A Comprehensive Framework for All Stages of Large-Model Training: From Data and Tokenization, through Pretraining, to Post-Training Alignment",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33451",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:xiangjing an": {
+   "id": "author:xiangjing an",
+   "type": "author",
+   "label": "Xiangjing An"
+  },
+  "author:zhibin jiao": {
+   "id": "author:zhibin jiao",
+   "type": "author",
+   "label": "Zhibin Jiao"
+  },
+  "author:aiting chen": {
+   "id": "author:aiting chen",
+   "type": "author",
+   "label": "Aiting Chen"
+  },
+  "arxiv:2610.33420": {
+   "id": "arxiv:2610.33420",
+   "type": "paper",
+   "label": "An Empirical Study of Reinforcement Learning Scaling Laws",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33420",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:zeyu zheng": {
+   "id": "author:zeyu zheng",
+   "type": "author",
+   "label": "Zeyu Zheng"
+  },
+  "author:clare lyle": {
+   "id": "author:clare lyle",
+   "type": "author",
+   "label": "Clare Lyle"
+  },
+  "author:khimya khetarpal": {
+   "id": "author:khimya khetarpal",
+   "type": "author",
+   "label": "Khimya Khetarpal"
+  },
+  "author:will dabney": {
+   "id": "author:will dabney",
+   "type": "author",
+   "label": "Will Dabney"
+  },
+  "arxiv:2610.33248": {
+   "id": "arxiv:2610.33248",
+   "type": "paper",
+   "label": "Reinforcement Learning for Controller Parameters in the Auto-Bidding System at Pinterest",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.33248",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:yichu zhou": {
+   "id": "author:yichu zhou",
+   "type": "author",
+   "label": "Yichu Zhou"
+  },
+  "author:qinyi chen": {
+   "id": "author:qinyi chen",
+   "type": "author",
+   "label": "Qinyi Chen"
+  },
+  "author:fei feng": {
+   "id": "author:fei feng",
+   "type": "author",
+   "label": "Fei Feng"
+  },
+  "author:jacob loh": {
+   "id": "author:jacob loh",
+   "type": "author",
+   "label": "Jacob Loh"
+  },
+  "author:mehdi ben ayed": {
+   "id": "author:mehdi ben ayed",
+   "type": "author",
+   "label": "Mehdi Ben Ayed"
+  },
+  "author:andrei curelea": {
+   "id": "author:andrei curelea",
+   "type": "author",
+   "label": "Andrei Curelea"
+  },
+  "author:jiajing xu": {
+   "id": "author:jiajing xu",
+   "type": "author",
+   "label": "Jiajing Xu"
+  },
+  "arxiv:2610.32971": {
+   "id": "arxiv:2610.32971",
+   "type": "paper",
+   "label": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32971",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:xi chen": {
+   "id": "author:xi chen",
+   "type": "author",
+   "label": "Xi Chen"
+  },
+  "author:fengqi hu": {
+   "id": "author:fengqi hu",
+   "type": "author",
+   "label": "Fengqi Hu"
+  },
+  "author:zeyu shen": {
+   "id": "author:zeyu shen",
+   "type": "author",
+   "label": "Zeyu Shen"
+  },
+  "author:jiaying xu": {
+   "id": "author:jiaying xu",
+   "type": "author",
+   "label": "Jiaying Xu"
+  },
+  "author:pan xu": {
+   "id": "author:pan xu",
+   "type": "author",
+   "label": "Pan Xu"
+  },
+  "author:anqi liu": {
+   "id": "author:anqi liu",
+   "type": "author",
+   "label": "Anqi Liu"
+  },
+  "author:laixi shi": {
+   "id": "author:laixi shi",
+   "type": "author",
+   "label": "Laixi Shi"
+  },
+  "arxiv:2610.32951": {
+   "id": "arxiv:2610.32951",
+   "type": "paper",
+   "label": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32951",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:yijing ke": {
+   "id": "author:yijing ke",
+   "type": "author",
+   "label": "Yijing Ke"
+  },
+  "author:tianle cai": {
+   "id": "author:tianle cai",
+   "type": "author",
+   "label": "Tianle Cai"
+  },
+  "author:ruosong wang": {
+   "id": "author:ruosong wang",
+   "type": "author",
+   "label": "Ruosong Wang"
+  },
+  "arxiv:2610.32910": {
+   "id": "arxiv:2610.32910",
+   "type": "paper",
+   "label": "Recommender regret for improving regularised RL estimation with bandits and MCTS",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32910",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:danilo vucetic": {
+   "id": "author:danilo vucetic",
+   "type": "author",
+   "label": "Danilo Vucetic"
+  },
+  "author:alexandre larouche": {
+   "id": "author:alexandre larouche",
+   "type": "author",
+   "label": "Alexandre Larouche"
+  },
+  "author:mohammad pedramfar": {
+   "id": "author:mohammad pedramfar",
+   "type": "author",
+   "label": "Mohammad Pedramfar"
+  },
+  "author:audrey durand": {
+   "id": "author:audrey durand",
+   "type": "author",
+   "label": "Audrey Durand"
+  },
+  "author:gauthier gidel": {
+   "id": "author:gauthier gidel",
+   "type": "author",
+   "label": "Gauthier Gidel"
+  },
+  "arxiv:2610.32887": {
+   "id": "arxiv:2610.32887",
+   "type": "paper",
+   "label": "Reinforcement Learning with Multi-Step Transition Predictions: A Bellman Theory",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32887",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:zaiwei chen": {
+   "id": "author:zaiwei chen",
+   "type": "author",
+   "label": "Zaiwei Chen"
+  },
+  "author:tongxin li": {
+   "id": "author:tongxin li",
+   "type": "author",
+   "label": "Tongxin Li"
+  },
+  "author:chenye wu": {
+   "id": "author:chenye wu",
+   "type": "author",
+   "label": "Chenye Wu"
+  },
+  "author:adam wierman": {
+   "id": "author:adam wierman",
+   "type": "author",
+   "label": "Adam Wierman"
+  },
+  "arxiv:2610.32881": {
+   "id": "arxiv:2610.32881",
+   "type": "paper",
+   "label": "NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32881",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:nilesh prasad pandey": {
+   "id": "author:nilesh prasad pandey",
+   "type": "author",
+   "label": "Nilesh Prasad Pandey"
+  },
+  "author:jangseon park": {
+   "id": "author:jangseon park",
+   "type": "author",
+   "label": "Jangseon Park"
+  },
+  "author:jason kong": {
+   "id": "author:jason kong",
+   "type": "author",
+   "label": "Jason Kong"
+  },
+  "author:onat gungor": {
+   "id": "author:onat gungor",
+   "type": "author",
+   "label": "Onat Gungor"
+  },
+  "author:tajana rosing": {
+   "id": "author:tajana rosing",
+   "type": "author",
+   "label": "Tajana Rosing"
+  },
+  "arxiv:2610.32855": {
+   "id": "arxiv:2610.32855",
+   "type": "paper",
+   "label": "Regularised RL improves sim-to-real transfer",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32855",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:mohamad h. danesh": {
+   "id": "author:mohamad h. danesh",
+   "type": "author",
+   "label": "Mohamad H. Danesh"
+  },
+  "author:florence clerc": {
+   "id": "author:florence clerc",
+   "type": "author",
+   "label": "Florence Clerc"
+  },
+  "author:hsiu-chin lin": {
+   "id": "author:hsiu-chin lin",
+   "type": "author",
+   "label": "Hsiu-Chin Lin"
+  },
+  "author:jonathan tremblay": {
+   "id": "author:jonathan tremblay",
+   "type": "author",
+   "label": "Jonathan Tremblay"
+  },
+  "arxiv:2610.32657": {
+   "id": "arxiv:2610.32657",
+   "type": "paper",
+   "label": "DT-JEPA: Learning to Predict Future Representations for Decision-Making",
+   "year": null,
+   "citations": 0,
+   "venue": "",
+   "doi": null,
+   "arxiv": "2610.32657",
+   "source": "arxiv",
+   "oa": null
+  },
+  "author:changxu ni": {
+   "id": "author:changxu ni",
+   "type": "author",
+   "label": "Changxu Ni"
+  },
+  "author:yiyang ni": {
+   "id": "author:yiyang ni",
+   "type": "author",
+   "label": "Yiyang Ni"
+  },
+  "author:jun li": {
+   "id": "author:jun li",
+   "type": "author",
+   "label": "Jun Li"
+  },
+  "author:feiran you": {
+   "id": "author:feiran you",
+   "type": "author",
+   "label": "Feiran You"
+  },
+  "author:hongyang du": {
+   "id": "author:hongyang du",
+   "type": "author",
+   "label": "Hongyang Du"
+  },
+  "author:haitao zhao": {
+   "id": "author:haitao zhao",
+   "type": "author",
+   "label": "Haitao Zhao"
+  },
+  "author:shi jin": {
+   "id": "author:shi jin",
+   "type": "author",
+   "label": "Shi Jin"
+  },
+  "doi:10.48175/ijarsct-40157": {
+   "id": "doi:10.48175/ijarsct-40157",
+   "type": "paper",
+   "label": "Reinforcement Learning Approach for Optimizing Cloud Resource Utilization with Load Balancing",
+   "year": 2026,
+   "citations": 0,
+   "venue": "International Journal of Advanced Research in Science Communication and Technology",
+   "doi": "10.48175/ijarsct-40157",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223573183"
+  },
+  "author:miss. p. v. kapse miss. sonawane rutuja sitaram": {
+   "id": "author:miss. p. v. kapse miss. sonawane rutuja sitaram",
+   "type": "author",
+   "label": "Miss. P. V. Kapse Miss. Sonawane Rutuja Sitaram",
+   "openalex": "https://openalex.org/A5159522620"
+  },
+  "group:adsul technical campus, chas, ahilyanagar, india": {
+   "id": "group:adsul technical campus, chas, ahilyanagar, india",
+   "type": "group",
+   "label": "Adsul Technical Campus, Chas, Ahilyanagar, India"
+  },
+  "author:prof. j. r. mahajan": {
+   "id": "author:prof. j. r. mahajan",
+   "type": "author",
+   "label": "Prof. J. R. Mahajan",
+   "openalex": "https://openalex.org/A5120494694"
+  },
+  "doi:10.65138/ijmdes.2026.v5i7.316": {
+   "id": "doi:10.65138/ijmdes.2026.v5i7.316",
+   "type": "paper",
+   "label": "Directed Hypergraph-Enhanced PPO for Quality-Aware Single-Machine Scheduling with Sequence-Dependent Setup Times: A Computational Pilot Study",
+   "year": 2026,
+   "citations": 0,
+   "venue": "International Journal of Modern Developments in Engineering and Science",
+   "doi": "10.65138/ijmdes.2026.v5i7.316",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7223446126"
+  },
+  "venue:international journal of modern developments in engineering and science": {
+   "id": "venue:international journal of modern developments in engineering and science",
+   "type": "venue",
+   "label": "International Journal of Modern Developments in Engineering and Science"
+  },
+  "author:sunday obokenuenu emmanuel inonoje": {
+   "id": "author:sunday obokenuenu emmanuel inonoje",
+   "type": "author",
+   "label": "Sunday Obokenuenu Emmanuel Inonoje",
+   "openalex": "https://openalex.org/A5059252688"
+  },
+  "group:southern delta university, ozoro": {
+   "id": "group:southern delta university, ozoro",
+   "type": "group",
+   "label": "Southern Delta University, Ozoro"
+  },
+  "author:newton ighomaro okposo": {
+   "id": "author:newton ighomaro okposo",
+   "type": "author",
+   "label": "Newton Ighomaro Okposo",
+   "openalex": "https://openalex.org/A5056954687"
+  },
+  "group:delta state university": {
+   "id": "group:delta state university",
+   "type": "group",
+   "label": "Delta State University"
+  },
+  "author:tsetimi jonathan": {
+   "id": "author:tsetimi jonathan",
+   "type": "author",
+   "label": "Tsetimi Jonathan",
+   "openalex": "https://openalex.org/A5064203309"
+  },
+  "author:henrietta ify ojarikre": {
+   "id": "author:henrietta ify ojarikre",
+   "type": "author",
+   "label": "Henrietta Ify Ojarikre",
+   "openalex": "https://openalex.org/A5072837176"
+  },
+  "claim:rl-scaling-laws:1": {
+   "id": "claim:rl-scaling-laws:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-27）：共 662 篇论文、3503 位作者。"
+  },
+  "claim:rl-scaling-laws:2": {
+   "id": "claim:rl-scaling-laws:2",
+   "type": "claim",
+   "label": "Scaling laws 用小规模廉价实验回答大规模训练的三问，最好性能、最优资源分配与最优超参；RL 里策略改进与数据生成相互耦合导致学习本质非平稳，奖励常按领域启发式设计，平均回合回报不平滑，RL 长期缺少可预测扩展的指导原则；本文据作者所知是首个在 RL 语境同时研究三问并验证拟合规律预测精度的工作，算法为 A2C，环境为程序化生成的 Starpilot 与 Craftax。"
+  },
+  "claim:rl-scaling-laws:3": {
+   "id": "claim:rl-scaling-laws:3",
+   "type": "claim",
+   "label": "两阶段框架先做超参扩展，7 个算力预算从 1e14 到 1e17 FLOPs、每个预算 7 种学习率乘 7 种批大小乘 4 种模型规模做网格搜索，用 bootstrap 重采样种子选出每组 1000 个竞争配置再拟合幂律；再用 isoFLOPs 抛物线定最优模型规模，模型规模以每帧 FLOPs 即 FPF 度量，总算力 C 等于 M 乘 D；最优批大小随算力增长（指数 0.39 与 0.26），学习率指数 Starpilot 为 −0.023、Craftax 为 −0.082，基本持平，与学习率应随规模下降的常见认知相左。"
+  },
+  "claim:rl-scaling-laws:4": {
+   "id": "claim:rl-scaling-laws:4",
+   "type": "claim",
+   "label": "为绕开平均回合回报的不平滑，论文用单智能体版 Elo 作性能指标，把每个训练的最终检查点组成联赛，在固定评测环境集合上两两模拟对抗得胜率矩阵，用 Bradley-Terry 模型拟合 Elo 并减去随机策略的 Elo 做锚定；Elo 本身在对数尺度上，性能规律拟合为对数线性 Elo*(C) 等于 dElo 乘 log10 C 加 aElo，dElo 为 240.97 与 223.86；Elo 比平均回合回报可预测得多，平均回报在 Craftax 上连拟合都不好。"
+  },
+  "claim:rl-scaling-laws:5": {
+   "id": "claim:rl-scaling-laws:5",
+   "type": "claim",
+   "label": "预测精度，1e17 FLOPs 上超参预测配置的回报 Starpilot 为 32.02 对经验最优 32.3，Craftax 为 63.46 对 64.76；1e18 FLOPs 上最优 FPF 预测 Starpilot 高估 31%（4.85e8 对 3.69e8）但性能近最优，胜率误差 −1.17%，Craftax 相对误差仅 3%（2.73e7 对 2.65e7），胜率误差 −3.55%；Elo 预测在 1e18 的胜率误差为 +5.84% 与 −6.37%。"
+  },
+  "claim:rl-scaling-laws:6": {
+   "id": "claim:rl-scaling-laws:6",
+   "type": "claim",
+   "label": "hero run 把算力推到 1e19 FLOPs、每环境 10 个种子，实际 Elo 高于预测，偏差 +80.2 与 +80.9，对应胜率偏差 +11.34% 与 +11.44%；按规律做算力最优分配后，Craftax 达到新 SOTA 54.0%，较此前最佳发表基线 20.6% 翻倍以上，代价是消耗 1350 亿帧对基线的 40 亿帧。"
+  },
+  "claim:bellman-multistep-prediction:1": {
+   "id": "claim:bellman-multistep-prediction:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-27）：共 662 篇论文、3503 位作者。"
+  },
+  "claim:bellman-multistep-prediction:2": {
+   "id": "claim:bellman-multistep-prediction:2",
+   "type": "claim",
+   "label": "多步转移预测在能源存储、投资组合与出行物流等在线决策中普遍可得；直接把 K 步预测拼进状态会让离散预测状态数随 K 指数增长、动态规划不可行，即便精确揭示未来转移，规划也可能是 NP 难，且表格 RL 的样本复杂度随状态动作对数增长；论文研究折扣有限 MDP 加块反馈协议，时间按 K 步分块，块首观察对部分转移行的 K 步概率预测，预测在块内持续可用，每步仍观察当前状态，动作可随块内实现状态自适应。"
+  },
+  "claim:bellman-multistep-prediction:3": {
+   "id": "claim:bellman-multistep-prediction:3",
+   "type": "claim",
+   "label": "低维 Bellman 表示，块反馈下最优无限期价值只需 |S| 个状态坐标；给定实现的预测，决策者解一个精确的 K 阶动态规划，对预测分布取平均得到原状态空间上的贝叶斯 Bellman 算子；该算子在无穷范数下是 γ^K 压缩，唯一不动点恰为最优块反馈价值；反向归纳给出依赖预测的状态反馈最优策略，策略在线使用高维预测信息而 Bellman 不动点保持低维。"
+  },
+  "claim:bellman-multistep-prediction:4": {
+   "id": "claim:bellman-multistep-prediction:4",
+   "type": "claim",
+   "label": "预测的价值来自 Bellman 展开中最大化与期望局部次序的交换，即 Bellman-Jensen 机制；论文建立无预测、不完美预测、部分动作覆盖的精确预测、全覆盖精确预测与完全信息离线基准之间的价值排序；有限预测视野的损失以 γ^K/(1−γ) 为尺度，误差轮廓 (ε0 到 εK−1) 贡献 γ 的幂次加权和除以 (1−γ)(1−γ^K)，部分动作覆盖是乘 1/(1−γ^K) 的单块覆盖差；精确全覆盖下到完全信息的差距按 O(γ^K/(1−γ)) 几何衰减，均匀误差 ε 下损失为 O(ε/(1−γ)²)，两种依赖都有匹配的 minimax 下界，说明一般情形无法改进。"
+  },
+  "claim:bellman-multistep-prediction:5": {
+   "id": "claim:bellman-multistep-prediction:5",
+   "type": "claim",
+   "label": "BF-BOLA 是有模型算法，环境样本只估预测未覆盖的转移行，预测样本独立学预测分布，离线算经验贝叶斯价值，在线结合当次观察的预测并随实现状态自适应；对数因子内学到 ε 最优块反馈策略需要环境样本 Õ(|S|(|A|−|A⁻|)/((1−γ)³ε²)) 与预测样本 Õ((1+γ^(2K))/((1−γ)²(1−γ^K)ε²))，两种统计资源都有匹配的下界，BF-BOLA 在对数因子内 minimax 最优。"
+  },
+  "claim:bellman-multistep-prediction:6": {
+   "id": "claim:bellman-multistep-prediction:6",
+   "type": "claim",
+   "label": "预测覆盖把学习维度从全部状态动作转移行降到未覆盖行，环境样本复杂度中的 (|A|−|A⁻|) 项即由此而来；学近优策略所需的预测样本显著少于估计贝叶斯价值函数，后者的预测样本复杂度为 Õ(1/((1−γ)²(1−γ^K)ε²))；关键技术是当前块抵消，执行时学习策略与基准策略条件在同一当前预测上，预测规律估计只通过未来块的贝叶斯价值影响性能，单边 Bellman 比较加方差敏感集中给出预测样本复杂度的 γ^(2K) 改进。"
   }
  },
  "edges": [
@@ -57282,16 +58117,6 @@
    "rel": "member_of"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.32324",
    "t": "claim:ovc-visual-credit:1",
    "rel": "claims"
@@ -57349,6 +58174,941 @@
   {
    "s": "arxiv:2610.31733",
    "t": "claim:learning-to-be-monitored:6",
+   "rel": "claims"
+  },
+  {
+   "s": "author:leiyue chen",
+   "t": "arxiv:2610.33882",
+   "rel": "authored"
+  },
+  {
+   "s": "author:meng wei",
+   "t": "arxiv:2610.33882",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xuefeng hu",
+   "t": "arxiv:2610.33882",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wei liu",
+   "t": "arxiv:2610.33882",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sina daneshgar",
+   "t": "arxiv:2610.33839",
+   "rel": "authored"
+  },
+  {
+   "s": "author:raya namazi",
+   "t": "arxiv:2610.33839",
+   "rel": "authored"
+  },
+  {
+   "s": "author:amirali khosravi",
+   "t": "arxiv:2610.33839",
+   "rel": "authored"
+  },
+  {
+   "s": "author:pouria rouzrokh",
+   "t": "arxiv:2610.33839",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bardia khosravi",
+   "t": "arxiv:2610.33839",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wei liu",
+   "t": "arxiv:2610.33817",
+   "rel": "authored"
+  },
+  {
+   "s": "author:min gao",
+   "t": "arxiv:2610.33817",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yali du",
+   "t": "arxiv:2610.33817",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yulan he",
+   "t": "arxiv:2610.33817",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sagnik anupam",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:utkarsh lal",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:aneesh edara",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:botong zhang",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yao tang",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiatao gu",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:dinesh jayaraman",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:osbert bastani",
+   "t": "arxiv:2610.33778",
+   "rel": "authored"
+  },
+  {
+   "s": "author:haggai roitman",
+   "t": "arxiv:2610.33775",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yanxing huang",
+   "t": "arxiv:2610.33740",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bingzhang yan",
+   "t": "arxiv:2610.33740",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zihan tang",
+   "t": "arxiv:2610.33740",
+   "rel": "authored"
+  },
+  {
+   "s": "author:wenzhe li",
+   "t": "arxiv:2610.33740",
+   "rel": "authored"
+  },
+  {
+   "s": "author:peng li",
+   "t": "arxiv:2610.33740",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yang liu",
+   "t": "arxiv:2610.33740",
+   "rel": "authored"
+  },
+  {
+   "s": "author:longhao yan",
+   "t": "arxiv:2610.33726",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jinhao liang",
+   "t": "arxiv:2610.33726",
+   "rel": "authored"
+  },
+  {
+   "s": "author:kaidi yang",
+   "t": "arxiv:2610.33726",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xudong cai",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhengxi lu",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yuchen yan",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jian shao",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jun xiao",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yueting zhuang",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yongliang shen",
+   "t": "arxiv:2610.33667",
+   "rel": "authored"
+  },
+  {
+   "s": "author:chenghao huang",
+   "t": "arxiv:2610.33654",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yue yang",
+   "t": "arxiv:2610.33654",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hao wang",
+   "t": "arxiv:2610.33654",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zongyou yu",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ao zhou",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xiongbo shi",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiayi guan",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shihang du",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xudong zhang",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shangding gu",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:junqiao zhao",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hanli wang",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:guang chen",
+   "t": "arxiv:2610.33494",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xiangjing an",
+   "t": "arxiv:2610.33451",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhibin jiao",
+   "t": "arxiv:2610.33451",
+   "rel": "authored"
+  },
+  {
+   "s": "author:aiting chen",
+   "t": "arxiv:2610.33451",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zeyu zheng",
+   "t": "arxiv:2610.33420",
+   "rel": "authored"
+  },
+  {
+   "s": "author:clare lyle",
+   "t": "arxiv:2610.33420",
+   "rel": "authored"
+  },
+  {
+   "s": "author:khimya khetarpal",
+   "t": "arxiv:2610.33420",
+   "rel": "authored"
+  },
+  {
+   "s": "author:will dabney",
+   "t": "arxiv:2610.33420",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yichu zhou",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:qinyi chen",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:fei feng",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jacob loh",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mehdi ben ayed",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:lin yang",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:andrei curelea",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiajing xu",
+   "t": "arxiv:2610.33248",
+   "rel": "authored"
+  },
+  {
+   "s": "author:xi chen",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:fengqi hu",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zeyu shen",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jiaying xu",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shangding gu",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:pan xu",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:anqi liu",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:laixi shi",
+   "t": "arxiv:2610.32971",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yijing ke",
+   "t": "arxiv:2610.32951",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tianle cai",
+   "t": "arxiv:2610.32951",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ruosong wang",
+   "t": "arxiv:2610.32951",
+   "rel": "authored"
+  },
+  {
+   "s": "author:danilo vucetic",
+   "t": "arxiv:2610.32910",
+   "rel": "authored"
+  },
+  {
+   "s": "author:alexandre larouche",
+   "t": "arxiv:2610.32910",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mohammad pedramfar",
+   "t": "arxiv:2610.32910",
+   "rel": "authored"
+  },
+  {
+   "s": "author:audrey durand",
+   "t": "arxiv:2610.32910",
+   "rel": "authored"
+  },
+  {
+   "s": "author:gauthier gidel",
+   "t": "arxiv:2610.32910",
+   "rel": "authored"
+  },
+  {
+   "s": "author:chenbei lu",
+   "t": "arxiv:2610.32887",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zaiwei chen",
+   "t": "arxiv:2610.32887",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tongxin li",
+   "t": "arxiv:2610.32887",
+   "rel": "authored"
+  },
+  {
+   "s": "author:chenye wu",
+   "t": "arxiv:2610.32887",
+   "rel": "authored"
+  },
+  {
+   "s": "author:adam wierman",
+   "t": "arxiv:2610.32887",
+   "rel": "authored"
+  },
+  {
+   "s": "author:nilesh prasad pandey",
+   "t": "arxiv:2610.32881",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jangseon park",
+   "t": "arxiv:2610.32881",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jason kong",
+   "t": "arxiv:2610.32881",
+   "rel": "authored"
+  },
+  {
+   "s": "author:onat gungor",
+   "t": "arxiv:2610.32881",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tajana rosing",
+   "t": "arxiv:2610.32881",
+   "rel": "authored"
+  },
+  {
+   "s": "author:danilo vucetic",
+   "t": "arxiv:2610.32855",
+   "rel": "authored"
+  },
+  {
+   "s": "author:mohamad h. danesh",
+   "t": "arxiv:2610.32855",
+   "rel": "authored"
+  },
+  {
+   "s": "author:florence clerc",
+   "t": "arxiv:2610.32855",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hsiu-chin lin",
+   "t": "arxiv:2610.32855",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jonathan tremblay",
+   "t": "arxiv:2610.32855",
+   "rel": "authored"
+  },
+  {
+   "s": "author:changxu ni",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yiyang ni",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "author:jun li",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "author:feiran you",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hongyang du",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "author:haitao zhao",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "author:shi jin",
+   "t": "arxiv:2610.32657",
+   "rel": "authored"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.4230/oasics.dx.2024.16",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-40157",
+   "t": "venue:international journal of advanced research in science communication and technolo",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:miss. p. v. kapse miss. sonawane rutuja sitaram",
+   "t": "doi:10.48175/ijarsct-40157",
+   "rel": "authored"
+  },
+  {
+   "s": "author:miss. p. v. kapse miss. sonawane rutuja sitaram",
+   "t": "group:adsul technical campus, chas, ahilyanagar, india",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:prof. j. r. mahajan",
+   "t": "doi:10.48175/ijarsct-40157",
+   "rel": "authored"
+  },
+  {
+   "s": "author:prof. j. r. mahajan",
+   "t": "group:adsul technical campus, chas, ahilyanagar, india",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.65138/ijmdes.2026.v5i7.316",
+   "t": "venue:international journal of modern developments in engineering and science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:sunday obokenuenu emmanuel inonoje",
+   "t": "doi:10.65138/ijmdes.2026.v5i7.316",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sunday obokenuenu emmanuel inonoje",
+   "t": "group:southern delta university, ozoro",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:newton ighomaro okposo",
+   "t": "doi:10.65138/ijmdes.2026.v5i7.316",
+   "rel": "authored"
+  },
+  {
+   "s": "author:newton ighomaro okposo",
+   "t": "group:delta state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:tsetimi jonathan",
+   "t": "doi:10.65138/ijmdes.2026.v5i7.316",
+   "rel": "authored"
+  },
+  {
+   "s": "author:tsetimi jonathan",
+   "t": "group:delta state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:henrietta ify ojarikre",
+   "t": "doi:10.65138/ijmdes.2026.v5i7.316",
+   "rel": "authored"
+  },
+  {
+   "s": "author:henrietta ify ojarikre",
+   "t": "group:delta state university",
+   "rel": "member_of"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.33420",
+   "t": "claim:rl-scaling-laws:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.33420",
+   "t": "claim:rl-scaling-laws:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.33420",
+   "t": "claim:rl-scaling-laws:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.33420",
+   "t": "claim:rl-scaling-laws:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.33420",
+   "t": "claim:rl-scaling-laws:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.33420",
+   "t": "claim:rl-scaling-laws:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.32887",
+   "t": "claim:bellman-multistep-prediction:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.32887",
+   "t": "claim:bellman-multistep-prediction:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.32887",
+   "t": "claim:bellman-multistep-prediction:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.32887",
+   "t": "claim:bellman-multistep-prediction:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.32887",
+   "t": "claim:bellman-multistep-prediction:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.32887",
+   "t": "claim:bellman-multistep-prediction:6",
    "rel": "claims"
   }
  ]

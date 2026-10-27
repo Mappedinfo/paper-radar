@@ -5,8 +5,8 @@
   "authors": 65,
   "papers": 8,
   "citations": 857860,
-  "in_graph_cited": 5799,
-  "score": 1011970.9
+  "in_graph_cited": 6046,
+  "score": 1018535.0
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,8 @@
   "authors": 9,
   "papers": 8,
   "citations": 232029,
-  "in_graph_cited": 1463,
-  "score": 270908.8
+  "in_graph_cited": 1536,
+  "score": 272848.9
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -32,8 +32,8 @@
   "authors": 8,
   "papers": 2,
   "citations": 76720,
-  "in_graph_cited": 114,
-  "score": 78544.0
+  "in_graph_cited": 120,
+  "score": 78640.0
  },
  {
   "group_id": "group:gte (united states)",
@@ -41,8 +41,8 @@
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 348,
-  "score": 56186.7
+  "in_graph_cited": 359,
+  "score": 56433.7
  },
  {
   "group_id": "group:college of charleston",
@@ -77,8 +77,8 @@
   "authors": 6,
   "papers": 6,
   "citations": 29353,
-  "in_graph_cited": 80,
-  "score": 31273.0
+  "in_graph_cited": 90,
+  "score": 31513.0
  },
  {
   "group_id": "group:tecnalia",
@@ -95,8 +95,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 206,
-  "score": 28370.0
+  "in_graph_cited": 213,
+  "score": 28458.8
  },
  {
   "group_id": "group:king fahd university of petroleum and minerals",
@@ -140,8 +140,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 90,
-  "score": 19051.2
+  "in_graph_cited": 94,
+  "score": 19101.9
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -158,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 92,
-  "score": 14490.0
+  "in_graph_cited": 96,
+  "score": 14554.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -167,8 +167,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 92,
-  "score": 14490.0
+  "in_graph_cited": 96,
+  "score": 14554.0
  },
  {
   "group_id": "group:graz university of technology",
@@ -176,8 +176,8 @@
   "authors": 4,
   "papers": 2,
   "citations": 11892,
-  "in_graph_cited": 66,
-  "score": 12948.0
+  "in_graph_cited": 68,
+  "score": 12980.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -266,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 74,
-  "score": 10042.3
+  "in_graph_cited": 77,
+  "score": 10080.3
  },
  {
   "group_id": "group:sorbonne université",
@@ -284,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 45,
-  "score": 9525.6
+  "in_graph_cited": 47,
+  "score": 9550.9
  },
  {
   "group_id": "group:northeastern university",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 126,
-  "score": 9123.6
+  "in_graph_cited": 131,
+  "score": 9187.0
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -365,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 33,
-  "score": 6363.4
+  "in_graph_cited": 34,
+  "score": 6376.1
  },
  {
   "group_id": "group:tu dortmund university",
@@ -374,8 +374,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 33,
-  "score": 6363.4
+  "in_graph_cited": 34,
+  "score": 6376.1
  },
  {
   "group_id": "group:university of fribourg",
@@ -1227,6 +1227,33 @@
   "group_id": "group:california nanosystems institute",
   "group": "California NanoSystems Institute",
   "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:adsul technical campus, chas, ahilyanagar, india",
+  "group": "Adsul Technical Campus, Chas, Ahilyanagar, India",
+  "authors": 2,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:southern delta university, ozoro",
+  "group": "Southern Delta University, Ozoro",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:delta state university",
+  "group": "Delta State University",
+  "authors": 3,
   "papers": 1,
   "citations": 0,
   "in_graph_cited": 0,

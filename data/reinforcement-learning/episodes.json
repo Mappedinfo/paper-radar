@@ -446,5 +446,19 @@
   "slug": "learning-to-be-monitored",
   "bvid": "BV11WnQ6gEVy",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-10-27",
+  "paper_id": "arxiv:2610.33420",
+  "slug": "rl-scaling-laws",
+  "bvid": "BV1k6HF6hEqf",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-27",
+  "paper_id": "arxiv:2610.32887",
+  "slug": "bellman-multistep-prediction",
+  "bvid": "BV1LFxT62Ere",
+  "status": "uploaded"
  }
 ]
