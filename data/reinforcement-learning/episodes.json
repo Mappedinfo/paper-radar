@@ -460,5 +460,19 @@
   "slug": "bellman-multistep-prediction",
   "bvid": "BV1LFxT62Ere",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-10-28",
+  "paper_id": "arxiv:2610.36925",
+  "slug": "dwell-latent-worlds",
+  "bvid": "BV15nxL6NEmY",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-28",
+  "paper_id": "arxiv:2610.35716",
+  "slug": "audit-where-hacks-pay",
+  "bvid": "BV1tSx56xEUo",
+  "status": "uploaded"
  }
 ]

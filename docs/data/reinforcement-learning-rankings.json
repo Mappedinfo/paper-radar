@@ -5,8 +5,8 @@
   "authors": 65,
   "papers": 8,
   "citations": 857860,
-  "in_graph_cited": 6046,
-  "score": 1018535.0
+  "in_graph_cited": 6540,
+  "score": 1031663.3
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,17 @@
   "authors": 9,
   "papers": 8,
   "citations": 232029,
-  "in_graph_cited": 1536,
-  "score": 272848.9
+  "in_graph_cited": 1682,
+  "score": 276728.9
+ },
+ {
+  "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
+  "group": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+  "authors": 9,
+  "papers": 2,
+  "citations": 88081,
+  "in_graph_cited": 154,
+  "score": 90545.0
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -27,22 +36,13 @@
   "score": 89817.0
  },
  {
-  "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
-  "group": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
-  "authors": 8,
-  "papers": 2,
-  "citations": 76720,
-  "in_graph_cited": 120,
-  "score": 78640.0
- },
- {
   "group_id": "group:gte (united states)",
   "group": "GTE (United States)",
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 359,
-  "score": 56433.7
+  "in_graph_cited": 381,
+  "score": 56927.8
  },
  {
   "group_id": "group:college of charleston",
@@ -77,8 +77,8 @@
   "authors": 6,
   "papers": 6,
   "citations": 29353,
-  "in_graph_cited": 90,
-  "score": 31513.0
+  "in_graph_cited": 110,
+  "score": 31993.0
  },
  {
   "group_id": "group:tecnalia",
@@ -95,8 +95,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 213,
-  "score": 28458.8
+  "in_graph_cited": 227,
+  "score": 28636.3
  },
  {
   "group_id": "group:king fahd university of petroleum and minerals",
@@ -140,8 +140,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 94,
-  "score": 19101.9
+  "in_graph_cited": 102,
+  "score": 19203.3
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -158,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 96,
-  "score": 14554.0
+  "in_graph_cited": 104,
+  "score": 14682.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -167,8 +167,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 96,
-  "score": 14554.0
+  "in_graph_cited": 104,
+  "score": 14682.0
  },
  {
   "group_id": "group:graz university of technology",
@@ -176,8 +176,8 @@
   "authors": 4,
   "papers": 2,
   "citations": 11892,
-  "in_graph_cited": 68,
-  "score": 12980.0
+  "in_graph_cited": 72,
+  "score": 13044.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -266,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 77,
-  "score": 10080.3
+  "in_graph_cited": 83,
+  "score": 10156.4
  },
  {
   "group_id": "group:sorbonne université",
@@ -284,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 47,
-  "score": 9550.9
+  "in_graph_cited": 51,
+  "score": 9601.7
  },
  {
   "group_id": "group:northeastern university",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 131,
-  "score": 9187.0
+  "in_graph_cited": 141,
+  "score": 9313.8
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -365,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 34,
-  "score": 6376.1
+  "in_graph_cited": 36,
+  "score": 6401.5
  },
  {
   "group_id": "group:tu dortmund university",
@@ -374,8 +374,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 34,
-  "score": 6376.1
+  "in_graph_cited": 36,
+  "score": 6401.5
  },
  {
   "group_id": "group:university of fribourg",
@@ -1254,6 +1254,24 @@
   "group_id": "group:delta state university",
   "group": "Delta State University",
   "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:institute of disaster prevention",
+  "group": "Institute of Disaster Prevention",
+  "authors": 3,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:north china university of science and technology",
+  "group": "North China University of Science and Technology",
+  "authors": 1,
   "papers": 1,
   "citations": 0,
   "in_graph_cited": 0,
