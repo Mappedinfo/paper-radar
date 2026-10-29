@@ -31,10 +31,16 @@ from pptx.util import Inches, Pt
 
 EMU_W, EMU_H = Inches(13.333), Inches(7.5)
 FOOTER_TOP = Inches(7.02)
-NAVY, ACCENT = RGBColor(0x00, 0x33, 0x66), RGBColor(0xD4, 0x48, 0x0B)  # Pentagram orange-red
-INK, SUB, TER = RGBColor(0x1A, 0x1A, 0x1A), RGBColor(0x66, 0x66, 0x66), RGBColor(0x99, 0x99, 0x99)
-BG2, BORDER, WHITE = RGBColor(0xFF, 0xFD, 0xF7), RGBColor(0xD0, 0xD7, 0xE0), RGBColor(0xFF, 0xFF, 0xFF)
-CREAM = RGBColor(0xFF, 0xFD, 0xF7)
+# Palette Lab tokens (https://mappedinfo.github.io/palette-lab/, v4.5):
+#   base 纯白铺底 + 暖白/象牙分区, 强调色小面积出场, 文字用中性深灰保证对比。
+NAVY, ACCENT = RGBColor(0x00, 0x33, 0x66), RGBColor(0x00, 0x43, 0xCE)  # 操作蓝 operation blue
+INK, SUB, TER = RGBColor(0x17, 0x1A, 0x20), RGBColor(0x47, 0x54, 0x67), RGBColor(0x84, 0x94, 0xA6)
+BG2, BORDER, WHITE = RGBColor(0xFF, 0xFD, 0xF5), RGBColor(0xD0, 0xD7, 0xE0), RGBColor(0xFF, 0xFF, 0xFF)
+CREAM = RGBColor(0xFF, 0xFD, 0xF5)  # 清暖白 warm-white panel
+
+# Palette Lab accents for per-episode rotation (small-area use only):
+# 翡翠/操作蓝/朱砂/品红/珊瑚/青绿 — pick via storyboard.accent hex or by date.
+PALETTE_LAB_ACCENTS = ["#008E6B", "#0043CE", "#9E1D1C", "#EE1969", "#E97A46", "#61AC4C"]
 FAM = "Microsoft YaHei"
 SERIF = "Georgia"
 FONTS = {"regular": r"C:\Windows\Fonts\msyh.ttc", "bold": r"C:\Windows\Fonts\msyhbd.ttc"}
@@ -356,6 +362,23 @@ def main():
     args = ap.parse_args()
     p = pathlib.Path(args.project).resolve()
     sb = json.loads((p / "storyboard.json").read_text(encoding="utf-8"))
+    # Palette Lab per-episode accent: storyboard.accent hex wins; else rotate by
+    # episode count in episodes.json so consecutive episodes differ.
+    global ACCENT
+    acc = str(sb.get("accent") or "").strip()
+    if acc.startswith("#") and len(acc) == 7:
+        try:
+            ACCENT = RGBColor(int(acc[1:3], 16), int(acc[3:5], 16), int(acc[5:7], 16))
+        except ValueError:
+            pass
+    else:
+        try:
+            eps = json.loads((pathlib.Path(__file__).resolve().parent.parent /
+                              "data" / "reinforcement-learning" / "episodes.json").read_text(encoding="utf-8"))
+            pick = PALETTE_LAB_ACCENTS[len(eps) % len(PALETTE_LAB_ACCENTS)]
+            ACCENT = RGBColor(int(pick[1:3], 16), int(pick[3:5], 16), int(pick[5:7], 16))
+        except Exception:
+            pass
     sources = json.loads((p / "sources.json").read_text(encoding="utf-8"))["sources"]
     primary = next(s for s in sources if s.get("primary_paper"))
     arxiv_footer = f"arXiv:{primary.get('arxiv_id', '')} ｜ 讲解音轨见备注页"

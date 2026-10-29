@@ -122,3 +122,18 @@
 
 - 新增内容页类型时，先在本文档登记布局契约，再改 `make_deck_svg.py`，改完在 LESSONS.md 记录。
 - 每期允许 ±2 页浮动（12-14 场景），但 hook 必须第 1 页、图谱页必须第 2-3 页、references 必须末页。
+
+## v4.5 · Palette Lab 色彩令牌与动画预留（2026-10-29）
+- 色彩系统改用 Palette Lab（https://mappedinfo.github.io/palette-lab/）令牌：
+  纯白 #FFFFFF 铺底、清暖白 #FFFDF5 分区/面板、近黑 #171A20 正文、石板 #475467 次级文字；
+  强调色小面积出场（侧边条/kicker/hero number），默认操作蓝 #0043CE。
+- 每期强调色：storyboard.accent 的 7 位 hex 优先；缺省按 episodes 期数在
+  PALETTE_LAB_ACCENTS（翡翠 #008E6B / 操作蓝 #0043CE / 朱砂 #9E1D1C / 品红 #EE1969 /
+  珊瑚 #E97A46 / 青绿 #61AC4C）中轮取，保证相邻期不同色。
+- 对比度规则沿用 Palette Lab 建议：主色上放白字对比不足时一律用中性深灰文字。
+- 动画预留：PlainDeck 0.10.0 自带 plaindeck/remotion（elementAnimationStyle 支持
+  fade-up/down/left/right/scale 入场 + 元素级 delay/duration 帧元数据，页面级
+  motion.camera 缩放，PlainDeckTimeline 按帧排片）。当前 deck:build 未发射
+  animation 字段（静态），视频仍为切页式；启用动画需在 build-plaindeck.mjs 为
+  文本元素按顺序注入 animation{enter:'fade-up', delayFrames:index*3} 并以
+  PlainDeckTimeline + narration 音轨走 remotion render。

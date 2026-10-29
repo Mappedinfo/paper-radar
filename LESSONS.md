@@ -280,3 +280,9 @@
 - 内容结论：方法热词款（GRPO/RLVR/蒸馏系列）拉播放（TOP10 全占，145-162 播放），理论深度款（Bellman 方程/样本复杂度）拉收藏（互动率 13-38%，Bellman 可塑性方程 37.8%）；「每日一方法款+一理论款」配对正确，保持。
 - 系列串联有效：OPD 蒸馏系列包揽播放（162/155）与收藏（12/5）双榜。
 - 流程更新已写入 workflows/daily-column.md §5：两期间隔≥60分钟、投稿时刻三档轮换、标题句式与 tags 去同质化、每周日跑 stats 脚本、最近 6 期中位播放 <20 触发限流应对（次日单期+时刻换档+搜索可见性抽查）。
+
+## 2026-10-29 · Palette Lab 色卡落地 + PlainDeck Remotion 查证
+- PlainDeck 0.10.0 确认自带 Remotion 支持：`plaindeck/remotion` 导出 elementAnimationStyle（fade-up/down/left/right/scale、元素级 delay/duration 帧、bezier 缓动）、PlainDeckRemotionSlide（页面级 camera 缩放）、PlainDeckTimeline（按帧排片）；remotion ≥4.0.500 为 peer 依赖且已安装。动画由元素上的 `animation` 元数据驱动，我们的 deck:build 尚未发射该字段，当前视频仍是静态切页。
+- elementAnimationStyle 实测：注入 {enter:'fade-up',delayFrames:6,durationFrames:18} 后 frame 0→24 输出 opacity 0→1、translate 34px→0，动画可用。
+- Palette Lab（https://mappedinfo.github.io/palette-lab/）色卡已落入 build_pptx（v4.5）：白底+清暖白 #FFFDF5 分区+近黑 #171A20 正文+石板 #475467 次级；强调色 storyboard.accent 优先、否则按期数轮取六色（翡翠/操作蓝/朱砂/品红/珊瑚/青绿）。第 69 期重跑验证 overlap audit 通过、导出正常。
+- 后续可选：deck:build 发射 animation 元数据 + PlainDeckTimeline + narration 音轨走 remotion render 替换 compose_video 的静态切页（预计从第 71 期起试一期限量启用）。
