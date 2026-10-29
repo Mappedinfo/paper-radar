@@ -5,8 +5,8 @@
   "authors": 65,
   "papers": 8,
   "citations": 857860,
-  "in_graph_cited": 6540,
-  "score": 1031663.3
+  "in_graph_cited": 6810,
+  "score": 1038838.6
  },
  {
   "group_id": "group:google (united states)",
@@ -14,17 +14,17 @@
   "authors": 9,
   "papers": 8,
   "citations": 232029,
-  "in_graph_cited": 1682,
-  "score": 276728.9
+  "in_graph_cited": 1759,
+  "score": 278775.2
  },
  {
   "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
   "group": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
-  "authors": 9,
-  "papers": 2,
-  "citations": 88081,
-  "in_graph_cited": 154,
-  "score": 90545.0
+  "authors": 14,
+  "papers": 4,
+  "citations": 145585,
+  "in_graph_cited": 184,
+  "score": 149390.1
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -41,8 +41,8 @@
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 381,
-  "score": 56927.8
+  "in_graph_cited": 392,
+  "score": 57174.9
  },
  {
   "group_id": "group:college of charleston",
@@ -72,15 +72,6 @@
   "score": 34812.0
  },
  {
-  "group_id": "group:university of california, berkeley",
-  "group": "University of California, Berkeley",
-  "authors": 6,
-  "papers": 6,
-  "citations": 29353,
-  "in_graph_cited": 110,
-  "score": 31993.0
- },
- {
   "group_id": "group:tecnalia",
   "group": "Tecnalia",
   "authors": 3,
@@ -95,8 +86,17 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 227,
-  "score": 28636.3
+  "in_graph_cited": 234,
+  "score": 28725.0
+ },
+ {
+  "group_id": "group:university of california, berkeley",
+  "group": "University of California, Berkeley",
+  "authors": 5,
+  "papers": 6,
+  "citations": 24984,
+  "in_graph_cited": 100,
+  "score": 27384.0
  },
  {
   "group_id": "group:king fahd university of petroleum and minerals",
@@ -140,8 +140,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 102,
-  "score": 19203.3
+  "in_graph_cited": 106,
+  "score": 19254.0
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -158,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 104,
-  "score": 14682.0
+  "in_graph_cited": 108,
+  "score": 14746.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -167,8 +167,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 104,
-  "score": 14682.0
+  "in_graph_cited": 108,
+  "score": 14746.0
  },
  {
   "group_id": "group:graz university of technology",
@@ -176,8 +176,8 @@
   "authors": 4,
   "papers": 2,
   "citations": 11892,
-  "in_graph_cited": 72,
-  "score": 13044.0
+  "in_graph_cited": 74,
+  "score": 13076.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -266,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 83,
-  "score": 10156.4
+  "in_graph_cited": 86,
+  "score": 10194.5
  },
  {
   "group_id": "group:sorbonne université",
@@ -284,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 51,
-  "score": 9601.7
+  "in_graph_cited": 53,
+  "score": 9627.0
  },
  {
   "group_id": "group:northeastern university",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 141,
-  "score": 9313.8
+  "in_graph_cited": 146,
+  "score": 9377.2
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -365,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 36,
-  "score": 6401.5
+  "in_graph_cited": 37,
+  "score": 6414.1
  },
  {
   "group_id": "group:tu dortmund university",
@@ -374,8 +374,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 36,
-  "score": 6401.5
+  "in_graph_cited": 37,
+  "score": 6414.1
  },
  {
   "group_id": "group:university of fribourg",
@@ -1271,6 +1271,15 @@
  {
   "group_id": "group:north china university of science and technology",
   "group": "North China University of Science and Technology",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:imam mohammad ibn saud islamic university",
+  "group": "Imam Mohammad ibn Saud Islamic University",
   "authors": 1,
   "papers": 1,
   "citations": 0,

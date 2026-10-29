@@ -474,5 +474,19 @@
   "slug": "audit-where-hacks-pay",
   "bvid": "BV1tSx56xEUo",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-10-29",
+  "paper_id": "arxiv:2610.37041",
+  "slug": "guided-rlvr",
+  "bvid": "BV1sWsd6hEKX",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-29",
+  "paper_id": "arxiv:2610.37504",
+  "slug": "strategyproof-rl-allocation",
+  "bvid": "BV147sd6vEG4",
+  "status": "uploaded"
  }
 ]
