@@ -89,9 +89,35 @@ git add -A && git commit -m "daily: <date> column run + skill evolution" && git 
 If push fails (credentials/network), keep the local commit and surface the
 error; never rewrite history to work around auth.
 
+## 5. Distribution hygiene & weekly review（B 站分发与周复盘）
+
+Background (2026-10-29 复盘, reports/video-stats-2026-10-29.json): 70 期总播放
+4643；播放呈三个平台期——正常期均值约 81（ep1-42）、恢复期均值约 115（ep49-58）、
+两次坍缩期均值 4-7（ep43-48、ep59-70）。坍缩与内容质量无关（质量门同期不变），
+判断为连续自动化投稿触发的分发限流。据此立规：
+
+**投稿节奏（每次例程执行）**
+1. 两期间隔 ≥60 分钟（第一期随例程投，第二期在 TTS/收尾后再投），不再连投。
+2. 投稿时刻在 09:30 / 13:00 / 18:30 三档间按日轮换，避免固定时刻指纹。
+3. 标题句式轮换（陈述式/问题式/数字式交替），tags 采用 3 个栏目固定词 + 2 个
+   当期主题词，不再每期同一组；论文链接保持在简介尾部。
+4. 每期投稿后在简介区保留一句论点总结（已由 publish.description 承担）。
+
+**周复盘（每周日例程附带执行）**
+1. 跑 `python scripts/fetch_bili_stats.py --channel reinforcement-learning`
+   （view 端点；旧 archive/stat 端点已 404），写 reports/video-stats-<date>.json。
+2. 看最近 6 期播放中位数：≥30 为正常；<20 视为限流信号，触发应对——
+   次日改投单期、时刻换档、并在网页端搜论文标题抽查视频是否可被搜到
+   （不可搜则连续 3 天只投单期）。
+3. 内容配对结论（数据支持，保持）：每天「一期方法热词款（GRPO/RLVR/智能体等，
+   拉播放）+ 一期理论深度款（Bellman/样本复杂度/机制设计，拉收藏）」。
+   理论款互动率可达 13-38%，方法款播放进 TOP10 但互动率约 1-2%。
+4. 系列串联继续：OPD/蒸馏系列包揽播放与收藏双榜（162 播放 12 收藏），
+   多系列主题线在站点与口播中互链。
+
 ## Cost guards
 
-- One episode per day maximum; a full production (TTS + render) costs
-  ~20 GPU-minutes — skip if the candidate is weak.
+- Two episodes per day maximum; a full production (TTS + render) costs
+  ~20 GPU-minutes each — skip a weak candidate and do one instead.
 - Raw snapshots accumulate daily; keep only the last 14 days
   (`raw/` files older than 14 days may be pruned; the graph keeps everything).
