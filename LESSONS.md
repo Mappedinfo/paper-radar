@@ -286,3 +286,10 @@
 - elementAnimationStyle 实测：注入 {enter:'fade-up',delayFrames:6,durationFrames:18} 后 frame 0→24 输出 opacity 0→1、translate 34px→0，动画可用。
 - Palette Lab（https://mappedinfo.github.io/palette-lab/）色卡已落入 build_pptx（v4.5）：白底+清暖白 #FFFDF5 分区+近黑 #171A20 正文+石板 #475467 次级；强调色 storyboard.accent 优先、否则按期数轮取六色（翡翠/操作蓝/朱砂/品红/珊瑚/青绿）。第 69 期重跑验证 overlap audit 通过、导出正常。
 - 后续可选：deck:build 发射 animation 元数据 + PlainDeckTimeline + narration 音轨走 remotion render 替换 compose_video 的静态切页（预计从第 71 期起试一期限量启用）。
+
+## 2026-10-29 晚 · Remotion 动画管线上线（第 71-72 期，加更）
+- PlainDeck Remotion 动画路径正式投产：video/remotion/index.tsx（Episode 组合，registerRoot + PlainDeckTimeline + staticFile 音轨）+ video/scripts/render-remotion.mjs（渲染期注入 fade-up 交错动画与图谱 PNG 图片元素、按 tts wav 时长排片、cover.png 拷贝）。compose_video.py 退役为后备。
+- 三个坑：①@remotion/cli 直连 dist/index.js 会静默退出 0，必须用 bin 入口 remotion-cli.js；②resolveIsolatedBrowser() 返回 {path} 对象，直接拼 CLI 变成 [object Object]；③npx+argv 数组在 Windows shell 下引号损坏，用 process.execPath 直调 CLI。
+- 音轨方案：<Audio> 只收 http(s)，把 narration.wav 拷进 video/public/ 用 staticFile 引用；图片用 data URL 塞 assetMap 规避 CORS。
+- extract_figures 的 auto-assign 会把 paper_figure 键写进 storyboard 场景（此前未察觉），方法/证据页被配图后 build_pptx 正文预算只剩一句；需删该键时移图保文字（本期 72 期证据页踩中）。
+- 两期间隔 ≥60 分钟规则首次执行：71 期 22:35 传、72 期 23:45 传。

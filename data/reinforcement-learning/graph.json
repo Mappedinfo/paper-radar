@@ -31376,6 +31376,31 @@
    "id": "claim:strategyproof-rl-allocation:6",
    "type": "claim",
    "label": "Partner 流上各单调网络福利接近，SP-SMM 是唯一同时拿福利第一与最差类服务第一、且以临界价值收入抽取超过 0.94 福利的方法，LipschitzMono 同样超过 0.94 而 SMNN 与 LinearMono 只抽约三分之一；模仿保留几乎全部福利且便宜得多，Union 教师的行为克隆 261 秒达到 0.975，约比强化学习快 89 倍。"
+  },
+  "claim:setgrpo-grader-calibration:1": {
+   "id": "claim:setgrpo-grader-calibration:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-29）：共 732 篇论文、3818 位作者。"
+  },
+  "claim:setgrpo-grader-calibration:2": {
+   "id": "claim:setgrpo-grader-calibration:2",
+   "type": "claim",
+   "label": "基于量表的强化学习用细粒度裁判反馈在开放任务上训练大模型，但裁判打分带随机性；GRPO 把组内奖励做共享均值与尺度的归一得到训练系数、再与各响应的响应级梯度合成局部更新，因此单个分数差异会通过共享统计量传遍整组系数，且不同策略快照下同样的系数位移会诱导不同的更新方向，改变选择性执行保留哪些组；论文用同一裁判对固定响应组两次打分做配对实验证实了这条传播链。"
+  },
+  "claim:setgrpo-grader-calibration:3": {
+   "id": "claim:setgrpo-grader-calibration:3",
+   "type": "claim",
+   "label": "SetGRPO 把 GRPO 的组内训练系数建模为联合不确定集，含三模块。联合奖励集校准用配对奖励差与独立校准数据刻画组内归一诱导的联合系数偏移；几何导引安全恢复把候选系数映到当前策略的响应级梯度上，求每组最大的方向安全恢复比；选择性风险门控在独立风险校准集上选全局阈值，控制被接受更新的条件方向反转风险，保持原 GRPO 目标不变。"
+  },
+  "claim:setgrpo-grader-calibration:4": {
+   "id": "claim:setgrpo-grader-calibration:4",
+   "type": "claim",
+   "label": "在可交换性假设下，SetGRPO 对联合系数集给出有限样本边际覆盖，并对候选阈值族提供同时风险控制。"
+  },
+  "claim:setgrpo-grader-calibration:5": {
+   "id": "claim:setgrpo-grader-calibration:5",
+   "type": "claim",
+   "label": "主实验覆盖三个领域十个开放任务基准、Qwen3.5 与 Llama3.2 两个模型家族；Qwen3.5-4B 上宏平均从基座 46.54 经 GRPO 的 55.41、RuscaRL 的 57.14、RubricHub 的 58.65 提升到 SetGRPO 的 60.26（较基座提升 13.72 个百分点）；Qwen3.5-9B 上从基座 49.78 经 GRPO 58.69、RuscaRL 60.33、RubricHub 62.11 到 SetGRPO 63.51（较基座提升 13.73 个百分点）；两个家族上 SetGRPO 均为全部对比训练方法中的最高宏平均。"
   }
  },
  "edges": [
@@ -64502,6 +64527,31 @@
   {
    "s": "arxiv:2610.37504",
    "t": "claim:strategyproof-rl-allocation:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.36807",
+   "t": "claim:setgrpo-grader-calibration:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.36807",
+   "t": "claim:setgrpo-grader-calibration:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.36807",
+   "t": "claim:setgrpo-grader-calibration:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.36807",
+   "t": "claim:setgrpo-grader-calibration:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.36807",
+   "t": "claim:setgrpo-grader-calibration:5",
    "rel": "claims"
   }
  ]
