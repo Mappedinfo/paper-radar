@@ -31401,6 +31401,36 @@
    "id": "claim:setgrpo-grader-calibration:5",
    "type": "claim",
    "label": "主实验覆盖三个领域十个开放任务基准、Qwen3.5 与 Llama3.2 两个模型家族；Qwen3.5-4B 上宏平均从基座 46.54 经 GRPO 的 55.41、RuscaRL 的 57.14、RubricHub 的 58.65 提升到 SetGRPO 的 60.26（较基座提升 13.72 个百分点）；Qwen3.5-9B 上从基座 49.78 经 GRPO 58.69、RuscaRL 60.33、RubricHub 62.11 到 SetGRPO 63.51（较基座提升 13.73 个百分点）；两个家族上 SetGRPO 均为全部对比训练方法中的最高宏平均。"
+  },
+  "claim:self-reinforcement-collapse:1": {
+   "id": "claim:self-reinforcement-collapse:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-29）：共 732 篇论文、3818 位作者。"
+  },
+  "claim:self-reinforcement-collapse:2": {
+   "id": "claim:self-reinforcement-collapse:2",
+   "type": "claim",
+   "label": "无标签 RLVR 用模型对自己多数票的同意程度作奖励，先提升推理随后坍缩，自评奖励趋近一而正确率下跌，常到每题都给同一个答案的程度；坍缩只在训练题很多时出现，He 等 2026 系统报告过这种数据集规模依赖与高初始熵基座更易坍缩，本文给出机制与定量判据。"
+  },
+  "claim:self-reinforcement-collapse:3": {
+   "id": "claim:self-reinforcement-collapse:3",
+   "type": "claim",
+   "label": "可解多题模型里题目经共享参数耦合，当单题自强化漂移 F 的总体平均斜率为正（题目尚不确定、答案 logit 绝对值小于约 1.32，即 ln(2 加根号 3)）时，任何共享扰动被放大，属居里外斯型集体不稳定；逐题锐化被 N 道训练题拖慢为 1/N 量级，共享模态以正比于 λ 平方的速率增长且与 N 无关（λ 为共享耦合强度），两者赛跑给出临界题数 Nc 近似 ln(1/δ) 除以 λ 平方乘 ln[F 星除 F(a)]，其中 δ 播种共享模态、a 为初始置信、F 星为不确定区间边缘的漂移。"
+  },
+  "claim:self-reinforcement-collapse:4": {
+   "id": "claim:self-reinforcement-collapse:4",
+   "type": "claim",
+   "label": "随机模拟（真实采样、多数投票、小批随机梯度下降）证实全部四个可证伪预言：转变尖锐；Nc 正比于 λ 的负二次方（至对数修正）；放大率 λ 平方 N ln[F 星/F(a)] 有单一临界值约 2.6 且同样刻画初始置信依赖；批大小只以对数方式进入；初始自信的模型永不坍缩。同一规律对 GRPO、更大组、多答案、异质置信与 Adam 均成立，Adam 常数更大。"
+  },
+  "claim:self-reinforcement-collapse:5": {
+   "id": "claim:self-reinforcement-collapse:5",
+   "type": "claim",
+   "label": "神经正切核版本揭示第二种保护性耦合，即锐化跨题的泛化，它存在时加数据可以不再引发坍缩；小 Transformer 实验里用反对称读出头移除共享方向可完全阻止坍缩，加回则坍缩，坍缩随训练集变大与基座熵升高而加剧；初始核排序能预测坍缩风险但校准很差，训练中实测核发现特征学习会侵蚀保护性耦合。"
+  },
+  "claim:self-reinforcement-collapse:6": {
+   "id": "claim:self-reinforcement-collapse:6",
+   "type": "claim",
+   "label": "批级边际熵奖金（权重 β）可压制均匀共享模态，理论临界权重 βc 不超过二分之一并在模拟与 Transformer 中证实；但压住均匀模态后不稳定会转移到下一个集体核模态，消除答案边际的不均衡并不能阻止与任务无关的集体坍缩，精度仍不保。"
   }
  },
  "edges": [
@@ -64552,6 +64582,36 @@
   {
    "s": "arxiv:2610.36807",
    "t": "claim:setgrpo-grader-calibration:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37553",
+   "t": "claim:self-reinforcement-collapse:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37553",
+   "t": "claim:self-reinforcement-collapse:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37553",
+   "t": "claim:self-reinforcement-collapse:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37553",
+   "t": "claim:self-reinforcement-collapse:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37553",
+   "t": "claim:self-reinforcement-collapse:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37553",
+   "t": "claim:self-reinforcement-collapse:6",
    "rel": "claims"
   }
  ]

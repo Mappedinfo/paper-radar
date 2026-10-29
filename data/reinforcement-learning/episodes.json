@@ -495,5 +495,12 @@
   "slug": "setgrpo-grader-calibration",
   "bvid": "BV1CZxc6kEBj",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-10-29",
+  "paper_id": "arxiv:2610.37553",
+  "slug": "self-reinforcement-collapse",
+  "bvid": "BV1jbxc6YE2k",
+  "status": "uploaded"
  }
 ]
