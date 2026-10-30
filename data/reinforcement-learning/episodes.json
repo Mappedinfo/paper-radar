@@ -502,5 +502,19 @@
   "slug": "self-reinforcement-collapse",
   "bvid": "BV1jbxc6YE2k",
   "status": "uploaded"
+ },
+ {
+  "date": "2026-10-30",
+  "paper_id": "arxiv:2610.37609",
+  "slug": "envsched-rollout-scheduling",
+  "bvid": "BV1FTxP6LEjU",
+  "status": "uploaded"
+ },
+ {
+  "date": "2026-10-30",
+  "paper_id": "arxiv:2610.37195",
+  "slug": "concal-continuation-calibration",
+  "bvid": "BV1qKxe64E8a",
+  "status": "uploaded"
  }
 ]

@@ -5,8 +5,8 @@
   "authors": 65,
   "papers": 8,
   "citations": 857860,
-  "in_graph_cited": 6810,
-  "score": 1038838.6
+  "in_graph_cited": 7350,
+  "score": 1053189.4
  },
  {
   "group_id": "group:google (united states)",
@@ -14,8 +14,8 @@
   "authors": 9,
   "papers": 8,
   "citations": 232029,
-  "in_graph_cited": 1759,
-  "score": 278775.2
+  "in_graph_cited": 1913,
+  "score": 282867.8
  },
  {
   "group_id": "group:friedrich-alexander-universität erlangen-nürnberg",
@@ -23,8 +23,8 @@
   "authors": 14,
   "papers": 4,
   "citations": 145585,
-  "in_graph_cited": 184,
-  "score": 149390.1
+  "in_graph_cited": 200,
+  "score": 149720.9
  },
  {
   "group_id": "group:worcester polytechnic institute",
@@ -41,8 +41,8 @@
   "authors": 1,
   "papers": 5,
   "citations": 48371,
-  "in_graph_cited": 392,
-  "score": 57174.9
+  "in_graph_cited": 414,
+  "score": 57669.0
  },
  {
   "group_id": "group:college of charleston",
@@ -86,8 +86,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 25758,
-  "in_graph_cited": 234,
-  "score": 28725.0
+  "in_graph_cited": 248,
+  "score": 28902.6
  },
  {
   "group_id": "group:university of california, berkeley",
@@ -95,8 +95,8 @@
   "authors": 5,
   "papers": 6,
   "citations": 24984,
-  "in_graph_cited": 100,
-  "score": 27384.0
+  "in_graph_cited": 124,
+  "score": 27960.0
  },
  {
   "group_id": "group:king fahd university of petroleum and minerals",
@@ -140,8 +140,8 @@
   "authors": 2,
   "papers": 1,
   "citations": 17910,
-  "in_graph_cited": 106,
-  "score": 19254.0
+  "in_graph_cited": 114,
+  "score": 19355.5
  },
  {
   "group_id": "group:university of illinois urbana-champaign",
@@ -158,8 +158,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 108,
-  "score": 14746.0
+  "in_graph_cited": 116,
+  "score": 14874.0
  },
  {
   "group_id": "group:25b framfield road, highbury, london, n5 1uu, england",
@@ -167,8 +167,8 @@
   "authors": 1,
   "papers": 2,
   "citations": 13018,
-  "in_graph_cited": 108,
-  "score": 14746.0
+  "in_graph_cited": 116,
+  "score": 14874.0
  },
  {
   "group_id": "group:graz university of technology",
@@ -176,8 +176,8 @@
   "authors": 4,
   "papers": 2,
   "citations": 11892,
-  "in_graph_cited": 74,
-  "score": 13076.0
+  "in_graph_cited": 78,
+  "score": 13140.0
  },
  {
   "group_id": "group:university of st andrews",
@@ -266,8 +266,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 9104,
-  "in_graph_cited": 86,
-  "score": 10194.5
+  "in_graph_cited": 92,
+  "score": 10270.5
  },
  {
   "group_id": "group:sorbonne université",
@@ -284,8 +284,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 8955,
-  "in_graph_cited": 53,
-  "score": 9627.0
+  "in_graph_cited": 57,
+  "score": 9677.7
  },
  {
   "group_id": "group:northeastern university",
@@ -293,8 +293,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 7526,
-  "in_graph_cited": 146,
-  "score": 9377.2
+  "in_graph_cited": 156,
+  "score": 9504.0
  },
  {
   "group_id": "group:institution of engineering and technology",
@@ -365,8 +365,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 37,
-  "score": 6414.1
+  "in_graph_cited": 39,
+  "score": 6439.5
  },
  {
   "group_id": "group:tu dortmund university",
@@ -374,8 +374,8 @@
   "authors": 1,
   "papers": 1,
   "citations": 5945,
-  "in_graph_cited": 37,
-  "score": 6414.1
+  "in_graph_cited": 39,
+  "score": 6439.5
  },
  {
   "group_id": "group:university of fribourg",
@@ -533,8 +533,8 @@
  {
   "group_id": "group:university of arkansas at fayetteville",
   "group": "University of Arkansas at Fayetteville",
-  "authors": 1,
-  "papers": 1,
+  "authors": 2,
+  "papers": 2,
   "citations": 4277,
   "in_graph_cited": 0,
   "score": 4277.0
@@ -1280,6 +1280,24 @@
  {
   "group_id": "group:imam mohammad ibn saud islamic university",
   "group": "Imam Mohammad ibn Saud Islamic University",
+  "authors": 1,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:universidade federal de pernambuco",
+  "group": "Universidade Federal de Pernambuco",
+  "authors": 12,
+  "papers": 1,
+  "citations": 0,
+  "in_graph_cited": 0,
+  "score": 0.0
+ },
+ {
+  "group_id": "group:centro universitário max planck (unimax)",
+  "group": "Centro Universitário Max Planck (UniMAX)",
   "authors": 1,
   "papers": 1,
   "citations": 0,

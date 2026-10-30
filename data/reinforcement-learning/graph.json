@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-29T09:03:43",
+ "updated_at": "2026-10-30T09:08:34",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -31431,6 +31431,177 @@
    "id": "claim:self-reinforcement-collapse:6",
    "type": "claim",
    "label": "批级边际熵奖金（权重 β）可压制均匀共享模态，理论临界权重 βc 不超过二分之一并在模拟与 Transformer 中证实；但压住均匀模态后不稳定会转移到下一个集体核模态，消除答案边际的不均衡并不能阻止与任务无关的集体坍缩，精度仍不保。"
+  },
+  "doi:10.3389/fnbeh.2026.1944695": {
+   "id": "doi:10.3389/fnbeh.2026.1944695",
+   "type": "paper",
+   "label": "Reward coding across mouse visual cortical areas",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Frontiers in Behavioral Neuroscience",
+   "doi": "10.3389/fnbeh.2026.1944695",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7224097708"
+  },
+  "venue:frontiers in behavioral neuroscience": {
+   "id": "venue:frontiers in behavioral neuroscience",
+   "type": "venue",
+   "label": "Frontiers in Behavioral Neuroscience"
+  },
+  "author:johseph p. g. souza": {
+   "id": "author:johseph p. g. souza",
+   "type": "author",
+   "label": "Johseph P. G. Souza",
+   "openalex": "https://openalex.org/A5157927097"
+  },
+  "group:universidade federal de pernambuco": {
+   "id": "group:universidade federal de pernambuco",
+   "type": "group",
+   "label": "Universidade Federal de Pernambuco"
+  },
+  "author:anne beatriz  vieira": {
+   "id": "author:anne beatriz  vieira",
+   "type": "author",
+   "label": "Anne Beatriz  Vieira",
+   "openalex": "https://openalex.org/A5157915355"
+  },
+  "author:vicente ventura": {
+   "id": "author:vicente ventura",
+   "type": "author",
+   "label": "Vicente Ventura",
+   "openalex": "https://openalex.org/A5160028281"
+  },
+  "author:julio c. de lima": {
+   "id": "author:julio c. de lima",
+   "type": "author",
+   "label": "Julio C. de Lima",
+   "openalex": "https://openalex.org/A5160006305"
+  },
+  "author:gabriel arcanjo": {
+   "id": "author:gabriel arcanjo",
+   "type": "author",
+   "label": "Gabriel Arcanjo",
+   "openalex": "https://openalex.org/A5006299224"
+  },
+  "author:edson vinicius de paula": {
+   "id": "author:edson vinicius de paula",
+   "type": "author",
+   "label": "Edson Vinicius de Paula",
+   "openalex": "https://openalex.org/A5116069771"
+  },
+  "author:matéus sales": {
+   "id": "author:matéus sales",
+   "type": "author",
+   "label": "Matéus Sales",
+   "openalex": "https://openalex.org/A5160065420"
+  },
+  "author:ana b. a. souza": {
+   "id": "author:ana b. a. souza",
+   "type": "author",
+   "label": "Ana B. A. Souza",
+   "openalex": "https://openalex.org/A5160011992"
+  },
+  "author:justo e. alvarez-jácobo": {
+   "id": "author:justo e. alvarez-jácobo",
+   "type": "author",
+   "label": "Justo E. Alvarez-Jácobo",
+   "openalex": "https://openalex.org/A5160030454"
+  },
+  "author:antonio j. fontenele": {
+   "id": "author:antonio j. fontenele",
+   "type": "author",
+   "label": "Antonio J. Fontenele",
+   "openalex": "https://openalex.org/A5030869295"
+  },
+  "author:leandro a. a. aguiar": {
+   "id": "author:leandro a. a. aguiar",
+   "type": "author",
+   "label": "Leandro A. A. Aguiar",
+   "openalex": "https://openalex.org/A5024310302"
+  },
+  "author:maíra a. de santana": {
+   "id": "author:maíra a. de santana",
+   "type": "author",
+   "label": "Maíra A. de Santana",
+   "openalex": "https://openalex.org/A5160026229"
+  },
+  "author:sousa nuno": {
+   "id": "author:sousa nuno",
+   "type": "author",
+   "label": "Sousa Nuno",
+   "openalex": "https://openalex.org/A5103614591"
+  },
+  "group:centro universitário max planck (unimax)": {
+   "id": "group:centro universitário max planck (unimax)",
+   "type": "group",
+   "label": "Centro Universitário Max Planck (UniMAX)"
+  },
+  "author:nivaldo a. p. de vasconcelos": {
+   "id": "author:nivaldo a. p. de vasconcelos",
+   "type": "author",
+   "label": "Nivaldo A. P. de Vasconcelos",
+   "openalex": "https://openalex.org/A5080707479"
+  },
+  "claim:envsched-rollout-scheduling:1": {
+   "id": "claim:envsched-rollout-scheduling:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-30）：共 733 篇论文、3832 位作者。"
+  },
+  "claim:envsched-rollout-scheduling:2": {
+   "id": "claim:envsched-rollout-scheduling:2",
+   "type": "claim",
+   "label": "可执行环境随语言智能体扩展，rollout 的生成与验证越来越贵，有限 rollout 预算下的问题是能否在环境层面做数据管理让智能体强化学习更高效；EnvSched 是一个从 rollout 历史在线学习的调度器，利用双信号，利用侧优先挑预计能产生有信息量奖励差异的任务，覆盖侧把每个批摊到欠观测的环境与交互模式上。"
+  },
+  "claim:envsched-rollout-scheduling:3": {
+   "id": "claim:envsched-rollout-scheduling:3",
+   "type": "claim",
+   "label": "EnvSched 把环境任务对组织成双关系图的节点，环境内边刻画任务语义与共享的工具、状态和验证器结构，跨环境边刻画抽象执行与奖励拓扑；沿两类边传播历史 rollout 统计量预测任务内奖励方差，预测引导调度把批分给高预测方差与欠观测的环境任务，环境配额与相似度惩罚进一步限制集中与冗余，全程零额外探针 rollout。"
+  },
+  "claim:envsched-rollout-scheduling:4": {
+   "id": "claim:envsched-rollout-scheduling:4",
+   "type": "claim",
+   "label": "实验用 EnvScaler 池做 GRPO 训练，基准为 BFCL-v3 Multi-Turn、τ-Bench 与 ACEBench-Agent，覆盖 Qwen3-1.7B、4B、8B 与 Qwen3-30B-A3B，200 步预算、三个随机种子；Qwen3-8B 上 EnvSched 三基准平均分 48.81。"
+  },
+  "claim:envsched-rollout-scheduling:5": {
+   "id": "claim:envsched-rollout-scheduling:5",
+   "type": "claim",
+   "label": "200 步对比随机调度，Qwen3-4B 上 BFCL-v3 从 28.83 到 31.88（提升 3.05 个百分点）、τ-Bench 从 37.78 到 41.01（提升 3.23 个百分点）、ACEBench-Agent 从 56.00 到 58.00（提升 2.00 个百分点）；1.7B 上分别提升 1.96、2.02、2.66 个百分点，8B 上提升 4.00、3.03、3.34 个百分点；Qwen3-30B-A3B 无需调度器调参即达 37.79、54.75、70.67，较随机调度提升 3.92、3.03、2.67 个百分点。（裸数字口径 3.05、3.23、2.00、1.96、2.02、2.66、4.00、3.03、3.34、2.67、3.92），补充口径为提升 4.00 个百分点、3.03 个百分点、2.67 个百分点、3.92 个百分点、1.96 个百分点、2.66 个百分点、2.02 个百分点"
+  },
+  "claim:envsched-rollout-scheduling:6": {
+   "id": "claim:envsched-rollout-scheduling:6",
+   "type": "claim",
+   "label": "仅看提示词的调度器不可靠转移，DPS 与 LEEPS 整体低于 EnvSched，且部分维度不如随机，DPS 在 4B τ-Bench 上 36.77 低于随机的 37.78，LEEPS 在 8B ACEBench-Agent 上 54.67 低于随机的 55.33。"
+  },
+  "claim:concal-continuation-calibration:1": {
+   "id": "claim:concal-continuation-calibration:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-10-30）：共 733 篇论文、3832 位作者。"
+  },
+  "claim:concal-continuation-calibration:2": {
+   "id": "claim:concal-continuation-calibration:2",
+   "type": "claim",
+   "label": "长程智能体强化学习依赖交互序列的终局反馈，单步动作的信用难分；GiGPO 等方法在共享状态处比较动作算相对优势，但每个动作的价值只从一条采样的后续轨迹估计，局部信用仍受轨迹后段决策影响，后续路径走得不同，同一动作的价值估计就漂移。"
+  },
+  "claim:concal-continuation-calibration:3": {
+   "id": "claim:concal-continuation-calibration:3",
+   "type": "claim",
+   "label": "ConCal 是递归的后续价值校准器，把 rollout 批里已有的后续证据用起来。它按进入的状态动作状态转移匹配同任务的多次到访，把共享的后续证据与每次到访自己的转移估计结合，再沿记录的轨迹向后传播校准值，精化更早的动作价值估计；全程不加新 rollout。"
+  },
+  "claim:concal-continuation-calibration:4": {
+   "id": "claim:concal-continuation-calibration:4",
+   "type": "claim",
+   "label": "留出回报诊断显示校准后的组内价值差误差更低、与参考动作排序的一致率更高，相对动作价值的均方误差在 ALFWorld 上从单条后续的 1.921 降到 1.263、WebShop 从 1.425 降到 1.186；动作排序一致率 ALFWorld 从 58.8% 升到 61.2%、WebShop 从 74.5% 升到 81.8%。"
+  },
+  "claim:concal-continuation-calibration:5": {
+   "id": "claim:concal-continuation-calibration:5",
+   "type": "claim",
+   "label": "实验用 Qwen2.5-1.5B-Instruct 训 150 次更新、每次 16 个任务各 8 条轨迹、三次独立运行取均值；基准 ALFWorld 与 WebShop，对比 GPT-4o、Gemini-2.5-Pro、ReAct、Reflexion、PPO、RLOO、GRPO、GiGPO 与 GraphGPO。"
+  },
+  "claim:concal-continuation-calibration:6": {
+   "id": "claim:concal-continuation-calibration:6",
+   "type": "claim",
+   "label": "ConCal 在 ALFWorld 达 94.27% 总体成功率、WebShop 任务分 90.18 加 79.69% 成功率，为全部对比方法中最高的报告均值；较 GRPO 成功率提升 16.41 与 8.34 个百分点、WebShop 任务分提升 5.45；较基座方法 GiGPO 成功率提升 3.39 与 5.86 个百分点、任务分提升 2.24，且两个基准上报告均值都高于 GraphGPO；消融支持递归共享与保留各自转移估计两项设计（裸数字口径 3.39、5.86、16.41、8.34）。"
   }
  },
  "edges": [
@@ -64490,16 +64661,6 @@
    "rel": "member_of"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.37041",
    "t": "claim:guided-rlvr:1",
    "rel": "claims"
@@ -64612,6 +64773,801 @@
   {
    "s": "arxiv:2610.37553",
    "t": "claim:self-reinforcement-collapse:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1707.06347",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.3389/fnbeh.2026.1944695",
+   "t": "venue:frontiers in behavioral neuroscience",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:johseph p. g. souza",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:johseph p. g. souza",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:anne beatriz  vieira",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:anne beatriz  vieira",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:vicente ventura",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:vicente ventura",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:julio c. de lima",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:julio c. de lima",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:gabriel arcanjo",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:gabriel arcanjo",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:edson vinicius de paula",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:edson vinicius de paula",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:matéus sales",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:matéus sales",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:ana b. a. souza",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ana b. a. souza",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:justo e. alvarez-jácobo",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:justo e. alvarez-jácobo",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:antonio j. fontenele",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:antonio j. fontenele",
+   "t": "group:university of arkansas at fayetteville",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:leandro a. a. aguiar",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:leandro a. a. aguiar",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:maíra a. de santana",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:maíra a. de santana",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:sousa nuno",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:sousa nuno",
+   "t": "group:centro universitário max planck (unimax)",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:nivaldo a. p. de vasconcelos",
+   "t": "doi:10.3389/fnbeh.2026.1944695",
+   "rel": "authored"
+  },
+  {
+   "s": "author:nivaldo a. p. de vasconcelos",
+   "t": "group:universidade federal de pernambuco",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1707.06347",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.37609",
+   "t": "claim:envsched-rollout-scheduling:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37609",
+   "t": "claim:envsched-rollout-scheduling:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37609",
+   "t": "claim:envsched-rollout-scheduling:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37609",
+   "t": "claim:envsched-rollout-scheduling:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37609",
+   "t": "claim:envsched-rollout-scheduling:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37609",
+   "t": "claim:envsched-rollout-scheduling:6",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37195",
+   "t": "claim:concal-continuation-calibration:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37195",
+   "t": "claim:concal-continuation-calibration:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37195",
+   "t": "claim:concal-continuation-calibration:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37195",
+   "t": "claim:concal-continuation-calibration:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37195",
+   "t": "claim:concal-continuation-calibration:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.37195",
+   "t": "claim:concal-continuation-calibration:6",
    "rel": "claims"
   }
  ]

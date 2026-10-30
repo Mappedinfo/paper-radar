@@ -293,3 +293,10 @@
 - 音轨方案：<Audio> 只收 http(s)，把 narration.wav 拷进 video/public/ 用 staticFile 引用；图片用 data URL 塞 assetMap 规避 CORS。
 - extract_figures 的 auto-assign 会把 paper_figure 键写进 storyboard 场景（此前未察觉），方法/证据页被配图后 build_pptx 正文预算只剩一句；需删该键时移图保文字（本期 72 期证据页踩中）。
 - 两期间隔 ≥60 分钟规则首次执行：71 期 22:35 传、72 期 23:45 传。
+
+## 2026-10-30（第 73-74 期 · EnvSched 环境调度 / ConCal 续段校准，全动画管线第二天）
+- arXiv 429 两连（首跑+100 秒重试均挂），按规则弃用增量，OpenAlex 正常图谱 732→733；选题走存量池未阻塞。
+- Remotion 动画管线例行首日顺利：两期渲染均一次通过，与 TTS 并发无冲突（昨晚的并发失败真因是 CLI 入口与浏览器参数 bug，非资源争抢）；时长对齐 199.96/199.86 与 162.56/162.48。
+- 溯源门多数字增益列表的口径规律再确认：凡「A、B、C 个百分点」只有 C 归一为百分数，A、B 需在 claims 落裸数字口径；区间式「A 到 B 个百分点」同理。本期用「裸数字口径+补充口径」双写一次通过。
+- extract_figures auto-assign 的 paper_figure 键现已在每期 deck:build 前统一清除（上期发现它会写进 storyboard 挤压正文预算），73/74 两期照做零踩坑。
+- 两期间隔 61 分钟（09:41/10:42），连续第二天执行分发卫生规则。
