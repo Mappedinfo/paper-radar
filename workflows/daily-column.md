@@ -68,9 +68,23 @@ any converter) — these become the opening slides of the episode.
    the rendered graph SVG/PNG pages; export per its SKILL.md. The deck→video
    composition path may fall back to the validated PlainDeck renderer if the
    EasySlides export path is not wired yet — record which one was used.
-4. Narration: `npm run generate:index-tts -- ../projects/<slug> --device cuda`
-   (shiqi profile), then `render:project`, `release:check` — all gates
-   unchanged (`check:narration-prose`, density, traceability, preflight).
+4. Narration → captions → render (cwd `E:\bili\Bili\video`):
+   1. `npm run deck:build -- ../projects/<slug>` (before TTS; the TTS wrap-up reads deck.json)
+   2. `npm run generate:index-tts -- ../projects/<slug> --device cuda` (shiqi
+      profile; TTS text passes `normalize-tts-text.mjs` — brand-name lexicon,
+      CJK/Latin spacing, % → 百分之; extend the lexicon when a new paper name
+      is a fused acronym like VeriCUA)
+   3. `npm run align:captions:cuda -- ../projects/<slug>` — scene-bounded
+      faster-whisper alignment on the local NVIDIA GPU (borrows the CUDA 12
+      DLLs from the IndexTTS2 torch); writes `captions.json` +
+      `caption-alignment.json`. Required by Bili AGENTS.md rule 4; the MLX
+      variant is for Apple silicon only.
+   4. `node scripts/render-remotion.mjs ../projects/<slug>` — Episode
+      composition with animation + aligned captions (the reader-note strip is
+      dropped from the video when captions are present, AGENTS.md rule 5)
+   5. `npm run release:check -- ../projects/<slug>` — all gates unchanged
+      (`check:narration-prose`, density, traceability, preflight).
+   Spot-check the last scene: the references slide must carry body text.
 5. **No upload.** Upload/publish stays behind the human gates. Record the
    episode in `data/<channel>/episodes.json`:
    `{"date", "paper_id", "slug", "bvid": null, "status": "release_ready"}`.

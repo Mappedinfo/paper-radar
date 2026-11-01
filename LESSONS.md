@@ -312,3 +312,10 @@
 - 时档轮换实操修正：本想严格等到 18:30 档，但单期日空等 9 小时性价比低；实际 11:40 上传（距上次投稿 >22 小时且时刻异于往日各档），满足卫生规则本质（去固定时刻指纹 + 大间隔），后续单期日改为「当期做完即传但避开昨日时刻」。
 - de-AI 新假阳性：「里程碑裁判」的里程碑命中黑话 → 改「有序节点裁判」；裸「可能」两头堵再现 → 确定性改写。
 - fetch 全通（图谱 785→788）；动画管线第五天，渲染 200.43s 对齐配音 200.39s 一次通过。
+
+## 2026-11-01 晚（第 76 期返工 · 视觉溢出与读音问题审查，创作者反馈触发）
+- 创作者反馈「文本超出 slides」的真身有两个：① references 版式在 visual.entries 缺失时 legacyElements 只发页眉四件套 → 第 71–76 期片尾 15s+ 空页陪完整旁白（7724 帧全片边缘扫描 + 75 期末帧确认）；density 校验对 references 页豁免，所以全绿通过。已修：空 entries 回退 prose 面板（build-plaindeck.mjs），例程增加「末页必须有正文」抽检。
+- 面板文本框越界是第二个真身：expandTextFrames 只避让右侧/下方元素、不认包含自己的面板，support 阅读区拉高也不管面板底 → 文本框右缘越出面板 42px、底部压出 55px；fit:fill 再在越界框上放大字号，整行字压出卡片；lead 换两行时框底压过固定位置 lead-rule（装饰线横穿字形）。已修：新增 containPanelText（右缘按对称内边距收回 → lead 按可读字号 28px 补足高度 → lead-rule/support 顺推 → 面板向下长到包住文本，越不动就收文本框）；第 6 页 lead 曾被压到 25px，现在 36px 且 layout-diagnostics 清零。
+- 动画管线（Episode 组合）从未挂字幕层，字符比例字幕数据一直生成但没渲染；render-manifest 却写 composition: PaperExplainer（失实）。已补齐：render-manifest 按实际管线写 Episode；字幕走正式对齐链路——align-captions-cuda-whisper.py（faster-whisper small，CUDA int8_float16，借 IndexTTS2 torch 目录的 cublas64_12/cudnn64_9，加载成功≠可用要用一次真实 encode 验证，失败自动回退 CPU int8；uv 环境传 numpy 数组避开 PyAV 版本地雷）。场景分段字符对齐 91.4%（简体 initial_prompt 把繁体漂移的 scene4 从 59.7% 拉回 93.7%），写 captions.json + caption-alignment.json 审计；Episode 渲染浅色胶囊字幕（用主题无衬线体，默认 DejaVu 会与整页字体打架）并在有字幕时渲染期剔除 reader-note 条（AGENTS 规则 5：不开第二条字幕带）；render-remotion 校验 captions.json 末帧与 narration.wav 时长匹配，防旧字幕配新配音。
+- 读音问题用 ASR 复听 A/B 定位（不必人耳）：WebArena 曾读「微Barena」→「Web Arena」复听正确；arXiv 读 ArcCV → archive 正确；CUA 整体读 kwa（CUAJudge→kwa judge）→ 逐字母 C U A（ASR 听到 Vary COA/字母序列，明显改善）。normalize-tts-text v2 = 读音词典 + CJK/拉丁边界补空格 + % → 百分之 + 保留 scale-join（CJK 数字+量级字母豁免避免互相拆台），10/10 测试绿；manifest 的 readability fixes 计数按四通道细分。
+- 76 期重制完成：配音 197.51s / 成片 197.59s，release:check + validate + prose 14/14 全绿，边缘扫描 0 违例。已上传版（BV1FPxp6FEJG）的原始产物备份在 E:\bili\_backups\ep76-vericua-uploaded-20261101，是否重传由创作者决定。残留已知问题：局部图谱 SVG 中心节点标题在图内截断（图渲染器，另案）；production-tracker 一个测试在干净树也失败（预存在，与本次无关）。
