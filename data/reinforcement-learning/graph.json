@@ -1,6 +1,6 @@
 {
  "channel": "reinforcement-learning",
- "updated_at": "2026-10-31T09:04:28",
+ "updated_at": "2026-11-01T09:04:43",
  "nodes": {
   "arxiv:2609.11900": {
    "id": "arxiv:2609.11900",
@@ -36426,6 +36426,155 @@
    "id": "claim:race-policy-rubric-coevolution:6",
    "type": "claim",
    "label": "消融（RewardBench2 均分与八基准策略均分）支持三层设计，完整版 49.2 与 73.0；去掉梯度过滤 48.7 与 70.8、均匀量表采样 47.9 与 71.4、只留过滤 45.1 与 70.9、随机相长交替 45.3 与 71.4、固定五五交替加路由 44.3 与 71.3、静态阈值 47.1 与 72.1（裸数字口径 4.7、3.3、1.9、2.0、2.9、9.5）。"
+  },
+  "venue:the mit press ebooks": {
+   "id": "venue:the mit press ebooks",
+   "type": "venue",
+   "label": "The MIT Press eBooks"
+  },
+  "doi:10.1007/978-3-032-43217-9_5": {
+   "id": "doi:10.1007/978-3-032-43217-9_5",
+   "type": "paper",
+   "label": "Reinforcement Learning for Software Vulnerability Analysis: A Systematic Review with Emphasis on C/C++ Source Code and Static Analysis",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Lecture notes in computer science",
+   "doi": "10.1007/978-3-032-43217-9_5",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7166729288"
+  },
+  "author:bruno caro-vásquez": {
+   "id": "author:bruno caro-vásquez",
+   "type": "author",
+   "label": "Bruno Caro-Vásquez",
+   "openalex": "https://openalex.org/A5139638048"
+  },
+  "group:university of bío-bío": {
+   "id": "group:university of bío-bío",
+   "type": "group",
+   "label": "University of Bío-Bío"
+  },
+  "author:carola figueroa-flores": {
+   "id": "author:carola figueroa-flores",
+   "type": "author",
+   "label": "Carola Figueroa-Flores",
+   "openalex": "https://openalex.org/A5037813016"
+  },
+  "author:gastón márquez": {
+   "id": "author:gastón márquez",
+   "type": "author",
+   "label": "Gastón Márquez",
+   "openalex": "https://openalex.org/A5007439667"
+  },
+  "doi:10.1007/978-981-92-7298-3_4": {
+   "id": "doi:10.1007/978-981-92-7298-3_4",
+   "type": "paper",
+   "label": "State-Dependent Risk-Sensitive Deep Reinforcement Learning for Multi-asset Allocation: Evidence from the Chinese Market",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Communications in computer and information science",
+   "doi": "10.1007/978-981-92-7298-3_4",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7224915767"
+  },
+  "author:zhiyan guan": {
+   "id": "author:zhiyan guan",
+   "type": "author",
+   "label": "Zhiyan Guan",
+   "openalex": "https://openalex.org/A5159273969"
+  },
+  "group:central university of finance and economics": {
+   "id": "group:central university of finance and economics",
+   "type": "group",
+   "label": "Central University of Finance and Economics"
+  },
+  "doi:10.1007/978-981-92-7298-3_8": {
+   "id": "doi:10.1007/978-981-92-7298-3_8",
+   "type": "paper",
+   "label": "Intelligent Financial Resource Allocation Algorithm Based on Deep Reinforcement Learning",
+   "year": 2026,
+   "citations": 0,
+   "venue": "Communications in computer and information science",
+   "doi": "10.1007/978-981-92-7298-3_8",
+   "arxiv": null,
+   "source": "openalex",
+   "oa": "W7224957934"
+  },
+  "author:ma li": {
+   "id": "author:ma li",
+   "type": "author",
+   "label": "Ma Li",
+   "openalex": "https://openalex.org/A5147415376"
+  },
+  "group:bansomdejchaopraya rajabhat university": {
+   "id": "group:bansomdejchaopraya rajabhat university",
+   "type": "group",
+   "label": "Bansomdejchaopraya Rajabhat University"
+  },
+  "author:廖學儀": {
+   "id": "author:廖學儀",
+   "type": "author",
+   "label": "廖學儀",
+   "openalex": "https://openalex.org/A5082338703"
+  },
+  "group:shinawatra university": {
+   "id": "group:shinawatra university",
+   "type": "group",
+   "label": "Shinawatra University"
+  },
+  "author:hong qing": {
+   "id": "author:hong qing",
+   "type": "author",
+   "label": "Hong Qing",
+   "openalex": "https://openalex.org/A5139610624"
+  },
+  "group:research institute of innovation economy named after sh. musakozhoev. sh. musako": {
+   "id": "group:research institute of innovation economy named after sh. musakozhoev. sh. musako",
+   "type": "group",
+   "label": "Research Institute of Innovation Economy Named After Sh. Musakozhoev. Sh. Musakozhoev, Bishkek, Kyrgyzstan"
+  },
+  "author:yulin qin": {
+   "id": "author:yulin qin",
+   "type": "author",
+   "label": "Yulin Qin",
+   "openalex": "https://openalex.org/A5089850991"
+  },
+  "group:inti international university": {
+   "id": "group:inti international university",
+   "type": "group",
+   "label": "INTI International University"
+  },
+  "claim:vericua-verification-exploration:1": {
+   "id": "claim:vericua-verification-exploration:1",
+   "type": "claim",
+   "label": "知识图谱统计（专栏 Paper Radar 图谱存储，2026-11-01）：共 788 篇论文、4674 位作者。"
+  },
+  "claim:vericua-verification-exploration:2": {
+   "id": "claim:vericua-verification-exploration:2",
+   "type": "claim",
+   "label": "计算机使用智能体在桌面、移动与网页环境的扩展需要可靠的任务完成验证来做数据筛选、评估与强化学习；常见自动化做法有两路，视觉语言模型裁判只能看供给的观测，自动生成的检查程序依赖可访问的状态，两者都只拿到复杂数字环境的局部视图，可能漏掉决定性证据；为不同平台与访问条件各配验证器又推高工程成本。"
+  },
+  "claim:vericua-verification-exploration:3": {
+   "id": "claim:vericua-verification-exploration:3",
+   "type": "claim",
+   "label": "VeriCUA 是平台无关的智能体探索式验证框架，把验证当作动态的证据收集与评估，同一套流程覆盖在线与离线设定；先检视可用上下文构造任务量表，再对未解决的需求选择图形界面或代码检查，最后按显式证据规则合并结论；证据不足以定案或多次验证通过结论相左时选择弃权。"
+  },
+  "claim:vericua-verification-exploration:4": {
+   "id": "claim:vericua-verification-exploration:4",
+   "type": "claim",
+   "label": "实验设定：在线环境为 AndroidWorld、OSWorld 与 ScienceBoard，验证器在每集结束后探测机器状态；离线验证用三个执行智能体的 WebArena 录制轨迹与人标的 OSReward 轨迹；全部验证器与基线跑在 gemini-3-flash-preview 上，骨干研究换 gemini-3.1-pro-preview 重跑；基线含单次视觉裁判、自动生成验证器、清单式 CUAJudge 与里程碑式 OS-Themis。"
+  },
+  "claim:vericua-verification-exploration:5": {
+   "id": "claim:vericua-verification-exploration:5",
+   "type": "claim",
+   "label": "在线结果：三个环境上 VeriCUA 精度最高且误报率最低。AndroidWorld 精度 90.5 对视觉裁判 78.4 与自动生成验证器 82.4，误报率 7.7 对 15.4 与 16.9，弃权按失败计后决定率 82%、决定案例精度 95.1%；OSWorld 精度 79.5、误报率 13.9；ScienceBoard 精度 86.4 对 71.6 与 76.9，误报率 5.4 约为生成验证器的四分之一，差距主因是先检视上下文再生成检查、避免查询错误的状态位置。"
+  },
+  "claim:vericua-verification-exploration:6": {
+   "id": "claim:vericua-verification-exploration:6",
+   "type": "claim",
+   "label": "离线结果：五个设定上 VeriCUA 精度与平衡精度全部第一，OSReward-Hard 精度 70.4 对 TRM 的 57.4、CUAJudge 的 63.4 与 OS-Themis 的 65.7，OSReward 全集 87.2、WebArena 82.7、AndroidWorld 94.3、OSWorld 86.3；难例上的优势更大，支持主动证据收集的价值；WebArena 上初始判断兜底发生在 23% 的轨迹。"
   }
  },
  "edges": [
@@ -75160,16 +75309,6 @@
    "rel": "cites"
   },
   {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
-   "rel": "supports"
-  },
-  {
-   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
-   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
-   "rel": "supports"
-  },
-  {
    "s": "arxiv:2610.40096",
    "t": "claim:race-policy-rubric-coevolution:1",
    "rel": "claims"
@@ -75197,6 +75336,446 @@
   {
    "s": "arxiv:2610.40096",
    "t": "claim:race-policy-rubric-coevolution:6",
+   "rel": "claims"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1023/a:1022676722315",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/nature14236",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/tnn.2004.842673",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.4230/oasics.dx.2024.16",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1613/jair.301",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/bf00992696",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "title:continuous control with deep reinforcement learning",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1013689704352",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1509.02971",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1312.5602",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "title:introduction to reinforcement learning",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "title:policy gradient methods for reinforcement learning with function approximation",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1611.01578",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1126/science.aar6404",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1038/s41586-019-1724-z",
+   "t": "doi:10.1109/tnn.1998.712192",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1609/aaai.v30i1.10295",
+   "t": "doi:10.1023/a:1013689704352",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1109/msp.2017.2743240",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1707.06347",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1023/a:1022676722315",
+   "t": "doi:10.1007/bf00115009",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1007/bf00992696",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1109/tnn.2004.842673",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1602.01783",
+   "t": "doi:10.48550/arxiv.1509.02971",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1801.01290",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1502.05477",
+   "t": "doi:10.48550/arxiv.1312.5602",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.48550/arxiv.1502.05477",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48550/arxiv.1707.06347",
+   "t": "doi:10.48550/arxiv.1602.01783",
+   "rel": "cites"
+  },
+  {
+   "s": "title:introduction to reinforcement learning",
+   "t": "venue:the mit press ebooks",
+   "rel": "published_in"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1613/jair.301",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.48175/ijarsct-38763",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-40121-2_11",
+   "t": "doi:10.1007/bf00992698",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-41794-7_16",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-3-032-43217-9_5",
+   "t": "venue:lecture notes in computer science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:bruno caro-vásquez",
+   "t": "doi:10.1007/978-3-032-43217-9_5",
+   "rel": "authored"
+  },
+  {
+   "s": "author:bruno caro-vásquez",
+   "t": "group:university of bío-bío",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:carola figueroa-flores",
+   "t": "doi:10.1007/978-3-032-43217-9_5",
+   "rel": "authored"
+  },
+  {
+   "s": "author:carola figueroa-flores",
+   "t": "group:university of bío-bío",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:gastón márquez",
+   "t": "doi:10.1007/978-3-032-43217-9_5",
+   "rel": "authored"
+  },
+  {
+   "s": "author:gastón márquez",
+   "t": "group:university of bío-bío",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-981-92-7298-3_4",
+   "t": "venue:communications in computer and information science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:zhiyan guan",
+   "t": "doi:10.1007/978-981-92-7298-3_4",
+   "rel": "authored"
+  },
+  {
+   "s": "author:zhiyan guan",
+   "t": "group:central university of finance and economics",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-981-92-7298-3_8",
+   "t": "venue:communications in computer and information science",
+   "rel": "published_in"
+  },
+  {
+   "s": "author:ma li",
+   "t": "doi:10.1007/978-981-92-7298-3_8",
+   "rel": "authored"
+  },
+  {
+   "s": "author:ma li",
+   "t": "group:bansomdejchaopraya rajabhat university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:廖學儀",
+   "t": "doi:10.1007/978-981-92-7298-3_8",
+   "rel": "authored"
+  },
+  {
+   "s": "author:廖學儀",
+   "t": "group:shinawatra university",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:hong qing",
+   "t": "doi:10.1007/978-981-92-7298-3_8",
+   "rel": "authored"
+  },
+  {
+   "s": "author:hong qing",
+   "t": "group:research institute of innovation economy named after sh. musakozhoev. sh. musako",
+   "rel": "member_of"
+  },
+  {
+   "s": "author:yulin qin",
+   "t": "doi:10.1007/978-981-92-7298-3_8",
+   "rel": "authored"
+  },
+  {
+   "s": "author:yulin qin",
+   "t": "group:inti international university",
+   "rel": "member_of"
+  },
+  {
+   "s": "doi:10.1007/978-981-92-7298-3_8",
+   "t": "doi:10.1038/nature14236",
+   "rel": "cites"
+  },
+  {
+   "s": "doi:10.1007/978-981-92-7298-3_8",
+   "t": "doi:10.1609/aaai.v30i1.10295",
+   "rel": "cites"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:9",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:9",
+   "rel": "supports"
+  },
+  {
+   "s": "evidence:absolute-zero-reinforced-self-play-reasoning:10",
+   "t": "claim:absolute-zero-reinforced-self-play-reasoning:10",
+   "rel": "supports"
+  },
+  {
+   "s": "arxiv:2610.40578",
+   "t": "claim:vericua-verification-exploration:1",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.40578",
+   "t": "claim:vericua-verification-exploration:2",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.40578",
+   "t": "claim:vericua-verification-exploration:3",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.40578",
+   "t": "claim:vericua-verification-exploration:4",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.40578",
+   "t": "claim:vericua-verification-exploration:5",
+   "rel": "claims"
+  },
+  {
+   "s": "arxiv:2610.40578",
+   "t": "claim:vericua-verification-exploration:6",
    "rel": "claims"
   }
  ]
